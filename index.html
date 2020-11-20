@@ -1,79 +1,42 @@
-<!DOCTYPE html>
-
-
-<html>
+<!doctype html>
+<html lang ="en">
     <head>
+        <title>Rose Kamal Love</title>
         <link rel="stylesheet" href="style.css">
-        <body>
-            
-        <title>
-            My Page
-        </title>
-        <h1>
-            Welcome to My Page!!
-        </h1>
-        <h2>
-
-        </h2>
-        <p>
-            Some pretty populer websites:
-        </p>
-        
-        <table cellspacing="10">
-            <tr>
-                <td><a href="https://google.com">Google</a></td>
-                <td><a href="https://instagram.com">Instagram</a></td> 
-                <td><a href="http://faebook.com">Facebook</a></td> 
-                
-            </tr>
-        </table>
-        <ul> <!-- un listed item tag-->
-            <li>Hello there boi, wanna watch a cat video? click <a href ="https://www.youtube.com/watch?v=wf_IIbT8HGk">here</a></li> <!-- list item tag-->
-        </ul>
-        <hr>
-        <p>
-            You can just go to them websites by <b>clicking</b> on them.
-        </p>
-        <table  border="0"
-        cellpadding="5"
-        cellspacing="3">
-          
-            <tr>
-                <td><button style="background-color: rgb(252, 177, 215);"><a href="https://reddit.com">A cool website</a></button></td>
-                <td><button style="background-color: rgb(252, 177, 215);"><a href="https://zamzar.com">A usefull website</a></button></td>
-                <td><button style="background-color: rgb(252, 177, 215);"><a href="http://faebook.com">A fkin time waster!</a></button></td>
-            </tr>
-            
-        </table>
-        <h4>
-            About the websites:
-        </h4>
-        <ol>
-            <li>Well talking about the cool website <a href="https://reddit.com">Reddit</a> it is a very cool website with a bunch of subredits.</li>
-            <li>The second one <a href="https://zamzar.com">Zamzar</a> helps you cover a wide variety of file formats to other formats, hekk isnt that useful? </li>
-            <li>The third one <a href ="http://facebook.com">Facebook</a> well let's just not talk about it.</li>
-        </ol>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/a8c5wmeOL9o" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <h4>
-            Contact Me:
-        </h4>
-        <form>
-             Name: <br>
-            <input type="text" style="background-color: rgb(252, 177, 215);"><br><br>
-            Email:<br>
-            <input type="text" style="background-color: rgb(252, 177, 215);"><br><br>
-            <button style="background-color: rgb(252, 177, 215);">Submit</button>
-
-        </form>
-    </body>
     </head>
+
+<body>
+    <nav>
+        <ul class="topnav-left" id ="dropDownClick">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://news.google.com">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class ="topnav_right"><a href="#signup">Sign-Up</a></li>
+            <li class ="topnav_right"><a href="#signup">Sign-In</a></li>
+            <li class="hamMenu"><a href="javascript:void(0);" onclick="dropDownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <script>
+        function dropDownMenu()
+        {
+            var x = document.getElementById("dropDownClick");
+
+            if(x.className==="topnav-left")
+            {
+                x.className+=" responsive";
+                /* change topnav to topnav.responsive*/
+            }
+            else
+            {
+                x.className ="topnav-left";z
+            }
+            
+        }
+    </script>
+</body>
 </html>
-
-
-
-
-
-
-
-
