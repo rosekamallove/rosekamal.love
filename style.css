@@ -9,6 +9,10 @@ body {
   margin: 0;
   background-image: url("maxresdefault.jpg");
 }
+h1 {
+  text-align: center;
+  color: rgb(156, 156, 156);
+}
 
 /* ######## Navbar ########### */
 
