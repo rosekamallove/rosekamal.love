@@ -54,7 +54,7 @@ ul.topnav-left li.hamMenu {
 
 /* ########## Mobile ########## */
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 680px) {
   ul.topnav-left li:not(:nth-child(1)) {
     display: none;
   }
