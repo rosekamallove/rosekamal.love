@@ -72,3 +72,46 @@ ul.topnav-left li.hamMenu {
     text-align: left;
   }
 }
+/*##########Footer############*/
+nav {
+  width: 100%;
+  margin: 0;
+}
+nav ul {
+  background-color: rgb(31, 31, 31);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul.footer li {
+  list-style: none;
+  float: left;
+}
+ul.footer li.footer {
+  float: right;
+}
+
+ul.footer li a {
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: rgb(156, 156, 156);
+}
+ul.footer li a:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  text-align: center;
+}
