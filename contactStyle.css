@@ -72,6 +72,13 @@ ul.topnav-left li.hamMenu {
     text-align: left;
   }
 }
+
+/* .lightwidget-widget {
+  width: 100%;
+  border: 0;
+  overflow: hidden;
+} */
+
 /*##########Footer############*/
 nav {
   width: 100%;
@@ -114,4 +121,39 @@ footer {
   background-color: rgb(65, 65, 65);
   color: white;
   text-align: center;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.2;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-linkedin {
+  background: #0e76a8;
+  color: white;
+}
+.fa-github {
+  background: #000000;
+  color: white;
 }
