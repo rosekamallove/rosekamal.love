@@ -1,0 +1,30 @@
+$primary-color:#132334;
+$secondary-color: #D3435E;
+$tertiary-color:#3E3D4E;
+$fourth-color: #425389;
+$fifth-color: #CAC4BC;
+$show-home-image: true;
+$home-image: url(../img/bg1.jpeg);
+$backgorund-opacity:0.9;
+@mixin easeOut {
+    transition: all 0.65s ease-out;
+}
+
+@mixin bacground {
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+            background-attachment: fixed;
+            background-size: cover;
+            .overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: rgba($primary-color, $backgorund-opacity);
+            }
+        }
+    }
+}
