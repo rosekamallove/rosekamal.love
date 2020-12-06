@@ -30,11 +30,11 @@
     visibility: visible; }
   .menu-branding, .menu-nav {
     display: flex;
-    flex-flow: coloumn wrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    float: right;
-    width: 50vh;
+    float: left;
+    width: 50%;
     height: 100vh;
     overflow: hidden; }
   .menu-nav {
@@ -42,8 +42,22 @@
     padding: 0;
     background: #0c1621;
     list-style: none;
-    transform: translate38(0, 100%, 0);
+    transform: translate3d(0, -100%, 0);
     transition: all 0.65s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    background: #132334;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.65s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .portrait {
+      width: 250px;
+      height: 250px;
+      background-image: url(../img/portrait1.jpeg);
+      border-radius: 50%;
+      border: solid 3px #D3435E; }
 
 * {
   box-sizing: border-box; }
@@ -59,7 +73,8 @@ body {
     background: url(../img/bg1.jpeg);
     background-attachment: fixed;
     background-size: cover; }
-    body#bg-img .overlay {
+    body#bg-img:after {
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
