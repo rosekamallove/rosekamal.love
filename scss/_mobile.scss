@@ -2,7 +2,12 @@
 @include mediaXL {}
 
 //Desktop and laptops
-@include mediaLg {}
+@include mediaLg {
+    .about-info{
+        grid-template-areas:'bioimage''bio''job1''job2''job3' ;
+        grid-template-columns: 1fr;
+    }
+}
 
 //Tablets and small Laptops
 @include mediaMd {
