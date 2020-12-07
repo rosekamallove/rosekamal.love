@@ -166,7 +166,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio'  'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -218,7 +218,7 @@ main {
   .boxes div {
     font-size: 1.5rem;
     border: 3px #CAC4BC solid;
-    padding: 1.5rem 2,5rem;
+    padding: 1.5rem 2, 5rem;
     margin-bottom: 3rem;
     transition: all 0.65s ease-out; }
     .boxes div:hover {
@@ -231,12 +231,12 @@ main {
 @keyframes transitionIn {
   from {
     opacity: 0;
-    transform: rotateX(-10deg); }
+    transform: translateY(-10deg); }
   to {
     opacity: 0;
-    transform: rotateX(0); } }
+    transform: translateY(0); } }
 
-main {
+.container {
   animation: transitionIn 0.75s; }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
