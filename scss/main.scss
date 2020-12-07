@@ -125,7 +125,7 @@ main {
     text-align: center;
     padding-top: 5rem;
     font-size: 38px;
-    color: $fifth-color;
+    color: $secondary-color;
     
 }
 
@@ -156,5 +156,23 @@ main {
         }
     }
 
+}
+
+
+// Transition Effect
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 0;
+        transform: rotateX(0);
+    }
+}
+
+main{
+    animation: transitionIn 0.75s;
 }
 @import 'mobile';

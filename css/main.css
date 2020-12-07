@@ -206,7 +206,7 @@ main {
   text-align: center;
   padding-top: 5rem;
   font-size: 38px;
-  color: #CAC4BC; }
+  color: #D3435E; }
 
 .boxes {
   display: flex;
@@ -227,6 +227,17 @@ main {
       .boxes div:hover span {
         transition: all 0.65s ease-out;
         color: #0e1925; }
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg); }
+  to {
+    opacity: 0;
+    transform: rotateX(0); } }
+
+main {
+  animation: transitionIn 0.75s; }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .about-info {
