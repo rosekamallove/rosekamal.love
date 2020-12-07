@@ -3,8 +3,8 @@
 
 //Desktop and laptops
 @include mediaLg {
-    .about-info{
-        grid-template-areas:'bioimage''bio''job1''job2''job3' ;
+    .about-info {
+        grid-template-areas: 'bioimage''bio''job1''job2''job3';
         grid-template-columns: 1fr;
     }
 }
@@ -43,10 +43,8 @@
             height: 125px;
         }
     }
-
-
-    .about-info{
-        grid-template-areas:'bioimage''bio''job1''job2''job3' ;
+    .about-info {
+        grid-template-areas: 'bioimage''bio''job1''job2''job3';
         grid-template-columns: 1fr;
     }
 }
@@ -56,9 +54,8 @@
     main#home h1 {
         margin-top: 10vh;
     }
-    .about-info{
-        grid-template-areas:'bioimage''bio''job1''job2''job3' ;
+    .about-info {
+        grid-template-areas: 'bioimage''bio''job1''job2''job3';
         grid-template-columns: 1fr;
     }
 }
-
