@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
+
 * {
     box-sizing: border-box;
 }
@@ -66,3 +66,60 @@ main {
         }
     }
 }
+
+.about-info {
+    display: grid;
+    grid-gap:30px;
+    grid-template-areas: 
+    'bioimage bio bio' 
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+
+.bio-image{
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+    width: 250px;
+    height: 250px;
+}
+.bio{
+    grid-area: bio;
+}
+.job-1{
+    grid-area: job1;
+}
+.job-2{
+    grid-area: job2;
+}
+.job-3{
+    grid-area: job3;
+}
+.job{
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+}
+}
+#main-footer{
+    text-align: center;
+    padding: 1rem;
+    background: darken($secondary-color, 10);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    .icons{
+        // padding: 5px;
+        a {
+            padding: 2rem;
+            &:hover {
+                color: rgba(lighten($primary-color, 0.2), 1);
+                @include easeOut();
+            }
+        }
+    }
+}
+    
+
+@import 'mobile';
