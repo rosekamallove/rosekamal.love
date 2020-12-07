@@ -38,13 +38,15 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.95;
+    opacity: 0.983;
     visibility: hidden;
     &.show {
         visibility: visible;
     }
     &-branding,
     &-nav {
+        // filter: blur(8px);
+        // -webkit-filter: blur(8px);
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -55,6 +57,9 @@
         overflow: hidden;
     }
     &-nav {
+        // filter: blur(8px);
+        // -webkit-filter: blur(8px);
+        z-index: -1;
         margin: 0;
         padding: 0;
         background: darken($primary-color, 5);
@@ -69,6 +74,9 @@
     }
     //Branding side
     &-branding {
+        // filter: blur(8px);
+        // -webkit-filter: blur(8px);
+        z-index: -1;
         background: $primary-color;
         transform: translate3d(0, 100%, 0);
         @include easeOut;
@@ -76,13 +84,52 @@
             //slide in from top
             transform: translate3d(0, 0, 0);
         }
-        .portrait {
-            width: 250px;
-            height: 250px;
-            background-image: url(../img/portrait1.jpeg);
-            border-radius: 50%;
-            border: solid 3px $secondary-color;
+    }
+    .portrait {
+        // filter: blur(8px);
+        // -webkit-filter: blur(8px);
+        z-index: 4;
+        width: 250px;
+        height: 250px;
+        background: url(../img/portrait3.jpeg);
+        border-radius: 50%;
+        border: solid 3px $secondary-color;
+        // border-shadow: 2px;
+    }
+    .nav-item {
+        z-index: 2;
+        transform: translate3d(600px, 0, 0);
+        @include easeOut;
+        &.show {
+            //slide in from top
+            transform: translate3d(0, 0, 0);
         }
+        &.current>a {
+            z-index: 3;
+            color: $secondary-color;
+        }
+    }
+    .nav-link {
+        z-index: 2;
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        text-transform: capitalize;
+        padding: 1rem 0;
+        font-weight: 300;
+        color: $fifth-color;
+        text-decoration: none;
+        @include easeOut;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+//Delay each nav item slide by 0.1sec(for loop)
+@for $x from 1 through 4 {
+    .nav-item:nth-child(#{$x}) {
+        transition-delay: $x*0.1s;
     }
 }
 
