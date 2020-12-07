@@ -228,7 +228,10 @@ main {
     .menu-branding .portrait {
       background: url(../img/portraitSmallz.jpeg);
       width: 125px;
-      height: 125px; } }
+      height: 125px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
