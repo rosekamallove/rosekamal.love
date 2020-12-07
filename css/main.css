@@ -202,6 +202,12 @@ main {
       color: #132435;
       transition: all 0.65s ease-out; }
 
+.photos {
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 38px;
+  color: #D3435E; }
+
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
