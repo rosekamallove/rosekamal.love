@@ -45,7 +45,8 @@
     visibility: hidden;
     &.show {
         visibility: visible;
-        backdrop-filter: blur(40px);
+        // backdrop-filter: blur(40px);
+        // z-index: inherit;
     }
     &-branding,
     &-nav {
@@ -139,10 +140,9 @@
     }
 }
 
-home {
-    .show {
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
+.container {
+    &.show {
+        backdrop-filter: blur(40px);
     }
 }
 
