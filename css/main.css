@@ -132,6 +132,7 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
+    margin-top: 3rem;
     margin-bottom: 3rem;
     padding: 5rem, 1rem;
     background: rgba(19, 36, 53, 0.5); }
@@ -149,12 +150,12 @@ header {
   color: #D3435E; }
 
 main {
-  padding: 4rem;
+  padding: 5rem;
   height: 100%; }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 4rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 1rem; }
       main .icons a:hover {
         color: #D3435E;
         transition: all 0.65s ease-out; }

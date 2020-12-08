@@ -24,6 +24,7 @@ h3 {
         font-size: 5rem; //1rem=16px
     }
     &.sm-heading {
+        margin-top: 3rem;
         margin-bottom: 3rem;
         padding: 5rem, 1rem;
         background: rgba(lighten($primary-color, 0.2), 0.5);
@@ -46,12 +47,12 @@ header {
 }
 
 main {
-    padding: 4rem;
+    padding: 5rem;
     height: 100%;
     .icons {
-        margin-top: 1rem;
+        margin-top: 4rem;
         a {
-            padding: 0.4rem;
+            padding: 1rem;
             &:hover {
                 color: $secondary-color;
                 @include easeOut();
