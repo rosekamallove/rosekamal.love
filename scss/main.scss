@@ -11,7 +11,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    ;
+    font-weight: 400;
     line-height: 1.5;
     z-index: -1;
     &.show {
@@ -92,12 +92,33 @@ main {
     }
     .job-1 {
         grid-area: job1;
+        h6 {
+            font-size: 12px;
+        }
+        h3 {
+            font-size: 26px;
+            font-weight: 600;
+        }
     }
     .job-2 {
         grid-area: job2;
+        h6 {
+            font-size: 12px;
+        }
+        h3 {
+            font-size: 26px;
+            font-weight: 600;
+        }
     }
     .job-3 {
         grid-area: job3;
+        h6 {
+            font-size: 12px;
+        }
+        h3 {
+            font-size: 26px;
+            font-weight: 600;
+        }
     }
     .job {
         background: lighten($primary-color, 5);
