@@ -107,6 +107,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Nunito', sans-serif;
+  font-weight: 400;
   line-height: 1.5;
   z-index: -1; }
   body#bg-img {
@@ -187,10 +188,25 @@ main {
     grid-area: bio; }
   .about-info .job-1 {
     grid-area: job1; }
+    .about-info .job-1 h6 {
+      font-size: 12px; }
+    .about-info .job-1 h3 {
+      font-size: 26px;
+      font-weight: 600; }
   .about-info .job-2 {
     grid-area: job2; }
+    .about-info .job-2 h6 {
+      font-size: 12px; }
+    .about-info .job-2 h3 {
+      font-size: 26px;
+      font-weight: 600; }
   .about-info .job-3 {
     grid-area: job3; }
+    .about-info .job-3 h6 {
+      font-size: 12px; }
+    .about-info .job-3 h3 {
+      font-size: 26px;
+      font-weight: 600; }
   .about-info .job {
     background: #1a3047;
     padding: 0.5rem;
