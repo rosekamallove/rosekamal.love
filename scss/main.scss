@@ -213,11 +213,7 @@ main {
   margin: 0 auto;
   padding-bottom: 1rem;
 }
-@media (max-width: 1200px) {
-  .main-container {
-    width: 95%;
-  }
-}
+
 #contact-form {
   background-color: $secondary-color;
   box-shadow: $secondary-color;
@@ -259,4 +255,9 @@ main {
   color: $fifth-color;
   background-color: darken($secondary-color, 10);
   border: none;
+}
+@media (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
 }
