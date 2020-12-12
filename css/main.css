@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #D3435E;
+    background: #d3435e;
     transition: all 0.65s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -59,7 +59,7 @@
     height: 250px;
     background: url(../img/portrait3.jpeg);
     border-radius: 50%;
-    border: solid 3px #D3435E; }
+    border: solid 3px #d3435e; }
   .menu .nav-item {
     z-index: 2;
     transform: translate3d(600px, 0, 0);
@@ -68,7 +68,7 @@
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
       z-index: 3;
-      color: #D3435E; }
+      color: #d3435e; }
   .menu .nav-link {
     z-index: 2;
     display: inline-block;
@@ -77,11 +77,11 @@
     text-transform: capitalize;
     padding: 1rem 0;
     font-weight: 300;
-    color: #CAC4BC;
+    color: #cac4bc;
     text-decoration: none;
     transition: all 0.65s ease-out; }
     .menu .nav-link:hover {
-      color: #D3435E; }
+      color: #d3435e; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -103,7 +103,7 @@
 
 body {
   background: #132334;
-  color: #CAC4BC;
+  color: #cac4bc;
   height: 100%;
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -115,7 +115,7 @@ body {
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -145,7 +145,7 @@ h3 {
     background: rgba(19, 36, 53, 0.5); }
 
 a {
-  color: #CAC4BC;
+  color: #cac4bc;
   text-decoration: none;
   z-index: 2; }
 
@@ -155,7 +155,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #D3435E; }
+  color: #d3435e; }
 
 main {
   padding: 5rem;
@@ -165,7 +165,7 @@ main {
     main .icons a {
       padding: 1rem; }
       main .icons a:hover {
-        color: #D3435E;
+        color: #d3435e;
         transition: all 0.65s ease-out; }
   main#home {
     overflow: hidden; }
@@ -181,7 +181,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #D3435E 3px solid;
+    border: #d3435e 3px solid;
     width: 250px;
     height: 250px; }
   .about-info .bio {
@@ -210,7 +210,7 @@ main {
   .about-info .job {
     background: #101d2b;
     padding: 0.5rem;
-    border-bottom: #D3435E 5px solid; }
+    border-bottom: #d3435e 5px solid; }
 
 #main-footer {
   text-align: center;
@@ -230,7 +230,7 @@ main {
   text-align: center;
   padding-top: 5rem;
   font-size: 38px;
-  color: #D3435E; }
+  color: #d3435e; }
 
 .boxes {
   display: flex;
@@ -243,14 +243,14 @@ main {
   padding: 1rem, 1rem, 1rem, 1rem; }
   .boxes div {
     font-size: 1.5rem;
-    border: 3px #CAC4BC solid;
+    border: 3px #cac4bc solid;
     border-radius: 7px;
     padding: 2rem 2.5, 6rem;
     margin-bottom: 3rem;
     transition: all 0.65s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background-color: #D3435E; }
+      background-color: #d3435e; }
       .boxes div:hover span {
         transition: all 0.65s ease-out;
         color: #0e1925; }
@@ -269,7 +269,7 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
@@ -313,7 +313,7 @@ main {
 /* ####### Contaact Form ######### */
 .s2 {
   background-color: #132334;
-  border-bottom: 1px solid #D3435E;
+  border-bottom: 1px solid #d3435e;
   overflow: auto; }
 
 .main-container {
@@ -322,8 +322,8 @@ main {
   padding-bottom: 1rem; }
 
 #contact-form {
-  background-color: #D3435E;
-  box-shadow: #D3435E;
+  background-color: #d3435e;
+  box-shadow: #d3435e;
   border-radius: 5px;
   display: block;
   max-width: 600px;
@@ -356,7 +356,7 @@ main {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
-  color: #CAC4BC;
+  color: #cac4bc;
   background-color: #b82b45;
   border: none; }
 

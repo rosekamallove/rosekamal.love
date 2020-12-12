@@ -269,7 +269,7 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
