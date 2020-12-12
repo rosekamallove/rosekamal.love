@@ -1,14 +1,22 @@
 {
-    "name": "responsiveportfolio",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "sass": "node-sass -w scss/ -o css --recursive"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "node-sass": "^5.0.0"
-    }
+  "name": "responsiveportfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosekamallove/rosekamallove.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rosekamallove/rosekamallove.github.io/issues"
+  },
+  "homepage": "https://github.com/rosekamallove/rosekamallove.github.io#readme",
+  "description": ""
 }

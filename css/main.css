@@ -106,7 +106,7 @@ body {
   color: #CAC4BC;
   height: 100%;
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   z-index: -1; }
@@ -175,7 +175,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -238,11 +238,14 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 1rem, 1rem, 1rem, 1rem; }
   .boxes div {
     font-size: 1.5rem;
     border: 3px #CAC4BC solid;
-    padding: 1.5rem 2, 5rem;
+    border-radius: 7px;
+    padding: 2rem 2.5, 6rem;
     margin-bottom: 3rem;
     transition: all 0.65s ease-out; }
     .boxes div:hover {
@@ -306,3 +309,57 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; } }
+
+/* ####### Contaact Form ######### */
+.s2 {
+  background-color: #132334;
+  border-bottom: 1px solid #D3435E;
+  overflow: auto; }
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 1rem; }
+
+@media (max-width: 1200px) {
+  .main-container {
+    width: 95%; } }
+
+#contact-form {
+  background-color: #D3435E;
+  box-shadow: #D3435E;
+  border-radius: 5px;
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #0e1925;
+  margin-bottom: 50px; }
+
+#contact-form label {
+  line-height: 2.7em; }
+
+#contact-form textarea {
+  min-height: 100px;
+  background: #0b141e;
+  box-shadow: #1a3047; }
+
+.input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #0b141e;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  box-shadow: nset 8px 8px 38px #ededed, inset -8px -8px 38px #132334; }
+
+#submit-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  color: #CAC4BC;
+  background-color: #b82b45;
+  border: none; }
