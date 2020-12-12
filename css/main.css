@@ -321,10 +321,6 @@ main {
   margin: 0 auto;
   padding-bottom: 1rem; }
 
-@media (max-width: 1200px) {
-  .main-container {
-    width: 95%; } }
-
 #contact-form {
   background-color: #D3435E;
   box-shadow: #D3435E;
@@ -363,3 +359,7 @@ main {
   color: #CAC4BC;
   background-color: #b82b45;
   border: none; }
+
+@media (max-width: 1200px) {
+  .main-container {
+    width: 95%; } }
