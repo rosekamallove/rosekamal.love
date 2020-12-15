@@ -33,6 +33,14 @@ header p {
   background: lightblue;
   width: 100%;
   display: flex;
+  /* @include easeOut;
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background-color: $secondary-color;
+      span {
+        /* @include easeOut; */
+        color: $fourth-color;
+      */
 }
 .pads > div {
   height: 100px;
