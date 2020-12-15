@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #e8175d;
+    background: #d3435e;
     transition: all 0.65s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -40,7 +40,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #292929;
+    background: #0c1621;
     list-style: none;
     backdrop-filter: blur(40px);
     transform: translate3d(0, -100%, 0);
@@ -49,7 +49,7 @@
       transform: translate3d(0, 0, 0);
       backdrop-filter: blur(40px); }
   .menu-branding {
-    background: #363636;
+    background: #132334;
     transform: translate3d(0, 100%, 0);
     transition: all 0.65s ease-out; }
     .menu-branding.show {
@@ -59,7 +59,7 @@
     height: 250px;
     background: url(../img/portrait3.jpeg);
     border-radius: 50%;
-    border: solid 3px #e8175d; }
+    border: solid 3px #d3435e; }
   .menu .nav-item {
     z-index: 2;
     transform: translate3d(600px, 0, 0);
@@ -68,7 +68,7 @@
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
       z-index: 3;
-      color: #e8175d; }
+      color: #d3435e; }
   .menu .nav-link {
     z-index: 2;
     display: inline-block;
@@ -76,12 +76,12 @@
     font-size: 30px;
     text-transform: capitalize;
     padding: 1rem 0;
-    font-weight: 300;
+    font-weight: 500;
     color: #a8a7a7;
     text-decoration: none;
     transition: all 0.65s ease-out; }
     .menu .nav-link:hover {
-      color: #e8175d; }
+      color: #d3435e; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -102,7 +102,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #363636;
+  background: #132334;
   color: #a8a7a7;
   height: 100%;
   margin: 0;
@@ -122,7 +122,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(54, 54, 54, 0.9); }
+      background: rgba(19, 35, 52, 0.9); }
   body.show {
     filter: blur(8px);
     -webkit-filter: blur(8px); }
@@ -142,7 +142,7 @@ h3 {
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding: 5rem, 1rem;
-    background: rgba(55, 55, 55, 0.5); }
+    background: rgba(19, 36, 53, 0.5); }
 
 a {
   color: #a8a7a7;
@@ -155,7 +155,8 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #e8175d; }
+  color: #d3435e;
+  font-weight: 600; }
 
 main {
   padding: 5rem;
@@ -165,7 +166,7 @@ main {
     main .icons a {
       padding: 1rem; }
       main .icons a:hover {
-        color: #e8175d;
+        color: #d3435e;
         transition: all 0.65s ease-out; }
   main#home {
     overflow: hidden; }
@@ -181,7 +182,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #e8175d 3px solid;
+    border: #d3435e 3px solid;
     width: 250px;
     height: 250px; }
   .about-info .bio {
@@ -192,30 +193,30 @@ main {
       font-size: 12px; }
     .about-info .job-1 h3 {
       font-size: 26px;
-      font-weight: 600; }
+      font-weight: 800; }
   .about-info .job-2 {
     grid-area: job2; }
     .about-info .job-2 h6 {
       font-size: 12px; }
     .about-info .job-2 h3 {
       font-size: 26px;
-      font-weight: 600; }
+      font-weight: 800; }
   .about-info .job-3 {
     grid-area: job3; }
     .about-info .job-3 h6 {
       font-size: 12px; }
     .about-info .job-3 h3 {
       font-size: 26px;
-      font-weight: 600; }
+      font-weight: 800; }
   .about-info .job {
-    background: #303030;
+    background: #101d2b;
     padding: 0.5rem;
-    border-bottom: #e8175d 5px solid; }
+    border-bottom: #d3435e 5px solid; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #ba124a;
+  background: #b82b45;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -223,14 +224,14 @@ main {
   #main-footer .icons a {
     padding: 2rem; }
     #main-footer .icons a:hover {
-      color: #373737;
+      color: #132435;
       transition: all 0.65s ease-out; }
 
 .photos {
   text-align: center;
   padding-top: 5rem;
   font-size: 38px;
-  color: #e8175d; }
+  color: #d3435e; }
 
 .boxes {
   display: flex;
@@ -250,7 +251,7 @@ main {
     transition: all 0.65s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background-color: #e8175d; }
+      background-color: #d3435e; }
       .boxes div:hover span {
         transition: all 0.65s ease-out;
         color: #474747; }
@@ -312,8 +313,8 @@ main {
 
 /* ####### Contaact Form ######### */
 .s2 {
-  background-color: #363636;
-  border-bottom: 1px solid #e8175d;
+  background-color: #132334;
+  border-bottom: 1px solid #d3435e;
   overflow: auto; }
 
 .main-container {
@@ -322,8 +323,8 @@ main {
   padding-bottom: 1rem; }
 
 #contact-form {
-  background-color: #e8175d;
-  box-shadow: #e8175d;
+  background-color: #d3435e;
+  box-shadow: #d3435e;
   border-radius: 5px;
   display: block;
   max-width: 600px;
@@ -337,18 +338,18 @@ main {
 
 #contact-form textarea {
   min-height: 100px;
-  background: #272727;
-  box-shadow: #434343; }
+  background: #0b141e;
+  box-shadow: #1a3047; }
 
 .input-field {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #272727;
+  background-color: #0b141e;
   border-radius: 5px;
   border: none;
   font-size: 14px;
-  box-shadow: nset 8px 8px 38px #ededed, inset -8px -8px 38px #363636; }
+  box-shadow: nset 8px 8px 38px #ededed, inset -8px -8px 38px #132334; }
 
 #submit-btn {
   margin-top: 10px;
@@ -357,7 +358,7 @@ main {
   padding-bottom: 10px;
   border-radius: 5px;
   color: #a8a7a7;
-  background-color: #ba124a;
+  background-color: #b82b45;
   border: none; }
 
 @media (max-width: 1200px) {
