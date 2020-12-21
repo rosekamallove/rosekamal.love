@@ -59,4 +59,15 @@
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr;
   }
+
+  .icons {
+    margin-top: 1rem;
+    a {
+      padding: 6px;
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
 }
