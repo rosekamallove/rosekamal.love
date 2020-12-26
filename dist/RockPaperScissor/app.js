@@ -25,13 +25,17 @@ function win(userChoice, computerChoice){
     userScore++;
     userScore_span.innerHTML=userScore;
     computerScore_span.innerHTML=computerScore;
-    result_p.innerHTML = `${conertToWord(userChoice)}  beats ${conertToWord(computerChoice)} You Win!`;
+    result_p.innerHTML = `${conertToWord(userChoice)}  beats ${conertToWord(computerChoice)} You Win :)`;
 }
 function loose(userChoice, computerChoice){
-    
+    computerScore++;
+    userScore_span.innerHTML=userScore;
+    computerScore_span.innerHTML=computerScore;
+    result_p.innerHTML = `${conertToWord(computerChoice)}  beats ${conertToWord(userChoice)} You Lose :(`;
 }
 function draw(userChoice, computerChoice){
     console.log("draw");
+    result_p.innerHTML = `${conertToWord(userChoice)}  draws ${conertToWord(computerChoice)} Issa Draw!`;
 }
 
 function game(userChoice){
