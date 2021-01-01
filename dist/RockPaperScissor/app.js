@@ -26,6 +26,7 @@ function win(userChoice, computerChoice){
     userScore_span.innerHTML=userScore;
     computerScore_span.innerHTML=computerScore;
     result_p.innerHTML = `${conertToWord(userChoice)}  beats ${conertToWord(computerChoice)} You Win :)`;
+    
 }
 function loose(userChoice, computerChoice){
     computerScore++;
