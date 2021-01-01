@@ -188,7 +188,7 @@ header p {
   font-size: 30px;
   text-transform: capitalize;
   padding: 1rem 0;
-  font-weight: 300;
+  /* font-weight: 100; */
   color: #cac4bc;
   text-decoration: none;
   transition: all 0.65s ease-out;
@@ -211,6 +211,9 @@ header p {
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s;
+}
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s;
 }
 
 .container.show {
