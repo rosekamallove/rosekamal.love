@@ -1,5 +1,5 @@
 import Logo from './logo'
-import NavLink from 'next/link'
+import NextLink from 'next/link'
 import {
   Container,
   Box,
