@@ -21,6 +21,7 @@ import {
   IoLogoGithub,
   IoLogoLinkedin
 } from 'react-icons/io5'
+import Footer from '../components/footer'
 
 const Page = () => {
   return (
@@ -211,6 +212,15 @@ const Page = () => {
           </ListItem>
         </List>
       </Section>
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue('whilteAlpha.500', 'whiteAlpha.300')}
+        mb={6}
+        p={3}
+        align="center"
+      >
+        <Footer />
+      </Box>
     </Container>
   )
 }
