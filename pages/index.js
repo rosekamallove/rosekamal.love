@@ -1,17 +1,26 @@
+import NextLink from 'next/link'
 import {
-  Button,
-  Container,
-  Box,
-  Heading,
-  Image,
   Link,
+  Container,
+  Heading,
+  Box,
+  Image,
+  Button,
+  List,
+  ListItem,
+  Icon,
   useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import NextLink from 'next/link'
 import { BioSection, BioYear } from '../components/bio'
+import Section from '../components/section'
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoLinkedin
+} from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -130,6 +139,77 @@ const Page = () => {
             <Link> enzyme.js </Link>
           </NextLink>
         </BioSection>
+      </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>
+          <Link href="https://soundcloud.com/rosekmallove" target="_blank">
+            Music
+          </Link>
+          ,{' '}
+          <Link href="https://instagram.com/rosekamallove" target="_blank">
+            Photography
+          </Link>
+          , Development, Vim
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/rosekamallove" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                @rosekamallove
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem></ListItem>
+          <ListItem>
+            <Link href="https://twitter.com/RoseKamalLove1" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoTwitter} />}
+              >
+                @RoseKamalLove1
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://instagram.com/rosekamallove" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoInstagram} />}
+              >
+                @rosekamallove
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.linkedin.com/in/rose-kamal-love-1146141b0/"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoLinkedin} />}
+              >
+                LinkedIn
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
       </Section>
     </Container>
   )
