@@ -73,6 +73,7 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem href="/" path={path}>
             <Link
+              style={{ color: useColorModeValue('#000', '#fff') }}
               href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
               target="_blank"
             >
