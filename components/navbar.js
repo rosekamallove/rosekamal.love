@@ -68,6 +68,9 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 3, nmd: 0 }}
         >
+          <LinkItem href="/" path={path}>
+            About
+          </LinkItem>
           <LinkItem href="/works" path={path}>
             Projects
           </LinkItem>
@@ -77,7 +80,7 @@ const Navbar = props => {
               href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
               target="_blank"
             >
-              Resume
+              <b>Resume</b>
             </Link>
           </LinkItem>
         </Stack>

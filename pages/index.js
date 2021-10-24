@@ -5,6 +5,7 @@ import {
   Heading,
   Box,
   Image,
+  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -15,17 +16,20 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Section from '../components/section'
+import Footer from '../components/footer'
+import { GridItem } from '../components/grid-item'
 import {
   IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
   IoLogoLinkedin
 } from 'react-icons/io5'
-import Footer from '../components/footer'
+import youtemy from '../public/images/youtemy.png'
 
 const Page = () => {
   return (
     <Container>
+      {/* Intro Section*/}
       <Box
         borderRadius="lg"
         bg={useColorModeValue('whilteAlpha.500', 'whiteAlpha.300')}
@@ -60,6 +64,9 @@ const Page = () => {
           />
         </Box>
       </Box>
+
+      {/* About Section */}
+
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
@@ -90,6 +97,8 @@ const Page = () => {
           </NextLink>
         </Box>
       </Section>
+
+      {/* TimeLine Section*/}
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Bio
@@ -98,6 +107,9 @@ const Page = () => {
           <BioYear>2003</BioYear>
           Born in Bareilly, India.
         </BioSection>
+
+        {/* 2020 */}
+
         <BioSection>
           <BioYear>2020</BioYear>
           Graduated my 12th, and took admission in
@@ -107,6 +119,9 @@ const Page = () => {
           as a Bachelor in Computer Science and Information Technology and
           Started learning basics of programming and Web Development
         </BioSection>
+
+        {/* 2020 */}
+
         <BioSection>
           <BioYear>2021</BioYear>
           Built two awesome projects
@@ -141,6 +156,9 @@ const Page = () => {
           </NextLink>
         </BioSection>
       </Section>
+
+      {/* I Love Section */}
+
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           I Love ♥
@@ -157,6 +175,7 @@ const Page = () => {
         </Paragraph>
       </Section>
 
+      {/* Web Links Section */}
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           On the web
@@ -212,6 +231,22 @@ const Page = () => {
           </ListItem>
         </List>
       </Section>
+
+      <Section delay={0.4}>
+        <Heading as="h3" variant="section-title">
+          Featured
+        </Heading>
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            href="https://youtemy.tech"
+            title="YouTemy"
+            thumbnail={youtemy}
+          >
+            Distraction free youtube learning
+          </GridItem>
+        </SimpleGrid>
+      </Section>
+
       <Box
         borderRadius="lg"
         bg={useColorModeValue('whilteAlpha.500', 'whiteAlpha.300')}
