@@ -1,20 +1,10 @@
-import Logo from './logo'
-import NextLink from 'next/link'
-import {
-  Container,
-  Box,
-  Link,
-  Stack,
-  Heading,
-  Flex,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
-  useColorModeValue
-} from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
+import {
+  Box, Container, Flex, Heading, IconButton, Link, Menu, MenuButton, MenuItem,
+  MenuList, Stack, useColorModeValue
+} from '@chakra-ui/react'
+import NextLink from 'next/link'
+import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, children }) => {
@@ -71,7 +61,7 @@ const Navbar = props => {
           <LinkItem href="/" path={path}>
             About
           </LinkItem>
-          <LinkItem href="/works" path={path}>
+          <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
           <LinkItem href="/" path={path}>
@@ -99,7 +89,7 @@ const Navbar = props => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
+                <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
                 <MenuItem
