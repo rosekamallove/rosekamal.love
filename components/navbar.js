@@ -1,22 +1,35 @@
 import { HamburgerIcon } from '@chakra-ui/icons'
 import {
-  Box, Container, Flex, Heading, IconButton, Link, Menu, MenuButton, MenuItem,
-  MenuList, Stack, useColorModeValue
+  Box,
+  Container,
+  Flex,
+  Heading,
+  IconButton,
+  Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Stack,
+  useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href
+  console.log({ path, href })
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-
   return (
-    <NextLink href={href}>
+    <NextLink href={href} passHref>
       <Link
         p={2}
-        bg={active ? 'glassTeal' : undefined}
+        bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
+        style={{borderRadius: '8px'}}
+        _target={_target}
+        {...props}
       >
         {children}
       </Link>
@@ -26,6 +39,8 @@ const LinkItem = ({ href, path, children }) => {
 
 const Navbar = props => {
   const { path } = props
+
+  console.log(path)
 
   return (
     <Box
@@ -64,15 +79,16 @@ const Navbar = props => {
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
-          <LinkItem href="/" path={path}>
-            <Link
-              style={{ color: useColorModeValue('#000', '#fff') }}
-              href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
-              target="_blank"
-            >
-              <b>Resume</b>
-            </Link>
-          </LinkItem>
+          <Link
+            style={{
+              color: useColorModeValue('#000', '#fff'),
+              marginTop: '10px'
+            }}
+            href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
+            target="_blank"
+          >
+            <b>Resume</b>
+          </Link>
         </Stack>
 
         <Box flex={1} align="right">
