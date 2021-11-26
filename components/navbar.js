@@ -27,7 +27,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
-        style={{borderRadius: '8px'}}
+        style={{ borderRadius: '8px' }}
         _target={_target}
         {...props}
       >
@@ -79,6 +79,16 @@ const Navbar = props => {
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
+          <Link
+            style={{
+              color: useColorModeValue('#000', '#fff'),
+              marginTop: '10px'
+            }}
+            href="https://github.com/rosekamallove"
+            target="_blank"
+          >
+            GitHub
+          </Link>
           <Link
             style={{
               color: useColorModeValue('#000', '#fff'),
