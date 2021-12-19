@@ -14,6 +14,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { IoLink, IoLogoGithub } from 'react-icons/io5'
 import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
 
@@ -79,26 +80,30 @@ const Navbar = props => {
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
-          <Link
-            style={{
-              color: useColorModeValue('#000', '#fff'),
-              marginTop: '10px'
-            }}
-            href="https://github.com/rosekamallove"
+          <LinkItem
             target="_blank"
+            href="https://github.com/craftzdog/craftzdog-homepage"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
           >
-            GitHub
-          </Link>
-          <Link
-            style={{
-              color: useColorModeValue('#000', '#fff'),
-              marginTop: '10px'
-            }}
+            <IoLogoGithub />
+            Source
+          </LinkItem>
+          <LinkItem
             href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
             target="_blank"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
           >
-            <b>Resume</b>
-          </Link>
+            <IoLink />
+            Resume
+          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
