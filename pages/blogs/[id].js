@@ -1,3 +1,4 @@
+import { Container, Heading } from '@chakra-ui/react'
 import Head from 'next/head'
 import Date from '../../components/date'
 import Layout from '../../components/layouts/article'
@@ -27,13 +28,13 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
-        <h1>{postData.title}</h1>
+      <Container maxW="container.lg">
+        <Heading variant="h2">{postData.title}</Heading>
         <div>
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
+      </Container>
     </Layout>
   )
 }
