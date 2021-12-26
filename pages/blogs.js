@@ -1,5 +1,5 @@
 import { Container, Heading } from '@chakra-ui/react'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import Date from '../components/date'
 import Layout from '../components/layouts/article'
 import { getSortedPostsData } from '../lib/posts'
@@ -24,9 +24,9 @@ const Page = ({ allPostsData }) => {
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
-              <Link href={`/posts/${id}`}>
+              <NextLink href={`/blogs/${id}`}>
                 <a>{title}</a>
-              </Link>
+              </NextLink>
               <br />
               <small>
                 <Date dateString={date} />

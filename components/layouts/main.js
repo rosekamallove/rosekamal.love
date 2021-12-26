@@ -7,7 +7,7 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width initial-scale=1" />
-        <title>Rose Kamal - HomePage</title>
+        <title>Rose Kamal Love</title>
       </Head>
 
       <Navbar path={router.asPath} />
