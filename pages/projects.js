@@ -1,14 +1,14 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
-import Section from '../components/section'
+import { Container, Divider, Heading, SimpleGrid } from '@chakra-ui/react'
 import { WorkGridItem } from '../components/grid-item'
-import youtemy from '../public/images/youtemy.png'
-import musicexpanse from '../public/images/music-expanse.jpg'
 import Layout from '../components/layouts/article'
+import Section from '../components/section'
+import musicexpanse from '../public/images/music-expanse.jpg'
+import youtemy from '../public/images/youtemy.png'
 
 const Work = () => {
   return (
     <Layout>
-      <Container>
+      <Container maxW="container.lg">
         <Heading as="h3" fontSize={20} mb={4}>
           My Projects
         </Heading>

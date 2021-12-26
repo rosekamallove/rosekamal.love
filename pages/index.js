@@ -20,9 +20,9 @@ import {
   IoLogoTwitter
 } from 'react-icons/io5'
 import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
 import Footer from '../components/footer'
 import { GridItem } from '../components/grid-item'
+import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import youtemy from '../public/images/youtemy.png'
@@ -30,7 +30,7 @@ import youtemy from '../public/images/youtemy.png'
 const Page = () => {
   return (
     <Layout>
-      <Container>
+      <Container maxW="container.lg">
         {/* Intro Section*/}
         <Box
           borderRadius="lg"
