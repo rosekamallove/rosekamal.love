@@ -20,9 +20,9 @@ import {
   IoLogoTwitter
 } from 'react-icons/io5'
 import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
 import Footer from '../components/footer'
 import { GridItem } from '../components/grid-item'
+import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import youtemy from '../public/images/youtemy.png'
@@ -84,10 +84,10 @@ const Page = () => {
             I also have a knack for Music, I love to listen as well as create
             Music{' '}
             <NextLink
-              href="https://soundcloud.com/user-276723683/teleported?si=aae145b46bfb443b9b2583bc35bae98b"
+              href="https://soundcloud.com/user-276723683"
               passHref={true}
             >
-              <Link>(Teleported)</Link>
+              <Link>(SoundCloud)</Link>
             </NextLink>
             .
           </Paragraph>
