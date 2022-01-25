@@ -30,7 +30,7 @@ import youtemy from '../public/images/youtemy.png'
 const Page = () => {
   return (
     <Layout>
-      <Container>
+      <Container maxW="container.lg">
         {/* Intro Section*/}
         <Box
           borderRadius="lg"

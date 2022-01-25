@@ -1,12 +1,12 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta } from '../../components/projects'
-import P from '../../components/paragraph'
+import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
+import P from '../../components/paragraph'
+import { Meta, Title } from '../../components/projects'
 
 const Project = () => (
   <Layout title="YouTemy">
-    <Container>
+    <Container maxW="container.lg">
       <Title>
         YouTemy <Badge>2021-</Badge>
       </Title>
