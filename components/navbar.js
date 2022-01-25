@@ -14,7 +14,13 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { IoLink, IoLogoGithub } from 'react-icons/io5'
+import {
+  IoJournal,
+  IoLink,
+  IoLogoGithub,
+  IoOpen,
+  IoPersonOutline
+} from 'react-icons/io5'
 import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
 
@@ -53,12 +59,12 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
+        maxW="container.lg"
         wrap="wrap"
         aligh="center"
         justify="space-between"
       >
-        <Flex alig="center" mr={5}>
+        <Flex alig="center" mr={8}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
@@ -71,10 +77,37 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 3, nmd: 0 }}
         >
-          <LinkItem href="/" path={path}>
+          <LinkItem
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+            href="/"
+            path={path}
+          >
+            <IoPersonOutline />
             About
           </LinkItem>
-          <LinkItem href="/projects" path={path}>
+          <LinkItem
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+            href="/blogs"
+            path={path}
+          >
+            <IoJournal />
+            Blogs
+          </LinkItem>
+          <LinkItem
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+            href="/projects"
+            path={path}
+          >
+            <IoOpen />
             Projects
           </LinkItem>
           <LinkItem
@@ -115,22 +148,31 @@ const Navbar = props => {
               ></MenuButton>
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link} styles={{ gap: 4 }}>
+                    <IoPersonOutline /> About
+                  </MenuItem>
+                </NextLink>
+                <NextLink href="/blogs" passHref>
+                  <MenuItem as={Link}>
+                    <IoJournal /> Blogs
+                  </MenuItem>
                 </NextLink>
                 <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
+                  <MenuItem as={Link}>
+                    <IoOpen /> Projects
+                  </MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}
                   href="https://github.com/rosekamallove/rosekamallove.github.io"
                 >
-                  View Source
+                  <IoLogoGithub /> View Source
                 </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
                 >
-                  Resume
+                  <IoLink /> Resume
                 </MenuItem>
               </MenuList>
             </Menu>
