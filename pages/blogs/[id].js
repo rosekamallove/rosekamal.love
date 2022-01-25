@@ -1,4 +1,5 @@
-import { Container, Heading } from '@chakra-ui/react'
+import { Box, Container, Heading } from '@chakra-ui/react'
+import Link from 'next/dist/client/link'
 import Head from 'next/head'
 import Date from '../../components/date'
 import Layout from '../../components/layouts/article'
@@ -34,6 +35,11 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <Box pt={4} pb={4}>
+          <Link href="/blogs">
+            <a>← Back to Blogs</a>
+          </Link>
+        </Box>
       </Container>
     </Layout>
   )

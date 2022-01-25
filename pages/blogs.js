@@ -1,4 +1,4 @@
-import { Container, Heading } from '@chakra-ui/react'
+import { Box, Center, Container, Heading } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Date from '../components/date'
 import Layout from '../components/layouts/article'
@@ -17,10 +17,14 @@ const Page = ({ allPostsData }) => {
   return (
     <Layout>
       <Container maxW="container.lg">
-        <Heading as="h2" variant="page-title">
-          Blogs
+        <Heading as="h1">
+          <Center>{'{ Still Working on it... }'}</Center>
         </Heading>
+        {/* <Heading as="h2" variant="page-title">
+          Blogs
+        </Heading> */}
         {/* Blogs Section */}
+        <Box p={15}></Box>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
