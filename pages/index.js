@@ -34,7 +34,7 @@ const Page = () => {
         {/* Intro Section*/}
         <Box
           borderRadius="lg"
-          bg={useColorModeValue('whilteAlpha.500', 'whiteAlpha.300')}
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.300')}
           mb={6}
           p={3}
           align="center"
