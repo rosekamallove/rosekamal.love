@@ -1,6 +1,5 @@
 import {
   Box,
-  Center,
   Container,
   Heading,
   Link,
@@ -27,13 +26,7 @@ const Page = ({ allPostsData }) => {
   return (
     <Layout>
       <Container maxW="container.lg">
-        <Heading as="h1">
-          <Center>Blogs</Center>
-        </Heading>
-        {/* <Heading as="h2" variant="page-title">
-          Blogs
-        </Heading> */}
-        {/* Blogs Section */}
+        <Heading as="h3">Blogs</Heading>
         <Box p={15}></Box>
         <List>
           {allPostsData.map(({ id, date, title, description }) => (
