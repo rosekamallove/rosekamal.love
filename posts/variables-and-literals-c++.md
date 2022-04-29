@@ -89,15 +89,6 @@ A string literal is a sequence of characters enclosed in double-quote marks. For
 
 `"Earth is round \n"` => prints string with a newline
 
-<!--
-| String                | Description                               |
-| --------------------- | ----------------------------------------- |
-| `"good"`              | string constant                           |
-| `""`                  | null string constant                      |
-| `" "`                 | string contant of six white spaces        |
-| `"x"`                 | string constant having a single character |
-| `"Earth is round \n"` | prints string with a newline              |
--->
 
 **4. C++ Constants**
 

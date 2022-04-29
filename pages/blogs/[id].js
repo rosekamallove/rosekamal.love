@@ -1,6 +1,8 @@
 import { Box, Container, Heading } from '@chakra-ui/react'
+import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
 import Link from 'next/dist/client/link'
 import Head from 'next/head'
+import ReactMarkdown from 'react-markdown'
 import Date from '../../components/date'
 import Layout from '../../components/layouts/article'
 import { getAllPostIds, getPostData } from '../../lib/posts'
@@ -34,10 +36,15 @@ export default function Post({ postData }) {
         <div>
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        {/* <ReactMarkdown components={(ChakraUIRenderer(), SyntaxHighlight)}> */}
+        <ReactMarkdown components={ChakraUIRenderer()}>
+          {postData.contentHtml}
+        </ReactMarkdown>
         <Box pt={4} pb={4}>
           <Link href="/blogs">
-            <a>← Back to Blogs</a>
+            <a>
+              <strong>← Back to Blogs</strong>
+            </a>
           </Link>
         </Box>
       </Container>
