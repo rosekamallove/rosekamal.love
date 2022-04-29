@@ -13,12 +13,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import {
-  IoLogoGithub,
-  IoLogoInstagram,
-  IoLogoLinkedin,
-  IoLogoTwitter
-} from 'react-icons/io5'
+import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 import { BioSection, BioYear } from '../components/bio'
 import Footer from '../components/footer'
 import { GridItem } from '../components/grid-item'
@@ -201,9 +196,9 @@ const Page = () => {
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoTwitter} />}
+                  leftIcon={<Icon as={IoLogoGithub} />}
                 >
-                  @RoseKamalLove1
+                  @rosekamallove
                 </Button>
               </Link>
             </ListItem>

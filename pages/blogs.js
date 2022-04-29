@@ -1,4 +1,13 @@
-import { Box, Center, Container, Heading } from '@chakra-ui/react'
+import { ArrowRightIcon } from '@chakra-ui/icons'
+import {
+  Box,
+  Center,
+  Container,
+  Heading,
+  List,
+  ListIcon,
+  ListItem
+} from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Date from '../components/date'
 import Layout from '../components/layouts/article'
@@ -18,16 +27,17 @@ const Page = ({ allPostsData }) => {
     <Layout>
       <Container maxW="container.lg">
         <Heading as="h1">
-          <Center>{'{ Still Working on it... }'}</Center>
+          <Center>Blogs</Center>
         </Heading>
         {/* <Heading as="h2" variant="page-title">
           Blogs
         </Heading> */}
         {/* Blogs Section */}
         <Box p={15}></Box>
-        <ul>
+        <List>
           {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
+            <ListItem key={id}>
+              <ListIcon as={ArrowRightIcon} />
               <NextLink href={`/blogs/${id}`}>
                 <a>{title}</a>
               </NextLink>
@@ -35,9 +45,9 @@ const Page = ({ allPostsData }) => {
               <small>
                 <Date dateString={date} />
               </small>
-            </li>
+            </ListItem>
           ))}
-        </ul>
+        </List>
       </Container>
     </Layout>
   )
