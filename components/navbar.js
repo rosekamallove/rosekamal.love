@@ -2,6 +2,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import {
   Box,
   Container,
+  Divider,
   Flex,
   Heading,
   IconButton,
@@ -33,7 +34,6 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
-        style={{ borderRadius: '8px' }}
         _target={_target}
         {...props}
       >
@@ -61,10 +61,10 @@ const Navbar = props => {
         p={2}
         maxW="container.lg"
         wrap="wrap"
-        aligh="center"
+        align="center"
         justify="space-between"
       >
-        <Flex alig="center" mr={8}>
+        <Flex align="center" mr={8}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
@@ -73,14 +73,14 @@ const Navbar = props => {
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
-          alightitems="center"
+          alignItems="center"
           flexGrow={1}
           mt={{ base: 3, nmd: 0 }}
         >
           <LinkItem
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4 }}
+            style={{ gap: 4, borderRadius: '8px' }}
             pl={2}
             href="/"
             path={path}
@@ -91,7 +91,7 @@ const Navbar = props => {
           <LinkItem
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4 }}
+            style={{ gap: 4, borderRadius: '8px' }}
             pl={2}
             href="/blogs"
             path={path}
@@ -102,7 +102,7 @@ const Navbar = props => {
           <LinkItem
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4 }}
+            style={{ gap: 4, borderRadius: '8px' }}
             pl={2}
             href="/projects"
             path={path}
@@ -110,13 +110,14 @@ const Navbar = props => {
             <IoOpen />
             Projects
           </LinkItem>
+          <Divider orientation="vertical" style={{ margin: '10px' }} />
           <LinkItem
             target="_blank"
             href="https://github.com/rosekamallove/rosekamallove.github.io"
             path={path}
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4 }}
+            style={{ gap: 4, borderRadius: '8px' }}
             pl={2}
           >
             <IoLogoGithub />
@@ -128,7 +129,7 @@ const Navbar = props => {
             path={path}
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4 }}
+            style={{ gap: 4, borderRadius: '8px' }}
             pl={2}
           >
             <IoLink />

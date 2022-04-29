@@ -1,11 +1,10 @@
-import { ArrowRightIcon } from '@chakra-ui/icons'
 import {
   Box,
   Center,
   Container,
   Heading,
+  Link,
   List,
-  ListIcon,
   ListItem
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
@@ -37,9 +36,11 @@ const Page = ({ allPostsData }) => {
         <List>
           {allPostsData.map(({ id, date, title }) => (
             <ListItem key={id}>
-              <ListIcon as={ArrowRightIcon} />
+              {/* <ListIcon as={ArrowRightIcon} /> */}
               <NextLink href={`/blogs/${id}`}>
-                <a>{title}</a>
+                <Link>
+                  <strong>{title}</strong>
+                </Link>
               </NextLink>
               <br />
               <small>
