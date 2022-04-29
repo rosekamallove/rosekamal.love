@@ -1,5 +1,6 @@
 ---
-title: "What is Coding & and an intro to C++"
+title: "What is Coding & and an intro to C++ (Part 1)"
+description: "Coding, sometimes called computer programming, is how we communicate with computers. Code tells a computer what actions to take, and writing code is like creating a set of instructions. By learning to write code, you can tell computers what to do or how to behave in a much faster way. You can use this skill to make websites and apps, process data, and do lots of other cool things."
 date: "2021-12-19"
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: "Conditionals in C++"
+title: "Conditionals in C++ (Part 3)"
+description: "In this tutorial, we will learn about the if...else statement to create decision making programs with the help of examples."
 date: "2021-12-22"
 ---
 

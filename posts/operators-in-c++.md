@@ -1,5 +1,6 @@
 ---
-title: "Operators  and Comments in C++"
+title: "Operators  and Comments in C++ (Part 4)"
+description: "In this tutorial, we will learn about the different types of operators in C++ with the help of examples. In programming, an operator is a symbol that operates on a value or a variable."
 date: "2021-12-23"
 ---
 

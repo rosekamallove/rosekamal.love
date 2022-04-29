@@ -5,7 +5,9 @@ import {
   Heading,
   Link,
   List,
-  ListItem
+  ListItem,
+  Text,
+  useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Date from '../components/date'
@@ -34,18 +36,26 @@ const Page = ({ allPostsData }) => {
         {/* Blogs Section */}
         <Box p={15}></Box>
         <List>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, description }) => (
             <ListItem key={id}>
-              {/* <ListIcon as={ArrowRightIcon} /> */}
-              <NextLink href={`/blogs/${id}`}>
-                <Link>
-                  <strong>{title}</strong>
-                </Link>
-              </NextLink>
-              <br />
-              <small>
-                <Date dateString={date} />
-              </small>
+              <Box
+                borderRadius="lg"
+                // eslint-disable-next-line react-hooks/rules-of-hooks
+                bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
+                mb={6}
+                p={3}
+              >
+                <NextLink href={`/blogs/${id}`}>
+                  <Link>
+                    <strong>{title}</strong>
+                  </Link>
+                </NextLink>
+                <br />
+                <pre>
+                  <Date dateString={date} />
+                </pre>
+                {description ? <Text fontSize="sm">{description}</Text> : ''}
+              </Box>
             </ListItem>
           ))}
         </List>

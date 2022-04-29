@@ -1,5 +1,6 @@
 ---
-title: "Varibales, Literals and Datatypes in C++"
+title: "Varibales, Literals and Datatypes in C++ (Part 2)"
+description: "In this tutorial, we will learn about variables, literals, and constants in C++ with the help of examples."
 date: "2021-12-21"
 ---
 
