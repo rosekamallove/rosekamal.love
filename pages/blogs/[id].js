@@ -3,6 +3,7 @@ import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
 import Link from 'next/dist/client/link'
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import Date from '../../components/date'
 import Layout from '../../components/layouts/article'
 import { getAllPostIds, getPostData } from '../../lib/posts'
@@ -37,7 +38,11 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         {/* <ReactMarkdown components={(ChakraUIRenderer(), SyntaxHighlight)}> */}
-        <ReactMarkdown escapeHtml={false} components={ChakraUIRenderer()}>
+        <ReactMarkdown
+          escapeHtml={true}
+          components={ChakraUIRenderer()}
+          remarkPlugins={[remarkGfm]}
+        >
           {postData.contentHtml}
         </ReactMarkdown>
         <Box pt={4} pb={4}>

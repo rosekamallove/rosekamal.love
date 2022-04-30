@@ -1,4 +1,4 @@
-import { Text, useColorModeValue } from '@chakra-ui/react'
+import { useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -21,15 +21,15 @@ const Logo = () => {
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={logoImg} width={40} height={40} alt="logo" />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          <Image src={logoImg} width={50} height={50} alt="logo" />
+          {/* <Text
+            color={useColorModeValue('#282c34', '#abb2bf')}
             fontFamily="M PLUS Rounded 1c"
             fontWeight="bold"
             ml={3}
           >
             Rose Kamal Love
-          </Text>
+          </Text> */}
         </LogoBox>
       </a>
     </Link>

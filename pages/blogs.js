@@ -34,7 +34,7 @@ const Page = ({ allPostsData }) => {
               <Box
                 borderRadius="lg"
                 // eslint-disable-next-line react-hooks/rules-of-hooks
-                bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
+                bg={useColorModeValue('whiteAlpha.500', '#323843')}
                 mb={6}
                 p={3}
               >
