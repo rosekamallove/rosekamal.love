@@ -15,6 +15,7 @@ pre {
 }
 
 blockquote {
+  margin-top: 10px !important;
   border-left: 5px solid #696969 !important;
   border-radius: 8px !important;
   padding: 5px !important;
