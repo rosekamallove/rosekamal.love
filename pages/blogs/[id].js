@@ -37,7 +37,7 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         {/* <ReactMarkdown components={(ChakraUIRenderer(), SyntaxHighlight)}> */}
-        <ReactMarkdown components={ChakraUIRenderer()}>
+        <ReactMarkdown escapeHtml={false} components={ChakraUIRenderer()}>
           {postData.contentHtml}
         </ReactMarkdown>
         <Box pt={4} pb={4}>

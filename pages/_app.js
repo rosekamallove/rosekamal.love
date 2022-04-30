@@ -1,5 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { AnimatePresence } from 'framer-motion'
+import 'prismjs/plugins/unescaped-markup/prism-unescaped-markup.min.js'
+// import 'prismjs/themes/prism-dark.css'
 import Fonts from '../components/fonts'
 import Layout from '../components/layouts/main'
 import theme from '../lib/theme'
