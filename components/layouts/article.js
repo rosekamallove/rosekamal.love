@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
-import { useEffect } from 'react'
 import { GridItemStyle } from '../grid-item'
 
 const variants = {
@@ -10,9 +9,9 @@ const variants = {
 }
 
 const Layout = ({ children, title }) => {
-  useEffect(() => {
-    Prism.highlightAll()
-  }, [])
+  // useEffect(() => {
+  //   Prism.highlightAll()
+  // }, [])
 
   return (
     <motion.article
