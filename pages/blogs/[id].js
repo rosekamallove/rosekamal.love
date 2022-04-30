@@ -31,6 +31,7 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <meta name="description" content={postData.description}></meta>
       </Head>
       <Container maxW="container.lg">
         <Heading variant="h2">{postData.title}</Heading>
