@@ -21,17 +21,22 @@ export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
   return {
     props: {
-      postData
+      postData,
+      id: params.id
     }
   }
 }
 
-export default function Post({ postData }) {
+export default function Post({ postData, id }) {
+  const url = `https://rosekamallove.vercel.app/blogs/${id}`
   return (
     <Layout>
       <Head>
         <title>{postData.title}</title>
         <meta name="description" content={postData.description}></meta>
+        <meta property="og:url" content={url}></meta>
+        <meta property="og:description" content={postData.og_description} />
+        <meta property="og:type" content="article" />
       </Head>
       <Container maxW="container.lg">
         <Heading variant="h2">{postData.title}</Heading>
