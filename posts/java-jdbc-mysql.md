@@ -3,6 +3,7 @@ title: "Java and MySQL"
 date: "2022-05-01"
 description: "I have been learning Java and SQL at University, I thought to myself why not combine both of them, 
 which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion"
+og_description: "A JDBC Introduction"
 ---
 
 ### Java DataBase Connectivity (JDBC)
