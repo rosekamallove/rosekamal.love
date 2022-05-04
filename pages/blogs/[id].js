@@ -1,4 +1,4 @@
-import { Box, Container, Heading } from '@chakra-ui/react'
+import { Box, Center, Container, Heading, Image } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
 import Link from 'next/dist/client/link'
 import Head from 'next/head'
@@ -27,6 +27,13 @@ export async function getStaticProps({ params }) {
   }
 }
 
+const newTheme = {
+  details: props => {
+    const { children } = props
+    return <details>{children}</details>
+  }
+}
+
 export default function Post({ postData, id }) {
   const url = `https://rosekamallove.vercel.app/blogs/${id}`
   return (
@@ -37,17 +44,31 @@ export default function Post({ postData, id }) {
         <meta property="og:url" content={url}></meta>
         <meta property="og:description" content={postData.og_description} />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content={postData.cover_image} />
       </Head>
+
       <Container maxW="container.lg">
+        <Center>
+          {postData.cover_image ? (
+            <Image
+              borderRadius="8px"
+              width="100%"
+              marginBottom="20px"
+              src={postData.cover_image}
+              alt="Cover Image"
+            />
+          ) : (
+            ''
+          )}
+        </Center>
         <Heading variant="h2">{postData.title}</Heading>
         <div>
           <Date dateString={postData.date} />
         </div>
-        {/* <ReactMarkdown components={(ChakraUIRenderer(), SyntaxHighlight)}> */}
         <ReactMarkdown
-          escapeHtml={true}
-          components={ChakraUIRenderer()}
+          components={ChakraUIRenderer(newTheme)}
           remarkPlugins={[remarkGfm]}
+          skipHtml
         >
           {postData.contentHtml}
         </ReactMarkdown>
