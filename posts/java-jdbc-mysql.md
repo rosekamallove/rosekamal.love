@@ -107,7 +107,7 @@ Now that we have a basic understand of what **JDBC** is let's move forward but b
 8. **Closing Connections**
    The last stage is to ourselves or the API from the Database
 
-### Let's Start Coding then 😃
+## Let's Start Coding then 😃
 
 #### Getting our Database Ready
 
@@ -164,4 +164,146 @@ insert into engineeringstudents
    value(10207, 'ECE', 'Jennifer', 'Charles', 2019, 13232);
 ```
 
-#### The Java Module 🥲
+### The Java Module 🥲
+
+#### Creating the Module
+
+- You can use any IDE/Text Editor that you want, although I would recommend you download and install [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download/#section=mac)
+- Launch the IDE
+- Next, create a **Java Project** (Not a Maven or Gradle etc)
+- I am going to call it **jdbc-intro**
+- And then create a `JDBC` directory with a `JDBC.java` class in it, the directory structure should look like this:
+
+```
+|-- jdbc-intro
+    |-- lib
+    |-- src
+        |-- JDBC
+            |-- JDBC.java
+```
+
+#### Creating a basic SQL query in Java
+
+- Now, we would start writing the code in the `src/JDBC/JDBC.java` file:
+
+```java
+package JDBC;
+
+import java.sql.*;
+
+public class JDBC {
+    public static void main(String args[]) throws SQLException {
+        String url = "jdbc:mysql://localhost:3306/customerdb";
+        String uname = "root";
+        String password = "password";
+        String query = "select * from engineeringstudents";
+    }
+}
+```
+
+- This code is pretty self explanatory, except for the `import java.sql.*;` line.
+- This is the line that provides us all of the function that are present in the **JDBC Library/API**
+- But we haven't added JDBC to our project, which we are going to using a `JAR`
+
+  - First we will download the Jar file for JDBC from [this link](https://dev.mysql.com/downloads/connector/j/)
+  - Next, to add this JAR file to our project we can follow [this article](https://www.geeksforgeeks.org/how-to-add-external-jar-file-to-an-intellij-idea-project/) on GFG
+
+- Checking if our package is imported correctly by using the `try and catch` block which find the package `className`
+
+```java
+package JDBC;
+
+import java.sql.*;
+
+public class JDBC {
+    public static void main(String args[]) throws SQLException {
+        String url = "jdbc:mysql://localhost:3306/customerdb";
+        String uname = "root";
+        String password = "password";
+        String query = "select * from engineeringstudents";
+
+        // Checking if the package is present
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+#### Connecting to the Database and printing the result to the console
+
+- To create a connection to the database we use the **Connection** class present in the _JDBC Driver_ and pass the _url, uname and password_ to the **getConnection()** method in the _DriverManager_
+- Then to convert our query String into a JDBC Statement we are going to use the **Statement** class and **createStatement()** method
+
+```java
+Connection con = DriverManager.getConnection(url, uname, password );
+Statement statement = con.createStatement();
+```
+
+- Now that we have created a **Query Statement**, it need to be executed and result stored in a variable, which will be of the the type **ResultSet** which is also provided by the _JDBC Driver_
+- The `statement` is to be executed using the **executeQuery()** method by providing it the query as a parameter
+
+```java
+ResultSet result = statement.executeQuery(query);
+```
+
+- Now, the only thing remaining is to print the result obtained to the console.
+- `while(result.next())` this part is pretty self explanatory, _until the next result is null_
+  - We will will iterate over all the **6 properties: {id, department, first_name, last_name, passout_year, uni_rank}** which can be accessed by the **result.getString(index)** method by passing the index to it.
+  - Then we will concatenate this result into a temporary variable.
+  - When the iteration is completed _(no more properties of index: i remains)_ we can print this temporary variable
+
+```java
+while(result.next()) {
+      String UniversityData =  "";
+      for(int i=1; i <= 6; i++) {
+         UniversityData += result.getString(i) + ":";
+      }
+      System.out.println(UniversityData);
+}
+```
+
+#### Final Code
+
+```java
+package JDBC;
+
+import java.sql.*;
+
+public class JDBC {
+    public static void main(String args[]) throws SQLException {
+        String url = "jdbc:mysql://localhost:3306/customerdb";
+        String uname = "root";
+        String password = System.getenv("SQLPassword");
+        String query = "select * from engineeringstudents";
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            Connection con = DriverManager.getConnection(url, uname, password );
+            Statement statement = con.createStatement();
+
+            ResultSet result = statement.executeQuery(query);
+
+            while(result.next()) {
+                String UniversityData =  "";
+                for(int i=1; i <= 6; i++) {
+                    UniversityData += result.getString(i) + ":";
+                }
+                System.out.println(UniversityData);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+I hope you liked this tutorial, please provide any feedback you have over on my [LinkedIn](https://www.linkedin.com/in/rose-kamal-love-1146141b0/)
