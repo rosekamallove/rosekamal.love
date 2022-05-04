@@ -4,11 +4,14 @@ date: "2022-05-01"
 description: "I have been learning Java and SQL at University, I thought to myself why not combine both of them, 
 which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion"
 og_description: "A JDBC Introduction"
+cover_image: "https://user-images.githubusercontent.com/69139607/166664947-44a5278e-7835-4f5d-88cd-0cf0d3ebd0b1.png"
 ---
 
 ### Java DataBase Connectivity (JDBC)
 
 #### What is JDBC ?
+
+<details></details>
 
 [Java Database Connectivity](https://www.javatpoint.com/java-jdbc) is tool or an application programming interface
 (API) that establishes a connection between a standard Database (_say MYSQL_) and a Java Application that intends
@@ -111,48 +114,54 @@ Now that we have a basic understand of what **JDBC** is let's move forward but b
 - First we need to [launch MySQL](https://www.hivelocity.net/kb/how-to-start-stop-and-restart-mysql-server/), which we can do by launching the **MySQL** workbench or through the **terminal** for the sake of simplicity of this tutorial we are gonna be using the **terminal**
 - Now that MySQL is running, we can create a database named `university` by typing in the command `CREATE DATABASE university;`, and then to check whether the database is running or not we can execute `SHOW DATABASES;` this is my output, notice the `university` database.
 
-            mysql> show databases;
-            +--------------------+
-            | Database |
-            +--------------------+
-            | information_schema |
-            | University |
-            | customerdb |
-            | mysql |
-            | openmrs |
-            | performance_schema |
-            | sys |
-            +--------------------+
-            7 rows in set (0.02 sec)
-            mysql>
+```txt
+mysql> show databases;
++--------------------+
+| Database |
++--------------------+
+| information_schema |
+| University |
+| customerdb |
+| mysql |
+| openmrs |
+| performance_schema |
+| sys |
++--------------------+
+7 rows in set (0.02 sec)
+mysql>
+```
 
 - Next we will create a table named `engineeringStudents` with **{id, department, first_name, last_name, passout_year, uni_rank}** by executing the following command:
 
-            CREATE TABLE `customerdb`.`EngineeringStudents` (
-            `student_id` INT NOT NULL,
-            `department` VARCHAR(45) NOT NULL,
-            `first_name` VARCHAR(45) NOT NULL,
-            `last_name` VARCHAR(45) NOT NULL,
-            `passout_year` INT NOT NULL,
-            `university_rank` INT NOT NULL,
-            PRIMARY KEY (`student_id`),
-            UNIQUE INDEX `student_id_UNIQUE` (`student_id` ASC));
+```sql
+CREATE TABLE `customerdb`.`EngineeringStudents` (
+`student_id` INT NOT NULL,
+`department` VARCHAR(45) NOT NULL,
+`first_name` VARCHAR(45) NOT NULL,
+`last_name` VARCHAR(45) NOT NULL,
+`passout_year` INT NOT NULL,
+`university_rank` INT NOT NULL,
+PRIMARY KEY (`student_id`),
+UNIQUE INDEX `student_id_UNIQUE` (`student_id` ASC));
+```
 
 - Now the last step to make our Database ready is to insert some data into it, which we will be doing by the following commands
 
-            insert into engineeringstudents
-              value(10201, 'CSE', 'Kiran', 'Acharya', 2018, 1272);
-            insert into engineeringstudents
-              value(10202, 'ME', 'Jayson', 'Robert', 2020, 1249);
-            insert into engineeringstudents
-              value(10203, 'CSE', 'Praveen', 'Kumar', 2017, 1238);
-            insert into engineeringstudents
-              value(10204, 'ECE', 'Rajesh', 'Kumar', 2019, 1243);
-            insert into engineeringstudents
-              value(10205, 'CSE', 'Trevor', 'Krugar', 2018, 1000);
-            insert into engineeringstudents
-              value(10206, 'CSE', 'Jogn', 'Denver', 2018, 1);
-            insert into engineeringstudents
-              value(10207, 'ECE', 'Jennifer', 'Charles', 2019, 13232);
+```sql
+insert into engineeringstudents
+   value(10201, 'CSE', 'Kiran', 'Acharya', 2018, 1272);
+insert into engineeringstudents
+   value(10202, 'ME', 'Jayson', 'Robert', 2020, 1249);
+insert into engineeringstudents
+   value(10203, 'CSE', 'Praveen', 'Kumar', 2017, 1238);
+insert into engineeringstudents
+   value(10204, 'ECE', 'Rajesh', 'Kumar', 2019, 1243);
+insert into engineeringstudents
+   value(10205, 'CSE', 'Trevor', 'Krugar', 2018, 1000);
+insert into engineeringstudents
+   value(10206, 'CSE', 'Jogn', 'Denver', 2018, 1);
+insert into engineeringstudents
+   value(10207, 'ECE', 'Jennifer', 'Charles', 2019, 13232);
+```
 
 #### The Java Module 🥲

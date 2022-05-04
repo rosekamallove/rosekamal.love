@@ -43,10 +43,9 @@ const Page = ({ allPostsData }) => {
                     <strong>{title}</strong>
                   </Link>
                 </NextLink>
-                <br />
-                <pre>
+                <Box>
                   <Date dateString={date} />
-                </pre>
+                </Box>
                 {description ? <Text fontSize="sm">{description}</Text> : ''}
               </Box>
             </ListItem>
