@@ -141,13 +141,15 @@ const Page = ({ allPostsData }) => {
               return ''
             }
           })}
-          <Button
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
-            variant="ghost"
-          >
-            Read All Blogs
-          </Button>
+          <NextLink href="/blogs">
+            <Button
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="teal"
+              variant="ghost"
+            >
+              Read All Blogs
+            </Button>
+          </NextLink>
         </List>
 
         {/* TimeLine Section*/}
