@@ -20,14 +20,25 @@ import {
   IoLogoTwitter
 } from 'react-icons/io5'
 import { BioSection, BioYear } from '../components/bio'
+import Date from '../components/date'
 import Footer from '../components/footer'
 import { GridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
+import { getSortedPostsData } from '../lib/posts'
 import youtemy from '../public/images/youtemy.png'
 
-const Page = () => {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+const Page = ({ allPostsData }) => {
   return (
     <Layout>
       <Container maxW="container.lg">
@@ -99,6 +110,45 @@ const Page = () => {
             </NextLink>
           </Box>
         </Section>
+
+        {/* Recent Blogs */}
+        <Heading variant="section-title">Latest Blogs</Heading>
+        <List>
+          {allPostsData.map(({ id, date, title }, index) => {
+            if (index < 3) {
+              return (
+                <ListItem key={id}>
+                  <Box
+                    borderRadius="lg"
+                    // eslint-disable-next-line react-hooks/rules-of-hooks
+                    bg={useColorModeValue('whiteAlpha.500', '#323843')}
+                    mb={2}
+                    p={2}
+                  >
+                    <NextLink href={`/blogs/${id}`}>
+                      <Link>
+                        <strong>{title}</strong>
+                      </Link>
+                    </NextLink>
+                    <Box>
+                      <Date dateString={date} />
+                    </Box>
+                    {/* {description ? <Text fontSize="sm">{description}</Text> : ''} */}
+                  </Box>
+                </ListItem>
+              )
+            } else {
+              return ''
+            }
+          })}
+          <Button
+            rightIcon={<ChevronRightIcon />}
+            colorScheme="teal"
+            variant="ghost"
+          >
+            Read All Blogs
+          </Button>
+        </List>
 
         {/* TimeLine Section*/}
         <Section delay={0.2}>
