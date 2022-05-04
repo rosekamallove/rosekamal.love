@@ -8,7 +8,26 @@ import theme from '../lib/theme'
 import '../node_modules/highlight.js/styles/atom-one-dark.css'
 import '../styles/global.css'
 
+import { useEffect } from 'react'
+
+import * as ga from '../lib/ga'
+
 const Website = ({ Component, pageProps, router }) => {
+  useEffect(() => {
+    const handleRouteChange = url => {
+      ga.pageView(url)
+    }
+    //When the component is mounted, subscribe to router changes
+    //and log those page views
+    router.events.on('routeChangeComplete', handleRouteChange)
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
