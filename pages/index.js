@@ -7,6 +7,8 @@ import {
   Icon,
   Image,
   Link,
+  LinkBox,
+  LinkOverlay,
   List,
   ListItem,
   SimpleGrid,
@@ -117,25 +119,26 @@ const Page = ({ allPostsData }) => {
           {allPostsData.map(({ id, date, title }, index) => {
             if (index < 3) {
               return (
-                <ListItem key={id}>
-                  <Box
-                    borderRadius="lg"
-                    // eslint-disable-next-line react-hooks/rules-of-hooks
-                    bg={useColorModeValue('whiteAlpha.500', '#323843')}
-                    mb={2}
-                    p={2}
-                  >
-                    <NextLink href={`/blogs/${id}`}>
-                      <Link>
-                        <strong>{title}</strong>
-                      </Link>
-                    </NextLink>
-                    <Box>
-                      <Date dateString={date} />
+                <LinkBox as="article" key={id}>
+                  <ListItem>
+                    <Box
+                      borderRadius="lg"
+                      // eslint-disable-next-line react-hooks/rules-of-hooks
+                      bg={useColorModeValue('whiteAlpha.400', '#323843')}
+                      mb={2}
+                      p={3}
+                    >
+                      <LinkOverlay href={`/blogs/${id}`}>
+                        <Link>
+                          <strong>{title}</strong>
+                        </Link>
+                      </LinkOverlay>
+                      <Box>
+                        <Date dateString={date} />
+                      </Box>
                     </Box>
-                    {/* {description ? <Text fontSize="sm">{description}</Text> : ''} */}
-                  </Box>
-                </ListItem>
+                  </ListItem>
+                </LinkBox>
               )
             } else {
               return ''

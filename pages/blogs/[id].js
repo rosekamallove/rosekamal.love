@@ -1,7 +1,14 @@
-import { Box, Center, Container, Heading, Image } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Center,
+  Container,
+  Heading,
+  Image
+} from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
-import Link from 'next/dist/client/link'
 import Head from 'next/head'
+import NextLink from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import Date from '../../components/date'
@@ -73,11 +80,13 @@ export default function Post({ postData, id }) {
           {postData.contentHtml}
         </ReactMarkdown>
         <Box pt={4} pb={4}>
-          <Link href="/blogs">
-            <a>
-              <strong>← Back to Blogs</strong>
-            </a>
-          </Link>
+          <NextLink href="/blogs">
+            <Button variant="ghost" colorScheme="teal" href="/blogs">
+              <a>
+                <strong>← Back to Blogs</strong>
+              </a>
+            </Button>
+          </NextLink>
         </Box>
       </Container>
     </Layout>
