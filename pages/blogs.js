@@ -32,6 +32,7 @@ const Page = ({ allPostsData }) => {
         <List>
           {allPostsData.map(({ id, date, title, description }) => (
             <LinkBox key={id} as="article">
+              {console.log(id)}
               <ListItem>
                 <Box
                   borderRadius="lg"
