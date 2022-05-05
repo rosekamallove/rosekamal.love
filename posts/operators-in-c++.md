@@ -9,7 +9,7 @@ Operators are symbols that perform operations on variables and values. For examp
 
 Operators in C++ can be classified into 6 types:
 
-1. Arithematic Operators
+1. Arithmetic Operators
 2. Assignment Operators
 3. Relational Operators
 4. Logical Operators
@@ -18,7 +18,7 @@ Operators in C++ can be classified into 6 types:
 
 ---
 
-## 1. C++ Arithematic Operator
+## 1. C++ Arithmetic Operator
 
 Arithmetic operators are used to perform arithmetic operations on variables and data. For example,
 
