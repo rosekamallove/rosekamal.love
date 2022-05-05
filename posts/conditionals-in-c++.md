@@ -1,7 +1,9 @@
 ---
-title: "Conditionals in C++ (Part 3)"
-description: "In this tutorial, we will learn about the if...else statement to create decision making programs with the help of examples."
-date: "2021-12-22"
+title: 'Conditionals in C++ (Part 3)'
+date: '2021-12-22'
+description: 'In this tutorial, we will learn about the if...else statement to create decision making programs with the help of examples.'
+og_description: 'C++ Conditionals'
+cover_image: 'https://cdn.programiz.com/cdn/farfuture/xsuXdpAJsveKdf2PFNfjAO12zeaCREtPTT5I0EiafBU/mtime:1592457249/sites/tutorial2program/files/cpp-if-else-if-else-working.png'
 ---
 
 In computer programming, we use the `if...else` statement to run one block of code under certain conditions and another block of code under different conditions.
