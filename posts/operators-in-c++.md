@@ -1,7 +1,8 @@
 ---
-title: "Operators  and Comments in C++ (Part 4)"
-description: "In this tutorial, we will learn about the different types of operators in C++ with the help of examples. In programming, an operator is a symbol that operates on a value or a variable."
-date: "2021-12-23"
+title: 'Operators  and Comments in C++ (Part 4)'
+description: 'In this tutorial, we will learn about the different types of operators in C++ with the help of examples. In programming, an operator is a symbol that operates on a value or a variable.'
+cover_image: 'https://static.studytonight.com/cpp/images/operators-in-cpp.png'
+date: '2021-12-23'
 ---
 
 Operators are symbols that perform operations on variables and values. For example, `+` is an operator used for addition, while `-` is an operator used for subtraction.

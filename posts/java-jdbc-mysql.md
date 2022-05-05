@@ -11,8 +11,6 @@ cover_image: "https://user-images.githubusercontent.com/69139607/166664947-44a52
 
 #### What is JDBC ?
 
-<details></details>
-
 [Java Database Connectivity](https://www.javatpoint.com/java-jdbc) is tool or an application programming interface
 (API) that establishes a connection between a standard Database (_say MYSQL_) and a Java Application that intends
 to use that database.
@@ -265,7 +263,8 @@ while(result.next()) {
 }
 ```
 
-#### Final Code
+<details>
+<summary><strong>Final Code</strong></summary>
 
 ```java
 package JDBC;
@@ -305,5 +304,7 @@ public class JDBC {
     }
 }
 ```
+
+</details>
 
 I hope you liked this tutorial, please provide any feedback you have over on my [LinkedIn](https://www.linkedin.com/in/rose-kamal-love-1146141b0/)

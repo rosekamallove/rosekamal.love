@@ -10,6 +10,7 @@ import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 import Date from '../../components/date'
 import Layout from '../../components/layouts/article'
@@ -75,6 +76,7 @@ export default function Post({ postData, id }) {
         <ReactMarkdown
           components={ChakraUIRenderer(newTheme)}
           remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
           skipHtml
         >
           {postData.contentHtml}
