@@ -1,3 +1,6 @@
+* {
+  -webkit-tap-highlight-color: transparent !important;
+}
 code {
   margin: 3px !important;
   padding-top: 1px !important;
