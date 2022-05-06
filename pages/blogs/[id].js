@@ -1,4 +1,5 @@
 import {
+  Alert,
   Box,
   Button,
   Center,
@@ -36,9 +37,17 @@ export async function getStaticProps({ params }) {
 }
 
 const newTheme = {
-  details: props => {
+  blockquote: props => {
     const { children } = props
-    return <details>{children}</details>
+    return (
+      <Alert status="info" variant="left-accent">
+        {children}
+      </Alert>
+    )
+  },
+  pre: props => {
+    const { children } = props
+    return <>{children}</>
   }
 }
 
@@ -59,7 +68,7 @@ export default function Post({ postData, id }) {
         <Center>
           {postData.cover_image ? (
             <Image
-              borderRadius="8px"
+              borderRadius="2px"
               width="100%"
               marginBottom="20px"
               src={postData.cover_image}

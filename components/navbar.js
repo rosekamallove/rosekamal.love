@@ -75,7 +75,7 @@ const Navbar = props => {
           <LinkItem
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4, borderRadius: '8px' }}
+            style={{ gap: 4, borderRadius: '2px' }}
             pl={2}
             href="/"
             path={path}
@@ -86,7 +86,7 @@ const Navbar = props => {
           <LinkItem
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4, borderRadius: '8px' }}
+            style={{ gap: 4, borderRadius: '2px' }}
             pl={2}
             href="/blogs"
             path={path}
@@ -97,7 +97,7 @@ const Navbar = props => {
           <LinkItem
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4, borderRadius: '8px' }}
+            style={{ gap: 4, borderRadius: '2px' }}
             pl={2}
             href="/projects"
             path={path}
@@ -112,7 +112,7 @@ const Navbar = props => {
             path={path}
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4, borderRadius: '8px' }}
+            style={{ gap: 4, borderRadius: '2px' }}
             pl={2}
           >
             <IoLogoGithub />
@@ -124,7 +124,7 @@ const Navbar = props => {
             path={path}
             display="inline-flex"
             alignItems="center"
-            style={{ gap: 4, borderRadius: '8px' }}
+            style={{ gap: 4, borderRadius: '2px' }}
             pl={2}
           >
             <IoLink />

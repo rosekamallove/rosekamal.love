@@ -2,6 +2,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
   Box,
   Button,
+  Center,
   Container,
   Heading,
   Link,
@@ -82,15 +83,17 @@ const Page = ({ allPostsData }) => {
             Featured
           </Heading>
           <SimpleGrid columns={[1, 1, 1]} gap={0}>
-            <GridItem
-              href="https://youtemy.tech"
-              title="YouTemy"
-              thumbnail={youtemy}
-            >
-              A great way to learn from YouTube courses without any distractions
-              and the ability to enroll in courses and track them with a daily
-              streak to become more consistent.
-            </GridItem>
+            <Center>
+              <GridItem
+                href="/projects/youtemy"
+                title="YouTemy"
+                thumbnail={youtemy}
+              >
+                A great way to learn from YouTube courses without any
+                distractions and the ability to enroll in courses and track them
+                with a daily streak to become more consistent.
+              </GridItem>
+            </Center>
           </SimpleGrid>
         </Section>
 
