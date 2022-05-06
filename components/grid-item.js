@@ -4,7 +4,7 @@ import Image from 'next/image'
 import NextLink from 'next/link'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
-  <Box w="70%" textAlign="center">
+  <Box w="80%" textAlign="center">
     <LinkBox cursor="pointer">
       <Image
         src={thumbnail}
@@ -13,7 +13,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
         placeholder="blur"
         loading="lazy"
       />
-      <LinkOverlay href={href} target="_blank">
+      <LinkOverlay href={href}>
         <Text mt={2}>{title}</Text>
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
@@ -46,7 +46,7 @@ export const GridItemStyle = () => (
   <Global
     styles={`
       .grid-item-thumbnail {
-        border-radius: 12px;
+        border-radius: 2px;
       }
     `}
   />

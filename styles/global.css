@@ -3,9 +3,11 @@
 }
 code {
   margin: 3px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
   padding-top: 1px !important;
   padding-bottom: 1px !important;
-  border-radius: 8px !important;
+  border-radius: 2px !important;
   font-family: Consolas, Monaco !important;
 }
 
@@ -13,14 +15,13 @@ p {
   margin-top: 0.5rem !important;
 }
 
-pre {
-  margin: 15px !important;
+button {
+  border-radius: 2px !important;
 }
 
-blockquote {
+.chakra-alert {
   margin-top: 10px !important;
-  border-left: 5px solid #696969 !important;
-  border-radius: 8px !important;
+  border-radius: 2px !important;
   padding: 5px !important;
   padding-left: 10px !important;
   width: 100% !important;

@@ -4,7 +4,7 @@ export const BasicIntro = () => {
   return (
     <div>
       <Box
-        borderRadius="lg"
+        borderRadius="sm"
         bg={useColorModeValue('whiteAlpha.500', '#323843')}
         mb={6}
         p={3}

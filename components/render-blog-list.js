@@ -20,7 +20,7 @@ export const RenderBlogs = ({ allPostsData, rendeDescription, count }) => {
             <LinkBox key={id} as="article">
               <ListItem>
                 <Box
-                  borderRadius="lg"
+                  borderRadius="sm"
                   // eslint-disable-next-line react-hooks/rules-of-hooks
                   bg={useColorModeValue('whiteAlpha.400', '#323843')}
                   mb={6}
