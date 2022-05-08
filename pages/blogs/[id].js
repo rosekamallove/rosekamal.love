@@ -83,6 +83,7 @@ export default function Post({ postData, id }) {
     let data = {
       name,
       email,
+      id,
       message
     }
     fetch('/api/contact', {
@@ -96,7 +97,6 @@ export default function Post({ postData, id }) {
       console.log('Response received')
       if (res.ok) {
         console.log('Response succeeded!')
-        setSubmitted(true)
         setName('')
         setEmail('')
         setMessage('')
