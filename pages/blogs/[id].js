@@ -24,6 +24,7 @@ import {
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
 import Head from 'next/head'
 import NextLink from 'next/link'
+import { useState } from 'react'
 import { IoSend } from 'react-icons/io5'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
@@ -69,6 +70,39 @@ const newTheme = {
 export default function Post({ postData, id }) {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const url = `https://rosekamallove.vercel.app/blogs/${id}`
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    console.log({ name, email, message })
+
+    let data = {
+      name,
+      email,
+      message
+    }
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then(res => {
+      console.log('Response received')
+      if (res.status === 200) {
+        console.log('Response succeeded!')
+        setName('')
+        setEmail('')
+        setBody('')
+      }
+    })
+    onClose()
+  }
+
   return (
     <Layout>
       <Head>
@@ -131,11 +165,20 @@ export default function Post({ postData, id }) {
             <ModalBody pb={6}>
               <FormControl isRequired>
                 <FormLabel>Name</FormLabel>
-                <Input placeholder="Enter your name" id="name" />
+                <Input
+                  placeholder="Enter your name"
+                  id="name"
+                  onChange={e => setName(e.target.value)}
+                />
               </FormControl>
               <FormControl mt={4} isRequired>
                 <FormLabel htmlFor="email">Email</FormLabel>
-                <Input placeholder="Enter your email" id="email" type="email" />
+                <Input
+                  placeholder="Enter your email"
+                  id="email"
+                  type="email"
+                  onChange={e => setEmail(e.target.value)}
+                />
               </FormControl>
               <FormControl mt={4} isRequired>
                 <FormLabel htmlFor="text">Email</FormLabel>
@@ -143,12 +186,19 @@ export default function Post({ postData, id }) {
                   placeholder="Enter your message"
                   id="message"
                   type="textarea"
+                  onChange={e => setMessage(e.target.value)}
                 />
               </FormControl>
             </ModalBody>
 
             <ModalFooter>
-              <Button colorScheme="teal" mr={3} leftIcon={<IoSend />}>
+              <Button
+                colorScheme="teal"
+                mr={3}
+                leftIcon={<IoSend />}
+                type="submit"
+                onClick={e => handleSubmit(e)}
+              >
                 Send
               </Button>
               <Button onClick={onClose} leftIcon={<DeleteIcon />}>
