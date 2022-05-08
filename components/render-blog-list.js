@@ -1,6 +1,5 @@
 import {
   Box,
-  Link,
   LinkBox,
   LinkOverlay,
   List,
@@ -26,10 +25,12 @@ export const RenderBlogs = ({ allPostsData, rendeDescription, count }) => {
                   mb={6}
                   p={3}
                 >
-                  <LinkOverlay href={`/blogs/${id}`}>
-                    <Link>
-                      <strong>{title}</strong>
-                    </Link>
+                  <LinkOverlay
+                    href={`/blogs/${id}`}
+                    // eslint-disable-next-line react-hooks/rules-of-hooks
+                    color={useColorModeValue('#3181CE', '#c678dd')}
+                  >
+                    <strong>{title}</strong>
                   </LinkOverlay>
                   <Box>
                     <Date dateString={date} />

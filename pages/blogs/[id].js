@@ -1,15 +1,30 @@
+import { ChatIcon, DeleteIcon } from '@chakra-ui/icons'
 import {
   Alert,
   Box,
   Button,
   Center,
   Container,
+  FormControl,
+  FormLabel,
   Heading,
-  Image
+  Image,
+  Input,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  Textarea,
+  useColorModeValue,
+  useDisclosure
 } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
 import Head from 'next/head'
 import NextLink from 'next/link'
+import { IoSend } from 'react-icons/io5'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
@@ -52,6 +67,7 @@ const newTheme = {
 }
 
 export default function Post({ postData, id }) {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   const url = `https://rosekamallove.vercel.app/blogs/${id}`
   return (
     <Layout>
@@ -98,7 +114,49 @@ export default function Post({ postData, id }) {
               </a>
             </Button>
           </NextLink>
+          <Button
+            leftIcon={<ChatIcon />}
+            onClick={onOpen}
+            variant="ghost"
+            colorScheme="teal"
+          >
+            Feedback
+          </Button>
         </Box>
+        <Modal isOpen={isOpen} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent background={useColorModeValue('#c8cdd5', '#282c34')}>
+            <ModalHeader>Send in your vital Feedback</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody pb={6}>
+              <FormControl isRequired>
+                <FormLabel>Name</FormLabel>
+                <Input placeholder="Enter your name" id="name" />
+              </FormControl>
+              <FormControl mt={4} isRequired>
+                <FormLabel htmlFor="email">Email</FormLabel>
+                <Input placeholder="Enter your email" id="email" type="email" />
+              </FormControl>
+              <FormControl mt={4} isRequired>
+                <FormLabel htmlFor="text">Email</FormLabel>
+                <Textarea
+                  placeholder="Enter your message"
+                  id="message"
+                  type="textarea"
+                />
+              </FormControl>
+            </ModalBody>
+
+            <ModalFooter>
+              <Button colorScheme="teal" mr={3} leftIcon={<IoSend />}>
+                Send
+              </Button>
+              <Button onClick={onClose} leftIcon={<DeleteIcon />}>
+                Discard
+              </Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
       </Container>
     </Layout>
   )
