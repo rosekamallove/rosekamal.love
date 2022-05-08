@@ -2,8 +2,8 @@
 title: 'Cryptography 101'
 date: '2022-06-01'
 description: 'This is a write-up post for the Cryptography video that Fireship.io has published, hope you like it.'
-og_description: 'Cryptography & NodeJS'
-cover_image: 'https://twilio-cms-prod.s3.amazonaws.com/original_images/19DfiKodi3T25Xz7g9EDTyvF9di2SzvJo6JebRJaCN-1P_c1fMqGtrAyZzxGGucG0bcmR8UwNes-gS'
+og_description: 'Getting started with cryptography in Node.js'
+cover_image: 'https://www.thesslstore.com/blog/wp-content/uploads/2017/12/Primitive-Encryption-1024x303.png'
 ---
 
 The mysterious discipline of cryptography is the backbone of the internet. Without it,
