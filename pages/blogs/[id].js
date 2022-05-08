@@ -74,6 +74,7 @@ export default function Post({ postData, id }) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -95,12 +96,13 @@ export default function Post({ postData, id }) {
       console.log('Response received')
       if (res.status === 200) {
         console.log('Response succeeded!')
+        setSubmitted(true)
         setName('')
         setEmail('')
-        setBody('')
+        setMessage('')
       }
     })
-    onClose()
+    submitted ? onClose() : ''
   }
 
   return (
