@@ -123,7 +123,7 @@ export default function Post({ postData, id }) {
               <a>← Back to Blogs</a>
             </Button>
           </NextLink>
-          <FeedbackModal />
+          <FeedbackModal id={id} />
         </Box>
       </Container>
     </Layout>

@@ -76,7 +76,6 @@ const Navbar = props => {
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4, borderRadius: '2px' }}
-            pl={2}
             href="/"
             path={path}
           >
@@ -87,7 +86,6 @@ const Navbar = props => {
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4, borderRadius: '2px' }}
-            pl={2}
             href="/blogs"
             path={path}
           >
@@ -98,7 +96,6 @@ const Navbar = props => {
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4, borderRadius: '2px' }}
-            pl={2}
             href="/projects"
             path={path}
           >
@@ -106,18 +103,6 @@ const Navbar = props => {
             Projects
           </LinkItem>
           <Divider orientation="vertical" style={{ margin: '10px' }} />
-          {/* <LinkItem
-            target="_blank"
-            href="https://github.com/rosekamallove/rosekamallove.github.io"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4, borderRadius: '2px' }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            Source
-          </LinkItem> */}
           <LinkItem
             href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
             target="_blank"
@@ -125,7 +110,6 @@ const Navbar = props => {
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4, borderRadius: '2px' }}
-            pl={2}
           >
             <IoLink />
             Resume
