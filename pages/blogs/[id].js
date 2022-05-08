@@ -18,14 +18,17 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
+  Spinner,
   Textarea,
   useColorModeValue,
-  useDisclosure
+  useDisclosure,
+  useToast
 } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import { useState } from 'react'
+import { useBottomScrollListener } from 'react-bottom-scroll-listener'
 import { IoSend } from 'react-icons/io5'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
@@ -70,11 +73,27 @@ const newTheme = {
 
 export default function Post({ postData, id }) {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const toast = useToast()
   const url = `https://rosekamallove.vercel.app/blogs/${id}`
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [sending, setSending] = useState(false)
+  const [count, setCount] = useState(0)
+
+  const reachedBottom = () => {
+    if (count < 1) {
+      toast({
+        description:
+          'Please do provide some feedback, it is crucial to my growth 😅',
+        variant: 'left-accent',
+        position: 'bottom-right'
+      })
+      setCount(count + 1)
+    }
+  }
+  const scrollRef = useBottomScrollListener(reachedBottom)
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -86,6 +105,7 @@ export default function Post({ postData, id }) {
       id,
       message
     }
+    setSending(true)
     fetch('/api/contact', {
       method: 'POST',
       headers: {
@@ -102,11 +122,19 @@ export default function Post({ postData, id }) {
         setMessage('')
       }
       onClose()
+      setSending(false)
+      toast({
+        title: 'Feedback Sent',
+        description: 'Thank you 3000 for your valuable feedback 😃',
+        status: 'success',
+        duration: 7000,
+        isClosable: true
+      })
     })
   }
 
   return (
-    <Layout>
+    <Layout ref={scrollRef}>
       <Head>
         <title>{postData.title}</title>
         <meta name="description" content={postData.description}></meta>
@@ -204,7 +232,13 @@ export default function Post({ postData, id }) {
                 type="submit"
                 onClick={e => handleSubmit(e)}
               >
-                Send
+                {sending ? (
+                  <>
+                    Sending <Spinner size="xs" ml={3} />
+                  </>
+                ) : (
+                  'Send'
+                )}
               </Button>
               <Button onClick={onClose} leftIcon={<DeleteIcon />}>
                 Discard

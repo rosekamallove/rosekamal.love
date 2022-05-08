@@ -45,7 +45,7 @@ let password = 'hi-mom!'
 const hash1 = hash(password)
 console.log(hash1)
 
-/// ... some time later
+// ... some time later
 
 password = 'hi-mom'
 const hash2 = hash(password)
