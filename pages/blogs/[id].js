@@ -102,8 +102,8 @@ export default function Post({ postData, id }) {
         setEmail('')
         setMessage('')
       }
+      onClose()
     })
-    submitted ? onClose() : ''
   }
 
   return (
