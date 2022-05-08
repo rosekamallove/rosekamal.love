@@ -13,6 +13,10 @@ code {
   font-family: Consolas, Monaco !important;
 }
 
+::-webkit-scrollbar {
+  display: none !important;
+}
+
 p {
   margin-top: 0.5rem !important;
 }
