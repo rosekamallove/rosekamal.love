@@ -341,5 +341,3 @@ public class JDBC {
 ```
 
 </details>
-
-I hope you liked this tutorial, please provide any feedback you have over on my [LinkedIn](https://www.linkedin.com/in/rose-kamal-love-1146141b0/)

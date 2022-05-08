@@ -1,6 +1,7 @@
 import { ChatIcon, DeleteIcon } from '@chakra-ui/icons'
 import {
   Alert,
+  AlertIcon,
   Box,
   Button,
   Center,
@@ -142,12 +143,15 @@ export default function Post({ postData, id }) {
         >
           {postData.contentHtml}
         </ReactMarkdown>
-        <Box pt={4} pb={4}>
+        <Alert status="info" colorScheme="teal" variant="left-accent">
+          <AlertIcon />
+          “Feedback is a gift. Ideas are the currency of our next success. Let
+          people see you value both feedback and ideas.”
+        </Alert>
+        <Box pt={2} pb={4}>
           <NextLink href="/blogs">
             <Button variant="ghost" colorScheme="teal" href="/blogs">
-              <a>
-                <strong>← Back to Blogs</strong>
-              </a>
+              <a>← Back to Blogs</a>
             </Button>
           </NextLink>
           <Button
@@ -183,7 +187,7 @@ export default function Post({ postData, id }) {
                 />
               </FormControl>
               <FormControl mt={4} isRequired>
-                <FormLabel htmlFor="text">Email</FormLabel>
+                <FormLabel htmlFor="text">Message</FormLabel>
                 <Textarea
                   placeholder="Enter your message"
                   id="message"
