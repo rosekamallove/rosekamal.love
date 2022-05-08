@@ -27,5 +27,5 @@ export default function handler(req, res) {
     if (err) console.log(err)
     else console.log(info)
   })
-  res.send(200).end()
+  res.send('200')
 }
