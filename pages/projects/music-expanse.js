@@ -1,7 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
-import P from '../../components/paragraph'
 import { Meta, Title } from '../../components/projects'
 
 const Project = () => (
@@ -10,11 +10,29 @@ const Project = () => (
       <Title>
         Music Expanse <Badge>2021-2021</Badge>
       </Title>
-      <P>
-        Tired of arguing over music at a party or a gathering? Here, make a
-        virtual room add people with the unique RoomID, and let the members of
-        the room control the music through a voting system.
-      </P>
+      <ul>
+        <li>
+          Tired of arguing over music at a party or a gathering? Here, make a
+          virtual room add people with the unique RoomID, and let the members of
+          the room control the music through a voting system.
+        </li>
+        <li>
+          The Goal of this project is to provide a solution to the abomination
+          playing music at parties is, where we keep shouting change the song,
+          and other people say don't.
+        </li>
+        <li>
+          MusicExpanse solves this problem by introducing music rooms which the
+          admin creates with a fix no of votes to skip. Then the room code can
+          be shared to the members at the party to allow them to vote on whether
+          to skip the song or not.
+        </li>
+        <li>
+          It uses the Spotify's Rest API and OAuth authentication method to
+          provide the song playing details and to send request to skip / pause
+          the songs
+        </li>
+      </ul>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
@@ -28,7 +46,8 @@ const Project = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Django, React, Spotify OAuth</span>
+          <Badge>Django</Badge>, <Badge>React</Badge>,{' '}
+          <Badge>Spotify OAuth</Badge>
         </ListItem>
         <ListItem>
           <Meta>GitHub</Meta>

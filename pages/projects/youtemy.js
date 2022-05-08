@@ -61,7 +61,8 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>NodeJS, React, Firestore , YouTube Data API V3</span>
+            <Badge>NodeJS</Badge>, <Badge>React</Badge>,{' '}
+            <Badge>Firestore,</Badge> <Badge>YouTube Data API V3</Badge>
           </ListItem>
           <ListItem>
             <Meta>GitHub</Meta>
