@@ -43,25 +43,60 @@ Now that we have a basic understand of what **JDBC** is let's move forward but b
 
 #### Data Types in JDBC
 
-| **SQL**   | **Java**             |
-| --------- | -------------------- |
-| VARCHAR   | java.lang.String     |
-| CHAR      | java.sql.String      |
-| BIT       | boolean              |
-| NUMERIC   | java.math.BigDecimal |
-| INTEGER   | int                  |
-| REAL      | float                |
-| FLOAT     | float                |
-| DOUBLE    | double               |
-| BINARY    | byte[]               |
-| DATE      | java.sql.Date        |
-| TIMESTAMP | java.sql.Timestamp   |
-| ARRAY     | java.sql.Array       |
-| REF       | java.sql.Ref         |
-| STRUCT    | java.sql.Struct      |
-| BIGINT    | long                 |
-| CLOB      | java.sql.Clob        |
-| BLOB      | java.sql.Blob        |
+| **SQL** | **Java**             |
+| ------- | -------------------- |
+| VARCHAR | java.lang.String     |
+| CHAR    | java.sql.String      |
+| BIT     | boolean              |
+| NUMERIC | java.math.BigDecimal |
+| INTEGER | int                  |
+| REAL    | float                |
+| FLOAT   | float                |
+| DOUBLE  | double               |
+
+<details>
+<summary>
+More Data Types
+</summary>
+<table>
+    <tr>
+        <td>BINARY</td>
+        <td>byte[]</td>
+    </tr>
+    <tr>
+        <td>DATE</td>
+        <td>java.sql.Date</td>
+    </tr>
+    <tr>
+        <td>TIMESTAMP</td>
+        <td>java.sql.Timestamp</td>
+    </tr>
+    <tr>
+        <td>ARRAY</td>
+        <td>java.sql.Array</td>
+    </tr>
+    <tr>
+        <td>REF</td>
+        <td>java.sql.Ref</td>
+    </tr>
+    <tr>
+        <td>STRUCT</td>
+        <td>java.sql.Struct</td>
+    </tr>
+    <tr>
+        <td>BIGINT</td>
+        <td>long</td>
+    </tr>
+    <tr>
+        <td>CLOB</td>
+        <td>java.sql.Clob</td>
+    </tr>
+    <tr>
+        <td>BLOB</td>
+        <td>java.sql.Blob</td>
+    </tr>
+</table>
+</details>
 
 #### JDBC Architecture
 
