@@ -67,8 +67,9 @@ export default function Post({ postData, id }) {
       toast({
         description:
           'Please do provide some feedback, it is crucial to my growth 😅',
-        variant: 'left-accent',
-        position: 'bottom-right'
+        variant: 'solid',
+        position: 'bottom-right',
+        isClosable: true
       })
       setCount(count + 1)
     }
