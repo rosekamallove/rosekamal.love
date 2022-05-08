@@ -95,7 +95,7 @@ export default function Post({ postData, id }) {
       body: JSON.stringify(data)
     }).then(res => {
       console.log('Response received')
-      if (res.ok === 200) {
+      if (res.ok) {
         console.log('Response succeeded!')
         setSubmitted(true)
         setName('')
