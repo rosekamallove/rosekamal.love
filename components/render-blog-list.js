@@ -31,6 +31,11 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                       borderRadius="sm"
                       // eslint-disable-next-line react-hooks/rules-of-hooks
                       bg={useColorModeValue('whiteAlpha.400', '#323843')}
+                      // border={`1px solid ${useColorModeValue(
+                      //   '#a5adbb',
+                      //   '#434956'
+                      // )}`}
+                      //bg={null}
                       mb={6}
                       p={3}
                     >
