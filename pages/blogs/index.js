@@ -15,7 +15,7 @@ export async function getStaticProps() {
 const Page = ({ allPostsData }) => {
   return (
     <Layout>
-      <Container maxW="container.lg">
+      <Container maxW="container.md">
         <Heading as="h3">Blogs</Heading>
         <Box p={15}></Box>
         <RenderBlogs

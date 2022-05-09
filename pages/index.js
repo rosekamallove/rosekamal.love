@@ -35,32 +35,35 @@ export async function getStaticProps() {
 const Page = ({ allPostsData }) => {
   return (
     <Layout>
-      <Container maxW="container.lg">
-        <BasicIntro />
-        <About />
+      <Container maxW="container.md">
+        <Section delay={0.1}>
+          <BasicIntro />
+          <About />
+        </Section>
 
-        {/* Recent Blogs */}
-        <Heading variant="section-title">Latest Blogs</Heading>
-        <RenderBlogs
-          allPostsData={allPostsData}
-          renderDescription={false}
-          count={3}
-        />
-        <NextLink href="/blogs">
-          <Button
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
-            variant="ghost"
-          >
-            Read All Blogs
-          </Button>
-        </NextLink>
-
-        <TimeLine />
-
-        {/* I Love Section */}
+        <Section delay={0.2}>
+          {/* Recent Blogs */}
+          <Heading variant="section-title">Latest Blogs</Heading>
+          <RenderBlogs
+            allPostsData={allPostsData}
+            renderDescription={false}
+            count={3}
+          />
+          <NextLink href="/blogs">
+            <Button
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="teal"
+              variant="ghost"
+            >
+              Read All Blogs
+            </Button>
+          </NextLink>
+        </Section>
 
         <Section delay={0.3}>
+          <TimeLine />
+          {/* I Love Section */}
+
           <Heading as="h3" variant="section-title">
             I Love ♥
           </Heading>

@@ -56,7 +56,7 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxW="container.lg"
+        maxW="container.md"
         wrap="wrap"
         align="center"
         justify="space-between"

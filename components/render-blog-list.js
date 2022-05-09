@@ -5,6 +5,7 @@ import {
   List,
   ListItem,
   Tag,
+  TagLabel,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -20,7 +21,7 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
           { id, date, title, description, og_description, words, tags },
           index
         ) => {
-          const tagArray = tags.split(',')
+          const tagArray = tags.split(',').map(tag => tag.trim())
           if (index < count) {
             return (
               <NextLink key={id} href={`/blogs/${id}`}>
@@ -56,12 +57,17 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                             mr={1}
                             mt={1}
                             borderRadius="sm"
-                            fontSize="12px"
-                            fontFamily="Jetbrains Mono"
-                            fontWeight="500"
                             key={tag}
+                            variant="subtle"
+                            colorScheme="teal"
                           >
-                            {tag}
+                            <TagLabel
+                              fontFamily="Jetbrains Mono"
+                              fontSize="13px"
+                            >
+                              <strong fontFamily="Poppins"># </strong>
+                              {tag}
+                            </TagLabel>
                           </Tag>
                         ))}
                       </Box>
