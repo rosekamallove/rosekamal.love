@@ -12,7 +12,7 @@ const Project = () => {
     <Layout title="YouTemy">
       <Container maxW="container.lg">
         <Title>
-          YouTemy <Badge>2021-</Badge>
+          YouTemy <Badge>2021-2022</Badge>
         </Title>
         <ul>
           <li>
