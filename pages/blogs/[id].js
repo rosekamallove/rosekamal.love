@@ -87,7 +87,8 @@ export default function Post({ postData, id }) {
           <Section delay={0.1}>
             <Heading variant="h2">{postData.title}</Heading>
             <div>
-              <Date dateString={postData.date} />{' '}
+              <Date dateString={postData.date} />
+              {' • '}
               <strong>
                 ☕ {Math.ceil(wordCounter(postData.contentHtml) / 225)}{' '}
                 {Math.ceil(wordCounter(postData.contentHtml) / 255) == 1
