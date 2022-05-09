@@ -1,11 +1,11 @@
 import {
   Alert,
   AlertIcon,
-  Box,
   Button,
   Container,
   Flex,
   Heading,
+  Spacer,
   useToast
 } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
@@ -18,6 +18,7 @@ import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 import Date from '../../components/date'
 import { FeedbackModal } from '../../components/feedback-modal'
+import HitCounter from '../../components/hit-counter'
 import { IconLinks } from '../../components/icon-links'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
@@ -118,9 +119,11 @@ export default function Post({ postData, id }) {
               </NextLink>
               <FeedbackModal id={id} />
             </Flex>
-            <Box borderRadius="sm" mb={6} p={3} align="center">
+            <Flex borderRadius="sm" mb={6} p={3}>
               <IconLinks />
-            </Box>
+              <Spacer />
+              <HitCounter slug={postData.contentHtml} />
+            </Flex>
           </Section>
         </article>
       </Container>
