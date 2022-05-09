@@ -5,6 +5,7 @@ description: "I have been learning Java and SQL at University, I thought to myse
 which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion"
 og_description: "A JDBC Introduction"
 cover_image: "https://user-images.githubusercontent.com/69139607/166664947-44a5278e-7835-4f5d-88cd-0cf0d3ebd0b1.png"
+tags: 'mysql, java, jdbc'
 ---
 
 ### Java DataBase Connectivity (JDBC)
