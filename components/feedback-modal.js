@@ -30,7 +30,6 @@ export const FeedbackModal = ({ id }) => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    console.log({ name, email, message })
 
     let data = {
       name,
@@ -47,9 +46,7 @@ export const FeedbackModal = ({ id }) => {
       },
       body: JSON.stringify(data)
     }).then(res => {
-      console.log('Response received')
       if (res.ok) {
-        console.log('Response succeeded!')
         setName('')
         setEmail('')
         setMessage('')
