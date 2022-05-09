@@ -7,8 +7,7 @@ export default function Date({ dateString }) {
       style={{
         padding: '0px',
         margin: '0px',
-        fontFamily: 'Poppins',
-        fontSize: '14px'
+        fontFamily: 'Poppins'
       }}
       dateTime={dateString}
     >

@@ -1,13 +1,8 @@
-import { Box, useColorModeValue } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 const Footer = () => {
   return (
-    <Box
-      align="center"
-      opacity={0.4}
-      fontSize="sm"
-      bg={useColorModeValue('whiteAlpha.500', '#323843')}
-    >
+    <Box align="center" fontSize="sm">
       &copy; {new Date().getFullYear()} Rose Kamal Love, All Rights Reserved.
     </Box>
   )
