@@ -13,6 +13,11 @@ code {
   font-family: 'Jetbrains Mono' !important;
 }
 
+em {
+  font-style: normal !important;
+  font-family: Sriracha !important;
+}
+
 ::-webkit-scrollbar {
   display: none !important;
 }
