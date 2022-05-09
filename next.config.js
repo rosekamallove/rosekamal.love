@@ -1,3 +1,6 @@
 module.exports = {
-  reactStricMode: true
+  reactStricMode: true,
+  images: {
+    domains: ['user-images.githubusercontent.com', 'www.thesslstore.com']
+  }
 }

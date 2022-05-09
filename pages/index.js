@@ -98,8 +98,8 @@ const Page = ({ allPostsData }) => {
         </Section>
 
         <Box
-          borderRadius="lg"
-          bg={useColorModeValue('whilteAlpha.500', 'whiteAlpha.300')}
+          borderRadius="sm"
+          bg={useColorModeValue('whiteAlpha.500', '#323843')}
           mb={6}
           p={3}
           align="center"
