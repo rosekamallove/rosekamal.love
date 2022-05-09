@@ -2,8 +2,10 @@ const faunadb = require('faunadb')
 
 module.exports = async (req, res) => {
   const q = faunadb.query
+  console.log(process.env.FAUNA_SECRET_KEY)
   const client = new faunadb.Client({
-    secret: process.env.FAUNA_SECRET_KEY
+    secret: process.env.FAUNA_SECRET_KEY,
+    domain: 'db.eu.fauna.com'
   })
   const { slug } = req.query
   console.log(slug)
