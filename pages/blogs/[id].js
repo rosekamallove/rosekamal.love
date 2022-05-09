@@ -2,7 +2,6 @@ import {
   Alert,
   AlertIcon,
   Button,
-  Center,
   Container,
   Flex,
   Heading,
@@ -10,7 +9,6 @@ import {
   useToast
 } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
-import Image from 'next/dist/client/image'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import { useState } from 'react'
@@ -91,7 +89,7 @@ export default function Post({ postData, id }) {
       </Head>
 
       <Container maxW="container.lg">
-        <Center>
+        {/* <Center>
           {postData.cover_image ? (
             <Image
               width={1000}
@@ -102,7 +100,7 @@ export default function Post({ postData, id }) {
           ) : (
             ''
           )}
-        </Center>
+        </Center> */}
         <Heading variant="h2">{postData.title}</Heading>
         <div>
           <Date dateString={postData.date} />{' '}
