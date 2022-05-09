@@ -25,17 +25,27 @@ export default function HitCounter({ slug }) {
       })
   }, [slug])
   if (typeof hits === 'undefined') {
-    return null
+    return (
+      <Box mt={1}>
+        <ReactRetroHitCounter
+          size={15}
+          segmentThickness={2}
+          hits={0}
+          segmentActiveColor="#696969"
+          segmentInActiveColor="#696969"
+          borderThickness={3}
+        />
+      </Box>
+    )
   }
   return (
-    <Box mt={2}>
+    <Box mt={1}>
       <ReactRetroHitCounter
-        size={20}
+        size={15}
         segmentThickness={2}
         hits={hits}
         borderThickness={3}
       />
     </Box>
   )
-  // return <div>{hits} Hits</div>
 }
