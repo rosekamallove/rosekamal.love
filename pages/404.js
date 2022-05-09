@@ -10,7 +10,7 @@ import NextLink from 'next/link'
 
 const NotFound = () => {
   return (
-    <Container maxW="container.lg">
+    <Container maxW="container.md">
       <Heading as="h1">Not found</Heading>
       <Text>The page you&apos;re looking for was not found.</Text>
       <Divider my={6} />

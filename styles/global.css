@@ -1,16 +1,28 @@
 * {
   -webkit-tap-highlight-color: transparent !important;
+  -webkit-font-smoothing: antialiased !important;
 }
+
+body {
+  font-size: 100% !important;
+  font-weight: 500 !important;
+}
+
+ol,
+ul {
+  font-size: 90% !important;
+}
+
 code {
-  margin: 3px !important;
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
   padding-top: 1px !important;
   padding-bottom: 1px !important;
   border-radius: 2px !important;
   font-family: 'Jetbrains Mono' !important;
+  font-weight: 500 !important;
 }
 
 em {

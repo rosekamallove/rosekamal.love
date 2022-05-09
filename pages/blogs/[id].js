@@ -49,8 +49,8 @@ export default function Post({ postData, id }) {
   const reachedBottom = () => {
     if (count < 1) {
       toast({
-        description:
-          'Please do provide some feedback, it is crucial to my growth 😅',
+        title: 'Please send feedback',
+        description: 'It will help me immensely in my growth ❤️ ',
         variant: 'solid',
         position: 'top-right',
         isClosable: true
@@ -71,7 +71,7 @@ export default function Post({ postData, id }) {
         <meta property="og:image" content={postData.cover_image} />
       </Head>
 
-      <Container maxW="container.lg">
+      <Container maxW="container.md">
         <article>
           {/* <Center>
           {postData.cover_image ? (

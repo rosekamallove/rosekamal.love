@@ -8,7 +8,7 @@ import youtemy from '../public/images/youtemy.png'
 const Work = () => {
   return (
     <Layout>
-      <Container maxW="container.lg">
+      <Container maxW="container.md">
         <Heading as="h3" fontSize={20} mb={4}>
           My Projects
         </Heading>
