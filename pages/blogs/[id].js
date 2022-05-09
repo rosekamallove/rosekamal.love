@@ -1,11 +1,11 @@
 import {
   Alert,
   AlertIcon,
+  Box,
   Button,
   Container,
   Flex,
   Heading,
-  Spacer,
   useToast
 } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
@@ -51,7 +51,7 @@ export default function Post({ postData, id }) {
         description:
           'Please do provide some feedback, it is crucial to my growth 😅',
         variant: 'solid',
-        position: 'bottom-right',
+        position: 'top-right',
         isClosable: true
       })
       setCount(count + 1)
@@ -110,16 +110,17 @@ export default function Post({ postData, id }) {
               “Feedback is a gift. Ideas are the currency of our next success.
               Let people see you value both feedback and ideas.”
             </Alert>
-            <Flex pt={2} pb={4}>
+            <Flex pt={2} pb={0} wrap>
               <NextLink href="/blogs">
                 <Button variant="ghost" colorScheme="teal" href="/blogs">
                   <a>← Back to Blogs</a>
                 </Button>
               </NextLink>
               <FeedbackModal id={id} />
-              <Spacer />
-              <IconLinks />
             </Flex>
+            <Box borderRadius="sm" mb={6} p={3} align="center">
+              <IconLinks />
+            </Box>
           </Section>
         </article>
       </Container>
