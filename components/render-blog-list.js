@@ -4,6 +4,7 @@ import {
   LinkOverlay,
   List,
   ListItem,
+  Tag,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -15,7 +16,11 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
   return (
     <List>
       {allPostsData.map(
-        ({ id, date, title, description, og_description, words }, index) => {
+        (
+          { id, date, title, description, og_description, words, tags },
+          index
+        ) => {
+          const tagArray = tags.split(',')
           if (index < count) {
             return (
               <NextLink key={id} href={`/blogs/${id}`}>
@@ -43,6 +48,19 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                           {Math.ceil(words / 255) == 1 ? 'minute' : 'minutes'}{' '}
                           read
                         </strong>
+                      </Box>
+                      <Box mb={0}>
+                        {tagArray.map(tag => (
+                          <Tag
+                            pt={0}
+                            mr={1}
+                            fontSize="12px"
+                            fontWeight="500"
+                            key={tag}
+                          >
+                            {tag}
+                          </Tag>
+                        ))}
                       </Box>
                       {renderDescription ? (
                         <Text fontSize="md">{description}</Text>
