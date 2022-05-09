@@ -1,5 +1,4 @@
 import React from 'react'
-import RetroHitCounter from 'react-retro-hit-counter'
 
 export default function HitCounter({ slug }) {
   const [hits, setHits] = React.useState(undefined)
@@ -21,5 +20,5 @@ export default function HitCounter({ slug }) {
   if (typeof hits === 'undefined') {
     return null
   }
-  return <RetroHitCounter hits={hits} />
+  return <div>{hits}</div>
 }

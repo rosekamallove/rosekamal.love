@@ -122,7 +122,7 @@ export default function Post({ postData, id }) {
             <Flex borderRadius="sm" mb={6} p={3}>
               <IconLinks />
               <Spacer />
-              <HitCounter slug={postData.contentHtml} />
+              <HitCounter slug={id} />
             </Flex>
           </Section>
         </article>

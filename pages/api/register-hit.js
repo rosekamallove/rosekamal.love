@@ -1,10 +1,12 @@
 const faunadb = require('faunadb')
+
 module.exports = async (req, res) => {
   const q = faunadb.query
   const client = new faunadb.Client({
     secret: process.env.FAUNA_SECRET_KEY
   })
   const { slug } = req.query
+  console.log(slug)
   if (!slug) {
     return res.status(400).json({
       message: 'Article slug not provided'
