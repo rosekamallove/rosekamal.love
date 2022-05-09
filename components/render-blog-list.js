@@ -36,7 +36,8 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                         <strong>{title}</strong>
                       </LinkOverlay>
                       <Box>
-                        <Date dateString={date} />{' '}
+                        <Date dateString={date} />
+                        {' • '}
                         <strong>
                           ☕ {Math.ceil(words / 225)}{' '}
                           {Math.ceil(words / 255) == 1 ? 'minute' : 'minutes'}{' '}
