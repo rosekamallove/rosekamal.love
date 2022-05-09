@@ -54,7 +54,9 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                           <Tag
                             pt={0}
                             mr={1}
+                            borderRadius="sm"
                             fontSize="12px"
+                            fontFamily="Jetbrains Mono"
                             fontWeight="500"
                             key={tag}
                           >
