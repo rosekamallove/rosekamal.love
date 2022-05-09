@@ -3,8 +3,9 @@
   -webkit-font-smoothing: antialiased !important;
 }
 
-body {
-  font-size: 100% !important;
+body,
+p {
+  font-size: 95% !important;
   font-weight: 500 !important;
 }
 
