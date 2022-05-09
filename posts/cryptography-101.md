@@ -1,6 +1,6 @@
 ---
 title: 'Cryptography 101'
-date: '2022-06-01'
+date: '2022-05-06'
 description: 'This is a write-up post for the Cryptography video that Fireship.io has published, hope you like it.'
 og_description: 'Getting started with cryptography in Node.js'
 cover_image: 'https://www.thesslstore.com/blog/wp-content/uploads/2017/12/Primitive-Encryption-1024x303.png'

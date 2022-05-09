@@ -6,10 +6,10 @@ import {
   Center,
   Container,
   Heading,
-  Image,
   useToast
 } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
+import Image from 'next/dist/client/image'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import { useState } from 'react'
@@ -92,8 +92,8 @@ export default function Post({ postData, id }) {
           {postData.cover_image ? (
             <Image
               borderRadius="2px"
-              width="100%"
-              marginBottom="20px"
+              width={1000}
+              height={400}
               src={postData.cover_image}
               alt="Cover Image"
             />
