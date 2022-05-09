@@ -1,7 +1,7 @@
 import { Box, Container, Heading } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-import { RenderBlogs } from '../components/render-blog-list'
-import { getSortedPostsData } from '../lib/posts'
+import Layout from '../../components/layouts/article'
+import { RenderBlogs } from '../../components/render-blog-list'
+import { getSortedPostsData } from '../../lib/posts'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -20,7 +20,7 @@ const Page = ({ allPostsData }) => {
         <Box p={15}></Box>
         <RenderBlogs
           allPostsData={allPostsData}
-          rendeDescription={true}
+          renderDescription={true}
           count={-1}
         />
       </Container>

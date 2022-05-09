@@ -9,10 +9,6 @@ const variants = {
 }
 
 const Layout = ({ children, title }) => {
-  // useEffect(() => {
-  //   Prism.highlightAll()
-  // }, [])
-
   return (
     <motion.article
       initial="hidden"

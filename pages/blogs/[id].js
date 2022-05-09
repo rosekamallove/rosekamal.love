@@ -20,27 +20,9 @@ import Date from '../../components/date'
 import { FeedbackModal } from '../../components/feedback-modal'
 import { IconLinks } from '../../components/icon-links'
 import Layout from '../../components/layouts/article'
+import Section from '../../components/section'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import wordCounter from '../../lib/word-counter'
-
-export async function getStaticPaths() {
-  // Return a list of possible value for id
-  const paths = getAllPostIds()
-  return {
-    paths,
-    fallback: false
-  }
-}
-
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
-  return {
-    props: {
-      postData,
-      id: params.id
-    }
-  }
-}
 
 const newTheme = {
   blockquote: props => {
@@ -89,7 +71,8 @@ export default function Post({ postData, id }) {
       </Head>
 
       <Container maxW="container.lg">
-        {/* <Center>
+        <article>
+          {/* <Center>
           {postData.cover_image ? (
             <Image
               width={1000}
@@ -101,41 +84,63 @@ export default function Post({ postData, id }) {
             ''
           )}
         </Center> */}
-        <Heading variant="h2">{postData.title}</Heading>
-        <div>
-          <Date dateString={postData.date} />{' '}
-          <strong>
-            ☕ {Math.ceil(wordCounter(postData.contentHtml) / 225)}{' '}
-            {Math.ceil(wordCounter(postData.contentHtml) / 255) == 1
-              ? 'minute'
-              : 'minutes'}{' '}
-            read
-          </strong>
-        </div>
-        <ReactMarkdown
-          components={ChakraUIRenderer(newTheme)}
-          remarkPlugins={[remarkGfm]}
-          rehypePlugins={[rehypeRaw]}
-          skipHtml
-        >
-          {postData.contentHtml}
-        </ReactMarkdown>
-        <Alert status="info" colorScheme="teal" variant="left-accent">
-          <AlertIcon />
-          “Feedback is a gift. Ideas are the currency of our next success. Let
-          people see you value both feedback and ideas.”
-        </Alert>
-        <Flex pt={2} pb={4}>
-          <NextLink href="/blogs">
-            <Button variant="ghost" colorScheme="teal" href="/blogs">
-              <a>← Back to Blogs</a>
-            </Button>
-          </NextLink>
-          <FeedbackModal id={id} />
-          <Spacer />
-          <IconLinks />
-        </Flex>
+          <Section delay={0.1}>
+            <Heading variant="h2">{postData.title}</Heading>
+            <div>
+              <Date dateString={postData.date} />{' '}
+              <strong>
+                ☕ {Math.ceil(wordCounter(postData.contentHtml) / 225)}{' '}
+                {Math.ceil(wordCounter(postData.contentHtml) / 255) == 1
+                  ? 'minute'
+                  : 'minutes'}{' '}
+                read
+              </strong>
+            </div>
+            <ReactMarkdown
+              components={ChakraUIRenderer(newTheme)}
+              remarkPlugins={[remarkGfm]}
+              rehypePlugins={[rehypeRaw]}
+              skipHtml
+            >
+              {postData.contentHtml}
+            </ReactMarkdown>
+            <Alert status="info" colorScheme="teal" variant="left-accent">
+              <AlertIcon />
+              “Feedback is a gift. Ideas are the currency of our next success.
+              Let people see you value both feedback and ideas.”
+            </Alert>
+            <Flex pt={2} pb={4}>
+              <NextLink href="/blogs">
+                <Button variant="ghost" colorScheme="teal" href="/blogs">
+                  <a>← Back to Blogs</a>
+                </Button>
+              </NextLink>
+              <FeedbackModal id={id} />
+              <Spacer />
+              <IconLinks />
+            </Flex>
+          </Section>
+        </article>
       </Container>
     </Layout>
   )
+}
+
+export async function getStaticPaths() {
+  // Return a list of possible value for id
+  const paths = getAllPostIds()
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export async function getStaticProps({ params }) {
+  const postData = await getPostData(params.id)
+  return {
+    props: {
+      postData,
+      id: params.id
+    }
+  }
 }

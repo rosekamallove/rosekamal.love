@@ -43,7 +43,7 @@ const Page = ({ allPostsData }) => {
         <Heading variant="section-title">Latest Blogs</Heading>
         <RenderBlogs
           allPostsData={allPostsData}
-          rendeDescription={false}
+          renderDescription={false}
           count={3}
         />
         <NextLink href="/blogs">

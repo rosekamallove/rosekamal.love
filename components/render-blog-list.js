@@ -1,4 +1,3 @@
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
   Box,
   LinkBox,
@@ -8,35 +7,35 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
+import NextLink from 'next/link'
 import Date from './date'
 
-export const RenderBlogs = ({ allPostsData, rendeDescription, count }) => {
+export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
   count = count == -1 ? allPostsData.length : count
   return (
     <List>
       {allPostsData.map(
-        ({ id, date, title, description, words, og_description }, index) => {
+        ({ id, date, title, description, og_description, words }, index) => {
           if (index < count) {
             return (
-              <LinkBox key={id} as="article">
-                <ListItem>
-                  <Box
-                    borderRadius="sm"
-                    // eslint-disable-next-line react-hooks/rules-of-hooks
-                    bg={useColorModeValue('whiteAlpha.400', '#323843')}
-                    mb={6}
-                    p={3}
-                  >
-                    <LinkOverlay
-                      href={`/blogs/${id}`}
+              <NextLink key={id} href={`/blogs/${id}`}>
+                <LinkBox as="article">
+                  <ListItem>
+                    <Box
+                      borderRadius="sm"
                       // eslint-disable-next-line react-hooks/rules-of-hooks
-                      color={useColorModeValue('#3181CE', '#c678dd')}
+                      bg={useColorModeValue('whiteAlpha.400', '#323843')}
+                      mb={6}
+                      p={3}
                     >
-                      <ChevronRightIcon />
-                      <strong>{title}</strong>
-                    </LinkOverlay>
-                    <Box ml="22px">
-                      <Box fontSize="sm">
+                      <LinkOverlay
+                        href={`/blogs/${id}`}
+                        // eslint-disable-next-line react-hooks/rules-of-hooks
+                        color={useColorModeValue('#3181CE', '#c678dd')}
+                      >
+                        <strong>{title}</strong>
+                      </LinkOverlay>
+                      <Box>
                         <Date dateString={date} />{' '}
                         <strong>
                           ☕ {Math.ceil(words / 225)}{' '}
@@ -44,15 +43,15 @@ export const RenderBlogs = ({ allPostsData, rendeDescription, count }) => {
                           read
                         </strong>
                       </Box>
-                      {rendeDescription ? (
+                      {renderDescription ? (
                         <Text fontSize="md">{description}</Text>
                       ) : (
                         <Text fontSize="md">{og_description}</Text>
                       )}
                     </Box>
-                  </Box>
-                </ListItem>
-              </LinkBox>
+                  </ListItem>
+                </LinkBox>
+              </NextLink>
             )
           }
         }
