@@ -10,7 +10,7 @@ code {
   padding-top: 1px !important;
   padding-bottom: 1px !important;
   border-radius: 2px !important;
-  font-family: Consolas, Monaco !important;
+  font-family: 'Jetbrains Mono' !important;
 }
 
 ::-webkit-scrollbar {
