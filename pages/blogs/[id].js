@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
   Spacer,
+  useColorModeValue,
   useToast
 } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
@@ -14,6 +15,7 @@ import NextLink from 'next/link'
 import { useState } from 'react'
 import { useBottomScrollListener } from 'react-bottom-scroll-listener'
 import ReactMarkdown from 'react-markdown'
+import { Prism } from 'react-syntax-highlighter'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 import Date from '../../components/date'
@@ -24,6 +26,8 @@ import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import wordCounter from '../../lib/word-counter'
+import dark from '../../node_modules/react-syntax-highlighter/dist/esm/styles/prism/one-dark'
+import light from '../../node_modules/react-syntax-highlighter/dist/esm/styles/prism/one-light'
 
 const newTheme = {
   blockquote: props => {
@@ -34,9 +38,23 @@ const newTheme = {
       </Alert>
     )
   },
-  pre: props => {
-    const { children } = props
-    return <>{children}</>
+  code: props => {
+    const { children, className } = props
+    const classArray =
+      className == undefined ? [' ', 'javascript'] : className.split('-')
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const theme = useColorModeValue('light', 'dark')
+    return (
+      <Prism
+        language={classArray[1]}
+        style={theme == 'dark' ? dark : light}
+        showLineNumbers={true}
+        customStyle={{ fontSize: '16px' }}
+      >
+        {children}
+      </Prism>
+    )
   }
 }
 
