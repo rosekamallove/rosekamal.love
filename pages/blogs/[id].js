@@ -2,6 +2,7 @@ import {
   Alert,
   AlertIcon,
   Button,
+  Code,
   Container,
   Flex,
   Heading,
@@ -40,11 +41,17 @@ const newTheme = {
   },
   code: props => {
     const { children, className } = props
-    const classArray =
-      className == undefined ? [' ', 'javascript'] : className.split('-')
+    const classArray = className == undefined ? '' : className.split('-')
+
+    console.log(className)
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const theme = useColorModeValue('light', 'dark')
+
+    if (classArray == '') {
+      return <Code margin="2px">{children}</Code>
+    }
+
     return (
       <Prism
         language={classArray[1]}
