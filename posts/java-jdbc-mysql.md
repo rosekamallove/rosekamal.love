@@ -9,9 +9,9 @@ tags: 'mysql, java, jdbc'
 published: true
 ---
 
-### Java DataBase Connectivity (JDBC)
+## Java DataBase Connectivity (JDBC)
 
-#### What is JDBC ?
+### What is JDBC ?
 
 [Java Database Connectivity](https://www.javatpoint.com/java-jdbc) is tool or an application programming interface
 (API) that establishes a connection between a standard Database (_say MYSQL_) and a Java Application that intends
@@ -19,7 +19,7 @@ to use that database.
 
 ![JDBC Flow Chart](https://static.javatpoint.com/images/core/jdbc.png)
 
-#### Need for JDBC ?
+### Need for JDBC ?
 
 Before JDBC, ODBC API was the database API to connect and execute the query with the database. But, ODBC API uses ODBC driver which is written in C language (i.e. platform dependent and unsecured). That is why Java has defined its own API (JDBC API) that uses JDBC drivers (written in Java language)
 
@@ -43,7 +43,7 @@ Here, the **waiter** is the **API**.
 
 Now that we have a basic understand of what **JDBC** is let's move forward but before we can start coding there a few things that we need to know.
 
-#### Data Types in JDBC
+### Data Types in JDBC
 
 | **SQL** | **Java**             |
 | ------- | -------------------- |
@@ -100,11 +100,11 @@ More Data Types
 </table>
 </details>
 
-#### JDBC Architecture
+### JDBC Architecture
 
 ![JDBC Architecture](https://static.javatpoint.com/core/images/design-of-jdbc.png)
 
-#### Setting up the Dev Environment
+### Setting up the Dev Environment
 
 **Setting up Java Environment**
 
@@ -121,7 +121,7 @@ More Data Types
 > **Note:**
 > You can use whichever Database application that you like as long as it is a **SQL database**
 
-#### Steps to Connect JDBC
+### Steps to Connect JDBC
 
 1. **Importing Packages**
    This procedure is followed to make sure the relevant packages are readily available for the API
@@ -144,7 +144,7 @@ More Data Types
 
 ## Let's Start Coding then 😃
 
-#### Getting our Database Ready
+### Getting our Database Ready
 
 - First we need to [launch MySQL](https://www.hivelocity.net/kb/how-to-start-stop-and-restart-mysql-server/), which we can do by launching the **MySQL** workbench or through the **terminal** for the sake of simplicity of this tutorial we are gonna be using the **terminal**
 - Now that MySQL is running, we can create a database named `university` by typing in the command `CREATE DATABASE university;`, and then to check whether the database is running or not we can execute `SHOW DATABASES;` this is my output, notice the `university` database.
@@ -199,9 +199,9 @@ insert into engineeringstudents
    value(10207, 'ECE', 'Jennifer', 'Charles', 2019, 13232);
 ```
 
-### The Java Module 🥲
+## The Java Module 🥲
 
-#### Creating the Module
+### Creating the Module
 
 - You can use any IDE/Text Editor that you want, although I would recommend you download and install [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download/#section=mac)
 - Launch the IDE

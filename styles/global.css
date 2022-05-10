@@ -12,13 +12,14 @@ p {
 blockquote {
   border-left: 5px solid;
   font-family: 'Sriracha' !important;
-  padding: 2px 2px 2px 10px !important;
+  padding: 0px 0px 0px 10px !important;
   margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 ol,
 ul {
-  font-size: 90% !important;
+  font-size: 92.5% !important;
 }
 
 code {
@@ -98,4 +99,18 @@ details[open] {
 details[open] summary {
   /*border-bottom: 1px solid #aaa;*/
   margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 44px !important;
+}
+h3 {
+  font-size: 28px !important;
+}
+
+h2,
+h2,
+h3,
+h4 {
+  font-weight: bold !important;
 }
