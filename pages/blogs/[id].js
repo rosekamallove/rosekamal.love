@@ -37,6 +37,38 @@ const newTheme = {
     const { children } = props
     return <blockquote>{children}</blockquote>
   },
+  h1: props => {
+    const { children, className, id } = props
+    return (
+      <h1 className={className} id={id}>
+        {children}
+      </h1>
+    )
+  },
+  h2: props => {
+    const { children, className, id } = props
+    return (
+      <h2 className={className} id={id}>
+        {children}
+      </h2>
+    )
+  },
+  h3: props => {
+    const { children, className, id } = props
+    return (
+      <h3 className={className} id={id}>
+        {children}
+      </h3>
+    )
+  },
+  h4: props => {
+    const { children, className, id } = props
+    return (
+      <h4 className={className} id={id}>
+        {children}
+      </h4>
+    )
+  },
   code: props => {
     const toast = useToast()
     const { children, className } = props
@@ -130,7 +162,9 @@ export default function Post({ postData, id }) {
       <Container maxW="container.md">
         <article>
           <Section delay={0.1}>
-            <Heading variant="h2">{postData.title}</Heading>
+            <Heading size="xl" as="h1">
+              {postData.title}
+            </Heading>
             <div>
               <Date dateString={postData.date} />
               {' • '}
