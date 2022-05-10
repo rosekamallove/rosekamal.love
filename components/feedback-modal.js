@@ -57,6 +57,7 @@ export const FeedbackModal = ({ id }) => {
         title: 'Feedback Sent',
         description: 'Thank you 3000 for your valuable feedback 😃',
         status: 'success',
+        variant: 'subtle',
         position: 'top-right',
         duration: 7000,
         isClosable: true

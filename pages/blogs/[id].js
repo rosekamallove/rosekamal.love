@@ -1,11 +1,14 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import {
   Alert,
   AlertIcon,
+  Box,
   Button,
   Code,
   Container,
   Flex,
   Heading,
+  IconButton,
   Spacer,
   useColorModeValue,
   useToast
@@ -15,6 +18,7 @@ import Head from 'next/head'
 import NextLink from 'next/link'
 import { useState } from 'react'
 import { useBottomScrollListener } from 'react-bottom-scroll-listener'
+import { IoCopy } from 'react-icons/io5'
 import ReactMarkdown from 'react-markdown'
 import { Prism } from 'react-syntax-highlighter'
 import rehypeRaw from 'rehype-raw'
@@ -25,6 +29,7 @@ import HitCounter from '../../components/hit-counter'
 import { IconLinks } from '../../components/icon-links'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
+import { copyTextToClipboard } from '../../lib/copy-to-clipboard'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import wordCounter from '../../lib/word-counter'
 import light from '../../node_modules/react-syntax-highlighter/dist/esm/styles/prism/coldark-cold'
@@ -40,12 +45,9 @@ const newTheme = {
     )
   },
   code: props => {
+    const toast = useToast()
     const { children, className } = props
     const classArray = className == undefined ? '' : className.split('-')
-
-    console.log(className)
-
-    // eslint-disable-next-line react-hooks/rules-of-hooks
     const theme = useColorModeValue('light', 'dark')
 
     if (classArray == '') {
@@ -53,10 +55,7 @@ const newTheme = {
         <Code
           margin="2px"
           fontSize="95%"
-          // eslint-disable-next-line react-hooks/rules-of-hooks
-          //border={`1px dashed ${useColorModeValue('#a5adbb', '#434956')}`}
           borderRadius="5px"
-          // eslint-disable-next-line react-hooks/rules-of-hooks
           background={useColorModeValue('#E2EAF2', '#414650')}
           bg={null}
         >
@@ -66,14 +65,32 @@ const newTheme = {
     }
 
     return (
-      <Prism
-        language={classArray[1]}
-        style={theme == 'dark' ? dark : light}
-        showLineNumbers={true}
-        customStyle={{ fontSize: '15px' }}
-      >
-        {children}
-      </Prism>
+      <Box>
+        <Box align="right">
+          <IconButton
+            aria-label="Copy"
+            variant="ghost"
+            size="xs"
+            onClick={() => {
+              copyTextToClipboard(children)
+              toast({
+                title: 'Copied to clipboard successfully!',
+                position: 'top-right',
+                variant: 'subtle'
+              })
+            }}
+            icon={<IoCopy />}
+          />
+        </Box>
+        <Prism
+          language={classArray[1]}
+          style={theme == 'dark' ? dark : light}
+          showLineNumbers={true}
+          customStyle={{ fontSize: '15px' }}
+        >
+          {children}
+        </Prism>
+      </Box>
     )
   }
 }
@@ -89,7 +106,7 @@ export default function Post({ postData, id }) {
       toast({
         title: 'Please send feedback',
         description: 'It will help me immensely in my growth ❤️ ',
-        variant: 'solid',
+        variant: 'subtle',
         position: 'top-right',
         isClosable: true
       })
