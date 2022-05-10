@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import {
   Alert,
-  AlertIcon,
   Box,
   Button,
   Code,
@@ -67,20 +66,27 @@ const newTheme = {
     return (
       <Box>
         <Box align="right">
-          <IconButton
-            aria-label="Copy"
-            variant="ghost"
-            size="xs"
-            onClick={() => {
-              copyTextToClipboard(children)
-              toast({
-                title: 'Copied to clipboard successfully!',
-                position: 'top-right',
-                variant: 'subtle'
-              })
-            }}
-            icon={<IoCopy />}
-          />
+          {classArray[1] === 'txt' ? (
+            ''
+          ) : (
+            <IconButton
+              aria-label="Copy"
+              // variant="outline"
+              size="xs"
+              borderRadius="sm"
+              color={useColorModeValue('#282c34', '#abb2bf')}
+              bg={useColorModeValue('#abb2bf', '#282c34')}
+              onClick={() => {
+                copyTextToClipboard(children)
+                toast({
+                  title: 'Copied to clipboard successfully!',
+                  position: 'top-right',
+                  variant: 'left-accent'
+                })
+              }}
+              icon={<IoCopy />}
+            />
+          )}
         </Box>
         <Prism
           language={classArray[1]}
@@ -106,7 +112,7 @@ export default function Post({ postData, id }) {
       toast({
         title: 'Please send feedback',
         description: 'It will help me immensely in my growth ❤️ ',
-        variant: 'subtle',
+        variant: 'left-accent',
         position: 'top-right',
         isClosable: true
       })
@@ -128,18 +134,6 @@ export default function Post({ postData, id }) {
 
       <Container maxW="container.md">
         <article>
-          {/* <Center>
-          {postData.cover_image ? (
-            <Image
-              width={1000}
-              height={400}
-              src={postData.cover_image}
-              alt="Cover Image"
-            />
-          ) : (
-            ''
-          )}
-        </Center> */}
           <Section delay={0.1}>
             <Heading variant="h2">{postData.title}</Heading>
             <div>
@@ -161,11 +155,6 @@ export default function Post({ postData, id }) {
             >
               {postData.contentHtml}
             </ReactMarkdown>
-            <Alert status="info" colorScheme="teal" variant="left-accent">
-              <AlertIcon />
-              “Feedback is a gift. Ideas are the currency of our next success.
-              Let people see you value both feedback and ideas.”
-            </Alert>
             <Flex pt={2} pb={0} wrap>
               <NextLink href="/blogs">
                 <Button variant="ghost" colorScheme="teal" href="/blogs">
