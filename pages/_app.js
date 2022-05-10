@@ -1,11 +1,10 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { AnimatePresence } from 'framer-motion'
+import { useEffect } from 'react'
 import Fonts from '../components/fonts'
 import Layout from '../components/layouts/main'
 import theme from '../lib/theme'
 import '../styles/global.css'
-
-import { useEffect } from 'react'
 
 import * as ga from '../lib/ga'
 

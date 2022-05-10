@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
+import Logo from '../../public/images/logo-light.png'
 import { GridItemStyle } from '../grid-item'
 
 const variants = {
@@ -22,6 +23,7 @@ const Layout = ({ children, title }) => {
         {title && (
           <Head>
             <title>{title} - Rose Kamal Love</title>
+            <meta property="og:image" content={Logo} />
             <meta name="twitter:title" content={title} />
             <meta property="og:title" content={title} />
           </Head>
