@@ -208,7 +208,7 @@ insert into engineeringstudents
 - I am going to call it **jdbc-intro**
 - And then create a `JDBC` directory with a `JDBC.java` class in it, the directory structure should look like this:
 
-```
+```txt
 |-- jdbc-intro
     |-- lib
     |-- src
