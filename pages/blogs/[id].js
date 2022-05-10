@@ -7,7 +7,6 @@ import {
   Container,
   Flex,
   Heading,
-  IconButton,
   Spacer,
   useColorModeValue,
   useToast
@@ -64,27 +63,29 @@ const newTheme = {
     }
 
     return (
-      <Box bg={useColorModeValue('#E2EAF2', '#282c34')}>
-        <Box align="right">
+      <Box>
+        <Box align="right" marginTop="0.5">
           {classArray[1] === 'txt' ? (
             ''
           ) : (
-            <IconButton
-              aria-label="Copy"
+            <Button
               size="xs"
               borderRadius="sm"
+              fontFamily="Poppins"
               color={useColorModeValue('#282c34', '#abb2bf')}
               bg={useColorModeValue('#E2EAF2', '#282c34')}
               onClick={() => {
                 copyTextToClipboard(children)
                 toast({
-                  title: 'Copied to clipboard successfully!',
+                  description: 'Copied to clipboard successfully!',
                   position: 'top-right',
                   variant: 'left-accent'
                 })
               }}
-              icon={<IoCopy />}
-            />
+              leftIcon={<IoCopy />}
+            >
+              Copy to Clipboard
+            </Button>
           )}
         </Box>
         <Prism
