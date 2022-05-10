@@ -6,7 +6,7 @@
 body,
 p {
   font-size: 95% !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 
 ol,
@@ -15,25 +15,45 @@ ul {
 }
 
 code {
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
-  margin-left: 5px !important;
-  margin-right: 5px !important;
-  padding-top: 1px !important;
-  padding-bottom: 1px !important;
-  border-radius: 2px !important;
   font-family: 'Jetbrains Mono' !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
+}
+
+pre {
+  margin: 0px 0px 0px 0px !important;
+  padding: 5px !important;
+  border-radius: 2px !important;
 }
 
 em {
+  border-radius: 2px;
   font-style: normal !important;
   font-family: Sriracha !important;
 }
 
 ::-webkit-scrollbar {
-  display: none !important;
+  display: none;
 }
+
+/* custom scrollbar
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 12px;
+  border: 7px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+} */
 
 p {
   margin-top: 0.5rem !important;

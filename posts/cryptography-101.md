@@ -27,7 +27,9 @@ often used to compare two values, like passwords, for equality.
 - Fast to compute, but computationally expensive to find the original input
 - Small proability of collision (unique)
 
-`Hello World -> {Hashing Function} => jibbrish(hashed stuff)`
+```
+Hello World -> {Hashing Function} => jibbrish(hashed stuff)
+```
 
 **Implementation:**
 
@@ -55,7 +57,7 @@ const match = hash1 === hash2
 console.log(match ? 'good password' : 'password does not match')
 ```
 
-<br>
+<br/>
 
 #### 2. **Salt**
 
@@ -71,7 +73,9 @@ of an unsalted hash by searching precomputed [rainbow table](https://en.wikipedi
 - Used to make a hash harder to guess
 - Appends a random string to the input before hashing
 
-`Hello World --(+random salt)--> {Hashing Function} => jibbrish(salted hashed stuff)`
+```
+Hello World --(+random salt)--> {Hashing Function} => jibbrish(salted hashed stuff)
+```
 
 **Implementation**
 
@@ -126,9 +130,9 @@ originator of the data. Using a different key produces a different output.
 - Only someone with the key can create an authentic hash
 
 ```
-              Hello World  --> {Hashing Function} => jibbrish(hashed stuff)
-                             |                    |
-                             |____ Shared Key ____|
+Hello World  --> {Hashing Function} => jibbrish(hashed stuff)
+               |                    |
+               |____ Shared Key ____|
 ```
 
 **Implementation:**
@@ -144,7 +148,7 @@ const hmac = createHmac('sha256', password).update(message).digest('hex')
 console.log(hmac)
 ```
 
-<br>
+<br/>
 
 #### 4. **Symmetric Encryption**
 
@@ -160,9 +164,9 @@ is used to encrypt and decrypt the message.
 - Same key used to encrypt and decrypt message
 
 ```
-              Hello World  --encrypt--> {jibbrish} --decrypt--> Hello World
-                               |                        |
-                               |______ Shared Key ______|
+Hello World  --encrypt--> {jibbrish} --decrypt--> Hello World
+                 |                        |
+                 |______ Shared Key ______|
 ```
 
 **Implementation:**
@@ -205,7 +209,9 @@ This is problematic in the real world because it’s not practical or secure to 
 solution is to use an algoritm like [RSA](https://en.wikipedia.org/wiki/RSA_cryptosystem) that generates a keypair containing a public and private key.
 As their names indicate, the private key should be kept secret, while the public key can be shared freely.
 
-`Public Key <---- Mathematically Linked ----> Private Key`
+```
+Public Key <---- Mathematically Linked ----> Private Key
+```
 
 **Implementation:**
 
@@ -228,7 +234,7 @@ console.log(publicKey)
 console.log(privateKey)
 ```
 
-<br>
+<br/>
 
 ### 6. **Asymetric Encryption**
 
@@ -241,10 +247,10 @@ The browser finds the public key of an SSL certificate installed on the website,
 you send, then the private key decrypts it.
 
 ```
-          Hello World  --encrypt--> {jibbrish} --decrypt--> Hello World
-                           |                        |
-                           |                        |
-                        Public Key              Private Key
+Hello World  --encrypt--> {jibbrish} --decrypt--> Hello World
+                 |                        |
+                 |                        |
+              Public Key              Private Key
 ```
 
 **Implementation:**
