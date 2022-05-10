@@ -64,18 +64,17 @@ const newTheme = {
     }
 
     return (
-      <Box>
+      <Box bg={useColorModeValue('#E2EAF2', '#282c34')}>
         <Box align="right">
           {classArray[1] === 'txt' ? (
             ''
           ) : (
             <IconButton
               aria-label="Copy"
-              // variant="outline"
               size="xs"
               borderRadius="sm"
               color={useColorModeValue('#282c34', '#abb2bf')}
-              bg={useColorModeValue('#abb2bf', '#282c34')}
+              bg={useColorModeValue('#E2EAF2', '#282c34')}
               onClick={() => {
                 copyTextToClipboard(children)
                 toast({
