@@ -1,5 +1,7 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import {
   Box,
+  Heading,
   LinkBox,
   LinkOverlay,
   List,
@@ -29,22 +31,17 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                   <ListItem>
                     <Box
                       borderRadius="sm"
-                      // eslint-disable-next-line react-hooks/rules-of-hooks
                       bg={useColorModeValue('whiteAlpha.400', '#323843')}
-                      // border={`1px solid ${useColorModeValue(
-                      //   '#a5adbb',
-                      //   '#434956'
-                      // )}`}
-                      //bg={null}
                       mb={6}
                       p={3}
                     >
                       <LinkOverlay
                         href={`/blogs/${id}`}
-                        // eslint-disable-next-line react-hooks/rules-of-hooks
                         color={useColorModeValue('#3181CE', '#c678dd')}
                       >
-                        <strong>{title}</strong>
+                        <Heading size="md" as="h3">
+                          {title}
+                        </Heading>
                       </LinkOverlay>
                       <Box>
                         <Date dateString={date} />

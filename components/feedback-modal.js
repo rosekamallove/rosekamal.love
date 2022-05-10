@@ -57,7 +57,7 @@ export const FeedbackModal = ({ id }) => {
         title: 'Feedback Sent',
         description: 'Thank you 3000 for your valuable feedback 😃',
         status: 'success',
-        variant: 'subtle',
+        variant: 'left-accent',
         position: 'top-right',
         duration: 7000,
         isClosable: true
@@ -79,6 +79,7 @@ export const FeedbackModal = ({ id }) => {
         <ModalContent background={useColorModeValue('#c8cdd5', '#282c34')}>
           <ModalHeader>Send in your vital Feedback</ModalHeader>
           <ModalCloseButton />
+
           <ModalBody pb={6}>
             <FormControl isRequired>
               <FormLabel>Name</FormLabel>
