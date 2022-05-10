@@ -27,7 +27,7 @@ often used to compare two values, like passwords, for equality.
 - Fast to compute, but computationally expensive to find the original input
 - Small proability of collision (unique)
 
-```
+```txt
 Hello World -> {Hashing Function} => jibbrish(hashed stuff)
 ```
 
@@ -73,7 +73,7 @@ of an unsalted hash by searching precomputed [rainbow table](https://en.wikipedi
 - Used to make a hash harder to guess
 - Appends a random string to the input before hashing
 
-```
+```txt
 Hello World --(+random salt)--> {Hashing Function} => jibbrish(salted hashed stuff)
 ```
 
@@ -129,7 +129,7 @@ originator of the data. Using a different key produces a different output.
 - Think of HMAC as a hash with a password or key
 - Only someone with the key can create an authentic hash
 
-```
+```txt
 Hello World  --> {Hashing Function} => jibbrish(hashed stuff)
                |                    |
                |____ Shared Key ____|
@@ -163,7 +163,7 @@ is used to encrypt and decrypt the message.
 - Encrypted message can be reversed with the key
 - Same key used to encrypt and decrypt message
 
-```
+```txt
 Hello World  --encrypt--> {jibbrish} --decrypt--> Hello World
                  |                        |
                  |______ Shared Key ______|
@@ -209,7 +209,7 @@ This is problematic in the real world because it’s not practical or secure to 
 solution is to use an algoritm like [RSA](https://en.wikipedia.org/wiki/RSA_cryptosystem) that generates a keypair containing a public and private key.
 As their names indicate, the private key should be kept secret, while the public key can be shared freely.
 
-```
+```txt
 Public Key <---- Mathematically Linked ----> Private Key
 ```
 
@@ -246,7 +246,7 @@ Asymmetric encryption is used on the web whenever you use HTTPS to establish an 
 The browser finds the public key of an SSL certificate installed on the website, which is used to encrypt any data
 you send, then the private key decrypts it.
 
-```
+```txt
 Hello World  --encrypt--> {jibbrish} --decrypt--> Hello World
                  |                        |
                  |                        |
