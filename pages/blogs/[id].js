@@ -27,8 +27,8 @@ import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import wordCounter from '../../lib/word-counter'
+import light from '../../node_modules/react-syntax-highlighter/dist/esm/styles/prism/coldark-cold'
 import dark from '../../node_modules/react-syntax-highlighter/dist/esm/styles/prism/one-dark'
-import light from '../../node_modules/react-syntax-highlighter/dist/esm/styles/prism/one-light'
 
 const newTheme = {
   blockquote: props => {
@@ -49,7 +49,20 @@ const newTheme = {
     const theme = useColorModeValue('light', 'dark')
 
     if (classArray == '') {
-      return <Code margin="2px">{children}</Code>
+      return (
+        <Code
+          margin="2px"
+          fontSize="95%"
+          // eslint-disable-next-line react-hooks/rules-of-hooks
+          //border={`1px dashed ${useColorModeValue('#a5adbb', '#434956')}`}
+          borderRadius="5px"
+          // eslint-disable-next-line react-hooks/rules-of-hooks
+          background={useColorModeValue('#E2EAF2', '#414650')}
+          bg={null}
+        >
+          {children}
+        </Code>
+      )
     }
 
     return (
@@ -57,7 +70,7 @@ const newTheme = {
         language={classArray[1]}
         style={theme == 'dark' ? dark : light}
         showLineNumbers={true}
-        customStyle={{ fontSize: '16px' }}
+        customStyle={{ fontSize: '15px' }}
       >
         {children}
       </Prism>
