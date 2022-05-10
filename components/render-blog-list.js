@@ -20,10 +20,20 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
     <List>
       {allPostsData.map(
         (
-          { id, date, title, description, og_description, words, tags },
+          {
+            id,
+            date,
+            title,
+            description,
+            og_description,
+            words,
+            tags,
+            published
+          },
           index
         ) => {
           const tagArray = tags.split(',').map(tag => tag.trim())
+          if (!published) return ''
           if (index < count) {
             return (
               <NextLink key={id} href={`/blogs/${id}`}>

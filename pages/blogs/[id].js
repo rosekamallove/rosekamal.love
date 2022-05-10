@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import {
-  Alert,
   Box,
   Button,
   Code,
@@ -36,11 +35,7 @@ import dark from '../../node_modules/react-syntax-highlighter/dist/esm/styles/pr
 const newTheme = {
   blockquote: props => {
     const { children } = props
-    return (
-      <Alert status="info" variant="left-accent">
-        {children}
-      </Alert>
-    )
+    return <blockquote>{children}</blockquote>
   },
   code: props => {
     const toast = useToast()
@@ -70,7 +65,7 @@ const newTheme = {
           ) : (
             <Button
               size="xs"
-              borderRadius="sm"
+              borderRadius="5px"
               fontFamily="Poppins"
               color={useColorModeValue('#282c34', '#abb2bf')}
               bg={useColorModeValue('#E2EAF2', '#282c34')}
