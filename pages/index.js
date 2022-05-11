@@ -20,16 +20,7 @@ import { TimeLine } from '../components/timeline'
 import { getSortedPostsData } from '../lib/posts'
 import youtemy from '../public/images/youtemy.png'
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
-
-const Page = ({ allPostsData }) => {
+export default function Page({ allPostsData }) {
   return (
     <Layout>
       <Container maxW="container.md">
@@ -103,4 +94,11 @@ const Page = ({ allPostsData }) => {
   )
 }
 
-export default Page
+export const getStaticProps = async () => {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
