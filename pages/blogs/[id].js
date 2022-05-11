@@ -28,6 +28,7 @@ import Section from '../../components/section'
 import { copyTextToClipboard } from '../../lib/copy-to-clipboard'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import wordCounter from '../../lib/word-counter'
+
 import light from '../../node_modules/react-syntax-highlighter/dist/esm/styles/prism/coldark-cold'
 import dark from '../../node_modules/react-syntax-highlighter/dist/esm/styles/prism/one-dark'
 
