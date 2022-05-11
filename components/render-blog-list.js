@@ -49,7 +49,7 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                         href={`/blogs/${id}`}
                         color={useColorModeValue('#3181CE', '#c678dd')}
                       >
-                        <Heading size="md" as="h3">
+                        <Heading size="md" as="h4">
                           {title}
                         </Heading>
                       </LinkOverlay>

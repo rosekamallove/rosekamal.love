@@ -1,10 +1,14 @@
 import { Box } from '@chakra-ui/react'
+import { IconLinks } from './icon-links'
 
 const Footer = () => {
   return (
-    <Box align="center" fontSize="sm">
-      &copy; {new Date().getFullYear()} Rose Kamal Love, All Rights Reserved.
-    </Box>
+    <>
+      <IconLinks />
+      <Box align="center" fontSize="xs" opacity={0.5}>
+        Copyright &copy; {new Date().getFullYear()} • Rose Kamal Love
+      </Box>
+    </>
   )
 }
 

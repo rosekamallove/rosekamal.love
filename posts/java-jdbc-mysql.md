@@ -118,7 +118,7 @@ More Data Types
 2. Extract the file
 3. Run the setup file
 
-> **Note:**
+> <u>**Note:</u>**
 > You can use whichever Database application that you like as long as it is a **SQL database**
 
 ### Steps to Connect JDBC

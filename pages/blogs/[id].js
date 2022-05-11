@@ -23,7 +23,6 @@ import remarkGfm from 'remark-gfm'
 import Date from '../../components/date'
 import { FeedbackModal } from '../../components/feedback-modal'
 import HitCounter from '../../components/hit-counter'
-import { IconLinks } from '../../components/icon-links'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { copyTextToClipboard } from '../../lib/copy-to-clipboard'
@@ -162,7 +161,7 @@ export default function Post({ postData, id }) {
       <Container maxW="container.md">
         <article>
           <Section delay={0.1}>
-            <Heading size="xl" as="h1">
+            <Heading as="h2" fontSize="34px !important">
               {postData.title}
             </Heading>
             <div>
@@ -186,14 +185,16 @@ export default function Post({ postData, id }) {
             </ReactMarkdown>
             <Flex pt={2} pb={0} wrap>
               <NextLink href="/blogs">
-                <Button variant="ghost" colorScheme="teal" href="/blogs">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  href="/blogs"
+                  size="sm"
+                >
                   <a>← Back to Blogs</a>
                 </Button>
               </NextLink>
               <FeedbackModal id={id} />
-            </Flex>
-            <Flex borderRadius="sm" mb={6} p={3}>
-              <IconLinks />
               <Spacer />
               <HitCounter slug={id} />
             </Flex>

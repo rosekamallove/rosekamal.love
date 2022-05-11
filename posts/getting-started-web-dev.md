@@ -56,7 +56,7 @@ With all that out of the way let's dive in.
 
 ### Index
 
-> - **Basics:**
+> - <u>**Basics</u>:**
 >   - [Internet](https://www.vox.com/2014/6/16/18076282/the-internet)
 >     - [How does the internet work, and what is HTTP?](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
 >     - [Browsers and how they work?](https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/#:~:text=When%20the%20web%20browser%20fetches,and%20experience%20on%20the%20internet.)
