@@ -42,15 +42,17 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
+  const isFirefox = typeof InstallTrigger !== 'undefined'
 
   return (
     <Box
       position="fixed"
       as="nav"
       w="100%"
-      // bg={useColorModeValue('#abb2bf40', '#21252b80')}
-      bg={null}
-      style={{ backdropFilter: 'blur(10px)' }}
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      bg={isFirefox ? useColorModeValue('#C8CDD5', '#2C313A') : null}
+      backdropFilter="auto"
+      backdropBlur="8px"
       zIndex={1}
       {...props}
     >
