@@ -12,7 +12,7 @@ export default function Date({ dateString }) {
       }}
       dateTime={dateString}
     >
-      {format(date, 'LLLL d, yyyy')}
+      📅 {format(date, 'LLLL d, yyyy')}
     </time>
   )
 }

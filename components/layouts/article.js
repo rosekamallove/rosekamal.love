@@ -1,6 +1,8 @@
+import { Box, Divider } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 import Logo from '../../public/images/logo-light.png'
+import Footer from '../footer'
 import { GridItemStyle } from '../grid-item'
 
 const variants = {
@@ -31,6 +33,16 @@ const Layout = ({ children, title }) => {
         {children}
 
         <GridItemStyle />
+        <Box
+          borderRadius="sm"
+          // bg={useColorModeValue('whiteAlpha.500', '#323843')}
+          bottom="0"
+          p={1}
+          align="center"
+        >
+          <Divider width="45%" />
+          <Footer />
+        </Box>
       </>
     </motion.article>
   )

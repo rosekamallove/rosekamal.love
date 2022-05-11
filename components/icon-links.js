@@ -10,17 +10,17 @@ export const IconLinks = () => {
   return (
     <>
       <Link href="https://github.com/rosekamallove" target="_blank">
-        <Button variant="ghost" colorScheme="teal">
+        <Button variant="ghost" colorScheme="teal" size="sm">
           <Icon as={IoLogoGithub} />
         </Button>
       </Link>
       <Link href="https://twitter.com/RoseKamalLove1" target="_blank">
-        <Button variant="ghost" colorScheme="teal">
+        <Button variant="ghost" colorScheme="teal" size="sm">
           <Icon as={IoLogoTwitter} />
         </Button>
       </Link>
       <Link href="https://instagram.com/rosekamallove" target="_blank">
-        <Button variant="ghost" colorScheme="teal">
+        <Button variant="ghost" colorScheme="teal" size="sm">
           <Icon as={IoLogoInstagram} />
         </Button>
       </Link>
@@ -28,7 +28,7 @@ export const IconLinks = () => {
         href="https://www.linkedin.com/in/rose-kamal-love-1146141b0/"
         target="_blank"
       >
-        <Button variant="ghost" colorScheme="teal">
+        <Button variant="ghost" colorScheme="teal" size="sm">
           <Icon as={IoLogoLinkedin} />
         </Button>
       </Link>

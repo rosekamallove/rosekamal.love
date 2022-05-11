@@ -71,6 +71,7 @@ export const FeedbackModal = ({ id }) => {
         onClick={onOpen}
         variant="ghost"
         colorScheme="teal"
+        size="sm"
       >
         Feedback
       </Button>

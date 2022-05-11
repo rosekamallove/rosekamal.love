@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <div>
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
+        <Heading as="h3" variant="section-title" fontSize="16px">
           Work
         </Heading>
         <Paragraph>

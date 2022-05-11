@@ -1,17 +1,14 @@
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
-  Box,
   Button,
   Center,
   Container,
   Heading,
   Link,
-  SimpleGrid,
-  useColorModeValue
+  SimpleGrid
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { About } from '../components/about'
-import Footer from '../components/footer'
 import { GridItem } from '../components/grid-item'
 import { BasicIntro } from '../components/intro'
 import Layout from '../components/layouts/article'
@@ -43,7 +40,9 @@ const Page = ({ allPostsData }) => {
 
         <Section delay={0.2}>
           {/* Recent Blogs */}
-          <Heading variant="section-title">Latest Blogs</Heading>
+          <Heading as="h3" variant="section-title">
+            Latest Blogs
+          </Heading>
           <RenderBlogs
             allPostsData={allPostsData}
             renderDescription={false}
@@ -99,16 +98,6 @@ const Page = ({ allPostsData }) => {
             </Center>
           </SimpleGrid>
         </Section>
-
-        <Box
-          borderRadius="sm"
-          bg={useColorModeValue('whiteAlpha.500', '#323843')}
-          mb={6}
-          p={3}
-          align="center"
-        >
-          <Footer />
-        </Box>
       </Container>
     </Layout>
   )
