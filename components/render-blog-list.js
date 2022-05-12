@@ -40,7 +40,7 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                 <LinkBox as="article">
                   <ListItem>
                     <Box
-                      borderRadius="sm"
+                      borderRadius="8px"
                       _hover={{
                         background: `${useColorModeValue(
                           'whiteAlpha.400',

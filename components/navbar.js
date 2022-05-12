@@ -35,7 +35,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         transition="ease-in-out 0.25s"
         display="inline-flex"
         alignItems="center"
-        style={{ gap: 4, borderRadius: '2px' }}
+        style={{ gap: 4, borderRadius: '8px' }}
       >
         {children}
       </Link>
@@ -63,6 +63,7 @@ const Navbar = props => {
         display="flex"
         px={2}
         py={0}
+        my={0}
         maxW="container.md"
         wrap="wrap"
         align="center"
