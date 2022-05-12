@@ -92,17 +92,19 @@ const newTheme = {
 
     return (
       <Box>
-        <Box align="right" marginTop="0.5">
-          {classArray[1] === 'txt' ? (
-            ''
-          ) : (
+        {classArray[1] === 'txt' ? (
+          ''
+        ) : (
+          <Box align="right" marginBottom="-40px">
             <Button
-              size="xs"
-              borderRadius="2px"
+              size="sm"
+              borderRadius="8px"
               fontFamily="Sriracha"
               fontWeight="300"
               color={useColorModeValue('#282c34', '#abb2bf')}
               bg={useColorModeValue('#E2EAF2', '#282c34')}
+              opacity={0.5}
+              _hover={{ opacity: '1' }}
               onClick={() => {
                 copyTextToClipboard(children)
                 toast({
@@ -112,12 +114,11 @@ const newTheme = {
                   variant: 'solid'
                 })
               }}
-              leftIcon={<IoCopy />}
             >
-              Copy to Clipboard
+              <IoCopy />
             </Button>
-          )}
-        </Box>
+          </Box>
+        )}
         <Prism
           language={classArray[1]}
           style={theme == 'dark' ? dark : light}
