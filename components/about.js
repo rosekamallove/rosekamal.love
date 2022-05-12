@@ -1,8 +1,9 @@
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { Box, Button, Heading, Link } from '@chakra-ui/react'
+import { Button, Flex, Heading, Link, Spacer } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
+import { IconLinks } from './icon-links'
 
 export const About = () => {
   return (
@@ -29,13 +30,15 @@ export const About = () => {
           </NextLink>
           .
         </Paragraph>
-        <Box align="center" my={4}>
+        <Flex  my={4}>
+          <IconLinks size='md'/>
+          <Spacer/>
           <NextLink href="/projects">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button mx={5} rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My Portfolio
             </Button>
           </NextLink>
-        </Box>
+        </Flex>
       </Section>
     </div>
   )

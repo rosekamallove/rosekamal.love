@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
     secret: process.env.FAUNA_SECRET_KEY,
     domain: 'db.eu.fauna.com'
   })
-  const { slug } = req.query
+  const { slug, published } = req.query
   if (!slug) {
     return res.status(400).json({
       message: 'Article slug not provided'
@@ -30,7 +30,7 @@ module.exports = async (req, res) => {
   await client.query(
     q.Update(document.ref, {
       data: {
-        hits: document.data.hits + 1
+        hits: published ? document.data.hits + 1 : 0
       }
     })
   )

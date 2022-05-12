@@ -45,6 +45,7 @@
     "rehype-raw": "^6.1.1",
     "remark": "^14.0.2",
     "remark-gfm": "^3.0.1",
+    "remark-heading-id": "^1.0.0",
     "remark-html": "^15.0.1"
   },
   "devDependencies": {
