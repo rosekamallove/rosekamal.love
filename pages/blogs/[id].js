@@ -99,7 +99,8 @@ const newTheme = {
             <Button
               size="xs"
               borderRadius="5px"
-              fontFamily="Poppins"
+              fontFamily="Sriracha"
+              fontWeight="300"
               color={useColorModeValue('#282c34', '#abb2bf')}
               bg={useColorModeValue('#E2EAF2', '#282c34')}
               onClick={() => {
@@ -164,7 +165,7 @@ export default function Post({ postData, id }) {
       <Container maxW="container.md">
         <article>
           <Section delay={0.1}>
-            <Heading as="h2" fontSize="34px !important">
+            <Heading as="h1" mb={5}>
               {postData.title}
             </Heading>
             <div>
