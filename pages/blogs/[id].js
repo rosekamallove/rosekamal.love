@@ -20,6 +20,7 @@ import ReactMarkdown from 'react-markdown'
 import { Prism } from 'react-syntax-highlighter'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
+import remarkHeadingId from 'remark-heading-id'
 import Date from '../../components/date'
 import { FeedbackModal } from '../../components/feedback-modal'
 import HitCounter from '../../components/hit-counter'
@@ -106,7 +107,8 @@ const newTheme = {
                 toast({
                   description: 'Copied to clipboard successfully!',
                   position: 'top-right',
-                  variant: 'left-accent'
+                  status: 'success',
+                  variant: 'solid'
                 })
               }}
               leftIcon={<IoCopy />}
@@ -139,7 +141,7 @@ export default function Post({ postData, id }) {
       toast({
         title: 'Please send feedback',
         description: 'It will help me immensely in my growth ❤️ ',
-        variant: 'left-accent',
+        variant: 'solid',
         position: 'top-right',
         isClosable: true
       })
@@ -178,7 +180,7 @@ export default function Post({ postData, id }) {
             </div>
             <ReactMarkdown
               components={ChakraUIRenderer(newTheme)}
-              remarkPlugins={[remarkGfm]}
+              remarkPlugins={[remarkGfm, remarkHeadingId]}
               rehypePlugins={[rehypeRaw]}
               skipHtml
             >
@@ -197,7 +199,7 @@ export default function Post({ postData, id }) {
               </NextLink>
               <FeedbackModal id={id} />
               <Spacer />
-              <HitCounter slug={id} />
+              <HitCounter published={postData.published} slug={id} />
             </Flex>
           </Section>
         </article>

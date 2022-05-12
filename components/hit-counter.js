@@ -2,16 +2,15 @@ import { Box } from '@chakra-ui/react'
 import React from 'react'
 import ReactRetroHitCounter from 'react-retro-hit-counter'
 
-export default function HitCounter({ slug }) {
+export default function HitCounter({ slug, published }) {
   const [hits, setHits] = React.useState(undefined)
   React.useEffect(() => {
-    // Don't count hits on localhost
+    //Don't count hits on localhost
     if (process.env.NODE_ENV !== 'production') {
       return
     }
-    // Invoke the function by making a request.
-    // Update the URL to match the format of your platform.
-    fetch(`/api/register-hit?slug=${slug}`, {
+
+    fetch(`/api/register-hit?slug=${slug}&published=${published}`, {
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json'
@@ -23,7 +22,7 @@ export default function HitCounter({ slug }) {
           setHits(json.hits)
         }
       })
-  }, [slug])
+  }, [slug, published])
   if (typeof hits === 'undefined') {
     return (
       <Box mt={1}>

@@ -4,7 +4,6 @@ import {
   Center,
   Container,
   Heading,
-  Link,
   SimpleGrid
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
@@ -12,8 +11,6 @@ import { About } from '../components/about'
 import { GridItem } from '../components/grid-item'
 import { BasicIntro } from '../components/intro'
 import Layout from '../components/layouts/article'
-import { ConnectLinks } from '../components/links'
-import Paragraph from '../components/paragraph'
 import { RenderBlogs } from '../components/render-blog-list'
 import Section from '../components/section'
 import { TimeLine } from '../components/timeline'
@@ -49,27 +46,11 @@ export default function Page({ allPostsData }) {
             </Button>
           </NextLink>
         </Section>
-
         <Section delay={0.3}>
           <TimeLine />
-          {/* I Love Section */}
-
-          <Heading as="h3" variant="section-title">
-            I Love ♥
-          </Heading>
-          <Paragraph>
-            <Link href="https://soundcloud.com/rosekmallove" target="_blank">
-              Music
-            </Link>
-            ,{' '}
-            <Link href="https://instagram.com/rosekamallove" target="_blank">
-              Photography
-            </Link>
-            , Development, Vim
-          </Paragraph>
         </Section>
 
-        <ConnectLinks />
+        {/* <ConnectLinks /> */}
 
         <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
