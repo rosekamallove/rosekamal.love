@@ -6,9 +6,9 @@ export default function HitCounter({ slug, published }) {
   const [hits, setHits] = React.useState(undefined)
   React.useEffect(() => {
     //Don't count hits on localhost
-    // if (process.env.NODE_ENV !== 'production') {
-    //   return
-    // }
+    if (process.env.NODE_ENV !== 'production') {
+      return
+    }
 
     fetch(`/api/register-hit?slug=${slug}&published=${published}`, {
       headers: {

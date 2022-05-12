@@ -30,11 +30,16 @@ export const About = () => {
           </NextLink>
           .
         </Paragraph>
-        <Flex  my={4}>
-          <IconLinks size='md'/>
-          <Spacer/>
+        <Flex my={4}>
+          <IconLinks size="md" />
+          <Spacer />
           <NextLink href="/projects">
-            <Button mx={5} rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button
+              mx={5}
+              variant="ghost"
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="teal"
+            >
               My Portfolio
             </Button>
           </NextLink>
