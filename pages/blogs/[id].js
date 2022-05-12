@@ -98,7 +98,7 @@ const newTheme = {
           ) : (
             <Button
               size="xs"
-              borderRadius="5px"
+              borderRadius="2px"
               fontFamily="Sriracha"
               fontWeight="300"
               color={useColorModeValue('#282c34', '#abb2bf')}
