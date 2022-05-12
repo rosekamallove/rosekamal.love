@@ -30,7 +30,7 @@ module.exports = async (req, res) => {
   await client.query(
     q.Update(document.ref, {
       data: {
-        hits: published ? document.data.hits + 1 : 0
+        hits: published === 'true' ? document.data.hits + 1 : 0
       }
     })
   )
