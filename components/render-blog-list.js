@@ -41,9 +41,15 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                   <ListItem>
                     <Box
                       borderRadius="sm"
-                      bg={useColorModeValue('whiteAlpha.400', '#323843')}
-                      mb={6}
-                      p={3}
+                      _hover={{
+                        background: `${useColorModeValue(
+                          'whiteAlpha.400',
+                          '#323843'
+                        )}`
+                      }}
+                      transition="ease-in-out 0.25s"
+                      // mb={1}
+                      p={2}
                     >
                       <LinkOverlay
                         href={`/blogs/${id}`}
