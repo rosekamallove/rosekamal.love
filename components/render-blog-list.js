@@ -48,14 +48,14 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                         )}`
                       }}
                       transition="ease-in-out 0.25s"
-                      // mb={1}
+                      mb={1}
                       p={2}
                     >
                       <LinkOverlay
                         href={`/blogs/${id}`}
                         color={useColorModeValue('#3181CE', '#c678dd')}
                       >
-                        <Heading size="md" as="h4">
+                        <Heading as="h2" size="md">
                           {title}
                         </Heading>
                       </LinkOverlay>
