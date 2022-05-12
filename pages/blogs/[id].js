@@ -7,6 +7,7 @@ import {
   Flex,
   Heading,
   Spacer,
+  Table,
   useColorModeValue,
   useToast
 } from '@chakra-ui/react'
@@ -68,6 +69,14 @@ const newTheme = {
       <h4 className={className} id={id}>
         {children}
       </h4>
+    )
+  },
+  table: props => {
+    const { children } = props
+    return (
+      <Table variant="striped" colorScheme="gray" borderRadius="8px">
+        {children}
+      </Table>
     )
   },
   code: props => {
