@@ -19,7 +19,7 @@ import youtemy from '../public/images/youtemy.png'
 
 export default function Page({ allPostsData }) {
   return (
-    <Layout>
+    <Layout title="About">
       <Container maxW="container.md">
         <Section delay={0.1}>
           <BasicIntro />
