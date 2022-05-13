@@ -13,9 +13,9 @@ export async function getStaticProps() {
   }
 }
 
-const Page = ({ allPostsData }) => {
+const Blogs = ({ allPostsData }) => {
   return (
-    <Layout>
+    <Layout title="Blogs">
       <Section delay={0.1}>
         <Container maxW="container.md">
           <Heading as="h3">Blogs</Heading>
@@ -31,4 +31,4 @@ const Page = ({ allPostsData }) => {
   )
 }
 
-export default Page
+export default Blogs

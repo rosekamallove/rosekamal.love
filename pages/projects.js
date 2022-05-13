@@ -5,9 +5,9 @@ import Section from '../components/section'
 import musicexpanse from '../public/images/music-expanse.jpg'
 import youtemy from '../public/images/youtemy.png'
 
-const Work = () => {
+const Portfolio = () => {
   return (
-    <Layout>
+    <Layout title="Portfolio">
       <Container maxW="container.md">
         <Heading as="h3" mb={4}>
           My Projects
@@ -37,4 +37,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Portfolio

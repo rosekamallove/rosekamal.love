@@ -1,14 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import {
-  Box,
   Button,
-  Code,
   Container,
   Flex,
   Heading,
   Spacer,
-  Table,
-  useColorModeValue,
   useToast
 } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
@@ -16,9 +12,7 @@ import Head from 'next/head'
 import NextLink from 'next/link'
 import { useState } from 'react'
 import { useBottomScrollListener } from 'react-bottom-scroll-listener'
-import { IoCopy } from 'react-icons/io5'
 import ReactMarkdown from 'react-markdown'
-import { Prism } from 'react-syntax-highlighter'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 import remarkHeadingId from 'remark-heading-id'
@@ -27,119 +21,10 @@ import { FeedbackModal } from '../../components/feedback-modal'
 import HitCounter from '../../components/hit-counter'
 import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
-import { copyTextToClipboard } from '../../lib/copy-to-clipboard'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import wordCounter from '../../lib/word-counter'
 
-import light from '../../node_modules/react-syntax-highlighter/dist/esm/styles/prism/coldark-cold'
-import dark from '../../node_modules/react-syntax-highlighter/dist/esm/styles/prism/one-dark'
-
-const newTheme = {
-  blockquote: props => {
-    const { children } = props
-    return <blockquote>{children}</blockquote>
-  },
-  h1: props => {
-    const { children, className, id } = props
-    return (
-      <h1 className={className} id={id}>
-        {children}
-      </h1>
-    )
-  },
-  h2: props => {
-    const { children, className, id } = props
-    return (
-      <h2 className={className} id={id}>
-        {children}
-      </h2>
-    )
-  },
-  h3: props => {
-    const { children, className, id } = props
-    return (
-      <h3 className={className} id={id}>
-        {children}
-      </h3>
-    )
-  },
-  h4: props => {
-    const { children, className, id } = props
-    return (
-      <h4 className={className} id={id}>
-        {children}
-      </h4>
-    )
-  },
-  table: props => {
-    const { children } = props
-    return (
-      <Table variant="striped" colorScheme="gray" borderRadius="8px">
-        {children}
-      </Table>
-    )
-  },
-  code: props => {
-    const toast = useToast()
-    const { children, className } = props
-    const classArray = className == undefined ? '' : className.split('-')
-    const theme = useColorModeValue('light', 'dark')
-
-    if (classArray == '') {
-      return (
-        <Code
-          margin="2px"
-          fontSize="95%"
-          borderRadius="5px"
-          background={useColorModeValue('#E2EAF2', '#414650')}
-          bg={null}
-        >
-          {children}
-        </Code>
-      )
-    }
-
-    return (
-      <Box>
-        {classArray[1] === 'txt' ? (
-          ''
-        ) : (
-          <Box align="right" marginBottom="-40px">
-            <Button
-              size="sm"
-              borderRadius="8px"
-              fontFamily="Sriracha"
-              fontWeight="300"
-              color={useColorModeValue('#282c34', '#abb2bf')}
-              bg={useColorModeValue('#E2EAF2', '#282c34')}
-              opacity={0.5}
-              _hover={{ opacity: '1' }}
-              onClick={() => {
-                copyTextToClipboard(children)
-                toast({
-                  description: 'Copied to clipboard successfully!',
-                  position: 'top-right',
-                  status: 'success',
-                  variant: 'solid'
-                })
-              }}
-            >
-              <IoCopy />
-            </Button>
-          </Box>
-        )}
-        <Prism
-          language={classArray[1]}
-          style={theme == 'dark' ? dark : light}
-          showLineNumbers={true}
-          customStyle={{ fontSize: '15px' }}
-        >
-          {children}
-        </Prism>
-      </Box>
-    )
-  }
-}
+import { newTheme } from '../../components/chakra-md-theme'
+import { MinutesRead } from '../../components/minutes-read'
 
 export default function Post({ postData, id }) {
   const toast = useToast()
@@ -178,17 +63,8 @@ export default function Post({ postData, id }) {
             <Heading as="h1" mb={5}>
               {postData.title}
             </Heading>
-            <div>
-              <Date dateString={postData.date} />
-              {' • '}
-              <strong>
-                ☕ {Math.ceil(wordCounter(postData.contentHtml) / 225)}{' '}
-                {Math.ceil(wordCounter(postData.contentHtml) / 255) == 1
-                  ? 'minute'
-                  : 'minutes'}{' '}
-                read
-              </strong>
-            </div>
+            <Date dateString={postData.date} /> {' • '}
+            <MinutesRead string={postData.contentHtml} />
             <ReactMarkdown
               components={ChakraUIRenderer(newTheme)}
               remarkPlugins={[remarkGfm, remarkHeadingId]}

@@ -1,18 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import {
-  Box,
-  Heading,
-  LinkBox,
-  LinkOverlay,
-  List,
-  ListItem,
-  Tag,
-  TagLabel,
-  Text,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { List } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import Date from './date'
+import { BlogListItem } from './blog-list-item'
 
 export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
   count = count == -1 ? allPostsData.length : count
@@ -37,66 +26,16 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
           if (index < count) {
             return (
               <NextLink key={id} href={`/blogs/${id}`}>
-                <LinkBox as="article">
-                  <ListItem>
-                    <Box
-                      borderRadius="8px"
-                      _hover={{
-                        background: `${useColorModeValue(
-                          'whiteAlpha.400',
-                          '#323843'
-                        )}`
-                      }}
-                      transition="ease-in-out 0.25s"
-                      mb={1}
-                      p={2}
-                    >
-                      <LinkOverlay
-                        href={`/blogs/${id}`}
-                        color={useColorModeValue('#3181CE', '#c678dd')}
-                      >
-                        <Heading as="h2" size="md">
-                          {title}
-                        </Heading>
-                      </LinkOverlay>
-                      <Box>
-                        <Date dateString={date} />
-                        {' • '}
-                        <strong>
-                          ☕ {Math.ceil(words / 225)}{' '}
-                          {Math.ceil(words / 255) == 1 ? 'minute' : 'minutes'}{' '}
-                          read
-                        </strong>
-                      </Box>
-                      <Box mb={0}>
-                        {tagArray.map(tag => (
-                          <Tag
-                            pt={0}
-                            mr={1}
-                            mt={1}
-                            borderRadius="sm"
-                            key={tag}
-                            variant="subtle"
-                            colorScheme="teal"
-                          >
-                            <TagLabel
-                              fontFamily="Jetbrains Mono"
-                              fontSize="13px"
-                            >
-                              <strong fontFamily="Poppins"># </strong>
-                              {tag}
-                            </TagLabel>
-                          </Tag>
-                        ))}
-                      </Box>
-                      {renderDescription ? (
-                        <Text fontSize="md">{description}</Text>
-                      ) : (
-                        <Text fontSize="md">{og_description}</Text>
-                      )}
-                    </Box>
-                  </ListItem>
-                </LinkBox>
+                <BlogListItem
+                  id={id}
+                  date={date}
+                  title={title}
+                  description={description}
+                  renderDescription={renderDescription}
+                  og_description={og_description}
+                  words={words}
+                  tagArray={tagArray}
+                />
               </NextLink>
             )
           }
