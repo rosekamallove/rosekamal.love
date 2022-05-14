@@ -64,7 +64,7 @@ const Navbar = props => {
         px={2}
         py={0}
         my={0}
-        maxW="container.md"
+        maxW="container.lg"
         wrap="wrap"
         align="center"
         justify="space-between"
@@ -80,7 +80,7 @@ const Navbar = props => {
           width={{ base: 'full', md: 'auto' }}
           alignItems="center"
           flexGrow={1}
-          mt={{ base: 3, nmd: 0 }}
+          mt={{ base: 4, nmd: 0 }}
         >
           <LinkItem href="/" path={path}>
             <IoPersonOutline />

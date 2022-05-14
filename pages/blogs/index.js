@@ -17,7 +17,7 @@ const Blogs = ({ allPostsData }) => {
   return (
     <Layout title="Blogs">
       <Section delay={0.1}>
-        <Container maxW="container.md">
+        <Container maxW="container.lg">
           <Heading as="h3">Blogs</Heading>
           <Box p={15}></Box>
           <RenderBlogs

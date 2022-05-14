@@ -22,7 +22,6 @@ export const MobileNav = () => {
           <MenuButton
             as={IconButton}
             icon={<HamburgerIcon />}
-            variant="outline"
             aria-label="Options"
           ></MenuButton>
           <MenuList>
