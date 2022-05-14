@@ -20,7 +20,7 @@ import youtemy from '../public/images/youtemy.png'
 export default function Page({ allPostsData }) {
   return (
     <Layout title="About">
-      <Container maxW="container.md">
+      <Container maxW="container.lg">
         <Section delay={0.1}>
           <BasicIntro />
           <About />

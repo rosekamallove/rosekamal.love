@@ -84,7 +84,7 @@ export const newTheme = {
         {classArray[1] === 'txt' ? (
           ''
         ) : (
-          <Box align="right" marginBottom="-40px">
+          <Box align="right" marginBottom="-50px">
             <Button
               size="sm"
               borderRadius="8px"
@@ -112,7 +112,7 @@ export const newTheme = {
           language={classArray[1]}
           style={theme == 'dark' ? dark : light}
           showLineNumbers={true}
-          customStyle={{ fontSize: '15px' }}
+          customStyle={{ fontSize: '100%' }}
         >
           {children}
         </Prism>

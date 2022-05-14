@@ -10,7 +10,7 @@ import { Meta, Title } from '../../components/projects'
 const Project = () => {
   return (
     <Layout title="YouTemy">
-      <Container maxW="container.md">
+      <Container maxW="container.lg">
         <Title>
           YouTemy <Badge>2021-2022</Badge>
         </Title>

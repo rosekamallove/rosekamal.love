@@ -57,7 +57,7 @@ export default function Post({ postData, id }) {
         <meta property="og:image" content={postData.cover_image} />
       </Head>
 
-      <Container maxW="container.md">
+      <Container maxW="container.lg">
         <article>
           <Section delay={0.1}>
             <Heading as="h1" mb={5}>
