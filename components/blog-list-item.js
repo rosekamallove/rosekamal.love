@@ -1,12 +1,12 @@
 import {
   Box,
   Heading,
-  LinkBox,
-  LinkOverlay,
+  Link,
   ListItem,
   Text,
   useColorModeValue
 } from '@chakra-ui/react'
+import NextLink from 'next/link'
 import Date from './date'
 import { MinutesRead } from './minutes-read'
 import { RenderTags } from './render-tags'
@@ -19,10 +19,13 @@ export const BlogListItem = ({
   og_description,
   words,
   tagArray,
-  renderDescription
+  renderDescription,
+  setSearchField,
+  onlyTags,
+  setOnlyTags
 }) => {
   return (
-    <LinkBox as="article">
+    <>
       <ListItem>
         <Box
           borderRadius="8px"
@@ -33,20 +36,27 @@ export const BlogListItem = ({
           mb={1}
           p={2}
         >
-          <LinkOverlay
+          <NextLink
             href={`/blogs/${id}`}
             color={useColorModeValue('#3181CE', '#c678dd')}
           >
-            <Heading as="h2" size="md">
-              {title}
-            </Heading>
-          </LinkOverlay>
+            <Link>
+              <Heading as="h2" size="md">
+                {title}
+              </Heading>
+            </Link>
+          </NextLink>
           <Box>
             <Date dateString={date} />
             {' • '}
             <MinutesRead words={words} />
           </Box>
-          <RenderTags tagArray={tagArray} />
+          <RenderTags
+            tagArray={tagArray}
+            setSearchField={setSearchField}
+            setOnlyTags={setOnlyTags}
+            onlyTags={onlyTags}
+          />
           {renderDescription ? (
             <Text fontSize="md">{description}</Text>
           ) : (
@@ -54,6 +64,6 @@ export const BlogListItem = ({
           )}
         </Box>
       </ListItem>
-    </LinkBox>
+    </>
   )
 }

@@ -30,9 +30,9 @@ export const SearchBar = ({
               <Search2Icon />
             </InputLeftElement>
             <Input
-              placeholder="Search"
+              placeholder={onlyTags ? 'Enter tag' : 'Search for posts'}
               size="md"
-              onChange={e => handleChange(e)}
+              onChange={e => handleChange.current(e.target.value)}
               value={searchField}
             />
           </InputGroup>
