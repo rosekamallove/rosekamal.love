@@ -20,8 +20,7 @@ export const BlogListItem = ({
   words,
   tagArray,
   renderDescription,
-  setSearchField,
-  onlyTags,
+  handleChange,
   setOnlyTags
 }) => {
   return (
@@ -53,9 +52,8 @@ export const BlogListItem = ({
           </Box>
           <RenderTags
             tagArray={tagArray}
-            setSearchField={setSearchField}
+            handleChange={handleChange}
             setOnlyTags={setOnlyTags}
-            onlyTags={onlyTags}
             renderDescription={renderDescription}
           />
           {renderDescription ? (

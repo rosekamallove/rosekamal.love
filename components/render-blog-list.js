@@ -10,19 +10,12 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
   const [postData, setPostData] = useState(allPostsData)
   const [searchField, setSearchField] = useState('')
   const [onlyTags, setOnlyTags] = useState(false)
+  const [fromTag, setFromTag] = useState(false)
 
-  const handleChange = useRef()
-
-  useEffect(() => {
-    handleChange.current(searchField)
-  }, [searchField])
-
-  handleChange.current = val => {
-    setSearchField(val)
-    if (val === '') return setPostData(allPostsData)
-
+  const getFiltered = useRef()
+  getFiltered.current = () => {
     let filteredPosts
-    if (onlyTags) {
+    if (onlyTags || fromTag) {
       filteredPosts = postData.filter(post => post.tags.includes(searchField))
       setOnlyTags(!onlyTags)
     } else {
@@ -32,8 +25,18 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
           post.og_description.toLowerCase().includes(searchField.toLowerCase())
       )
     }
-
+    return filteredPosts
+  }
+  useEffect(() => {
+    const filteredPosts = getFiltered.current()
     setPostData(filteredPosts)
+  }, [searchField])
+
+  const handleChange = val => {
+    setSearchField(val)
+    if (val === '') {
+      return setPostData(allPostsData)
+    }
   }
 
   return (
@@ -78,9 +81,8 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
                     og_description={og_description}
                     words={words}
                     tagArray={tagArray}
-                    setSearchField={setSearchField}
-                    onlyTags={onlyTags}
-                    setOnlyTags={setOnlyTags}
+                    handleChange={handleChange}
+                    setOnlyTags={setFromTag}
                   />
                 </NextLink>
               )
