@@ -1,7 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { Box, Tag, TagLabel } from '@chakra-ui/react'
 
-export const RenderTags = ({ tagArray }) => {
+export const RenderTags = ({
+  tagArray,
+  setSearchField,
+  setOnlyTags,
+  onlyTags
+}) => {
   return (
     <Box mb={0}>
       {tagArray.map(tag => (
@@ -14,8 +19,16 @@ export const RenderTags = ({ tagArray }) => {
           variant="subtle"
           colorScheme="teal"
         >
-          <TagLabel fontFamily="Jetbrains Mono" fontSize="13px">
-            <strong fontFamily="Poppins"># </strong>
+          <TagLabel
+            cursor="pointer"
+            fontFamily="Jetbrains Mono"
+            fontSize="13px"
+            onClick={() => {
+              setOnlyTags(!onlyTags)
+              setSearchField(tag)
+            }}
+          >
+            <strong># </strong>
             {tag}
           </TagLabel>
         </Tag>
