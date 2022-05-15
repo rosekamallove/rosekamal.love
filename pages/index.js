@@ -27,7 +27,6 @@ export default function Page({ allPostsData }) {
         </Section>
 
         <Section delay={0.2}>
-          {/* Recent Blogs */}
           <Heading as="h3" variant="section-title">
             Latest Blogs
           </Heading>
@@ -49,8 +48,6 @@ export default function Page({ allPostsData }) {
         <Section delay={0.3}>
           <TimeLine />
         </Section>
-
-        {/* <ConnectLinks /> */}
 
         <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
