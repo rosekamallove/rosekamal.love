@@ -41,14 +41,14 @@ export const SearchBar = ({
             justifyContent="center"
             alignItems="center"
             ml={5}
-            width={{ base: '13rem', md: '12rem' }}
+            width={{ base: '13rem', md: '10rem' }}
           >
-            <FormLabel htmlFor="email-alerts" mb="0">
+            <FormLabel htmlFor="email-alerts" mb="0" fontSize="80%">
               By Tags
             </FormLabel>
             <Switch
               id="only tags"
-              size="md"
+              size="sm"
               checked={onlyTags}
               onChange={() => setOnlyTags(!onlyTags)}
             />
