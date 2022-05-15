@@ -11,6 +11,7 @@ import {
   Spacer,
   Switch
 } from '@chakra-ui/react'
+import { useEffect, useState } from 'react'
 
 export const SearchBar = ({
   renderDescription,
@@ -19,6 +20,12 @@ export const SearchBar = ({
   onlyTags,
   setOnlyTags
 }) => {
+  const [tag, setTag] = useState(onlyTags)
+
+  useEffect(() => {
+    setTag(onlyTags)
+  }, [onlyTags])
+
   return (
     <>
       {renderDescription ? (
@@ -32,7 +39,7 @@ export const SearchBar = ({
             <Input
               placeholder={onlyTags ? 'Enter tag' : 'Search for posts'}
               size="md"
-              onChange={e => handleChange.current(e.target.value)}
+              onChange={e => handleChange(e.target.value)}
               value={searchField}
             />
           </InputGroup>
@@ -49,8 +56,11 @@ export const SearchBar = ({
             <Switch
               id="only tags"
               size="sm"
-              checked={onlyTags}
-              onChange={() => setOnlyTags(!onlyTags)}
+              checked={tag}
+              onChange={() => {
+                setTag(!tag)
+                setOnlyTags(!tag)
+              }}
             />
           </FormControl>
         </Flex>
