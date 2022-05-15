@@ -12,17 +12,28 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
   count = count == -1 ? allPostsData.length : count
   const [postData, setPostData] = useState(allPostsData)
   const [searchField, setSearchField] = useState('')
+  const [onlyTags, setOnlyTags] = useState(false)
+
+  console.log(onlyTags)
 
   const handleChange = e => {
     e.preventDefault()
     setSearchField(e.target.value)
     if (e.target.value === '') return setPostData(allPostsData)
 
-    const filteredPosts = postData.filter(
-      post =>
-        post.title.toLowerCase().includes(searchField.toLowerCase()) ||
-        post.og_description.toLowerCase().includes(searchField.toLowerCase())
-    )
+    let filteredPosts
+    if (onlyTags) {
+      filteredPosts = postData.filter(post =>
+        post.tags.toLowerCase().includes(searchField.toLowerCase())
+      )
+    } else {
+      filteredPosts = postData.filter(
+        post =>
+          post.title.toLowerCase().includes(searchField.toLowerCase()) ||
+          post.og_description.toLowerCase().includes(searchField.toLowerCase())
+      )
+    }
+
     setPostData(filteredPosts)
 
     if (filteredPosts.length === 0 && !toast.isActive(id))
@@ -41,6 +52,8 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
         renderDescription={renderDescription}
         handleChange={handleChange}
         searchField={searchField}
+        onlyTags={onlyTags}
+        setOnlyTags={setOnlyTags}
       />
       {postData.map(
         (
