@@ -16,8 +16,9 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
   getFiltered.current = () => {
     let filteredPosts
     if (onlyTags || fromTag) {
-      filteredPosts = postData.filter(post => post.tags.includes(searchField))
-      setOnlyTags(!onlyTags)
+      filteredPosts = postData.filter(post =>
+        post.tags.includes(searchField.toLowerCase())
+      )
     } else {
       filteredPosts = postData.filter(
         post =>
