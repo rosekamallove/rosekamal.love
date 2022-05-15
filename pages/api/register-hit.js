@@ -6,13 +6,14 @@ module.exports = async (req, res) => {
     secret: process.env.FAUNA_SECRET_KEY,
     domain: 'db.eu.fauna.com'
   })
+
   const { slug, published } = req.query
   if (!slug) {
     return res.status(400).json({
       message: 'Article slug not provided'
     })
   }
-  // Check and see if the doc exists.
+
   const doesDocExist = await client.query(
     q.Exists(q.Match(q.Index('hits_by_slug'), slug))
   )
@@ -23,7 +24,7 @@ module.exports = async (req, res) => {
       })
     )
   }
-  // Fetch the document for-real
+
   const document = await client.query(
     q.Get(q.Match(q.Index('hits_by_slug'), slug))
   )
@@ -34,6 +35,7 @@ module.exports = async (req, res) => {
       }
     })
   )
+
   return res.status(200).json({
     hits: document.data.hits
   })

@@ -8,7 +8,14 @@
 }
 html,
 body {
-  @apply text-base md:text-lg lg:text-lg xl:text-[21px];
+  @apply text-base md:text-[18px] lg:text-lg xl:text-[21px];
+}
+iframe {
+  @apply w-full h-56 sm:h-80 md:h-96 my-10 !important;
+}
+
+.ytp-cued-thumbnail-overlay-image {
+  @apply w-full h-96 !important;
 }
 
 h1 {

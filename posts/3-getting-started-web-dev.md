@@ -1,18 +1,18 @@
 ---
-title: 'This is what you can do to become an internship ready Web Developer [in 2022]'
+title: 'This is what you can do to become an internship ready Web Developer [in 2022] (Part 1: Front-End)'
 date: '2022-05-11'
 description: "There is a plethora of videos and blog posts out there discussing how to get started with Web Development, whenever I go to Uni there is at least one person asking this question to me. So I figured the content isn't helping and a potential problem can be those videos and blogs posts discuss the what but not the how. This is what I am gonna try and solve"
 og_description: 'A comprehensive guide to take you from HTML & CSS to an Web Development Intern'
 cover_image: 'https://user-images.githubusercontent.com/69139607/167338113-fd54e91d-37f6-4fc6-a3f4-f9e51940c6d8.png'
 tags: 'beginner, html, css, js, react, nodejs, web-development'
-published: false
+published: true
 ---
 
 # Introduction
 
 In this blog post we're gonna dive into, how one who has zero experience in Web Development can become an **internship ready Web Developer**.
 
-> Note: The resources are going to be opinionated in this post to solve the issue of **abundance of resources**.  
+> **Note:** The resources are going to be opinionated in this post to solve the issue of **abundance of resources**.  
 > It is a issue because if we are exposed to too many resources we tend to procrastinate
 
 We'll first understand the difference between the backend and frontend of a web application, then we'll start by learning the frontend which will include firstly the basics _html_, _css_, and _js_.
@@ -77,9 +77,7 @@ With all that out of the way let's dive in.
 >   - [Version Control](#version-control)
 >     - Basic usage of Git and GitHub
 >     - Repo hosting service (GitHub)
-> - **Additional front-end:**
->   - Responsive design
->   - CSS pre-processors (SaaS, Less)
+> - **[Additional front-end:](#additional-frontend)**
 >   - JavaScript Frameworks (**react.js**, angular.js, vue.js, etc)
 >   - CSS Frameworks (**tailwind**, bootstrap, etc)
 >   - SSR (**next.js**, gatsby.js, nuxt.js, etc)
@@ -185,11 +183,9 @@ This is the perfect way to solidify your learning and make you fall in love with
 
 > **Note**: Once you are done with this, you'll have to learn **Asynchronous JavaScript** and the best course for that is [Namaste JavaScript - Akshay Saini](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP), you don't have to watch the whole playlist at once, you can take your time and keep learning it slowly once you finished with the basics.
 
-[Plug Youtemy Here with a selling point paragraph]
+<iframe src="https://www.youtube.com/embed/FiOLt_Fdd1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Tools {#tools}
-
-_this part is sourced from [here](https://www.freecodecamp.org/news/beginners-roadmap-web-development/)_
 
 Let’s get into some other front-end technologies now. As we mentioned, HTML, CSS, and JavaScript are the basic building blocks of front-end web development. In addition to them, there are a few other tools that you’ll want to learn.
 
@@ -203,7 +199,7 @@ The most popular package manager is called [npm](https://www.npmjs.com/), or Nod
 
 If you’re curious to learn more, you can read this article on the [basics of using npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/).
 
-_Sourced part ends._
+[Source of Above Section](https://www.freecodecamp.org/news/beginners-roadmap-web-development/)
 
 ## Build Tools {#build-tools}
 
@@ -226,12 +222,3 @@ You may have also heard of [GitHub](https://github.com), which is an online host
 To learn Git and GitHub, [GitHub.com](https://lab.github.com/) has some [online guides](https://docs.github.com/en) that explain how to get up and running. Traversy Media also has a [YouTube video](https://www.youtube.com/watch?v=SWYqp7iY_Tc) explaining how Git works.
 
 And while you're at it, go ahead learn [GitHub Pages](https://pages.github.com/) the repo hosting service provided by GitHub which will allow you to host your websites for free. And there is nothing better than being able to show your friends what you have built through a live URL
-
-- Why
-- What
-- From Where
-- Using YouTemy
-- Major Pit falls
-- Not falling into the tutorial hell (by thinking of the solution before hand, then implementing it, and using the video to check our solution)
-- Finally creating a project from scratch with Git and Github
-- Applying to internships
