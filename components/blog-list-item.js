@@ -56,6 +56,7 @@ export const BlogListItem = ({
             setSearchField={setSearchField}
             setOnlyTags={setOnlyTags}
             onlyTags={onlyTags}
+            renderDescription={renderDescription}
           />
           {renderDescription ? (
             <Text fontSize="md">{description}</Text>
