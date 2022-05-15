@@ -8,29 +8,32 @@ tags: 'beginner, html, css, js, react, nodejs, web-development'
 published: false
 ---
 
-## Introduction
+# Introduction
 
 In this blog post we're gonna dive into, how one who has zero experience in Web Development can become an **internship ready Web Developer**.
+
+> Note: The resources are going to be opinionated in this post to solve the issue of **abundance of resources**.  
+> It is a issue because if we are exposed to too many resources we tend to procrastinate
 
 We'll first understand the difference between the backend and frontend of a web application, then we'll start by learning the frontend which will include firstly the basics _html_, _css_, and _js_.
 
 Once we're done with these we'll have the choice to move further with the frontend or start exploring the backend I'll recommend moving forward with a _Frontend JavaScript Framework_ like _react.js_, or one can move forward with a _Backend JavaScript Framework_ like _express.js_
 
-### Why Web-Development?
+## Why Web-Development?
 
 The answer to this question is fairly straightforward, Web Development has proven itself to be a valuable skill to learn from time and time again.
 I can tell this by my experience and from the experience of my fellow developers, that the number of opportunities in Web Development is far greater than they are in say Mobile Development or Machine Learning Development. The pay is pretty nice too, although it highly depends on the level of your skill.
-The stipend is anywhere from _10k INR_ to _100k INR_ depending on the quality and relevance of the skill you have.
+The stipend is anywhere from _10k INR_ to _60K INR_ depending on the quality and relevance of the skills you have. _(your year of college doesn't matter)_
 
 Apart from all this, the barrier to entry for Web Development is comparatively way less. You start to see the result of all that you've been learning quickly which motivates us, we learn more and get more results. This _positive feedback loop_ takes more time to kick in, in other forms of development (say Mobile Development)
 
 All and all, spending time learning web development is going to be extremely rewarding.
 
-### Why JavaScript?
+## Why JavaScript?
 
 The answer to this question is fairly complicated compared to the previous one. So let's divide it into two parts the _front-end_ and the _back-end_.
 
-**Front End**
+### Front-End
 
 If I had to tell someone why they need to learn _JavaScript_ to become a frontend developer in a single line, I would say:
 Because every browser has a _JavaScript Runtime_ built in by default.
@@ -39,7 +42,7 @@ JavScript Runtime being the platform on which the _. js_ code is executed. But n
 
 > Even if the website is built with a framework like **Django** (python) the front-end is still written with **javaScript**
 
-**Back End**
+### Back-End
 
 _javaScript_ on the back-end is a different story entirely, there is no default recommendation for the back-end technologies, and using _javaScript_ on the backend is nothing more than a _personal recommendation_
 
@@ -54,9 +57,9 @@ I recommend _javaScript_ for the backend for mainly two reasons, the community i
 A newbie can learn either of the above-mentioned frameworks for the _back-end_ but my recommendation still lies with _javaScript_, the blog post being about _internship-ready web-developer_. This statement doesn't mean that these technologies don't have opportunities, it is simply implying the _javaScript_ has more.
 With all that out of the way let's dive in.
 
-### Index
-
-> - <u>**Basics</u>:**
+> # Index
+>
+> - **Basics:**
 >   - [Internet](https://www.vox.com/2014/6/16/18076282/the-internet)
 >     - [How does the internet work, and what is HTTP?](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
 >     - [Browsers and how they work?](https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/#:~:text=When%20the%20web%20browser%20fetches,and%20experience%20on%20the%20internet.)
@@ -65,13 +68,13 @@ With all that out of the way let's dive in.
 >   - [HTML](#html)
 >   - [CSS](#css)
 >   - [JavaScript](#js-frontend)
-> - **Tools:**
->   - Package Mangers (like npm),
->   - build tools
+> - **[Tools:](tools)**
+>   - [Package Mangers](#package-managers) (like npm),
+>   - [build tools](#build-tools)
 >     - npm scripts
 >     - webpack
 >     - esbuild
->   - Version Control
+>   - [Version Control](#version-control)
 >     - Basic usage of Git and GitHub
 >     - Repo hosting service (GitHub)
 > - **Additional front-end:**
@@ -101,7 +104,7 @@ Don't get anxious looking at all the topics above, I am sorry if they look intim
 
 > **Note:** The first two steps (Basics and Tools) are basically **mandatory (in order)** to move forward with the later steps, however the last two steps (Additional Frontend and Back-End) can be swapped to the interest, whichever interests you more.
 
-### HTML {#html}
+# HTML {#html}
 
 _HyperText Markup Language_ is the foundation of all websites. It’s the main file type that is loaded in your browser when you look at a website. The HTML file contains all the _content on the page_, and it uses _tags_ to denote different types of content.
 
@@ -118,7 +121,7 @@ To learn _html_ I have two video recommendation
 
 Just watch either of the two videos and move ahead, without wasting any more time on this.
 
-### CSS {#css}
+# CSS {#css}
 
 _Cascading Style Sheets_, lets you style that HTML content so it looks nice and fancy. You can add colors, custom fonts, and layout the elements of your website however you want them to look. You can even create _animations_ and shapes with CSS!
 
@@ -159,7 +162,70 @@ Wait there is more, when you complete the modules you will be greeted with [_cod
 
 **I can't recommend this [interactice course](https://dev.to/bascodes/a-todo-app-with-pyscript-3435) enough!**
 
-### Javascript {#js-frontend}
+# JavaScript {#js-frontend}
+
+JavaScript is a very interesting language (putting it mildly). It was designed in 10 days to run inside the browser. Using JavaScript we can make our website dynamics, meaning it will respond to different inputs from the user, or other sources.
+
+For example you can make a Weather widget showing the weather based on the input of the user, you can build a website that tracks user's expenses and shows the stats in a chart form.
+
+It is _crucial_ to learn if you wanna go ahead to learn JavaScript frameworks like React, you'll have a better time learning those frameworks if you take the time to learn regular Vanilla JavaScript first.
+
+Even if you wanna go for backend-development, you still can't gloss over JavaScript. You are also required to understand the fundamentals of this language. This is the only way we can interact with the browser like we do with a computer and _it is fun_.
+
+**Now comes the resources part:**
+
+- [Learn JavaScript in 1 video - Advanced JavaScript Crash Course + Projects ](https://www.youtube.com/watch?v=hNYzV87wocY)
+- [Javascript Course - Hitesh Choudhry](https://www.youtube.com/playlist?list=PLRAV69dS1uWSxUIk5o3vQY2-_VKsOpXLD)
+
+These are the two free courses that I will recommend, but watching videos while mindlessly copying the code is what everyone tends to do when we learning from videos.
+
+To solve this issue I would **highly recommend** you follow the **[30 Days of JavaScript Challenge](https://javascript30.com/)**. In this challenge you will be given a unique challenge each day for 30 days, slowly increasing in difficulty.
+
+This is the perfect way to solidify your learning and make you fall in love with JavaScript.
+
+> **Note**: Once you are done with this, you'll have to learn **Asynchronous JavaScript** and the best course for that is [Namaste JavaScript - Akshay Saini](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP), you don't have to watch the whole playlist at once, you can take your time and keep learning it slowly once you finished with the basics.
+
+[Plug Youtemy Here with a selling point paragraph]
+
+# Tools {#tools}
+
+_this part is sourced from [here](https://www.freecodecamp.org/news/beginners-roadmap-web-development/)_
+
+Let’s get into some other front-end technologies now. As we mentioned, HTML, CSS, and JavaScript are the basic building blocks of front-end web development. In addition to them, there are a few other tools that you’ll want to learn.
+
+## Package Manager {#package-managers}
+
+Package managers are online collections of software, much of it open source. Each piece of software, called a package, is available for you to install and use in your own projects.
+
+You can think about them like plugins– instead of writing everything from scratch, you can use helpful utilities that other people have written already.
+
+The most popular package manager is called [npm](https://www.npmjs.com/), or Node Package Manager, but you can also use another manager called [Yarn](https://classic.yarnpkg.com/en/). Both are good options to know and use, although it’s probably best to start out with npm.
+
+If you’re curious to learn more, you can read this article on the [basics of using npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/).
+
+_Sourced part ends._
+
+## Build Tools {#build-tools}
+
+> Build tools are programs that automate the creation of executable applications from source code. Building incorporates compiling, linking and packaging the code into a usable or executable form
+
+By far the most widely used _build tool_ is **[WebPack](https://webpack.js.org/)** and I will recommend understanding how WebPack works. This knowledge will be easily transferable to other build tools.
+
+- [If You are Scared of Webpack, WATCH THIS!](https://www.youtube.com/watch?v=aT1rkp1UJ00&t=7s)
+
+## Version Control
+
+> This is something that you just can't skip, it is very important and will make you a decent developer single handedly.
+
+Version control (also called source control) is a system that keeps track of every code change that you make in your project files. You can even revert to a previous change if you make a mistake. It’s almost like having infinite save points for your project, and let me tell you, it can be a huge lifesaver.
+
+The most popular version control system is an open source system called Git. Using [Git](https://git-scm.com/), you can store all your files and their change history in collections called repositories.
+
+You may have also heard of [GitHub](https://github.com), which is an online hosting company owned by Microsoft where you can store all your Git repositories.
+
+To learn Git and GitHub, [GitHub.com](https://lab.github.com/) has some [online guides](https://docs.github.com/en) that explain how to get up and running. Traversy Media also has a [YouTube video](https://www.youtube.com/watch?v=SWYqp7iY_Tc) explaining how Git works.
+
+And while you're at it, go ahead learn [GitHub Pages](https://pages.github.com/) the repo hosting service provided by GitHub which will allow you to host your websites for free. And there is nothing better than being able to show your friends what you have built through a live URL
 
 - Why
 - What
