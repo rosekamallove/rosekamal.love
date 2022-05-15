@@ -4,6 +4,7 @@ import { Box, Tag, TagLabel } from '@chakra-ui/react'
 export const RenderTags = ({
   tagArray,
   setSearchField,
+  renderDescription,
   setOnlyTags,
   onlyTags
 }) => {
@@ -24,8 +25,10 @@ export const RenderTags = ({
             fontFamily="Jetbrains Mono"
             fontSize="13px"
             onClick={() => {
-              setOnlyTags(!onlyTags)
-              setSearchField(tag)
+              if (renderDescription) {
+                setOnlyTags(!onlyTags)
+                setSearchField(tag)
+              }
             }}
           >
             <strong># </strong>
