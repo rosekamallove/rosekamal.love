@@ -53,7 +53,11 @@ const Navbar = props => {
       as="nav"
       w="100%"
       // eslint-disable-next-line react-hooks/rules-of-hooks
-      bg={isFirefox ? useColorModeValue('#C8CDD5', '#2C313A') : null}
+      bg={
+        isFirefox
+          ? useColorModeValue('#C8CDD5', '#2C313A')
+          : useColorModeValue('#C8CDD540', '#2C313A40')
+      }
       backdropFilter="auto"
       backdropBlur="8px"
       zIndex={1}
