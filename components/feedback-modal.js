@@ -31,7 +31,7 @@ export const FeedbackModal = ({ id }) => {
   const handleSubmit = e => {
     e.preventDefault()
 
-    let data = {
+    const data = {
       name,
       email,
       id,
@@ -55,7 +55,7 @@ export const FeedbackModal = ({ id }) => {
       setSending(false)
       toast({
         title: 'Feedback Sent',
-        description: 'Thank you 3000 for your valuable feedback 😃',
+        description: 'Thank you 3000, for your valuable feedback 😃',
         status: 'success',
         variant: 'solid',
         position: 'top-right',
@@ -64,6 +64,7 @@ export const FeedbackModal = ({ id }) => {
       })
     })
   }
+
   return (
     <>
       <Button
@@ -87,6 +88,7 @@ export const FeedbackModal = ({ id }) => {
               <Input
                 placeholder="Enter your name"
                 id="name"
+                variant="filled"
                 onChange={e => setName(e.target.value)}
               />
             </FormControl>
@@ -96,6 +98,7 @@ export const FeedbackModal = ({ id }) => {
                 placeholder="Enter your email"
                 id="email"
                 type="email"
+                variant="filled"
                 onChange={e => setEmail(e.target.value)}
               />
             </FormControl>
@@ -105,6 +108,7 @@ export const FeedbackModal = ({ id }) => {
                 placeholder="Enter your message"
                 id="message"
                 type="textarea"
+                variant="filled"
                 onChange={e => setMessage(e.target.value)}
               />
             </FormControl>

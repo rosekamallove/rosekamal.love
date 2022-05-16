@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { Box, Tag, TagLabel } from '@chakra-ui/react'
+import { useRouter } from 'next/dist/client/router'
 
 export const RenderTags = ({
   tagArray,
@@ -7,6 +8,7 @@ export const RenderTags = ({
   renderDescription,
   setOnlyTags
 }) => {
+  const router = useRouter()
   return (
     <Box mb={0}>
       {tagArray.map(tag => (
@@ -24,10 +26,9 @@ export const RenderTags = ({
             fontFamily="Jetbrains Mono"
             fontSize="13px"
             onClick={() => {
-              if (renderDescription) {
-                setOnlyTags(true)
-                handleChange(tag)
-              }
+              setOnlyTags(true)
+              handleChange(tag)
+              if (!renderDescription) router.push('/blogs')
             }}
           >
             <strong># </strong>

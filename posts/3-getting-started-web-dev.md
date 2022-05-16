@@ -1,11 +1,12 @@
 ---
-title: 'This is how you become "Internship Ready" as a Web Developer [in 2022](Part 1: Front-End)'
+title: 'This is how you become "Internship Ready" as a Web Developer [in 2022] (Part 1: Front-End)'
 date: '2022-05-11'
 description: "There are a plethora of videos and blog posts out there discussing how to get started with Web Development, whenever I go to Uni there is at least one person asking this question to me. So I figured the content isn't helping and a potential problem can be those videos and blog posts discuss the what but not the how. This is what I am gonna try and solve"
 og_description: 'A comprehensive guide to taking you from HTML & CSS to a Web Development Intern'
 cover_image: 'https://user-images.githubusercontent.com/69139607/167338113-fd54e91d-37f6-4fc6-a3f4-f9e51940c6d8.png'
 tags: 'beginner, html, css, js, react, nodejs, web-development'
 published: true
+featured: true
 ---
 
 # Introduction
@@ -13,6 +14,8 @@ published: true
 In this blog post we're gonna dive into, how one who has zero experience in Web Development can become an **internship ready Web Developer**.
 
 > **Note:** The resources are going to be opinionated in this post to solve the issue of **abundance of resources**. It is an issue because if we are exposed to too many resources we tend to procrastinate
+
+> Even though this post is opinionated, you can still choose your own resources and swap them with the ones I recommend. Because it possible that you don't understand from the one's I have recommended
 
 We'll first understand the difference between the backend and frontend of a web application, then we'll start by learning the frontend which will include firstly the basics _html_, _css_, and _js_.
 
@@ -56,7 +59,9 @@ I recommend _javaScript_ for the backend for mainly two reasons, the community i
 A newbie can learn either of the above-mentioned frameworks for the _back-end_ but my recommendation still lies with _javaScript_, the blog post being about _internship-ready web-developer_. This statement doesn't mean that these technologies don't have opportunities, it is simply implying the _javaScript_ has more.
 With all that out of the way let's dive in.
 
-> # Index
+> ## Index
+>
+> ### [ Featured: [Learning on YouTube](#youtemy-callout) ]
 >
 > - **Basics:**
 >   - [Internet](https://www.vox.com/2014/6/16/18076282/the-internet)
@@ -77,10 +82,16 @@ With all that out of the way let's dive in.
 >     - Basic usage of Git and GitHub
 >     - Repo hosting service (GitHub)
 > - **[Additional front-end:](#additional-frontend)**
->   - JavaScript Frameworks (**react.js**, angular.js, vue.js, etc)
->   - CSS Frameworks (**tailwind**, bootstrap, etc)
->   - SSR (**next.js**, gatsby.js, nuxt.js, etc)
-> - **Back-End:**
+>
+>   - [JavaScript Front-end Frameworks](#js-frameworks) (**react.js**, angular.js, vue.js, etc)
+>   - [CSS Frameworks](#css-framework) (**tailwind**, bootstrap, etc)
+>   - [SSR](#ssr) (**next.js**, gatsby.js, nuxt.js, etc)
+>
+> - **[Building Projects]** (Will be covered in a different blog post)
+
+<br/>
+
+> - **Back-End:** (this section will be covered in Part 2)
 >   - OS and General Knowledge
 >     - Basic Terminal Usage and CLI commands (grwp, awk, sed, lsof, curl, etc)
 >     - Process, Threads, Concurrency and Memory management
@@ -157,7 +168,7 @@ Wait there is more, when you complete the modules you will be greeted with [_cod
 >
 > Yeah, it even includes a **personal portfolio**
 
-**I can't recommend this [interactice course](https://dev.to/bascodes/a-todo-app-with-pyscript-3435) enough!**
+**I can't recommend this [interactive course](https://dev.to/bascodes/a-todo-app-with-pyscript-3435) enough!**
 
 # JavaScript {#js-frontend}
 
@@ -171,8 +182,8 @@ Even if you wanna go for backend development, you still can't gloss over JavaScr
 
 **Now comes the resources part:**
 
-- [Learn JavaScript in 1 video - Advanced JavaScript Crash Course + Projects ](https://www.youtube.com/watch?v=hNYzV87wocY)
-- [Javascript Course - Hitesh Choudhry](https://www.youtube.com/playlist?list=PLRAV69dS1uWSxUIk5o3vQY2-_VKsOpXLD)
+- **[Learn JavaScript in 1 video - Advanced JavaScript Crash Course + Projects ](https://www.youtube.com/watch?v=hNYzV87wocY)**
+- **[Javascript Course - Hitesh Choudhry](https://www.youtube.com/playlist?list=PLRAV69dS1uWSxUIk5o3vQY2-_VKsOpXLD)**
 
 These are the two free courses that I will recommend, but watching videos while mindlessly copying the code is what everyone tends to do when we learn from videos.
 
@@ -181,6 +192,16 @@ To solve this issue I would **highly recommend** you follow the **[30 Days of Ja
 This is the perfect way to solidify your learning and make you fall in love with JavaScript.
 
 > **Note**: Once you are done with this, you'll have to learn **Asynchronous JavaScript** and the best course for that is [Namaste JavaScript - Akshay Saini](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP), you don't have to watch the whole playlist at once, you can take your time and keep learning it slowly once you finished with the basics.
+
+# Learning from YouTube {#youtemy-callout}
+
+Even though I am asking you to watch these playlists on _YouTube_, it is not a good platform to _learn_. There are a **lot of distractions**, a whole side-bar dedicated to make you **watch unproductive content**.
+
+I personally go from **learning** to watching **Tanmay Bhatt's Comedy videos** in not time.
+
+This is why I would recommend you to checkout **[YouTemy](https://youtemy.tech)** the project I built to fix these issue. Even though it is in it's MVP stage, you'll still get a lot of use out of it.
+
+You can send feedback for the project to me personally on [twitter](https://twitter.com/RoseKamalLove1), or you can post an issue on **[GitHub - YouTemy](https://github.com/rosekamallove/youtemy)** and while you're at it, **do give it a ⭐ on GitHub, I would Love ❤️ that that**
 
 <iframe src="https://www.youtube.com/embed/FiOLt_Fdd1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -198,7 +219,7 @@ The most popular package manager is called [npm](https://www.npmjs.com/), or Nod
 
 If you’re curious to learn more, you can read this article on the [basics of using npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/).
 
-[Source of Above Section](https://www.freecodecamp.org/news/beginners-roadmap-web-development/)
+{ _[Source of Above Section](https://www.freecodecamp.org/news/beginners-roadmap-web-development/)_ }
 
 ## Build Tools {#build-tools}
 
@@ -206,7 +227,7 @@ If you’re curious to learn more, you can read this article on the [basics of u
 
 By far the most widely used _build tool_ is **[WebPack](https://webpack.js.org/)** and I will recommend understanding how WebPack works. This knowledge will be easily transferable to other build tools.
 
-- [If You are Scared of Webpack, WATCH THIS!](https://www.youtube.com/watch?v=aT1rkp1UJ00&t=7s)
+- **[If You are Scared of Webpack, WATCH THIS!](https://www.youtube.com/watch?v=aT1rkp1UJ00&t=7s)**
 
 ## Version Control
 
@@ -221,3 +242,58 @@ You may have also heard of [GitHub](https://github.com), which is an online host
 To learn Git and GitHub, [GitHub.com](https://lab.github.com/) has some [online guides](https://docs.github.com/en) that explain how to get up and running. Traversy Media also has a [YouTube video](https://www.youtube.com/watch?v=SWYqp7iY_Tc) explaining how Git works.
 
 And while you're at it, go ahead and learn [GitHub Pages](https://pages.github.com/) the repo hosting service provided by GitHub which will allow you to host your websites for free. And there is nothing better than being able to show your friends what you have built through a live URL
+
+# Additional Frontend {#additional-frontend}
+
+First off _Congratulations_, not a lot of people reach here. They quit before getting to the good part, the part where I fell in love with web-development. The part where we finally start to see the output of the hard work that we've been doing.
+
+This is the part where you'll get the skills that will **get you an internship** with a good pay or a good enough pay (depending on the quality of projects that you have).
+
+In this section, I'll be telling you about _CSS frameworks_, _JavaScript front-end frameworks_ and then finally _SSR (Server Side Rendering)_. And if you choose to not learn the backend just yet I'll also tell you how you can build a full-stack application without the overhead of learning the backend (spoiler alert: Firebase)
+
+## JavaScript Front-End Frameworks {#js-frameworks}
+
+_JavaScript Frameworks_ 😆 this sure is a very interesting topic to write about. But we'll first go over why do we need them anyway, what purpose do they serve, what are the most popular ones and then finally the none that I'll recommend and then where can you learn it from.
+
+> JavaScript frameworks are an essential part of modern front-end web development, providing developers with tried and tested tools for building scalable, interactive web applications. Many modern companies use frameworks as a standard part of their tooling, so many front-end development jobs now require framework experience.
+>
+> [ From [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks) ]
+
+So, when we use basics HTML, CSS and JavaScript to build our application, there is a limit on how complex a website can be, and realtime updates aren't great either. As the application grows larger and larger, it gets harder and harder to understand the whole flow of the project.
+
+In the past there was a threshold of how complex a front-end can be, so most of the work was done using the back-end which served static HTML, CSS and JavaScript files to the client, but now as the client's machines are getting better, Client Side frameworks have taken over the world.
+
+They are easier to scale, making complex DOM manipulations is easier than ever. I mean just go and look the FaceBook's homepage. There is so much going on there, imagine building that with plain JS and HTML, CSS. No, go there and actually start designing the front-end yourself (on paper obv)
+
+Now that we know why front-end frameworks exist, we can move-forward and see what are the available options to learn.
+
+There are a huge number of front-end frameworks and new one's popping basically every month it seems. Maybe even every week, to what to learn and what not to learn? Then answer is a bit complicated, let's first narrow down our list to the top 3
+
+**Top 3 front-end JavaScript Frameworks**
+
+- **[vue.js](https://vuejs.org/)** [188k GH Stars]
+- **[react.js](https://reactjs.org/)** [175k GH Stars]
+- **[angular.js](https://angular.io/)** [55k GH Stars]
+
+Each of the above frameworks are great, _Vue is the most loved_, _React is the most widely used_ and _Angular is the most hated 😆_
+
+My recommendation out of the above bunchy is **React.js** the reason being, it is very fun to write, the opportunities for React Developers are huge, and the knowledge of React can be then transferred to _Cross Platform: React Native_ which can be used to build mobile apps for both IOS and Android.
+
+> I love ❤️ React.js (it is not a framework tho, it is a library ping me on [twitter](https://twitter.com/RoseKamalLove1) if you wanna discuss this)
+
+### Resource to learn React.js
+
+**[Complete React Developer in 2022 (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)**
+
+This is by far the best React course there is, it's **only ₹500 or $10**,
+My friend learnt from this and landed an internship in first year and It is recommended by everyone that have watched it.
+
+There is no alternative to this course, so I would **highly recommend** that you buy this course and complete it, and follow all the instructions the instructor gives you. _I am sure that you'll understand all the concepts very clearly._
+
+And by the end of the course you will be in a position to build your own _full-stack project_ (using Firebase) or _apply to internships directly_, that's how good this course is.
+
+**Some Good Stuff on YouTube**
+
+- [React Course - Beginner's Tutorial for React JavaScript Library - FreeCodeCamp](https://www.youtube.com/watch?v=bMknfKXIFA8)
+- [ReactJS Tutorial for Beginners - Codevolution](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
+- [Practical React - Ben Awad](https://www.youtube.com/playlist?list=PLN3n1USn4xlntqksY83W3997mmQPrUmqM)

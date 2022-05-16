@@ -9,7 +9,8 @@
 
 html,
 body {
-  @apply text-base md:text-[18px] lg:text-lg;
+  @apply text-base md:text-[18px]  lg:text-lg;
+  scroll-behavior: smooth !important;
 }
 
 iframe {
@@ -21,13 +22,13 @@ iframe {
 }
 
 h1 {
-  @apply text-3xl md:text-4xl !important;
+  @apply text-3xl md:text-4xl font-extrabold !important;
 }
 h2 {
-  @apply my-3 text-2xl md:text-3xl  !important;
+  @apply my-3 text-2xl md:text-3xl  font-bold !important;
 }
 h3 {
-  @apply my-2 text-xl md:text-2xl !important;
+  @apply my-2 text-xl md:text-2xl font-semibold !important;
 }
 ::-webkit-scrollbar {
   display: none;
