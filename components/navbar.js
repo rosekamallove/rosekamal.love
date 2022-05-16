@@ -64,7 +64,7 @@ const Navbar = props => {
         px={2}
         py={0}
         my={0}
-        maxW="container.lg"
+        maxW="container.md"
         wrap="wrap"
         align="center"
         justify="space-between"

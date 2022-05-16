@@ -32,12 +32,13 @@ export const SearchBar = ({
         <Flex>
           <Heading as="h2">Blogs</Heading>
           <Spacer />
-          <InputGroup ml={[5, 10, 20]} mt={3}>
+          <InputGroup ml={[5, 10, 20]} mt={3} style={{ zIndex: 0 }}>
             <InputLeftElement>
               <Search2Icon />
             </InputLeftElement>
             <Input
               placeholder={onlyTags ? 'Enter tag' : 'Search for posts'}
+              variant="filled"
               size="md"
               onChange={e => handleChange(e.target.value)}
               value={searchField}
@@ -57,6 +58,7 @@ export const SearchBar = ({
               id="only tags"
               size="sm"
               checked={tag}
+              colorScheme="teal"
               onChange={() => {
                 setTag(!tag)
                 setOnlyTags(!tag)

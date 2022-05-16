@@ -1,14 +1,11 @@
 import wordCounter from '../lib/word-counter'
 
 export const MinutesRead = ({ string, words }) => {
+  const count = Math.ceil((string ? wordCounter(string) : words) / 225)
   return (
     <>
       <strong>
-        ☕ {Math.ceil((string ? wordCounter(string) : words) / 225)}{' '}
-        {Math.ceil((string ? wordCounter(string) : words) / 255) == 1
-          ? 'minute'
-          : 'minutes'}{' '}
-        read
+        ☕ {count} {count === 1 ? 'minute' : 'minutes'} read
       </strong>
     </>
   )
