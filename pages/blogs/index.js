@@ -1,6 +1,6 @@
 import { Container } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
-import { RenderBlogs } from '../../components/render-blog-list'
+import { RenderBlogs } from '../../components/render-blogs'
 import Section from '../../components/section'
 import { getSortedPostsData } from '../../lib/posts'
 
