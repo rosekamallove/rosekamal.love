@@ -6,10 +6,12 @@
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
 }
+
 html,
 body {
-  @apply text-base md:text-[18px] lg:text-lg xl:text-[21px];
+  @apply text-base md:text-[18px] lg:text-lg;
 }
+
 iframe {
   @apply w-full h-56 sm:h-80 md:h-96 my-10 !important;
 }
@@ -19,10 +21,10 @@ iframe {
 }
 
 h1 {
-  @apply text-3xl md:text-5xl lg:text-6xl !important;
+  @apply text-3xl md:text-4xl !important;
 }
 h2 {
-  @apply my-3 text-2xl md:text-3xl lg:text-4xl !important;
+  @apply my-3 text-2xl md:text-3xl  !important;
 }
 h3 {
   @apply my-2 text-xl md:text-2xl !important;

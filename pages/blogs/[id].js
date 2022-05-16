@@ -28,18 +28,20 @@ import { MinutesRead } from '../../components/minutes-read'
 
 export default function Post({ postData, id }) {
   const toast = useToast()
+  const toast_id = 'feedback-toast'
   const url = `https://rosekamallove.vercel.app/blogs/${id}`
 
   const [count, setCount] = useState(0)
 
   const reachedBottom = () => {
-    if (count < 1) {
+    if (count < 1 && !toast.isActive(toast_id)) {
       toast({
         title: 'Please send feedback',
         description: 'It will help me immensely in my growth ❤️ ',
         variant: 'solid',
         position: 'top-right',
-        isClosable: true
+        isClosable: true,
+        id: toast_id
       })
       setCount(count + 1)
     }
@@ -57,7 +59,7 @@ export default function Post({ postData, id }) {
         <meta property="og:image" content={postData.cover_image} />
       </Head>
 
-      <Container maxW="container.lg">
+      <Container maxW="container.md">
         <article>
           <Section delay={0.1}>
             <Heading as="h1" mb={5}>

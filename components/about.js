@@ -10,7 +10,7 @@ export const About = () => {
     <div>
       <Section delay={0.1}>
         <Heading as="h3" size="md" variant="section-title">
-          Work
+          About Me
         </Heading>
         <Paragraph>
           I am a full-stack developer with experience in the MERN stack and have

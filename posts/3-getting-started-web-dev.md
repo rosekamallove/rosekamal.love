@@ -1,8 +1,8 @@
 ---
-title: 'This is what you can do to become an internship ready Web Developer [in 2022] (Part 1: Front-End)'
+title: 'This is how you become "Internship Ready" as a Web Developer [in 2022](Part 1: Front-End)'
 date: '2022-05-11'
-description: "There is a plethora of videos and blog posts out there discussing how to get started with Web Development, whenever I go to Uni there is at least one person asking this question to me. So I figured the content isn't helping and a potential problem can be those videos and blogs posts discuss the what but not the how. This is what I am gonna try and solve"
-og_description: 'A comprehensive guide to take you from HTML & CSS to an Web Development Intern'
+description: "There are a plethora of videos and blog posts out there discussing how to get started with Web Development, whenever I go to Uni there is at least one person asking this question to me. So I figured the content isn't helping and a potential problem can be those videos and blog posts discuss the what but not the how. This is what I am gonna try and solve"
+og_description: 'A comprehensive guide to taking you from HTML & CSS to a Web Development Intern'
 cover_image: 'https://user-images.githubusercontent.com/69139607/167338113-fd54e91d-37f6-4fc6-a3f4-f9e51940c6d8.png'
 tags: 'beginner, html, css, js, react, nodejs, web-development'
 published: true
@@ -12,8 +12,7 @@ published: true
 
 In this blog post we're gonna dive into, how one who has zero experience in Web Development can become an **internship ready Web Developer**.
 
-> **Note:** The resources are going to be opinionated in this post to solve the issue of **abundance of resources**.  
-> It is a issue because if we are exposed to too many resources we tend to procrastinate
+> **Note:** The resources are going to be opinionated in this post to solve the issue of **abundance of resources**. It is an issue because if we are exposed to too many resources we tend to procrastinate
 
 We'll first understand the difference between the backend and frontend of a web application, then we'll start by learning the frontend which will include firstly the basics _html_, _css_, and _js_.
 
@@ -38,7 +37,7 @@ The answer to this question is fairly complicated compared to the previous one. 
 If I had to tell someone why they need to learn _JavaScript_ to become a frontend developer in a single line, I would say:
 Because every browser has a _JavaScript Runtime_ built in by default.
 
-JavScript Runtime being the platform on which the _. js_ code is executed. But no one would be using _. js_ if it didn't get the job done, because it does. And there is a huge number of _javaScript frameworks_ out there that make the ecosystem very developer friend (_at least virtually_)
+JavaScript Runtime being the platform on which the _. js_ code is executed. But no one would be using _. js_ if it didn't get the job done, because it does. And there is a huge number of _javaScript frameworks_ out there that make the ecosystem very developer friend (_at least virtually_)
 
 > Even if the website is built with a framework like **Django** (python) the front-end is still written with **javaScript**
 
@@ -144,7 +143,7 @@ And to get these fundamentals in place I have the perfect resource for you, I be
 ![freeCodeCampLayout](https://user-images.githubusercontent.com/69139607/167907972-8838c53f-1cb0-4552-92c8-d7c07573f562.jpg)
 
 This is what the layout of the website looks like, on the left, we have the tutorial _explaining the topic_ that we have learned. If the topic is from a previous module then it is linked here.
-In the middles, there is the _code editor_ in which we write our code, the output of which is shown at the right of the page.
+In the middle, there is the _code editor_ in which we write our code, the output of which is shown at the right of the page.
 
 Wait there is more, when you complete the modules you will be greeted with [_coding assignments_](https://www.freecodecamp.org/learn/responsive-web-design/#responsive-web-design-projects) in which you'll have to code out some projects to _solidify the CSS skills_ that you have learned.
 
@@ -162,20 +161,20 @@ Wait there is more, when you complete the modules you will be greeted with [_cod
 
 # JavaScript {#js-frontend}
 
-JavaScript is a very interesting language (putting it mildly). It was designed in 10 days to run inside the browser. Using JavaScript we can make our website dynamics, meaning it will respond to different inputs from the user, or other sources.
+JavaScript is a very interesting language (putting it mildly). It was designed in 10 days to run inside the browser. Using JavaScript we can make our website dynamic, meaning it will respond to different inputs from the user or other sources.
 
-For example you can make a Weather widget showing the weather based on the input of the user, you can build a website that tracks user's expenses and shows the stats in a chart form.
+For example, you can make a Weather widget showing the weather based on the input of the user, you can build a website that tracks the user's expenses and shows the stats in a chart form.
 
 It is _crucial_ to learn if you wanna go ahead to learn JavaScript frameworks like React, you'll have a better time learning those frameworks if you take the time to learn regular Vanilla JavaScript first.
 
-Even if you wanna go for backend-development, you still can't gloss over JavaScript. You are also required to understand the fundamentals of this language. This is the only way we can interact with the browser like we do with a computer and _it is fun_.
+Even if you wanna go for backend development, you still can't gloss over JavaScript. You are also required to understand the fundamentals of this language. This is the only way we can interact with the browser like we do with a computer and _it is fun_.
 
 **Now comes the resources part:**
 
 - [Learn JavaScript in 1 video - Advanced JavaScript Crash Course + Projects ](https://www.youtube.com/watch?v=hNYzV87wocY)
 - [Javascript Course - Hitesh Choudhry](https://www.youtube.com/playlist?list=PLRAV69dS1uWSxUIk5o3vQY2-_VKsOpXLD)
 
-These are the two free courses that I will recommend, but watching videos while mindlessly copying the code is what everyone tends to do when we learning from videos.
+These are the two free courses that I will recommend, but watching videos while mindlessly copying the code is what everyone tends to do when we learn from videos.
 
 To solve this issue I would **highly recommend** you follow the **[30 Days of JavaScript Challenge](https://javascript30.com/)**. In this challenge you will be given a unique challenge each day for 30 days, slowly increasing in difficulty.
 
@@ -203,7 +202,7 @@ If you’re curious to learn more, you can read this article on the [basics of u
 
 ## Build Tools {#build-tools}
 
-> Build tools are programs that automate the creation of executable applications from source code. Building incorporates compiling, linking and packaging the code into a usable or executable form
+> Build tools are programs that automate the creation of executable applications from source code. The building incorporates compiling, linking, and packaging the code into a usable or executable form
 
 By far the most widely used _build tool_ is **[WebPack](https://webpack.js.org/)** and I will recommend understanding how WebPack works. This knowledge will be easily transferable to other build tools.
 
@@ -211,7 +210,7 @@ By far the most widely used _build tool_ is **[WebPack](https://webpack.js.org/)
 
 ## Version Control
 
-> This is something that you just can't skip, it is very important and will make you a decent developer single handedly.
+> This is something that you just can't skip, it is very important and will make you a decent developer single-handedly.
 
 Version control (also called source control) is a system that keeps track of every code change that you make in your project files. You can even revert to a previous change if you make a mistake. It’s almost like having infinite save points for your project, and let me tell you, it can be a huge lifesaver.
 
@@ -221,4 +220,4 @@ You may have also heard of [GitHub](https://github.com), which is an online host
 
 To learn Git and GitHub, [GitHub.com](https://lab.github.com/) has some [online guides](https://docs.github.com/en) that explain how to get up and running. Traversy Media also has a [YouTube video](https://www.youtube.com/watch?v=SWYqp7iY_Tc) explaining how Git works.
 
-And while you're at it, go ahead learn [GitHub Pages](https://pages.github.com/) the repo hosting service provided by GitHub which will allow you to host your websites for free. And there is nothing better than being able to show your friends what you have built through a live URL
+And while you're at it, go ahead and learn [GitHub Pages](https://pages.github.com/) the repo hosting service provided by GitHub which will allow you to host your websites for free. And there is nothing better than being able to show your friends what you have built through a live URL
