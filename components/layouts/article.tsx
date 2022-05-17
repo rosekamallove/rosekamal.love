@@ -1,6 +1,7 @@
 import { Box, Divider } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import Head from 'next/head'
+import React from 'react'
 import Logo from '../../public/images/logo-light.png'
 import Footer from '../footer'
 import { GridItemStyle } from '../grid-item'
@@ -11,7 +12,13 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 }
 }
 
-const Layout = ({ children, title }) => {
+interface Props {
+  title?: string
+  children: React.ReactNode
+  ref?: any
+}
+
+const Layout: React.FC<Props> = ({ children, title, ref }) => {
   return (
     <motion.article
       initial="hidden"
@@ -25,7 +32,7 @@ const Layout = ({ children, title }) => {
         {title && (
           <Head>
             <title>{title} - Rose Kamal</title>
-            <meta property="og:image" content={Logo} />
+            <meta property="og:image" content={Logo.src} />
             <meta name="twitter:title" content={title} />
             <meta property="og:title" content={title} />
           </Head>
