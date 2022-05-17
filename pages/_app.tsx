@@ -1,16 +1,17 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { AnimatePresence } from 'framer-motion'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Fonts from '../components/fonts'
 import Layout from '../components/layouts/main'
 import theme from '../lib/theme'
 import '../styles/global.css'
 
+import { AppProps } from 'next/app'
 import * as ga from '../lib/ga'
 
-const Website = ({ Component, pageProps, router }) => {
+const Website: React.FC = ({ Component, pageProps, router }: AppProps) => {
   useEffect(() => {
-    const handleRouteChange = url => {
+    const handleRouteChange = (url: string): void => {
       ga.pageView(url)
     }
     //When the component is mounted, subscribe to router changes
@@ -27,10 +28,9 @@ const Website = ({ Component, pageProps, router }) => {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <Layout router={router} />
-      <AnimatePresence exitBeforeEnter intial={true}>
-        <Component {...pageProps} key={router.route} />
-      </AnimatePresence>
+      <Layout router={router} {...pageProps} />
+      <AnimatePresence exitBeforeEnter initial={true} />
+      <Component {...pageProps} key={router.route} />
     </ChakraProvider>
   )
 }
