@@ -17,10 +17,14 @@ import {
   useDisclosure,
   useToast
 } from '@chakra-ui/react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { IoSend } from 'react-icons/io5'
 
-export const FeedbackModal = ({ id }) => {
+interface Props {
+  id: string
+}
+
+export const FeedbackModal: React.FC<Props> = ({ id }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const toast = useToast()
   const [name, setName] = useState('')
@@ -28,7 +32,7 @@ export const FeedbackModal = ({ id }) => {
   const [message, setMessage] = useState('')
   const [sending, setSending] = useState(false)
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: React.SyntheticEvent): void => {
     e.preventDefault()
 
     const data = {

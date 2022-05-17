@@ -15,10 +15,9 @@ const variants = {
 interface Props {
   title?: string
   children: React.ReactNode
-  ref?: any
 }
 
-const Layout: React.FC<Props> = ({ children, title, ref }) => {
+const Layout: React.FC<Props> = ({ children, title }) => {
   return (
     <motion.article
       initial="hidden"

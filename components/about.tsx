@@ -1,18 +1,18 @@
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { Button, Flex, Heading, Link, Spacer } from '@chakra-ui/react'
+import { Button, Flex, Heading, Link, Spacer, Text } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import Paragraph from '../components/paragraph'
-import Section from '../components/section'
+import React from 'react'
 import { IconLinks } from './icon-links'
+import Section from './section'
 
-export const About = () => {
+export const About: React.FC = () => {
   return (
     <div>
       <Section delay={0.1}>
         <Heading as="h3" size="md" variant="section-title">
           About Me
         </Heading>
-        <Paragraph>
+        <Text>
           I am a full-stack developer with experience in the MERN stack and have
           also built a backend with Django. I like to Solve Problems,
           algorithmic as well as the problems I face while developing some cool
@@ -29,7 +29,7 @@ export const About = () => {
             <Link>(SoundCloud)</Link>
           </NextLink>
           .
-        </Paragraph>
+        </Text>
         <Flex my={4}>
           <IconLinks size="md" />
           <Spacer />

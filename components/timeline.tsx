@@ -1,9 +1,10 @@
 import { Heading, Link } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { BioSection, BioYear } from '../components/bio'
-import Section from '../components/section'
+import React from 'react'
+import { BioSection, BioYear } from './bio'
+import Section from './section'
 
-export const TimeLine = () => {
+export const TimeLine: React.FC = () => {
   return (
     <Section delay={0.2}>
       <Heading as="h3" variant="section-title">

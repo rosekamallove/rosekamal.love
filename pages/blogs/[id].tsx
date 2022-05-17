@@ -11,7 +11,6 @@ import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
 import Head from 'next/head'
 import NextLink from 'next/link'
 import React, { useState } from 'react'
-import { useBottomScrollListener } from 'react-bottom-scroll-listener'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
@@ -40,7 +39,7 @@ const Post: React.FC<Props> = ({ postData, id }) => {
 
   const [count, setCount] = useState(0)
 
-  const reachedBottom = () => {
+  const _reachedBottom = () => {
     if (count < 1 && !toast.isActive(toast_id)) {
       toast({
         title: 'Please send feedback',
@@ -53,10 +52,9 @@ const Post: React.FC<Props> = ({ postData, id }) => {
       setCount(count + 1)
     }
   }
-  const scrollRef = useBottomScrollListener(reachedBottom)
 
   return (
-    <Layout ref={scrollRef}>
+    <Layout>
       <Head>
         <title>{postData.title}</title>
         <meta name="description" content={postData.description}></meta>

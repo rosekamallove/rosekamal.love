@@ -1,7 +1,8 @@
 import { Box } from '@chakra-ui/react'
+import React from 'react'
 import { IconLinks } from './icon-links'
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <>
       <IconLinks size="md" />
