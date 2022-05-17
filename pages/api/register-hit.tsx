@@ -1,6 +1,17 @@
-const faunadb = require('faunadb')
+import faunadb from 'faunadb'
+import { NextApiRequest, NextApiResponse } from 'next'
 
-module.exports = async (req, res) => {
+interface Document {
+  ref: any
+  ts: number
+  data: {
+    slug: string
+    hits: number
+  }
+}
+
+module.exports = async (req: NextApiRequest, res: NextApiResponse) => {
+  console.log(process.env.FAUNA_SECRET_KEY)
   const q = faunadb.query
   const client = new faunadb.Client({
     secret: process.env.FAUNA_SECRET_KEY,
@@ -25,9 +36,12 @@ module.exports = async (req, res) => {
     )
   }
 
-  const document = await client.query(
+  const document: Document = await client.query(
     q.Get(q.Match(q.Index('hits_by_slug'), slug))
   )
+
+  console.log(document)
+
   await client.query(
     q.Update(document.ref, {
       data: {

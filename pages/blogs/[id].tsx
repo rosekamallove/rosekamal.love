@@ -10,7 +10,7 @@ import {
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
 import Head from 'next/head'
 import NextLink from 'next/link'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { useBottomScrollListener } from 'react-bottom-scroll-listener'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
@@ -23,10 +23,17 @@ import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
+import { GetStaticPaths, GetStaticProps } from 'next'
 import { newTheme } from '../../components/chakra-md-theme'
 import { MinutesRead } from '../../components/minutes-read'
+import postData from '../../interfaces/postData'
 
-export default function Post({ postData, id }) {
+interface Props {
+  postData: postData
+  id: string
+}
+
+const Post: React.FC<Props> = ({ postData, id }) => {
   const toast = useToast()
   const toast_id = 'feedback-toast'
   const url = `https://rosekamallove.vercel.app/blogs/${id}`
@@ -66,7 +73,7 @@ export default function Post({ postData, id }) {
               {postData.title}
             </Heading>
             <Date dateString={postData.date} /> {' • '}
-            <MinutesRead string={postData.contentHtml} />
+            <MinutesRead string={postData.contentHtml} words={null} />
             <ReactMarkdown
               components={ChakraUIRenderer(newTheme)}
               remarkPlugins={[remarkGfm, remarkHeadingId]}
@@ -75,7 +82,7 @@ export default function Post({ postData, id }) {
             >
               {postData.contentHtml}
             </ReactMarkdown>
-            <Flex pt={2} pb={0} wrap>
+            <Flex pt={2} pb={0}>
               <NextLink href="/blogs">
                 <Button
                   variant="ghost"
@@ -97,7 +104,7 @@ export default function Post({ postData, id }) {
   )
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   // Return a list of possible value for id
   const paths = getAllPostIds()
   return {
@@ -106,7 +113,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params }) {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   const postData = await getPostData(params.id)
   return {
     props: {
@@ -115,3 +122,5 @@ export async function getStaticProps({ params }) {
     }
   }
 }
+
+export default Post
