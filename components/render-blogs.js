@@ -15,15 +15,16 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
   const getFiltered = useRef()
   getFiltered.current = () => {
     let filteredPosts = []
+    if (onlyTags || fromTag) {
+      //TODO: Search in tagArraySearch
 
-    if (onlyTags || fromTag)
       filteredPosts = allPostsData.filter(post =>
-        /* Searching in the tags only */
+        // Searching in the tags only
         post.tags.includes(searchField.toLowerCase())
       )
-    else
+    } else {
       filteredPosts = allPostsData.filter(
-        /* Searching in every searchField */
+        // Searching in every searchField
         post =>
           post.title.toLowerCase().includes(searchField.toLowerCase()) ||
           post.og_description
@@ -31,7 +32,7 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
             .includes(searchField.toLowerCase()) ||
           post.tags.includes(searchField.toLowerCase())
       )
-
+    }
     return filteredPosts
   }
 
@@ -40,6 +41,9 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
   }, [searchField])
 
   const handleChange = val => {
+    if (val == ',') {
+      //TODO: update the tagArraySearch state
+    }
     setSearchField(val)
   }
 

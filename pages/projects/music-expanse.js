@@ -1,6 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react'
+import {
+  Badge,
+  Container,
+  Link,
+  List,
+  ListItem,
+  UnorderedList
+} from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { Meta, Title } from '../../components/projects'
 
@@ -10,29 +17,29 @@ const Project = () => (
       <Title>
         Music Expanse <Badge>2021-2021</Badge>
       </Title>
-      <ul>
-        <li>
+      <UnorderedList>
+        <ListItem>
           Tired of arguing over music at a party or a gathering? Here, make a
           virtual room add people with the unique RoomID, and let the members of
           the room control the music through a voting system.
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           The Goal of this project is to provide a solution to the abomination
           playing music at parties is, where we keep shouting change the song,
           and other people say don't.
-        </li>
-        <li>
-          MusicExpanse solves this problem by introducing music rooms which the
-          admin creates with a fix no of votes to skip. Then the room code can
-          be shared to the members at the party to allow them to vote on whether
-          to skip the song or not.
-        </li>
-        <li>
-          It uses the Spotify's Rest API and OAuth authentication method to
-          provide the song playing details and to send request to skip / pause
-          the songs
-        </li>
-      </ul>
+        </ListItem>
+        <ListItem>
+          MusicExpanse solves this problem by introducing <em>music rooms</em>{' '}
+          which the admin creates with a fix <em>no of votes to skip</em>. Then
+          the room code can be shared to the members at the party to allow them
+          to vote on whether to skip the song or not.
+        </ListItem>
+        <ListItem>
+          It uses the <strong>Spotify's Rest API</strong> and{' '}
+          <strong>OAuth</strong> authentication method to provide the song
+          playing details and to send request to skip / pause the songs
+        </ListItem>
+      </UnorderedList>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
@@ -47,7 +54,7 @@ const Project = () => (
         <ListItem>
           <Meta>Stack</Meta>
           <Badge>Django</Badge>, <Badge>React</Badge>,{' '}
-          <Badge>Spotify OAuth</Badge>
+          <Badge>Spotify OAuth</Badge> <Badge>Material UI</Badge>
         </ListItem>
         <ListItem>
           <Meta>GitHub</Meta>
