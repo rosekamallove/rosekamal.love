@@ -1,6 +1,12 @@
+import React from 'react'
 import wordCounter from '../lib/word-counter'
 
-export const MinutesRead = ({ string, words }) => {
+interface Props {
+  string?: string
+  words?: number
+}
+
+export const MinutesRead: React.FC<Props> = ({ string, words }) => {
   const count = Math.ceil((string ? wordCounter(string) : words) / 225)
   return (
     <>

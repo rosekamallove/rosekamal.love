@@ -1,4 +1,5 @@
 import { Button, Icon, Link } from '@chakra-ui/react'
+import React from 'react'
 import {
   IoLogoGithub,
   IoLogoInstagram,
@@ -6,7 +7,11 @@ import {
   IoLogoTwitter
 } from 'react-icons/io5'
 
-export const IconLinks = ({size}) => {
+interface Props {
+  size?: string
+}
+
+export const IconLinks: React.FC<Props> = ({ size }) => {
   return (
     <>
       <Link href="https://github.com/rosekamallove" target="_blank">

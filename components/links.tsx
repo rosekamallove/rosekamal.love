@@ -1,13 +1,14 @@
 import { Button, Heading, Icon, Link, List, ListItem } from '@chakra-ui/react'
+import React from 'react'
 import {
   IoLogoGithub,
   IoLogoInstagram,
   IoLogoLinkedin,
   IoLogoTwitter
 } from 'react-icons/io5'
-import Section from '../components/section'
+import Section from './section'
 
-export const ConnectLinks = () => {
+export const ConnectLinks: React.FC = () => {
   return (
     <Section delay={0.3}>
       <Heading as="h3" variant="section-title">

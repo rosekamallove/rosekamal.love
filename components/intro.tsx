@@ -1,6 +1,7 @@
 import { Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import React from 'react'
 
-export const BasicIntro = () => {
+export const BasicIntro: React.FC = () => {
   return (
     <div>
       <Box

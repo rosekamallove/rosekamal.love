@@ -2,7 +2,7 @@ import { Box, Container, useColorModeValue } from '@chakra-ui/react'
 import { AppProps } from 'next/app.js'
 import Head from 'next/head'
 import React from 'react'
-import Navbar from '../navbar.js'
+import Navbar from '../navbar'
 
 interface Props extends AppProps {
   children: React.ReactNode

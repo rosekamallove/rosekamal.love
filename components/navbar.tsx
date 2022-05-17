@@ -10,11 +10,25 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import React from 'react'
 import { IoJournal, IoLink, IoOpen, IoPersonOutline } from 'react-icons/io5'
 import Logo from './logo'
 import { MobileNav } from './mobile-nav'
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
+interface Props {
+  href?: string
+  path?: string
+  target?: any
+  children?: React.ReactNode
+}
+
+const LinkItem: React.FC<Props> = ({
+  href,
+  path,
+  target,
+  children,
+  ...props
+}) => {
   const active = path === href
   const inactiveColor = useColorModeValue('#282c34', '#abb2bf')
   const activeBg = useColorModeValue('#3D9CA9', '#55B6C2')
@@ -25,7 +39,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         p={2}
         bg={active ? activeBg : undefined}
         color={active ? '#282c34' : inactiveColor}
-        _target={_target}
+        _target={target}
         {...props}
         _hover={{
           background: `${
@@ -45,6 +59,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
+  // @ts-ignore
   const isFirefox = typeof InstallTrigger !== 'undefined'
 
   return (

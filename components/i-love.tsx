@@ -1,14 +1,14 @@
-import { Heading } from '@chakra-ui/react'
+import { Heading, Text } from '@chakra-ui/react'
 import Link from 'next/link'
-import { Paragraph } from '../components/paragraph'
+import React from 'react'
 
-export const ILove = () => {
+export const ILove: React.FC = () => {
   return (
     <div>
       <Heading as="h3" variant="section-title">
         I Love ♥
       </Heading>
-      <Paragraph>
+      <Text>
         <Link href="https://soundcloud.com/rosekmallove" target="_blank">
           Music
         </Link>
@@ -17,7 +17,7 @@ export const ILove = () => {
           Photography
         </Link>
         , Development, Vim
-      </Paragraph>
+      </Text>
     </div>
   )
 }

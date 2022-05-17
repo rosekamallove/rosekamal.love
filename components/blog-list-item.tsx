@@ -7,11 +7,25 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import React from 'react'
 import Date from './date'
 import { MinutesRead } from './minutes-read'
 import { RenderTags } from './render-tags'
 
-export const BlogListItem = ({
+interface Props {
+  id: string
+  date: string
+  title: string
+  description: string
+  og_description: string
+  words: number
+  tagArray: Array<string>
+  renderDescription: boolean
+  handleChange: () => void
+  setOnlyTags: () => void
+}
+
+export const BlogListItem: React.FC<Props> = ({
   id,
   date,
   title,

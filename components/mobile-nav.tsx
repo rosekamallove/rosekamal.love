@@ -10,10 +10,11 @@ import {
   MenuList
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import React from 'react'
 import { IoJournal, IoLink, IoOpen, IoPersonOutline } from 'react-icons/io5'
 import ThemeToggleButton from './theme-toggle-button'
 
-export const MobileNav = () => {
+export const MobileNav: React.FC = () => {
   return (
     <>
       <ThemeToggleButton />

@@ -2,6 +2,7 @@ import { useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -15,21 +16,13 @@ const LogoBox = styled.span`
   transition: ease 0.2s;
 `
 
-const Logo = () => {
+const Logo: React.FC = () => {
   const logoImg = `/images/logo${useColorModeValue('-light', '-dark')}.png`
   return (
     <Link href="/">
       <a>
         <LogoBox>
           <Image src={logoImg} width={50} height={50} alt="logo" />
-          {/* <Text
-            color={useColorModeValue('#282c34', '#abb2bf')}
-            fontFamily="M PLUS Rounded 1c"
-            fontWeight="bold"
-            ml={3}
-          >
-            Rose Kamal Love
-          </Text> */}
         </LogoBox>
       </a>
     </Link>

@@ -1,14 +1,6 @@
 import faunadb from 'faunadb'
 import { NextApiRequest, NextApiResponse } from 'next'
-
-interface Document {
-  ref: any
-  ts: number
-  data: {
-    slug: string
-    hits: number
-  }
-}
+import Document from '../../interfaces/faunaDocument'
 
 module.exports = async (req: NextApiRequest, res: NextApiResponse) => {
   console.log(process.env.FAUNA_SECRET_KEY)
@@ -39,8 +31,6 @@ module.exports = async (req: NextApiRequest, res: NextApiResponse) => {
   const document: Document = await client.query(
     q.Get(q.Match(q.Index('hits_by_slug'), slug))
   )
-
-  console.log(document)
 
   await client.query(
     q.Update(document.ref, {

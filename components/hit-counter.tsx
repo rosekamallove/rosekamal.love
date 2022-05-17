@@ -2,13 +2,18 @@ import { Box } from '@chakra-ui/react'
 import React from 'react'
 import ReactRetroHitCounter from 'react-retro-hit-counter'
 
-export default function HitCounter({ slug, published }) {
+interface Props {
+  slug: string
+  published: boolean
+}
+
+const HitCounter: React.FC<Props> = ({ slug, published }) => {
   const [hits, setHits] = React.useState(undefined)
-  React.useEffect(() => {
+  React.useEffect((): void => {
     //Don't count hits on localhost
-    // if (process.env.NODE_ENV !== 'production') {
-    //   return
-    // }
+    if (process.env.NODE_ENV !== 'production') {
+      return
+    }
 
     fetch(`/api/register-hit?slug=${slug}&published=${published}`, {
       headers: {
@@ -48,3 +53,5 @@ export default function HitCounter({ slug, published }) {
     </Box>
   )
 }
+
+export default HitCounter
