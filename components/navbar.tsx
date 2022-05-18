@@ -54,6 +54,7 @@ const LinkItem: React.FC<Props> = ({
         display="inline-flex"
         alignItems="center"
         style={{ gap: 4, borderRadius: '8px' }}
+        className={`${active ? 'shadow-md' : ''} hover:shadow-md`}
       >
         {children}
       </Link>

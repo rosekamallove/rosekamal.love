@@ -107,6 +107,7 @@ export const newTheme = {
           language={classArray[1]}
           style={theme == 'dark' ? dark : light}
           showLineNumbers={true}
+          customStyle={{ fontSize: '85% !important' }}
         >
           {children}
         </Prism>

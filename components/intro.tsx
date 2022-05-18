@@ -1,7 +1,15 @@
-import { Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import {
+  Box,
+  Heading,
+  Image,
+  useColorModeValue,
+  useToast
+} from '@chakra-ui/react'
 import React from 'react'
 
 export const BasicIntro: React.FC = () => {
+  const toast = useToast()
+  const id = 'toast-id'
   return (
     <div>
       <Box
@@ -26,16 +34,28 @@ export const BasicIntro: React.FC = () => {
           ml={{ md: 6 }}
           align="center"
         >
-          <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="120px"
-            display="inline-block"
-            borderRadius="full"
-            src="/images/rosek.jpg"
-            alt="Profile Picture"
-          />
+          <div
+            className="cursor-pointer rounded-full transition-ease-in-out duration-300 hover:scale-[1.1] hover:shadow-lg"
+            onClick={() => {
+              if (!toast.isActive(id))
+                toast({
+                  description: 'You teasing me? You naughty naughty 🤣',
+                  id,
+                  position: 'top-right'
+                })
+            }}
+          >
+            <Image
+              borderColor="whiteAlpha.800"
+              borderWidth={2}
+              borderStyle="solid"
+              maxWidth="120px"
+              display="inline-block"
+              borderRadius="full"
+              src="/images/rosek.jpg"
+              alt="Profile Picture"
+            />
+          </div>
         </Box>
       </Box>
     </div>
