@@ -16,7 +16,7 @@ export async function getStaticProps() {
 const Blogs = ({ allPostsData }) => {
   return (
     <Layout title="Blogs">
-      <Section delay={0.1}>
+      <Section delay="0.1">
         <Container maxW="container.md">
           <RenderBlogs
             allPostsData={allPostsData}

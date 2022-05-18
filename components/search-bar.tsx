@@ -11,9 +11,17 @@ import {
   Spacer,
   Switch
 } from '@chakra-ui/react'
-import { useEffect, useState } from 'react'
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
 
-export const SearchBar = ({
+interface Props {
+  renderDescription: boolean
+  searchField: string
+  handleChange: (_val: string) => void
+  onlyTags: boolean
+  setOnlyTags: Dispatch<SetStateAction<boolean>>
+}
+
+export const SearchBar: React.FC<Props> = ({
   renderDescription,
   searchField,
   handleChange,
@@ -40,7 +48,9 @@ export const SearchBar = ({
               placeholder={onlyTags ? 'Enter tag' : 'Search for posts'}
               variant="filled"
               size="md"
-              onChange={e => handleChange(e.target.value)}
+              onChange={(e: { target: { value: string } }) =>
+                handleChange(e.target.value)
+              }
               value={searchField}
             />
           </InputGroup>

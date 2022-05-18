@@ -1,10 +1,21 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { List } from '@chakra-ui/react'
-import { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import postData from '../interfaces/postData'
 import { RenderList } from './render-blog-list'
 import { SearchBar } from './search-bar'
 
-export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
+interface Props {
+  allPostsData: Array<postData>
+  renderDescription?: boolean
+  count?: number
+}
+
+export const RenderBlogs: React.FC<Props> = ({
+  allPostsData,
+  renderDescription,
+  count
+}) => {
   count = count == -1 ? allPostsData.length : count
 
   const [filteredPosts, setFilteredPosts] = useState([])
@@ -12,7 +23,7 @@ export const RenderBlogs = ({ allPostsData, renderDescription, count }) => {
   const [onlyTags, setOnlyTags] = useState(false)
   const [fromTag, setFromTag] = useState(false)
 
-  const getFiltered = useRef()
+  const getFiltered = useRef<Function>(() => [])
   getFiltered.current = () => {
     let filteredPosts = []
     if (onlyTags || fromTag) {

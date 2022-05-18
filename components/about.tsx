@@ -8,7 +8,7 @@ import Section from './section'
 export const About: React.FC = () => {
   return (
     <div>
-      <Section delay={0.1}>
+      <Section delay="0.1">
         <Heading as="h3" size="md" variant="section-title">
           About Me
         </Heading>
