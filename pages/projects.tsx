@@ -13,14 +13,14 @@ const Portfolio = () => {
           My Projects
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section>
+          <Section delay="0">
             <WorkGridItem id="youtemy" title="YouTemy" thumbnail={youtemy}>
               A great way to learn from YouTube courses without any distractions
               and the ability to enroll in courses and track them with a daily
               streak to become more consistent.
             </WorkGridItem>
           </Section>
-          <Section>
+          <Section delay="0">
             <WorkGridItem
               id="music-expanse"
               title="Music Expanse"

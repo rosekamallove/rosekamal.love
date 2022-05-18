@@ -191,7 +191,7 @@ This is the perfect way to solidify your learning and make you fall in love with
 
 > **Note**: Once you are done with this, you'll have to learn **Asynchronous JavaScript** and the best course for that is [Namaste JavaScript - Akshay Saini](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP), you don't have to watch the whole playlist at once, you can take your time and keep learning it slowly once you finished with the basics.
 
-# Learning from YouTube {#youtemy-callout}
+# Learning on YouTube {#youtemy-callout}
 
 Even though I am asking you to watch these playlists on _YouTube_, it is not a good platform to _learn_. There are a **lot of distractions**, a whole side-bar dedicated to make you **watch unproductive content**.
 
