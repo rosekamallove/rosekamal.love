@@ -66,7 +66,7 @@ const Post: React.FC<Props> = ({ postData, id }) => {
 
       <Container maxW="container.md">
         <article>
-          <Section delay={0.1}>
+          <Section delay="0.1">
             <Heading as="h1" mb={5}>
               {postData.title}
             </Heading>

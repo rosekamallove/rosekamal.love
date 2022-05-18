@@ -21,12 +21,12 @@ export default function Page({ allPostsData }) {
   return (
     <Layout title="About">
       <Container maxW="container.md">
-        <Section delay={0.1}>
+        <Section delay="0.1">
           <BasicIntro />
           <About />
         </Section>
 
-        <Section delay={0.2}>
+        <Section delay="0.2">
           <Heading as="h3" variant="section-title">
             Latest Blogs
           </Heading>
@@ -45,11 +45,11 @@ export default function Page({ allPostsData }) {
             </Button>
           </NextLink>
         </Section>
-        <Section delay={0.3}>
+        <Section delay="0.3">
           <TimeLine />
         </Section>
 
-        <Section delay={0.4}>
+        <Section delay="0.4">
           <Heading as="h3" variant="section-title">
             Featured
           </Heading>

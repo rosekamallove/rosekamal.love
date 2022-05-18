@@ -7,7 +7,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import React from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 import Date from './date'
 import { MinutesRead } from './minutes-read'
 import { RenderTags } from './render-tags'
@@ -21,8 +21,8 @@ interface Props {
   words: number
   tagArray: Array<string>
   renderDescription: boolean
-  handleChange: () => void
-  setOnlyTags: () => void
+  handleChange: (_val: string) => void
+  setOnlyTags: Dispatch<SetStateAction<boolean>>
 }
 
 export const BlogListItem: React.FC<Props> = ({

@@ -1,8 +1,16 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { Box, Tag, TagLabel } from '@chakra-ui/react'
 import { useRouter } from 'next/dist/client/router'
+import React, { Dispatch, SetStateAction } from 'react'
 
-export const RenderTags = ({
+interface Props {
+  tagArray: Array<string>
+  handleChange: (_val: string) => void
+  renderDescription: boolean
+  setOnlyTags: Dispatch<SetStateAction<boolean>>
+}
+
+export const RenderTags: React.FC<Props> = ({
   tagArray,
   handleChange,
   renderDescription,

@@ -5,7 +5,7 @@ description: ''
 og_description: ''
 cover_image: ''
 tags: 'beginner, c++'
-published: true
+published: false
 ---
 
 ## Coding on a very High Level:
