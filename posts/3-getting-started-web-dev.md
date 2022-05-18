@@ -87,9 +87,7 @@ With all that out of the way let's dive in.
 >   - [CSS Frameworks](#css-framework) (**tailwind**, bootstrap, etc)
 >   - [SSR](#ssr) (**next.js**, gatsby.js, nuxt.js, etc)
 >
-> - **[Building Projects]** (Will be covered in a different blog post)
-
-<br/>
+> - **[Building Projects]** (Will be covered in a different blog post)\
 
 > - **Back-End:** (this section will be covered in Part 2)
 >   - OS and General Knowledge
@@ -182,7 +180,7 @@ Even if you wanna go for backend development, you still can't gloss over JavaScr
 
 **Now comes the resources part:**
 
-- **[Learn JavaScript in 1 video - Advanced JavaScript Crash Course + Projects ](https://www.youtube.com/watch?v=hNYzV87wocY)**
+- **[Learn JavaScript in 1 video - Advanced JavaScript Crash Course + Projects](https://www.youtube.com/watch?v=hNYzV87wocY)**
 - **[Javascript Course - Hitesh Choudhry](https://www.youtube.com/playlist?list=PLRAV69dS1uWSxUIk5o3vQY2-_VKsOpXLD)**
 
 These are the two free courses that I will recommend, but watching videos while mindlessly copying the code is what everyone tends to do when we learn from videos.
@@ -193,7 +191,7 @@ This is the perfect way to solidify your learning and make you fall in love with
 
 > **Note**: Once you are done with this, you'll have to learn **Asynchronous JavaScript** and the best course for that is [Namaste JavaScript - Akshay Saini](https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP), you don't have to watch the whole playlist at once, you can take your time and keep learning it slowly once you finished with the basics.
 
-# Learning from YouTube {#youtemy-callout}
+# Learning on YouTube {#youtemy-callout}
 
 Even though I am asking you to watch these playlists on _YouTube_, it is not a good platform to _learn_. There are a **lot of distractions**, a whole side-bar dedicated to make you **watch unproductive content**.
 

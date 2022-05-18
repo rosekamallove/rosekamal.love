@@ -5,7 +5,7 @@ description: ''
 og_description: ''
 cover_image: ''
 tags: 'beginner, c++'
-published: true
+published: false
 ---
 
 Today we'll learn about variables, literals and constants in C++ with the help of examples
