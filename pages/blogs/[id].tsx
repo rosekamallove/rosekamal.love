@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import {
+  Box,
   Button,
   Container,
   Flex,
@@ -25,6 +26,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { newTheme } from '../../components/chakra-md-theme'
 import { MinutesRead } from '../../components/minutes-read'
+import { RenderTags } from '../../components/render-tags'
 import postData from '../../interfaces/postData'
 
 interface Props {
@@ -72,6 +74,9 @@ const Post: React.FC<Props> = ({ postData, id }) => {
             </Heading>
             <Date dateString={postData.date} /> {' • '}
             <MinutesRead string={postData.contentHtml} words={null} />
+            <Box mb="5">
+              <RenderTags tagArray={postData.tags.split(',')} />
+            </Box>
             <ReactMarkdown
               components={ChakraUIRenderer(newTheme)}
               remarkPlugins={[remarkGfm, remarkHeadingId]}

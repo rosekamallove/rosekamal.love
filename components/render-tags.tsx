@@ -5,9 +5,9 @@ import React, { Dispatch, SetStateAction } from 'react'
 
 interface Props {
   tagArray: Array<string>
-  handleChange: (_val: string) => void
-  renderDescription: boolean
-  setOnlyTags: Dispatch<SetStateAction<boolean>>
+  handleChange?: (_val: string) => void
+  renderDescription?: boolean
+  setOnlyTags?: Dispatch<SetStateAction<boolean>>
 }
 
 export const RenderTags: React.FC<Props> = ({
@@ -33,9 +33,11 @@ export const RenderTags: React.FC<Props> = ({
             cursor="pointer"
             fontFamily="Jetbrains Mono"
             onClick={() => {
-              setOnlyTags(true)
-              handleChange(tag)
-              if (!renderDescription) router.push('/blogs')
+              if (setOnlyTags && handleChange) {
+                setOnlyTags(true)
+                handleChange(tag)
+                if (!renderDescription) router.push('/blogs')
+              }
             }}
           >
             <strong># </strong>
