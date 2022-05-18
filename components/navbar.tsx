@@ -1,15 +1,19 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import {
+  As,
   Box,
+  ChakraProps,
   Container,
   Divider,
   Flex,
   Heading,
   Link,
+  OmitCommonProps,
   Stack,
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 import { IoJournal, IoLink, IoOpen, IoPersonOutline } from 'react-icons/io5'
 import Logo from './logo'
@@ -57,14 +61,26 @@ const LinkItem: React.FC<Props> = ({
   )
 }
 
-const Navbar = props => {
+const Navbar = (
+  props: JSX.IntrinsicAttributes &
+    OmitCommonProps<
+      React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLDivElement>,
+        HTMLDivElement
+      >,
+      keyof ChakraProps
+    > &
+    ChakraProps &
+    OmitCommonProps<any, keyof ChakraProps> & { as?: As<any> }
+) => {
+  const router = useRouter()
   const { path } = props
   // @ts-ignore
   const isFirefox = typeof InstallTrigger !== 'undefined'
 
   return (
     <Box
-      position="fixed"
+      position={router.asPath.includes('/blogs/') ? 'absolute' : 'fixed'}
       as="nav"
       w="100%"
       // eslint-disable-next-line react-hooks/rules-of-hooks

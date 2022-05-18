@@ -12,8 +12,7 @@ const Date: React.FC<Props> = ({ dateString }) => {
       style={{
         padding: '0px',
         margin: '0px',
-        fontFamily: 'Raleway',
-        fontWeight: '500'
+        fontWeight: '600'
       }}
       dateTime={dateString}
     >

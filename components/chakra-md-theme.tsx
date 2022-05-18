@@ -69,7 +69,6 @@ export const newTheme = {
       return (
         <Code
           margin="2px"
-          fontSize="95%"
           borderRadius="5px"
           background={useColorModeValue('#E2EAF2', '#414650')}
           bg={null}
@@ -84,16 +83,12 @@ export const newTheme = {
         {classArray[1] === 'txt' ? (
           ''
         ) : (
-          <Box align="right" marginBottom="-50px">
+          <Box align="right" marginBottom="-40px">
             <Button
-              size="sm"
+              size="xs"
               borderRadius="8px"
-              fontFamily="Sriracha"
-              fontWeight="300"
               color={useColorModeValue('#282c34', '#abb2bf')}
               bg={useColorModeValue('#E2EAF2', '#282c34')}
-              opacity={0.5}
-              _hover={{ opacity: '1' }}
               onClick={() => {
                 copyTextToClipboard(children)
                 toast({
@@ -112,7 +107,6 @@ export const newTheme = {
           language={classArray[1]}
           style={theme == 'dark' ? dark : light}
           showLineNumbers={true}
-          customStyle={{ fontSize: '100%' }}
         >
           {children}
         </Prism>

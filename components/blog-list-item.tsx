@@ -39,7 +39,7 @@ export const BlogListItem: React.FC<Props> = ({
 }) => {
   return (
     <>
-      <ListItem>
+      <ListItem className="hover:shadow-md">
         <Box
           borderRadius="8px"
           _hover={{

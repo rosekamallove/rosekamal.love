@@ -1,4 +1,10 @@
-import { Box, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
+import {
+  Box,
+  LinkBox,
+  LinkOverlay,
+  Text,
+  useColorModeValue
+} from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import Image from 'next/image'
 import NextLink from 'next/link'
@@ -41,7 +47,17 @@ export const WorkGridItem: React.FC<Props> = ({
   title,
   thumbnail
 }) => (
-  <Box w="100%" textAlign="center">
+  <Box
+    w="100%"
+    h="100%"
+    borderRadius="8px"
+    textAlign="center"
+    _hover={{
+      background: `${useColorModeValue('whiteAlpha.400', '#323843')}`
+    }}
+    transition="ease-in-out 0.25s"
+    className="p-3 hover:shadow-md"
+  >
     <NextLink href={`/projects/${id}`}>
       <LinkBox cursor="pointer">
         <Image
