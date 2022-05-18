@@ -60,6 +60,7 @@ const Post: React.FC<Props> = ({ postData, id }) => {
       <Head>
         <title>{postData.title}</title>
         <meta name="description" content={postData.description}></meta>
+        <meta property="og:title" content={postData.title}></meta>
         <meta property="og:url" content={url}></meta>
         <meta property="og:description" content={postData.og_description} />
         <meta property="og:type" content="article" />
