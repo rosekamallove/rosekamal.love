@@ -32,7 +32,6 @@ export const RenderTags: React.FC<Props> = ({
           <TagLabel
             cursor="pointer"
             fontFamily="Jetbrains Mono"
-            fontSize="13px"
             onClick={() => {
               setOnlyTags(true)
               handleChange(tag)
