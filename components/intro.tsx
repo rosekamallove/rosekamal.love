@@ -18,6 +18,7 @@ export const BasicIntro: React.FC = () => {
         mb={6}
         p={3}
         align="center"
+        className="shadow-sm"
       >
         Hello There, I&apos;m a full-stack developer based in India
       </Box>
@@ -35,13 +36,14 @@ export const BasicIntro: React.FC = () => {
           align="center"
         >
           <div
-            className="cursor-pointer rounded-full transition-ease-in-out duration-300 hover:scale-[1.1] hover:shadow-lg"
+            className="cursor-pointer rounded-full transition-ease-in-out duration-300 hover:scale-[1.1]"
             onClick={() => {
               if (!toast.isActive(id))
                 toast({
                   description: 'You teasing me? You naughty naughty 🤣',
                   id,
-                  position: 'top-right'
+                  position: 'top-right',
+                  isClosable: true
                 })
             }}
           >

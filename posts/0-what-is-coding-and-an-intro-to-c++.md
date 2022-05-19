@@ -1,11 +1,11 @@
 ---
 title: 'What is Coding & and an intro to C++'
 date: '2021-12-19'
-description: ''
-og_description: ''
-cover_image: ''
+description: 'An introduction to coding, what, how and why'
+og_description: 'An introduction to coding, what, how and why'
+cover_image: 'https://user-images.githubusercontent.com/69139607/169286239-44eb2877-047b-453a-8ffe-4ebac0b34f05.png'
 tags: 'beginner, c++'
-published: false
+published: true
 ---
 
 ## Coding on a very High Level:
@@ -29,8 +29,6 @@ Ever wanted to make an app or a website? Code does that. It can also help you au
 **Have Loads of Fun**
 
 Have you ever met a coder who regretted learning to code? Probably not, because learning to code is fun and empowering! Coding also opens up a whole new community and network for you. In fact, we've heard the term "addictive" regularly.
-
----
 
 ### Now let's discuss specifically what C++ coding is
 
@@ -91,15 +89,11 @@ I would definately learn english and start talking to that guy. What about you?
 
 Here, `C++` is the `English` for you and `Computer/Laptop` is the `South Indian Guy`.
 
----
-
 ![Wait a Minute](https://c.tenor.com/IJwsfw7ToiQAAAAM/wait-what.gif)
 
 You Guys don't even know how to **speak**
 
 So C++ is going to be a way for you to learn how to **communicate** with the processor
-
----
 
 ### Different Stages of Writing a C++ Program:
 
