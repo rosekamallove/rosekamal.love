@@ -13,6 +13,14 @@ body {
   scroll-behavior: smooth !important;
 }
 
+button {
+  @apply hover:shadow-md;
+}
+
+hr {
+  @apply my-5 !important;
+}
+
 pre {
   @apply text-base md:text-[18px]  lg:text-lg !important;
 }

@@ -39,13 +39,14 @@ export const BlogListItem: React.FC<Props> = ({
 }) => {
   return (
     <>
-      <ListItem className="hover:shadow-md">
+      <ListItem>
         <Box
           borderRadius="8px"
           _hover={{
             background: `${useColorModeValue('whiteAlpha.400', '#323843')}`
           }}
           transition="ease-in-out 0.25s"
+          className="hover:shadow-md"
           mb={1}
           p={2}
         >

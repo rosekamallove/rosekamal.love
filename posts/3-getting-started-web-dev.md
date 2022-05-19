@@ -13,13 +13,13 @@ featured: true
 
 In this blog post we're gonna dive into, how one who has zero experience in Web Development can become an **internship ready Web Developer**.
 
-> **Note:** The resources are going to be opinionated in this post to solve the issue of **abundance of resources**. It is an issue because if we are exposed to too many resources we tend to procrastinate
-
-> Even though this post is opinionated, you can still choose your own resources and swap them with the ones I recommend. Because it possible that you don't understand from the one's I have recommended
-
 We'll first understand the difference between the backend and frontend of a web application, then we'll start by learning the frontend which will include firstly the basics _html_, _css_, and _js_.
 
 Once we're done with these we'll have the choice to move further with the frontend or start exploring the backend I'll recommend moving forward with a _Frontend JavaScript Framework_ like _react.js_, or one can move forward with a _Backend JavaScript Framework_ like _express.js_
+
+> **Note:** The resources are going to be opinionated in this post to solve the issue of **abundance of resources**. It is an issue because if we are exposed to too many resources we tend to procrastinate
+
+> Even though this post is opinionated, you can still choose your own resources and swap them with the ones I recommend. Because it possible that you don't understand from the one's I have recommended
 
 ## Why Web-Development?
 
@@ -87,7 +87,7 @@ With all that out of the way let's dive in.
 >   - [CSS Frameworks](#css-framework) (**tailwind**, bootstrap, etc)
 >   - [SSR](#ssr) (**next.js**, gatsby.js, nuxt.js, etc)
 >
-> - **[Building Projects]** (Will be covered in a different blog post)\
+> - **[Building Projects]** (Will be covered in a different blog post)
 
 > - **Back-End:** (this section will be covered in Part 2)
 >   - OS and General Knowledge
@@ -195,7 +195,7 @@ This is the perfect way to solidify your learning and make you fall in love with
 
 Even though I am asking you to watch these playlists on _YouTube_, it is not a good platform to _learn_. There are a **lot of distractions**, a whole side-bar dedicated to make you **watch unproductive content**.
 
-I personally go from **learning** to watching **Tanmay Bhatt's Comedy videos** in not time.
+I personally go from **learning** to watching **Tanmay Bhatt's Comedy videos** in no time.
 
 This is why I would recommend you to checkout **[YouTemy](https://youtemy.tech)** the project I built to fix these issue. Even though it is in it's MVP stage, you'll still get a lot of use out of it.
 
@@ -227,7 +227,7 @@ By far the most widely used _build tool_ is **[WebPack](https://webpack.js.org/)
 
 - **[If You are Scared of Webpack, WATCH THIS!](https://www.youtube.com/watch?v=aT1rkp1UJ00&t=7s)**
 
-## Version Control
+## Version Control {#version-control}
 
 > This is something that you just can't skip, it is very important and will make you a decent developer single-handedly.
 
@@ -295,3 +295,86 @@ And by the end of the course you will be in a position to build your own _full-s
 - [React Course - Beginner's Tutorial for React JavaScript Library - FreeCodeCamp](https://www.youtube.com/watch?v=bMknfKXIFA8)
 - [ReactJS Tutorial for Beginners - Codevolution](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3)
 - [Practical React - Ben Awad](https://www.youtube.com/playlist?list=PLN3n1USn4xlntqksY83W3997mmQPrUmqM)
+
+## CSS Frameworks {#css-framework}
+
+If you have followed this guid religiously, I recommended _the best_ CSS course that I could find ([_FreeCodeCamp Interactive CSS Course_](https://www.freecodecamp.org/learn/responsive-web-design/)) and you have completed it (at least I hope) but the problem with plain CSS is that it is not _scalable_ what I mean by that is, as the project grows larger and larger the maintainability of CSS decreases rapidly.
+
+Styles are overriding each other, new styles is making the old styles go nuts, the new guy just used `!important` everywhere and, now everyone is holding their re-iterating their life choices. It is a disaster.
+
+Though many great developers have come up with various system to fix all theses issues (_[symantic class names](https://css-tricks.com/semantic-class-names/) for example_), plain CSS is still a disaster, especially for someone who hasn't worked on large scale projects.
+
+> ### “Best practices” don’t actually work.
+>
+> I’ve written a **few thousand words** on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.
+>
+> **Adam Wathan** (Creator of Tailwind CSS)
+
+And this is where **CSS Frameworks** come in, to solve all the issues I mentioned above, some do the job really well that I think why does CSS even exist, and some suck so bad that I start loving plain CSS. So, what is _my_ recommendation you may ask, well it is **Tailwind CSS** duh.
+
+You can try using _bootstrap_ , _bulma_ or _skeleton_ but once you get your hands on experience using _Tailwind CSS_ I don't think you would even think of switching tailwind out for your next project (I certainly don't), that's how good it is.
+
+> You don't need to go through an entire course to learn tailwind, _since you already know CSS_ you can just google how to do a certain css thing in tailwind as you go along with your project.
+
+**Learning Resources**
+
+- [Official Getting Started](https://tailwindcss.com/docs/installation)
+- [Tailwind CSS Crash Course](https://www.youtube.com/watch?v=UBOj6rqRUME)
+
+## SSR (Server Side Rendering) {#ssr}
+
+Damn, this has been a very long write-up, but we're finally approaching the end so _phew_ 😌.
+
+### What is Server Side Rendering?
+
+Server-side rendering (SSR) is an application’s ability to convert HTML files on the server into a fully rendered HTML page for the client. The web browser submits a request for information from the server, which instantly responds by sending a fully rendered page to the client. Search engines can crawl and index content prior to delivery, which is beneficial for Search Engine Optimization purposes.
+
+Popular examples of server-side rendering JavaScript frameworks include: Angular server side rendering, ejs server side rendering, server side rendering Express, Gatsby server side rendering, Google server side rendering, NestJS server side rendering, Next server side rendering, Nuxt server side rendering, React server side rendering, and Vue server side rendering.
+
+**Advantages of SSR**
+
+- A server-side rendered application enables pages to load faster, improving the user experience.
+- When rendering server-side, search engines can easily index and crawl content because the content can be rendered before the page is loaded, which is ideal for SEO.
+- Webpages are correctly indexed because web browsers prioritize web pages with faster load times.
+- Rendering server-side helps efficiently load webpages for users with slow internet connection or outdated devices.
+
+### What is Static Site Generation?
+
+A static site generator is a tool that generates a full static HTML website based on raw data and a set of templates. Essentially, a static site generator automates the task of coding individual HTML pages and gets those pages ready to serve to users ahead of time. Because these HTML pages are pre-built, they can load very quickly in users' browsers.
+
+Static site generators are an alternative to content management systems (CMS) — another type of tool for managing web content, generating webpages, and implementing templates. (A template is a reusable format for web content; developers use templates to avoid writing the same formatting over and over.) Static site generators are typically part of a JAMstack web development approach.
+
+### Why Next.js?
+
+**[Next.js](https://nextjs.org/)** is a React Framework. A _React_ Framework? that doesn't make sense, framework of a framework? Well, React is not a framework, it is library. What this means is that React doesn't force you to use it in a certain way. You can use React for a single `div` in an application built with plain HTML, CSS and JavaScript.
+
+Next.js however is a opinionated set of tools, which allows the developer to build application in a certain way. Let me tell you this, **It is the best thing that has happened to React to build Production Applications**.
+
+**Some of the amazing features of Next.js**
+
+- Automatic Routing (Frontend as well as API Routing)
+- Code Splitting
+- Server Side Rendering and Static Site Generation
+- Image Optimization and SEO (The `<Head/>` element)
+
+**Resources to learn**
+
+> Next.js themselves has provided us with amazing documentation and code-along tutorials, so there is no need to wander around the internet to learn Next.js
+
+- **[Official Start Learning](https://nextjs.org/learn/foundations/about-nextjs?utm_source=next-site&utm_medium=homepage-cta&utm_campaign=next-website)**
+- **[Official Documentation](https://nextjs.org/docs)**
+
+---
+
+# We're finally done 🔥
+
+Congratulation for all those who have read this blog-post till here, and best-of-luck for completing all this and building cool projects and getting an awesome internship.
+
+Do let me know if you do see improvements, or want to ask for some advice or anything at all. [Twitter](https://twitter.com/RoseKamalLove1) is the best place to do this.
+Do give me a follow while you're at it 😅.
+
+What is next after this guide? I will be following up with a Part: 2 of this blog post which will have a detailed guide explaining back-end development. After which or before this, I will post about what is the optimal way to come up with new project ideas and actually finishing them till deployment (and avoiding **Tutorial Hell** 👿)
+
+I am also working on React, Next.js tutorials, and will also post about how you can actually apply for internships. Stay tuned for that.
+
+Thank you all for staying this far 🙂.
