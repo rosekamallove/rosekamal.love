@@ -19,7 +19,7 @@ Once we're done with these we'll have the choice to move further with the fronte
 
 > **Note:** The resources are going to be opinionated in this post to solve the issue of **abundance of resources**. It is an issue because if we are exposed to too many resources we tend to procrastinate
 
-> Even though this post is opinionated, you can still choose your own resources and swap them with the ones I recommend. Because it possible that you don't understand from the one's I have recommended
+> Even though this post is opinionated, you can still choose your own resources and swap them with the ones I recommend. Because it is possible that you don't understand the one's I have recommended
 
 ## Why Web-Development?
 
@@ -193,13 +193,13 @@ This is the perfect way to solidify your learning and make you fall in love with
 
 # Learning on YouTube {#youtemy-callout}
 
-Even though I am asking you to watch these playlists on _YouTube_, it is not a good platform to _learn_. There are a **lot of distractions**, a whole side-bar dedicated to make you **watch unproductive content**.
+Even though I am asking you to watch these playlists on _YouTube_, it is not a good platform to _learn_. There are a **lot of distractions**, a whole sidebar dedicated to making you **watch unproductive content**.
 
 I personally go from **learning** to watching **Tanmay Bhatt's Comedy videos** in no time.
 
-This is why I would recommend you to checkout **[YouTemy](https://youtemy.tech)** the project I built to fix these issue. Even though it is in it's MVP stage, you'll still get a lot of use out of it.
+This is why I would recommend you to checkout **[YouTemy](https://youtemy.tech)** the project I built to fix these issues. Even though it is in its MVP stage, you'll still get a lot of use out of it.
 
-You can send feedback for the project to me personally on [twitter](https://twitter.com/RoseKamalLove1), or you can post an issue on **[GitHub - YouTemy](https://github.com/rosekamallove/youtemy)** and while you're at it, **do give it a ⭐ on GitHub, I would Love ❤️ that that**
+You can send feedback for the project to me personally on [Twitter](https://twitter.com/RoseKamalLove1), or you can post an issue on **[GitHub - YouTemy](https://github.com/rosekamallove/youtemy)** and while you're at it, **do give it a ⭐ on GitHub, I would Love ❤️ that**
 
 <iframe src="https://www.youtube.com/embed/FiOLt_Fdd1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -243,29 +243,29 @@ And while you're at it, go ahead and learn [GitHub Pages](https://pages.github.c
 
 # Additional Frontend {#additional-frontend}
 
-First off _Congratulations_, not a lot of people reach here. They quit before getting to the good part, the part where I fell in love with web-development. The part where we finally start to see the output of the hard work that we've been doing.
+First off _Congratulations_, not a lot of people reach here. They quit before getting to the good part, the part where I fell in love with web development. The part where we finally start to see the output of the hard work that we've been doing.
 
-This is the part where you'll get the skills that will **get you an internship** with a good pay or a good enough pay (depending on the quality of projects that you have).
+This is the part where you'll get the skills that will **get you an internship** with good pay or good enough pay (depending on the quality of projects that you have).
 
 In this section, I'll be telling you about _CSS frameworks_, _JavaScript front-end frameworks_ and then finally _SSR (Server Side Rendering)_. And if you choose to not learn the backend just yet I'll also tell you how you can build a full-stack application without the overhead of learning the backend (spoiler alert: Firebase)
 
 ## JavaScript Front-End Frameworks {#js-frameworks}
 
-_JavaScript Frameworks_ 😆 this sure is a very interesting topic to write about. But we'll first go over why do we need them anyway, what purpose do they serve, what are the most popular ones and then finally the none that I'll recommend and then where can you learn it from.
+_JavaScript Frameworks_ 😆 this sure is a very interesting topic to write about. But we'll first go over why we need them anyway, what purpose they serve, what are the most popular ones and then finally the none that I'll recommend and then where can you learn them from.
 
 > JavaScript frameworks are an essential part of modern front-end web development, providing developers with tried and tested tools for building scalable, interactive web applications. Many modern companies use frameworks as a standard part of their tooling, so many front-end development jobs now require framework experience.
 >
 > [ From [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks) ]
 
-So, when we use basics HTML, CSS and JavaScript to build our application, there is a limit on how complex a website can be, and realtime updates aren't great either. As the application grows larger and larger, it gets harder and harder to understand the whole flow of the project.
+So, when we use basic HTML, CSS, and JavaScript to build our application, there is a limit on how complex a website can be, and real-time updates aren't great either. As the application grows larger and larger, it gets harder and harder to understand the whole flow of the project.
 
-In the past there was a threshold of how complex a front-end can be, so most of the work was done using the back-end which served static HTML, CSS and JavaScript files to the client, but now as the client's machines are getting better, Client Side frameworks have taken over the world.
+In the past there was a threshold of how complex a front-end can be, so most of the work was done using the back-end which served static HTML, CSS, and JavaScript files to the client, but now as the client's machines are getting better, Client Side frameworks have taken over the world.
 
-They are easier to scale, making complex DOM manipulations is easier than ever. I mean just go and look the FaceBook's homepage. There is so much going on there, imagine building that with plain JS and HTML, CSS. No, go there and actually start designing the front-end yourself (on paper obv)
+They are easier to scale, making complex DOM manipulations easier than ever. I mean just go and look the FaceBook's homepage. There is so much going on there, imagine building that with plain JS and HTML, and CSS. No, go there and actually start designing the front-end yourself (on paper obv)
 
-Now that we know why front-end frameworks exist, we can move-forward and see what are the available options to learn.
+Now that we know why front-end frameworks exist, we can move forward and see what are the available options to learn.
 
-There are a huge number of front-end frameworks and new one's popping basically every month it seems. Maybe even every week, to what to learn and what not to learn? Then answer is a bit complicated, let's first narrow down our list to the top 3
+There are a huge number of front-end frameworks and new ones popping basically every month it seems. Maybe even every week, to what to learn and what not to learn? The answer is a bit complicated, let's first narrow down our list to the top 3
 
 **Top 3 front-end JavaScript Frameworks**
 
@@ -273,22 +273,22 @@ There are a huge number of front-end frameworks and new one's popping basically 
 - **[react.js](https://reactjs.org/)** [175k GH Stars]
 - **[angular.js](https://angular.io/)** [55k GH Stars]
 
-Each of the above frameworks are great, _Vue is the most loved_, _React is the most widely used_ and _Angular is the most hated 😆_
+Each of the above frameworks is great, _Vue is the most loved_, _React is the most widely used_ and _Angular is the most hated 😆_
 
-My recommendation out of the above bunchy is **React.js** the reason being, it is very fun to write, the opportunities for React Developers are huge, and the knowledge of React can be then transferred to _Cross Platform: React Native_ which can be used to build mobile apps for both IOS and Android.
+My recommendation out of the above bunchy is **React.js** the reason being, that it is very fun to write, the opportunities for React Developers are huge, and the knowledge of React can be then transferred to _Cross Platform: React Native_ which can be used to build mobile apps for both IOS and Android.
 
-> I love ❤️ React.js (it is not a framework tho, it is a library ping me on [twitter](https://twitter.com/RoseKamalLove1) if you wanna discuss this)
+> I love ❤️ React.js (it is not a framework tho, though it is a library ping me on [Twitter](https://twitter.com/RoseKamalLove1) if you wanna discuss this)
 
 ### Resource to learn React.js
 
 **[Complete React Developer in 2022 (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)**
 
 This is by far the best React course there is, it's **only ₹500 or $10**,
-My friend learnt from this and landed an internship in first year and It is recommended by everyone that have watched it.
+My friend learned from this and landed an internship in the first year and It is recommended by everyone that has watched it.
 
 There is no alternative to this course, so I would **highly recommend** that you buy this course and complete it, and follow all the instructions the instructor gives you. _I am sure that you'll understand all the concepts very clearly._
 
-And by the end of the course you will be in a position to build your own _full-stack project_ (using Firebase) or _apply to internships directly_, that's how good this course is.
+And by the end of the course, you will be in a position to build your own _full-stack project_ (using Firebase) or _apply to internships directly_, that's how good this course is.
 
 **Some Good Stuff on YouTube**
 
@@ -298,11 +298,11 @@ And by the end of the course you will be in a position to build your own _full-s
 
 ## CSS Frameworks {#css-framework}
 
-If you have followed this guid religiously, I recommended _the best_ CSS course that I could find ([_FreeCodeCamp Interactive CSS Course_](https://www.freecodecamp.org/learn/responsive-web-design/)) and you have completed it (at least I hope) but the problem with plain CSS is that it is not _scalable_ what I mean by that is, as the project grows larger and larger the maintainability of CSS decreases rapidly.
+If you have followed this guide religiously, I recommended _the best_ CSS course that I could find ([_FreeCodeCamp Interactive CSS Course_](https://www.freecodecamp.org/learn/responsive-web-design/)) and you have completed it (at least I hope) but the problem with plain CSS is that it is not _scalable_ what I mean by that is, as the project grows larger and larger the maintainability of CSS decreases rapidly.
 
-Styles are overriding each other, new styles is making the old styles go nuts, the new guy just used `!important` everywhere and, now everyone is holding their re-iterating their life choices. It is a disaster.
+Styles are overriding each other, new styles are making the old styles go nuts, the new guy just used `!important` everywhere and, now everyone is holding their re-iterating their life choices. It is a disaster.
 
-Though many great developers have come up with various system to fix all theses issues (_[symantic class names](https://css-tricks.com/semantic-class-names/) for example_), plain CSS is still a disaster, especially for someone who hasn't worked on large scale projects.
+Though many great developers have come up with various systems to fix all these issues (_[symantic class names](https://css-tricks.com/semantic-class-names/) for example_), plain CSS is still a disaster, especially for someone who hasn't worked on large scale projects.
 
 > ### “Best practices” don’t actually work.
 >
@@ -314,7 +314,7 @@ And this is where **CSS Frameworks** come in, to solve all the issues I mentione
 
 You can try using _bootstrap_ , _bulma_ or _skeleton_ but once you get your hands on experience using _Tailwind CSS_ I don't think you would even think of switching tailwind out for your next project (I certainly don't), that's how good it is.
 
-> You don't need to go through an entire course to learn tailwind, _since you already know CSS_ you can just google how to do a certain css thing in tailwind as you go along with your project.
+> You don't need to go through an entire course to learn tailwind, _since you already know CSS_ you can just google how to do a certain CSS thing in tailwind as you go along with your project.
 
 **Learning Resources**
 
@@ -329,14 +329,14 @@ Damn, this has been a very long write-up, but we're finally approaching the end 
 
 Server-side rendering (SSR) is an application’s ability to convert HTML files on the server into a fully rendered HTML page for the client. The web browser submits a request for information from the server, which instantly responds by sending a fully rendered page to the client. Search engines can crawl and index content prior to delivery, which is beneficial for Search Engine Optimization purposes.
 
-Popular examples of server-side rendering JavaScript frameworks include: Angular server side rendering, ejs server side rendering, server side rendering Express, Gatsby server side rendering, Google server side rendering, NestJS server side rendering, Next server side rendering, Nuxt server side rendering, React server side rendering, and Vue server side rendering.
+Popular examples of server-side rendering JavaScript frameworks include Angular server-side rendering, ejs server-side rendering, server-side rendering Express, Gatsby server-side rendering, Google server-side rendering, NestJS server side rendering, Next server-side rendering, Nuxt server side rendering, React server-side rendering and Vue server side rendering.
 
 **Advantages of SSR**
 
 - A server-side rendered application enables pages to load faster, improving the user experience.
 - When rendering server-side, search engines can easily index and crawl content because the content can be rendered before the page is loaded, which is ideal for SEO.
 - Webpages are correctly indexed because web browsers prioritize web pages with faster load times.
-- Rendering server-side helps efficiently load webpages for users with slow internet connection or outdated devices.
+- Rendering server-side helps efficiently load webpages for users with slow internet connections or outdated devices.
 
 ### What is Static Site Generation?
 
@@ -346,9 +346,9 @@ Static site generators are an alternative to content management systems (CMS) �
 
 ### Why Next.js?
 
-**[Next.js](https://nextjs.org/)** is a React Framework. A _React_ Framework? that doesn't make sense, framework of a framework? Well, React is not a framework, it is library. What this means is that React doesn't force you to use it in a certain way. You can use React for a single `div` in an application built with plain HTML, CSS and JavaScript.
+**[Next.js](https://nextjs.org/)** is a React Framework. A _React_ Framework? that doesn't make sense, the framework of a framework? Well, React is not a framework, it is the library. What this means is that React doesn't force you to use it in a certain way. You can use React for a single `div` in an application built with plain HTML, CSS and JavaScript.
 
-Next.js however is a opinionated set of tools, which allows the developer to build application in a certain way. Let me tell you this, **It is the best thing that has happened to React to build Production Applications**.
+Next.js however is an opinionated set of tools, which allows the developer to build applications in a certain way. Let me tell you this, **It is the best thing that has happened to React to build Production Applications**.
 
 **Some of the amazing features of Next.js**
 
@@ -368,13 +368,13 @@ Next.js however is a opinionated set of tools, which allows the developer to bui
 
 # We're finally done 🔥
 
-Congratulation for all those who have read this blog-post till here, and best-of-luck for completing all this and building cool projects and getting an awesome internship.
+Congratulation to all those who have read this blog post till here, and best of luck for completing all this and building cool projects, and getting an awesome internship.
 
 Do let me know if you do see improvements, or want to ask for some advice or anything at all. [Twitter](https://twitter.com/RoseKamalLove1) is the best place to do this.
 Do give me a follow while you're at it 😅.
 
-What is next after this guide? I will be following up with a Part: 2 of this blog post which will have a detailed guide explaining back-end development. After which or before this, I will post about what is the optimal way to come up with new project ideas and actually finishing them till deployment (and avoiding **Tutorial Hell** 👿)
+What is next after this guide? I will be following up with Part: 2 of this blog post which will have a detailed guide explaining back-end development. After which or before this, I will post about what is the optimal way to come up with new project ideas and actually finish them till deployment (and avoiding **Tutorial Hell** 👿)
 
-I am also working on React, Next.js tutorials, and will also post about how you can actually apply for internships. Stay tuned for that.
+I am also working on React, and Next.js tutorials, and will also post about how you can actually apply for internships. Stay tuned for that.
 
 Thank you all for staying this far 🙂.
