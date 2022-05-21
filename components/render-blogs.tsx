@@ -28,6 +28,7 @@ export const RenderBlogs: React.FC<Props> = ({
     let filteredPosts = []
     if (onlyTags || fromTag) {
       //TODO: Search in tagArraySearch
+      //
 
       filteredPosts = allPostsData.filter(post =>
         // Searching in the tags only
