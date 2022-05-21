@@ -5,6 +5,13 @@ import { BioSection, BioYear } from './bio'
 import Section from './section'
 
 export const TimeLine: React.FC = () => {
+  /*
+   * TODO:
+   *
+   * -> Making a JSON Object probably, to make the addition scalable
+   * -> Timeline using Tailwind CSS && Chakra UI
+   * https://flowbite.com/docs/components/timeline/#:~:text=The%20timeline%20component%20can%20be,from%20Tailwind%20CSS%20and%20Flowbite.
+   */
   return (
     <Section delay="0.2">
       <Heading as="h3" variant="section-title">

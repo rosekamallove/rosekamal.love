@@ -6,6 +6,23 @@ import musicexpanse from '../public/images/music-expanse.jpg'
 import youtemy from '../public/images/youtemy.png'
 
 const Portfolio = () => {
+  /*
+   * TODO:
+   *
+   * => Refactor to make adding project/work-experience easier
+   *    -> A JSON Object maybe containing meta details
+   *    -> Markdown for description (mdx or inline)
+   *    -> Static Images obv
+   *
+   * Projects:
+   *  -> Portfolio (MLH + AlanAI)
+   *  -> Resume Generator
+   *  -> rosekamallove.github.io
+   *  -> Gaggle (Maybe)
+   *
+   * Under Experiences:
+   *  -> repo-report
+   */
   return (
     <Layout title="Portfolio">
       <Container maxW="container.md">

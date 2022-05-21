@@ -6,6 +6,7 @@ import {
   Flex,
   Heading,
   Spacer,
+  Link,
   useToast
 } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
@@ -77,6 +78,12 @@ const Post: React.FC<Props> = ({ postData, id }) => {
             <MinutesRead string={postData.contentHtml} words={null} />
             <Box mb="5">
               <RenderTags tagArray={postData.tags.split(',')} />
+            </Box>
+            <Box fontWeight="bold" className="border p-2 my-5" w="38%">
+              Do give it a like on
+              <Link mx="2" href="https://dev.to/rosekamallove">
+                [ dev.to ]
+              </Link>
             </Box>
             <ReactMarkdown
               components={ChakraUIRenderer(newTheme)}
