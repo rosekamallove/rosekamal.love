@@ -29,19 +29,21 @@ export const RenderList: React.FC<Props> = ({
           og_description,
           words,
           tags,
-          published
+          published,
+          devUrl
         },
         index
       ) => {
         const tagArray = tags.split(',').map(tag => tag.trim())
-        if (!published) return ''
         if (index < count) {
           return (
             <NextLink key={id} href={`/blogs/${id}`}>
               <BlogListItem
                 id={id}
                 date={date}
+                published={published}
                 title={title}
+                devUrl={devUrl}
                 description={description}
                 renderDescription={renderDescription}
                 og_description={og_description}

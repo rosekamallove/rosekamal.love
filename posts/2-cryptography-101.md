@@ -5,6 +5,7 @@ description: 'This is a write-up post for the Cryptography video that Fireship.i
 og_description: 'Getting started with cryptography in Node.js'
 cover_image: 'https://www.thesslstore.com/blog/wp-content/uploads/2017/12/Primitive-Encryption-1024x303.png'
 tags: 'node, cryptography, hashing'
+devUrl: 'cryptography-in-nodejs-22ai'
 published: true
 ---
 
