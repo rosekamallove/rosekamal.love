@@ -63,9 +63,12 @@ const Post: React.FC<Props> = ({ postData, id }) => {
         <meta name="description" content={postData.description}></meta>
         <meta property="og:title" content={postData.title}></meta>
         <meta property="og:url" content={url}></meta>
-        <meta property="og:description" content={postData.og_description} />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content={postData.cover_image} />
+        <meta
+          property="og:description"
+          content={postData.og_description}
+        ></meta>
+        <meta property="og:type" content="article"></meta>
+        <meta property="og:image" content={postData.cover_image}></meta>
       </Head>
 
       <Container maxW="container.md">
