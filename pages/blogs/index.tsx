@@ -2,6 +2,8 @@ import { Container } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { RenderBlogs } from '../../components/render-blogs'
 import Section from '../../components/section'
+import BlogImage from '../../public/images/og_blogs.png'
+import Head from 'next/head'
 import { getSortedPostsData } from '../../lib/posts'
 
 export async function getStaticProps() {
@@ -16,6 +18,14 @@ export async function getStaticProps() {
 const Blogs = ({ allPostsData }) => {
   return (
     <Layout title="Blogs">
+      <Head>
+        <meta property="og:title" content="Blogs - Rose Kamal Love" />
+        <meta
+          property="og:description"
+          content="Blog posts about Internships, Web Develoment, Open Source, Productivity and more"
+        />
+        <meta property="og:imgae" content={BlogImage as any} />
+      </Head>
       <Section delay="0.1">
         <Container maxW="container.md">
           <RenderBlogs
