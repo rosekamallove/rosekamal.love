@@ -6,6 +6,7 @@ which can then help build the base for a future project maybe. P.S stay tuned fo
 og_description: "A JDBC Introduction"
 cover_image: "https://user-images.githubusercontent.com/69139607/166664947-44a5278e-7835-4f5d-88cd-0cf0d3ebd0b1.png"
 tags: 'mysql, java, jdbc'
+devUrl: 'java-and-mysql-kp9'
 published: true
 ---
 

@@ -9,5 +9,6 @@ export default interface postData {
   cover_image: string
   tags: string
   published: boolean
+  devUrl: string
   featured?: boolean
 }

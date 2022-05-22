@@ -81,7 +81,10 @@ const Post: React.FC<Props> = ({ postData, id }) => {
             </Box>
             <Box fontWeight="bold" className="border p-2 my-5" w="38%">
               Do give it a like on
-              <Link mx="2" href="https://dev.to/rosekamallove">
+              <Link
+                mx="2"
+                href={`https://dev.to/rosekamallove/${postData.devUrl}`}
+              >
                 [ dev.to ]
               </Link>
             </Box>

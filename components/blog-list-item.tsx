@@ -3,7 +3,9 @@ import {
   Heading,
   Link,
   ListItem,
+  Tag,
   Text,
+  TagLabel,
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
@@ -19,6 +21,8 @@ interface Props {
   description: string
   og_description: string
   words: number
+  published: boolean
+  devUrl?: string
   tagArray: Array<string>
   renderDescription: boolean
   handleChange: (_val: string) => void
@@ -30,6 +34,7 @@ export const BlogListItem: React.FC<Props> = ({
   date,
   title,
   description,
+  published,
   og_description,
   words,
   tagArray,
@@ -50,16 +55,34 @@ export const BlogListItem: React.FC<Props> = ({
           mb={1}
           p={2}
         >
-          <NextLink
-            href={`/blogs/${id}`}
-            color={useColorModeValue('#3181CE', '#c678dd')}
-          >
-            <Link>
-              <Heading as="h2" size="md">
-                {title}
-              </Heading>
-            </Link>
-          </NextLink>
+          <Box display="inline">
+            <NextLink
+              href={`/blogs/${id}`}
+              color={useColorModeValue('#3181CE', '#c678dd')}
+            >
+              <Link>
+                <Heading as="h2" size="md">
+                  {title}
+                  {published ? (
+                    ''
+                  ) : (
+                    <Tag
+                      mx="5"
+                      mt="2"
+                      borderRadius="sm"
+                      variant="outline"
+                      colorScheme="red"
+                    >
+                      <TagLabel cursor="pointer" fontFamily="Jetbrains Mono">
+                        Draft
+                      </TagLabel>
+                    </Tag>
+                  )}
+                </Heading>
+              </Link>
+            </NextLink>
+          </Box>
+
           <Box>
             <Date dateString={date} />
             {' • '}
