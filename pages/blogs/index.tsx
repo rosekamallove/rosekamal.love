@@ -17,14 +17,14 @@ export async function getStaticProps() {
 
 const Blogs = ({ allPostsData }) => {
   return (
-    <Layout title="Blogs">
+    <Layout>
       <Head>
-        <meta property="og:title" content="Blogs - Rose Kamal Love" />
+        <meta property="og:title" content="Blogs - Rose Kamal Love"></meta>
         <meta
           property="og:description"
           content="Blog posts about Internships, Web Develoment, Open Source, Productivity and more"
-        />
-        <meta property="og:imgae" content={BlogImage as any} />
+        ></meta>
+        <meta property="og:image" content={BlogImage as any}></meta>
       </Head>
       <Section delay="0.1">
         <Container maxW="container.md">
