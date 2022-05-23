@@ -13,6 +13,8 @@ const Portfolio = () => {
    *    -> A JSON Object maybe containing meta details
    *    -> Markdown for description (mdx or inline)
    *    -> Static Images obv
+   *    -> I don't really know how this can be implemented
+   *       (probably ask Anshudhar probably)
    *
    * Projects:
    *  -> Portfolio (MLH + AlanAI)

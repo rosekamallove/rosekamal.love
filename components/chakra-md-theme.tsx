@@ -103,14 +103,15 @@ export const newTheme = {
             </Button>
           </Box>
         )}
-        <Prism
-          language={classArray[1]}
-          style={theme == 'dark' ? dark : light}
-          showLineNumbers={true}
-          customStyle={{ fontSize: '80% !important' }}
-        >
-          {children}
-        </Prism>
+        <div className="shadow-xl">
+          <Prism
+            language={classArray[1]}
+            style={theme == 'dark' ? dark : light}
+            showLineNumbers={true}
+          >
+            {children}
+          </Prism>
+        </div>
       </Box>
     )
   }

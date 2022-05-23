@@ -31,9 +31,12 @@ const Layout: React.FC<Props> = ({ children, title }) => {
         {title && (
           <Head>
             <title>{title} - Rose Kamal</title>
+            <meta
+              property="og:title"
+              content="👋 A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
+            />
             <meta property="og:image" content={Logo.src} />
             <meta name="twitter:title" content={title} />
-            <meta property="og:title" content={title} />
           </Head>
         )}
         {children}

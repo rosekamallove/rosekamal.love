@@ -82,7 +82,12 @@ const Post: React.FC<Props> = ({ postData, id }) => {
             <Box mb="5">
               <RenderTags tagArray={postData.tags.split(',')} />
             </Box>
-            <Box fontWeight="bold" className="border p-2 my-5" w="38%">
+            <Box
+              fontWeight="bold"
+              borderRadius="8px"
+              className="border p-1 my-3 text-base"
+              w="33%"
+            >
               Do give it a like on
               <Link
                 mx="2"

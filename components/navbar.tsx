@@ -88,7 +88,7 @@ const Navbar = (
       bg={
         isFirefox
           ? useColorModeValue('#C8CDD5', '#2C313A')
-          : useColorModeValue('#C8CDD540', '#2C313A40')
+          : useColorModeValue('#EFF2F540', '#2C313A40')
       }
       backdropFilter="auto"
       backdropBlur="8px"
