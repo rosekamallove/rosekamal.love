@@ -25,7 +25,7 @@ export const BasicIntro: React.FC = () => {
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Rose Kamal Love
+            Rose Kamal Love <span className="wave">👋</span>
           </Heading>
           <p>{'{ Developer / Hobyist Photographer / Music Enthusiast }'}</p>
         </Box>
