@@ -1,5 +1,4 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import { AnimatePresence } from 'framer-motion'
 import React, { useEffect } from 'react'
 import Fonts from '../components/fonts'
 import Layout from '../components/layouts/main'
