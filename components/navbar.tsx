@@ -61,7 +61,7 @@ const LinkItem: React.FC<Props> = ({
         display="inline-flex"
         alignItems="center"
         style={{ gap: 4, borderRadius: '8px' }}
-        className={`${active ? 'shadow-md' : ''} hover:shadow-md`}
+        className={`${active ? 'shadow-lg' : ''} hover:shadow-lg`}
       >
         {children}
       </Link>
@@ -107,7 +107,7 @@ const Navbar = (
         px={2}
         py={0}
         my={0}
-        maxW="850px"
+        maxW="container.md"
         wrap="wrap"
         align="center"
         justify="space-between"
@@ -137,7 +137,17 @@ const Navbar = (
             <IoOpen />
             Portfolio
           </LinkItem>
-          <Divider orientation="vertical" style={{ margin: '10px' }} />
+          <Divider
+            orientation="vertical"
+            style={{ marginLeft: '15px', marginRight: '0px', padding: 0 }}
+          />
+          <LinkItem
+            href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
+            path={path}
+          >
+            <IoLink />
+            Resume
+          </LinkItem>
           <LinkItem
             href="https://github.com/rosekamallove"
             target="_blank"
@@ -151,13 +161,6 @@ const Navbar = (
             path={path}
           >
             <IoLogoTwitter />
-          </LinkItem>
-          <LinkItem
-            href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
-            path={path}
-          >
-            <IoLink />
-            Resume
           </LinkItem>
         </Stack>
 
