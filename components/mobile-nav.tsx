@@ -11,7 +11,14 @@ import {
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from 'react'
-import { IoJournal, IoLink, IoOpen, IoPersonOutline } from 'react-icons/io5'
+import {
+  IoJournal,
+  IoLink,
+  IoOpen,
+  IoPersonOutline,
+  IoLogoTwitter,
+  IoLogoGithub
+} from 'react-icons/io5'
 import ThemeToggleButton from './theme-toggle-button'
 
 export const MobileNav: React.FC = () => {
@@ -19,6 +26,20 @@ export const MobileNav: React.FC = () => {
     <>
       <ThemeToggleButton />
       <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+        <IconButton mr={2} aria-label="github">
+          <NextLink href="https://github.com/rosekamallove">
+            <a>
+              <IoLogoGithub />
+            </a>
+          </NextLink>
+        </IconButton>
+        <IconButton mr={2} aria-label="twitter">
+          <NextLink href="https://twitter.com/RoseKamalLove1">
+            <a>
+              <IoLogoTwitter />
+            </a>
+          </NextLink>
+        </IconButton>
         <Menu colorScheme="teal">
           <MenuButton
             as={IconButton}
