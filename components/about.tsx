@@ -5,6 +5,12 @@ import React from 'react'
 import { IconLinks } from './icon-links'
 import Section from './section'
 
+export const A = ({ children, href }) => (
+  <a className="underline-offset-4 hover:underline font-semibold" href={href}>
+    {children}
+  </a>
+)
+
 export const About: React.FC = () => {
   return (
     <div>
@@ -13,22 +19,21 @@ export const About: React.FC = () => {
           About Me
         </Heading>
         <Text>
-          I am a full-stack developer with experience in the MERN stack and have
-          also built a backend with Django. I like to Solve Problems,
-          algorithmic as well as the problems I face while developing some cool
-          projects like{' '}
-          <NextLink href="https://youtemy.tech" passHref={true}>
-            <Link>YouTemy</Link>
-          </NextLink>{' '}
-          I also have a knack for Music, I love to listen as well as create
-          Music{' '}
-          <NextLink
-            href="https://soundcloud.com/user-276723683"
-            passHref={true}
-          >
-            <Link>(SoundCloud)</Link>
-          </NextLink>
-          .
+          I, a sophomore pursuing B-Tech in CS&IT am a full-stack developer. I
+          like solving problems, algorithmic as well as the ones I face when
+          developing cool projects like{' '}
+          <A href="https://youtemy.tech">YouTemy</A>. I have a knack for Music
+          too, I love to listen as well as create Music{' '}
+          <A href="https://soundcloud.com/user-276723683">(SoundCloud)</A>.
+        </Text>
+        <Text>
+          I am currently making OCR accessible at{' '}
+          <A href="https://trysolvio.ai/">Solvio</A> as as Front-End Intern, and
+          will help <A href="https://librehealth.io/">LibreHealth</A> build
+          Libre Medical Record Systems this summer as an Open Source Contribter
+          under the{' '}
+          <A href="summerofcode.with.google.com">Google Summer of Code </A>
+          Program
         </Text>
         <Flex my={4}>
           <IconLinks size="md" />

@@ -13,7 +13,6 @@ import { BasicIntro } from '../components/intro'
 import Layout from '../components/layouts/article'
 import { RenderBlogs } from '../components/render-blogs'
 import Section from '../components/section'
-import { TimeLine } from '../components/timeline'
 import { getSortedPostsData } from '../lib/posts'
 import youtemy from '../public/images/youtemy.png'
 
@@ -45,9 +44,7 @@ export default function Page({ allPostsData }) {
             </Button>
           </NextLink>
         </Section>
-        <Section delay="0.3">
-          <TimeLine />
-        </Section>
+        <Section delay="0.3">{/*<TimeLine />*/}</Section>
 
         <Section delay="0.4">
           <Heading as="h3" variant="section-title">
