@@ -21,7 +21,7 @@ export default function Page({ allPostsData }) {
   return (
     <Layout title="About">
       <Container maxW="container.md">
-        <Section delay="0.1">
+        <Section delay="0.0">
           <BasicIntro />
           <About />
         </Section>

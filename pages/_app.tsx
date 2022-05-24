@@ -29,7 +29,6 @@ const Website: React.FC = ({ Component, pageProps, router }: AppProps) => {
     <ChakraProvider theme={theme}>
       <Fonts />
       <Layout router={router} {...pageProps} />
-      <AnimatePresence exitBeforeEnter initial={true} />
       <Component {...pageProps} key={router.route} />
     </ChakraProvider>
   )

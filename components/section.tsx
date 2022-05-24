@@ -14,6 +14,7 @@ interface Props {
 }
 
 const Section: React.FC<Props> = ({ children, delay = '0' }) => {
+  delay = '0'
   return (
     <StyledDiv
       initial={{ y: 10, opacity: 0 }}

@@ -42,6 +42,15 @@ const Post: React.FC<Props> = ({ postData, id }) => {
 
   const [count, setCount] = useState(0)
 
+  /*
+   * TODO
+   *
+   * [ Create a Scroll indicator ]
+   * https://www.youtube.com/watch?v=X1PI52QLanE
+   *
+   * Probably add debouncing: when the user stops scrolling
+   */
+
   const _reachedBottom = () => {
     if (count < 1 && !toast.isActive(toast_id)) {
       toast({

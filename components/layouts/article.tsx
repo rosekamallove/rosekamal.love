@@ -1,5 +1,4 @@
 import { Box, Divider } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
 import Head from 'next/head'
 import React from 'react'
 import Logo from '../../public/images/logo-light.png'
@@ -19,41 +18,32 @@ interface Props {
 
 const Layout: React.FC<Props> = ({ children, title }) => {
   return (
-    <motion.article
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      variants={variants}
-      transition={{ duration: 0.2, type: 'easeInOut' }}
-      style={{ position: 'relative' }}
-    >
-      <>
-        {title && (
-          <Head>
-            <title>{title} - Rose Kamal</title>
-            <meta
-              property="og:title"
-              content="👋 A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
-            />
-            <meta property="og:image" content={Logo.src} />
-            <meta name="twitter:title" content={title} />
-          </Head>
-        )}
-        {children}
+    <>
+      {title && (
+        <Head>
+          <title>{title} - Rose Kamal</title>
+          <meta
+            property="og:title"
+            content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
+          />
+          <meta property="og:image" content={Logo.src} />
+          <meta name="twitter:title" content={title} />
+        </Head>
+      )}
+      {children}
 
-        <GridItemStyle />
-        <Box
-          borderRadius="sm"
-          // bg={useColorModeValue('whiteAlpha.500', '#323843')}
-          bottom="0"
-          p={1}
-          align="center"
-        >
-          <Divider width="45%" />
-          <Footer />
-        </Box>
-      </>
-    </motion.article>
+      <GridItemStyle />
+      <Box
+        borderRadius="sm"
+        // bg={useColorModeValue('whiteAlpha.500', '#323843')}
+        bottom="0"
+        p={1}
+        align="center"
+      >
+        <Divider width="45%" />
+        <Footer />
+      </Box>
+    </>
   )
 }
 
