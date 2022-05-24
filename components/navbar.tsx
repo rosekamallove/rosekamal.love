@@ -15,7 +15,14 @@ import {
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
-import { IoJournal, IoLink, IoOpen, IoPersonOutline } from 'react-icons/io5'
+import {
+  IoJournal,
+  IoLink,
+  IoLogoGithub,
+  IoLogoTwitter,
+  IoOpen,
+  IoPerson
+} from 'react-icons/io5'
 import Logo from './logo'
 import { MobileNav } from './mobile-nav'
 
@@ -100,7 +107,7 @@ const Navbar = (
         px={2}
         py={0}
         my={0}
-        maxW="container.md"
+        maxW="850px"
         wrap="wrap"
         align="center"
         justify="space-between"
@@ -119,7 +126,7 @@ const Navbar = (
           mt={{ base: 4, nmd: 0 }}
         >
           <LinkItem href="/" path={path}>
-            <IoPersonOutline />
+            <IoPerson />
             About
           </LinkItem>
           <LinkItem href="/blogs" path={path}>
@@ -132,8 +139,21 @@ const Navbar = (
           </LinkItem>
           <Divider orientation="vertical" style={{ margin: '10px' }} />
           <LinkItem
-            href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
+            href="https://github.com/rosekamallove"
             target="_blank"
+            path={path}
+          >
+            <IoLogoGithub />
+          </LinkItem>
+          <LinkItem
+            href="https://twitter.com/RoseKamalLove1"
+            target="_blank"
+            path={path}
+          >
+            <IoLogoTwitter />
+          </LinkItem>
+          <LinkItem
+            href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
             path={path}
           >
             <IoLink />
