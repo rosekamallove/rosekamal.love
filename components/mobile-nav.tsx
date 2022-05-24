@@ -26,25 +26,14 @@ export const MobileNav: React.FC = () => {
     <>
       <ThemeToggleButton />
       <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-        <IconButton mr={2} aria-label="github">
-          <NextLink href="https://github.com/rosekamallove">
-            <a>
-              <IoLogoGithub />
-            </a>
-          </NextLink>
-        </IconButton>
-        <IconButton mr={2} aria-label="twitter">
-          <NextLink href="https://twitter.com/RoseKamalLove1">
-            <a>
-              <IoLogoTwitter />
-            </a>
-          </NextLink>
-        </IconButton>
         <Menu colorScheme="teal">
           <MenuButton
             as={IconButton}
             icon={<HamburgerIcon />}
             aria-label="Options"
+            size="sm"
+            variant="ghost"
+            className="shadow-md hover:shadow-lg"
           ></MenuButton>
           <MenuList>
             <NextLink href="/" passHref>

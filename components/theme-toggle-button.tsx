@@ -22,6 +22,7 @@ const ThemeToggleButton = () => {
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
           onClick={toggleColorMode}
           className="transition-all shadow-md hover:shadow-lg"
+          variant="ghost"
         ></IconButton>
       </motion.div>
     </>
