@@ -29,6 +29,7 @@ import { newTheme } from '../../components/chakra-md-theme'
 import { MinutesRead } from '../../components/minutes-read'
 import { RenderTags } from '../../components/render-tags'
 import postData from '../../interfaces/postData'
+import { ReadingProgress } from '../../components/reading-progress'
 
 interface Props {
   postData: postData
@@ -36,34 +37,7 @@ interface Props {
 }
 
 const Post: React.FC<Props> = ({ postData, id }) => {
-  const toast = useToast()
-  const toast_id = 'feedback-toast'
   const url = `https://rosekamallove.vercel.app/blogs/${id}`
-
-  const [count, setCount] = useState(0)
-
-  /*
-   * TODO
-   *
-   * [ Create a Scroll indicator ]
-   * https://www.youtube.com/watch?v=X1PI52QLanE
-   *
-   * Probably add debouncing: when the user stops scrolling
-   */
-
-  const _reachedBottom = () => {
-    if (count < 1 && !toast.isActive(toast_id)) {
-      toast({
-        title: 'Please send feedback',
-        description: 'It will help me immensely in my growth ❤️ ',
-        variant: 'solid',
-        position: 'top-right',
-        isClosable: true,
-        id: toast_id
-      })
-      setCount(count + 1)
-    }
-  }
 
   return (
     <Layout>
@@ -80,30 +54,27 @@ const Post: React.FC<Props> = ({ postData, id }) => {
         <meta property="og:image" content={postData.cover_image}></meta>
       </Head>
 
+      <ReadingProgress />
+
       <Container maxW="container.md">
         <article>
           <Section delay="0.1">
             <Heading as="h1" mb={5}>
               {postData.title}
             </Heading>
-            <Date dateString={postData.date} /> {' • '}
-            <MinutesRead string={postData.contentHtml} words={null} />
-            <Box mb="5">
-              <RenderTags tagArray={postData.tags.split(',')} />
-            </Box>
-            <Box
-              fontWeight="bold"
-              borderRadius="8px"
-              className="border p-1 my-3 text-base"
-              w="33%"
-            >
-              Do give it a like on
+            <Box fontWeight="600" borderRadius="8px">
+              <Date dateString={postData.date} /> {' • '}
+              <MinutesRead string={postData.contentHtml} words={null} />
+              {' • '}Do give it a like on
               <Link
                 mx="2"
                 href={`https://dev.to/rosekamallove/${postData.devUrl}`}
               >
-                [ dev.to ]
+                dev.to
               </Link>
+            </Box>
+            <Box mb="5">
+              <RenderTags tagArray={postData.tags.split(',')} />
             </Box>
             <ReactMarkdown
               components={ChakraUIRenderer(newTheme)}
