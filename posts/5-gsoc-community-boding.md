@@ -6,7 +6,7 @@ og_description: "Getting to know the community and familiarizing myself with Lib
 cover_image: 'https://user-images.githubusercontent.com/69139607/170450651-bfe6ef15-5634-473d-908f-d95dab890113.png'
 tags: 'gsoc, librehealth, open-source'
 devUrl: ''
-published: false
+published: true
 ---
 
 I have been selected as an _Open Source Contributor_ for [LibreHealthIO](https://librehealth.io) under the [Google Summer
