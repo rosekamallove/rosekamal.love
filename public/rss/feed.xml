@@ -4,7 +4,7 @@
         <title>RoseK's Blog</title>
         <link>https://rosekamallove.vercel.app/</link>
         <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
-        <lastBuildDate>Thu, 26 May 2022 06:43:07 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 May 2022 13:00:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,15 @@
             <link>https://rosekamallove.vercel.app/</link>
         </image>
         <copyright>All rights reserved 2022, Rose Kamal Love</copyright>
+        <item>
+            <title><![CDATA[GSoC - Community bonding period (LibreHealth)]]></title>
+            <link>https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding</link>
+            <guid>https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding</guid>
+            <pubDate>Thu, 26 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></description>
+            <content:encoded><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></content:encoded>
+            <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
+        </item>
         <item>
             <title><![CDATA[How to land a good internship, with amazing learning experince and good pay?]]></title>
             <link>https://rosekamallove.vercel.app//blogs/4-applying-for-internships</link>

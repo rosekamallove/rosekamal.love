@@ -11,6 +11,18 @@
     },
     "items": [
         {
+            "id": "https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding",
+            "content_html": "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.",
+            "url": "https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding",
+            "title": "GSoC - Community bonding period (LibreHealth)",
+            "summary": "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.",
+            "date_modified": "2022-05-26T00:00:00.000Z",
+            "author": {
+                "name": "Rose Kamal Love",
+                "url": "https://twitter.com/RoseKamalLove1"
+            }
+        },
+        {
             "id": "https://rosekamallove.vercel.app//blogs/4-applying-for-internships",
             "content_html": "A proven way to land an internship irrespective of your college and year",
             "url": "https://rosekamallove.vercel.app//blogs/4-applying-for-internships",
