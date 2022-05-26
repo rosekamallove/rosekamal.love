@@ -89,24 +89,19 @@ const Post: React.FC<Props> = ({ postData, id }) => {
             <Heading as="h1" mb={5}>
               {postData.title}
             </Heading>
-            <Date dateString={postData.date} /> {' • '}
-            <MinutesRead string={postData.contentHtml} words={null} />
-            <Box mb="5">
-              <RenderTags tagArray={postData.tags.split(',')} />
-            </Box>
-            <Box
-              fontWeight="bold"
-              borderRadius="8px"
-              className="border p-1 my-3 text-base"
-              w="33%"
-            >
-              Do give it a like on
+            <Box className="font-semibold">
+              <Date dateString={postData.date} /> {' • '}
+              <MinutesRead string={postData.contentHtml} words={null} />
+              {' • '}Read on
               <Link
                 mx="2"
                 href={`https://dev.to/rosekamallove/${postData.devUrl}`}
               >
-                [ dev.to ]
+                dev.to
               </Link>
+            </Box>
+            <Box mb="5">
+              <RenderTags tagArray={postData.tags.split(',')} />
             </Box>
             <ReactMarkdown
               components={ChakraUIRenderer(newTheme)}
