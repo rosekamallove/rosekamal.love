@@ -12,7 +12,8 @@ export const BasicIntro: React.FC = () => {
         align="center"
         className="shadow-sm"
       >
-        Hello There, I&apos;m A software developer scaling up systems 🚀
+        I&apos;m A software developer who brings latency down to his humour
+        level 🚀
       </Box>
       {/*<Box flexShrink={0} md={{ display: 'none' }} align="center">
         <div className="cursor-pointer rounded-full transition-ease-in-out duration-300 hover:scale-[1.1]">
