@@ -14,7 +14,12 @@ const Layout: React.FC<Props> = ({ children, title }) => {
     <>
       {title && (
         <Head>
-          <title>{title} - Rose Kamal</title>
+          <title>{title} - Rose Kamal Love</title>
+          <meta property="og:title" content={title} />
+          <meta
+            property="og:image"
+            content="https://rosekamallove.vercel.app/images/rosek.jpg"
+          />
           <meta
             property="og:description"
             content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
