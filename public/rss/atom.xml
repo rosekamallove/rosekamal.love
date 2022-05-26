@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamallove.vercel.app/</id>
     <title>RoseK's Blog</title>
-    <updated>2022-05-26T06:43:07.961Z</updated>
+    <updated>2022-05-26T13:00:04.001Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -15,6 +15,24 @@
     <logo>https://rosekamallove.vercel.app//images/rosek.jpg</logo>
     <icon>https://rosekamallove.vercel.app//images/logo-dark.png</icon>
     <rights>All rights reserved 2022, Rose Kamal Love</rights>
+    <entry>
+        <title type="html"><![CDATA[GSoC - Community bonding period (LibreHealth)]]></title>
+        <id>https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding</id>
+        <link href="https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding"/>
+        <updated>2022-05-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></summary>
+        <content type="html"><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How to land a good internship, with amazing learning experince and good pay?]]></title>
         <id>https://rosekamallove.vercel.app//blogs/4-applying-for-internships</id>
