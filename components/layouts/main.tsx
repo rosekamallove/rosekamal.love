@@ -31,6 +31,10 @@ const Main: React.FC<Props> = ({ children, router }) => {
         />
         <meta property="og:site_name" content="Rose Kamal Love" />
         <meta name="og:title" content="Rose Kamal Love" />
+        <meta
+          name="og:image"
+          content="https://rosekamallove.vercel.app/images/rosek.jpg"
+        />
         <meta property="og:type" content="website" />
         <title>Rose Kamal Love - Blog</title>
       </Head>
