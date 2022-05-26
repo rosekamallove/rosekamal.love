@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { Button, Flex, Heading, Spacer, Text } from '@chakra-ui/react'
+import { Button, Flex, Spacer, Text } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from 'react'
 import { IconLinks } from './icon-links'
