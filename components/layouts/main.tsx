@@ -27,7 +27,7 @@ const Main: React.FC<Props> = ({ children, router }) => {
         <meta name="twitter:creator" content="@RoseKamalLove1" />
         <meta
           name="twitter:image"
-          content="https://rosekamallove.vercel.app/rosek.jpg"
+          content="https://rosekamallove.vercel.app/images/rosek.jpg"
         />
         <meta property="og:site_name" content="Rose Kamal Love" />
         <meta name="og:title" content="Rose Kamal Love" />
