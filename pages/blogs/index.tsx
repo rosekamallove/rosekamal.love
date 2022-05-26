@@ -4,7 +4,7 @@ import { RenderBlogs } from '../../components/render-blogs'
 import Section from '../../components/section'
 import BlogImage from '../../public/images/og_blogs.png'
 import Head from 'next/head'
-import { generateRssFeed } from './rss'
+import { generateRssFeed } from '../../lib/rss'
 import { getSortedPostsData } from '../../lib/posts'
 
 export async function getStaticProps() {
