@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamallove.vercel.app/</id>
     <title>RoseK's Blog</title>
-    <updated>2022-05-26T13:15:37.693Z</updated>
+    <updated>2022-05-26T17:52:05.300Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -34,12 +34,12 @@
         </contributor>
     </entry>
     <entry>
-        <title type="html"><![CDATA[How to land a good internship, with amazing learning experince and good pay?]]></title>
+        <title type="html"><![CDATA[How to land an internship, with amazing learning experince and good pay?]]></title>
         <id>https://rosekamallove.vercel.app//blogs/4-applying-for-internships</id>
         <link href="https://rosekamallove.vercel.app//blogs/4-applying-for-internships"/>
         <updated>2022-05-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A proven way to land an internship irrespective of your college and year]]></summary>
-        <content type="html"><![CDATA[A proven way to land an internship irrespective of your college and year]]></content>
+        <summary type="html"><![CDATA[A proven way to land an internship irrespective of your college and year.]]></summary>
+        <content type="html"><![CDATA[A proven way to land an internship irrespective of your college and year.]]></content>
         <author>
             <name>Rose Kamal Love</name>
             <email>rosekamallove@gmail.com</email>
