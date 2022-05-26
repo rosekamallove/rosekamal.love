@@ -1,6 +1,6 @@
 import fs from 'fs'
-import postData from '../../interfaces/postData'
-import { getSortedPostsData } from '../../lib/posts'
+import postData from '../interfaces/postData'
+import { getSortedPostsData } from './posts'
 import { Feed } from 'feed'
 
 export const generateRssFeed = async (): Promise<void> => {
