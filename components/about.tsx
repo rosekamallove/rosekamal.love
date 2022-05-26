@@ -28,7 +28,8 @@ export const About: React.FC = () => {
         </Text>
         <Text>
           I am currently making OCR accessible at{' '}
-          <A href="https://trysolvio.ai/">Solvio</A> as as Front-End Intern, and
+          <A href="https://trysolvio.ai/">Solvio</A> /{' '}
+          <A href="https://trysolvio.ai/">BlendEd</A> as a Front-End Intern, and
           will help <A href="https://librehealth.io/">LibreHealth</A> build
           Libre Medical Record Systems this summer as an Open Source Contribter
           under the{' '}
