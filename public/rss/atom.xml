@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://rosekamallove.vercel.app/</id>
+    <title>RoseK's Blog</title>
+    <updated>2022-05-26T06:43:07.961Z</updated>
+    <generator>Feed for Node.js</generator>
+    <author>
+        <name>Rose Kamal Love</name>
+        <email>rosekamallove@gmail.com</email>
+        <uri>https://twitter.com/RoseKamalLove1</uri>
+    </author>
+    <link rel="alternate" href="https://rosekamallove.vercel.app/"/>
+    <link rel="self" href="https://rosekamallove.vercel.app//rss/atom.xml"/>
+    <subtitle>Blgo posts about internships, Web Development, Open Source, Productivity and more</subtitle>
+    <logo>https://rosekamallove.vercel.app//images/rosek.jpg</logo>
+    <icon>https://rosekamallove.vercel.app//images/logo-dark.png</icon>
+    <rights>All rights reserved 2022, Rose Kamal Love</rights>
+    <entry>
+        <title type="html"><![CDATA[How to land a good internship, with amazing learning experince and good pay?]]></title>
+        <id>https://rosekamallove.vercel.app//blogs/4-applying-for-internships</id>
+        <link href="https://rosekamallove.vercel.app//blogs/4-applying-for-internships"/>
+        <updated>2022-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A proven way to land an internship irrespective of your college and year]]></summary>
+        <content type="html"><![CDATA[A proven way to land an internship irrespective of your college and year]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This is how you become "Internship Ready" as a Web Developer [in 2022] (Part 1: Front-End)]]></title>
+        <id>https://rosekamallove.vercel.app//blogs/3-getting-started-web-dev</id>
+        <link href="https://rosekamallove.vercel.app//blogs/3-getting-started-web-dev"/>
+        <updated>2022-05-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[There are a plethora of videos and blog posts out there discussing how to get started with Web Development, whenever I go to Uni there is at least one person asking this question to me. So I figured the content isn't helping and a potential problem can be those videos and blog posts discuss the what but not the how. This is what I am gonna try and solve 😃]]></summary>
+        <content type="html"><![CDATA[There are a plethora of videos and blog posts out there discussing how to get started with Web Development, whenever I go to Uni there is at least one person asking this question to me. So I figured the content isn't helping and a potential problem can be those videos and blog posts discuss the what but not the how. This is what I am gonna try and solve 😃]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cryptography 101]]></title>
+        <id>https://rosekamallove.vercel.app//blogs/2-cryptography-101</id>
+        <link href="https://rosekamallove.vercel.app//blogs/2-cryptography-101"/>
+        <updated>2022-05-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is a write-up post for the Cryptography video that Fireship.io has published, hope you like it.]]></summary>
+        <content type="html"><![CDATA[This is a write-up post for the Cryptography video that Fireship.io has published, hope you like it.]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java and MySQL]]></title>
+        <id>https://rosekamallove.vercel.app//blogs/1-java-jdbc-mysql</id>
+        <link href="https://rosekamallove.vercel.app//blogs/1-java-jdbc-mysql"/>
+        <updated>2022-05-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></summary>
+        <content type="html"><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What is Coding & and an intro to C++]]></title>
+        <id>https://rosekamallove.vercel.app//blogs/0-what-is-coding-and-an-intro-to-c++</id>
+        <link href="https://rosekamallove.vercel.app//blogs/0-what-is-coding-and-an-intro-to-c++"/>
+        <updated>2021-12-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[An introduction to coding, what, how and why]]></summary>
+        <content type="html"><![CDATA[An introduction to coding, what, how and why]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
+</feed>
