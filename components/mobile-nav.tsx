@@ -24,7 +24,6 @@ export const MobileNav: React.FC = () => {
             as={IconButton}
             icon={<HamburgerIcon />}
             aria-label="Options"
-            size="sm"
             variant="ghost"
             className="shadow-md hover:shadow-lg"
           ></MenuButton>

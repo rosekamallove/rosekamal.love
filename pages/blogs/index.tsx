@@ -4,10 +4,14 @@ import { RenderBlogs } from '../../components/render-blogs'
 import Section from '../../components/section'
 import BlogImage from '../../public/images/og_blogs.png'
 import Head from 'next/head'
+import { generateRssFeed } from './rss'
 import { getSortedPostsData } from '../../lib/posts'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
+
+  await generateRssFeed()
+
   return {
     props: {
       allPostsData
