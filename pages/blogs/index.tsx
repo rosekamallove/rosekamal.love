@@ -5,7 +5,6 @@ import { RenderBlogs } from '../../components/render-blogs'
 import Section from '../../components/section'
 import { getSortedPostsData } from '../../lib/posts'
 import { generateRssFeed } from '../../lib/rss'
-import BlogImage from '../../public/images/og_blogs.png'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
