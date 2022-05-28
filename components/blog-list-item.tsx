@@ -55,11 +55,12 @@ export const BlogListItem: React.FC<Props> = ({
           mb={1}
           p={2}
         >
-          <Box display="inline">
-            <NextLink
-              href={`/blogs/${id}`}
-              color={useColorModeValue('#3181CE', '#c678dd')}
-            >
+          <NextLink
+            href={`/blogs/${id}`}
+            color={useColorModeValue('#3181CE', '#c678dd')}
+            scroll={true}
+          >
+            <Box display="inline">
               <Link>
                 <Heading as="h2" size="md">
                   {title}
@@ -80,8 +81,8 @@ export const BlogListItem: React.FC<Props> = ({
                   )}
                 </Heading>
               </Link>
-            </NextLink>
-          </Box>
+            </Box>
+          </NextLink>
 
           <Box>
             <Date dateString={date} />

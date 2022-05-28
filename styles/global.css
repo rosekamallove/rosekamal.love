@@ -10,7 +10,6 @@
 html,
 body {
   @apply text-base md:text-[18px]  lg:text-lg;
-  scroll-behavior: smooth !important;
 }
 
 button {
