@@ -20,21 +20,12 @@ const Main: React.FC<Props> = ({ children, router }) => {
           content="Rose Kamal Love's Personal Blog / Portfolio"
         />
         <meta name="author" content="Rose Kamal Love" />
-        <meta name="author" content="rosek" />
         <meta name="twitter:title" content="Rose Kamal Love" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@RoseKamalLove1" />
         <meta name="twitter:creator" content="@RoseKamalLove1" />
-        <meta
-          name="twitter:image"
-          content="https://rosekamallove.vercel.app/images/rosek.jpg"
-        />
         <meta property="og:site_name" content="Rose Kamal Love" />
         <meta name="og:title" content="Rose Kamal Love" />
-        <meta
-          name="og:image"
-          content="https://rosekamallove.vercel.app/images/rosek.jpg"
-        />
         <meta property="og:type" content="website" />
         <title>Rose Kamal Love - Blog</title>
       </Head>
