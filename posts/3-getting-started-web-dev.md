@@ -124,7 +124,7 @@ But, unfortunately, many people are stuck in this phase, maybe they're just sayi
 To learn _html_ I have two video recommendation
 
 - [HTML Tutorial for Beginners: HTML Crash Course](https://www.youtube.com/watch?v=qz0aGYrrlhU) _[English]_
-- [HTML Tutorial for Beginners | Complete HTML with Notes & Code](https://www.youtube.com/watch?v=HcOc7P5BMi) _[Hindi]_
+- [HTML Tutorial for Beginners | Complete HTML with Notes & Code](https://www.youtube.com/watch?v=HcOc7P5BMi4&t=4s) _[Hindi]_
 
 Just watch either of the two videos and move ahead, without wasting any more time on this.
 
