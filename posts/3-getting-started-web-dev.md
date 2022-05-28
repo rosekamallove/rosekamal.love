@@ -60,52 +60,52 @@ I recommend _javaScript_ for the backend for mainly two reasons, the community i
 A newbie can learn either of the above-mentioned frameworks for the _back-end_ but my recommendation still lies with _javaScript_, the blog post being about _internship-ready web-developer_. This statement doesn't mean that these technologies don't have opportunities, it is simply implying the _javaScript_ has more.
 With all that out of the way let's dive in.
 
-> ## Index
->
-> ### [ Featured: [Learning on YouTube](#youtemy-callout) ]
->
-> - **Basics:**
->   - [Internet](https://www.vox.com/2014/6/16/18076282/the-internet)
->     - [How does the internet work, and what is HTTP?](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
->     - [Browsers and how they work?](https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/#:~:text=When%20the%20web%20browser%20fetches,and%20experience%20on%20the%20internet.)
->     - [What's a Domain Name?](https://www.cloudflare.com/en-in/learning/dns/glossary/what-is-a-domain-name/)
->     - [Working of a DNS, and what is hosting?](https://www.cloudflare.com/en-in/learning/dns/what-is-dns/)
->   - [HTML](#html)
->   - [CSS](#css)
->   - [JavaScript](#js-frontend)
-> - **[Tools:](tools)**
->   - [Package Mangers](#package-managers) (like npm),
->   - [build tools](#build-tools)
->     - npm scripts
->     - webpack
->     - esbuild
->   - [Version Control](#version-control)
->     - Basic usage of Git and GitHub
->     - Repo hosting service (GitHub)
-> - **[Additional front-end:](#additional-frontend)**
->
->   - [JavaScript Front-end Frameworks](#js-frameworks) (**react.js**, angular.js, vue.js, etc)
->   - [CSS Frameworks](#css-framework) (**tailwind**, bootstrap, etc)
->   - [SSR](#ssr) (**next.js**, gatsby.js, nuxt.js, etc)
->
-> - **[Building Projects]** (Will be covered in a different blog post)
+## Index
 
-> - **Back-End:** (this section will be covered in Part 2)
->   - OS and General Knowledge
->     - Basic Terminal Usage and CLI commands (grwp, awk, sed, lsof, curl, etc)
->     - Process, Threads, Concurrency and Memory management
->     - I/O Management and POSIX (stdin, stdout, stderr, pipes)
->     - Basic Networking
->   - Programming Language (javaScript preferred)
->   - Server (node.js, express.js etc)
->   - DataBases
->     - Relational (**PostgresSQL**, MySQL, MariaDB, etc)
->     - Document (MongoDB, Firebase)
->   - APIs
->     - REST
->     - JSON APIs
->     - gRPC
->   - Authentication
+### [ Featured: [Learning on YouTube](#youtemy-callout) ]
+
+- **Basics:**
+  - [Internet](https://www.vox.com/2014/6/16/18076282/the-internet)
+    - [How does the internet work, and what is HTTP?](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
+    - [Browsers and how they work?](https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/#:~:text=When%20the%20web%20browser%20fetches,and%20experience%20on%20the%20internet.)
+    - [What's a Domain Name?](https://www.cloudflare.com/en-in/learning/dns/glossary/what-is-a-domain-name/)
+    - [Working of a DNS, and what is hosting?](https://www.cloudflare.com/en-in/learning/dns/what-is-dns/)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [JavaScript](#js-frontend)
+- **[Tools:](tools)**
+  - [Package Mangers](#package-managers) (like npm),
+  - [build tools](#build-tools)
+    - npm scripts
+    - webpack
+    - esbuild
+  - [Version Control](#version-control)
+    - Basic usage of Git and GitHub
+    - Repo hosting service (GitHub)
+- **[Additional front-end:](#additional-frontend)**
+
+  - [JavaScript Front-end Frameworks](#js-frameworks) (**react.js**, angular.js, vue.js, etc)
+  - [CSS Frameworks](#css-framework) (**tailwind**, bootstrap, etc)
+  - [SSR](#ssr) (**next.js**, gatsby.js, nuxt.js, etc)
+
+- **[Building Projects]** (Will be covered in a different blog post)
+
+- **Back-End:** (this section will be covered in Part 2)
+  - OS and General Knowledge
+    - Basic Terminal Usage and CLI commands (grwp, awk, sed, lsof, curl, etc)
+    - Process, Threads, Concurrency and Memory management
+    - I/O Management and POSIX (stdin, stdout, stderr, pipes)
+    - Basic Networking
+  - Programming Language (javaScript preferred)
+  - Server (node.js, express.js etc)
+  - DataBases
+    - Relational (**PostgresSQL**, MySQL, MariaDB, etc)
+    - Document (MongoDB, Firebase)
+  - APIs
+    - REST
+    - JSON APIs
+    - gRPC
+  - Authentication
 
 Don't get anxious looking at all the topics above, I am sorry if they look intimidating. This index is designed to _quick access_ all the _sections_ and _sub-sections_ of the blog post that corresponds to each of the topics. For some of the topics that are too small to explain I have directly linked resources to learn them. For example, _How does the internet work, and what is HTTP?_ is directly linked to a **Stanford** web page explaining exactly that.
 
