@@ -12,7 +12,7 @@ import { Meta, Title } from '../../components/projects'
 
 const Project = () => {
   return (
-    <Layout title="YouTemy">
+    <Layout>
       <Container maxW="container.md">
         <Title>
           YouTemy <Badge>2021-2022</Badge>

@@ -12,7 +12,7 @@ import Layout from '../../components/layouts/article'
 import { Meta, Title } from '../../components/projects'
 
 const Project = () => (
-  <Layout title="MusicExpanse">
+  <Layout>
     <Container maxW="container.md">
       <Title>
         Music Expanse <Badge>2021-2021</Badge>

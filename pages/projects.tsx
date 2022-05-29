@@ -2,6 +2,7 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+import Head from 'next/head'
 import musicexpanse from '../public/images/music-expanse.jpg'
 import youtemy from '../public/images/youtemy.png'
 
@@ -26,7 +27,19 @@ const Portfolio = () => {
    *  -> repo-report
    */
   return (
-    <Layout title="Portfolio">
+    <Layout>
+      <Head>
+        <title>Portfolio - Rose Kamal Love</title>
+        <meta property="og:title" content={'Portfolio - Rose Kamal Love'} />
+        <meta
+          property="og:image"
+          content="https://rosekamallove.vercel.app/images/rosek.jpg"
+        />
+        <meta
+          property="og:description"
+          content="My projects, work experiences and open source contributions"
+        />
+      </Head>
       <Container maxW="container.md">
         <Heading as="h3" mb={4}>
           My Projects

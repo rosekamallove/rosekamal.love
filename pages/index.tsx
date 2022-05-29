@@ -6,6 +6,7 @@ import {
   Heading,
   SimpleGrid
 } from '@chakra-ui/react'
+import Head from 'next/head'
 import NextLink from 'next/link'
 import { About } from '../components/about'
 import { GridItem } from '../components/grid-item'
@@ -18,7 +19,19 @@ import youtemy from '../public/images/youtemy.png'
 
 export default function Page({ allPostsData }) {
   return (
-    <Layout title="About">
+    <Layout>
+      <Head>
+        <title>About - Rose Kamal Love</title>
+        <meta property="og:title" content={'About - Rose Kamal Love'} />
+        <meta
+          property="og:image"
+          content="https://rosekamallove.vercel.app/images/rosek.jpg"
+        />
+        <meta
+          property="og:description"
+          content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
+        />
+      </Head>
       <Container maxW="container.md">
         <Section delay="0.0">
           <BasicIntro />
