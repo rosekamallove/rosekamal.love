@@ -1,5 +1,4 @@
 import { Box, Divider } from '@chakra-ui/react'
-import Head from 'next/head'
 import React from 'react'
 import Footer from '../footer'
 import { GridItemStyle } from '../grid-item'
