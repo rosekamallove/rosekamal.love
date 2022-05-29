@@ -22,7 +22,6 @@ export const generateRssFeed = async (): Promise<void> => {
       'Blgo posts about internships, Web Development, Open Source, Productivity and more',
     id: siteURL,
     link: siteURL,
-    image: `${siteURL}/images/rosek.jpg`,
     favicon: `${siteURL}/images/logo-dark.png`,
     copyright: `All rights reserved ${date.getFullYear()}, Rose Kamal Love`,
     updated: date,
