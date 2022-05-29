@@ -5,28 +5,13 @@ import Footer from '../footer'
 import { GridItemStyle } from '../grid-item'
 
 interface Props {
-  title?: string
+  _title?: string
   children: React.ReactNode
 }
 
-const Layout: React.FC<Props> = ({ children, title }) => {
+const Layout: React.FC<Props> = ({ children, _title }) => {
   return (
     <>
-      {title && (
-        <Head>
-          <title>{title} - Rose Kamal Love</title>
-          <meta property="og:title" content={title} />
-          <meta
-            property="og:image"
-            content="https://rosekamallove.vercel.app/images/rosek.jpg"
-          />
-          <meta
-            property="og:description"
-            content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
-          />
-          <meta name="twitter:title" content={title} />
-        </Head>
-      )}
       {children}
 
       <GridItemStyle />
