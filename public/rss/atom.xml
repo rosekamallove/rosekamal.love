@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamallove.vercel.app/</id>
     <title>RoseK's Blog</title>
-    <updated>2022-05-28T14:19:06.862Z</updated>
+    <updated>2022-05-29T07:01:56.103Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -12,7 +12,6 @@
     <link rel="alternate" href="https://rosekamallove.vercel.app/"/>
     <link rel="self" href="https://rosekamallove.vercel.app//rss/atom.xml"/>
     <subtitle>Blgo posts about internships, Web Development, Open Source, Productivity and more</subtitle>
-    <logo>https://rosekamallove.vercel.app//images/rosek.jpg</logo>
     <icon>https://rosekamallove.vercel.app//images/logo-dark.png</icon>
     <rights>All rights reserved 2022, Rose Kamal Love</rights>
     <entry>

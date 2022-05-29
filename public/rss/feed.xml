@@ -4,14 +4,9 @@
         <title>RoseK's Blog</title>
         <link>https://rosekamallove.vercel.app/</link>
         <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
-        <lastBuildDate>Sat, 28 May 2022 14:19:06 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 29 May 2022 07:01:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
-        <image>
-            <title>RoseK's Blog</title>
-            <url>https://rosekamallove.vercel.app//images/rosek.jpg</url>
-            <link>https://rosekamallove.vercel.app/</link>
-        </image>
         <copyright>All rights reserved 2022, Rose Kamal Love</copyright>
         <item>
             <title><![CDATA[GSoC - Community bonding period (LibreHealth)]]></title>
