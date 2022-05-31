@@ -1,5 +1,5 @@
 ---
-title: 'GSoC - Community bonding period (LibreHealth)'
+title: "My goals for GSoC 22' Community Bonding Period (LibreHealthIO)"
 date: '2022-05-26'
 description: "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style."
 og_description: "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style."

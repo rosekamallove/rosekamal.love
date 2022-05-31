@@ -80,34 +80,34 @@ export const newTheme = {
 
     return (
       <Box>
-        {classArray[1] === 'txt' ? (
-          ''
-        ) : (
-          <Box align="right" marginBottom="-40px">
-            <Button
-              size="xs"
-              borderRadius="8px"
-              color={useColorModeValue('#282c34', '#abb2bf')}
-              bg={useColorModeValue('#E2EAF2', '#282c34')}
-              onClick={() => {
-                copyTextToClipboard(children)
-                toast({
-                  description: 'Copied to clipboard successfully!',
-                  position: 'top-right',
-                  status: 'success',
-                  variant: 'solid'
-                })
-              }}
-            >
-              <IoCopy />
-            </Button>
-          </Box>
-        )}
-        <div className="shadow-xl">
+        <Box align="right" marginBottom="-40px">
+          <Button
+            size="xs"
+            borderRadius="8px"
+            color={useColorModeValue('#282c34', '#abb2bf')}
+            bg={useColorModeValue('#E2EAF2', '#282c34')}
+            onClick={() => {
+              copyTextToClipboard(children)
+              toast({
+                description: 'Copied to clipboard successfully!',
+                position: 'top-right',
+                status: 'success',
+                variant: 'solid'
+              })
+            }}
+          >
+            <IoCopy />
+          </Button>
+        </Box>
+        <div
+          className={`p-0 m-0 rounded-[8px] ${
+            theme == 'dark' ? 'shadow-xl' : 'shadow-md'
+          }`}
+        >
           <Prism
             language={classArray[1]}
             style={theme == 'dark' ? dark : light}
-            showLineNumbers={true}
+            showLineNumbers={classArray[1] === 'txt' ? false : true}
           >
             {children}
           </Prism>

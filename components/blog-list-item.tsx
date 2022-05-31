@@ -62,7 +62,7 @@ export const BlogListItem: React.FC<Props> = ({
           >
             <Box display="inline">
               <Link>
-                <Heading as="h2" size="md">
+                <Heading as="h2">
                   {title}
                   {published ? (
                     ''

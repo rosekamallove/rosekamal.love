@@ -24,6 +24,7 @@ export default class Document extends NextDocument {
           `
             }}
           />
+          <script async src="../lin/preCode.js" />
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />

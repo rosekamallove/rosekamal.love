@@ -13,7 +13,19 @@
             "id": "https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding",
             "content_html": "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.",
             "url": "https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding",
-            "title": "GSoC - Community bonding period (LibreHealth)",
+            "title": "My goals for GSoC 22' Community Bonding Period (LibreHealthIO)",
+            "summary": "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.",
+            "date_modified": "2022-05-26T00:00:00.000Z",
+            "author": {
+                "name": "Rose Kamal Love",
+                "url": "https://twitter.com/RoseKamalLove1"
+            }
+        },
+        {
+            "id": "https://rosekamallove.vercel.app//blogs/6-setting-up-lh-toolkit-radiology",
+            "content_html": "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.",
+            "url": "https://rosekamallove.vercel.app//blogs/6-setting-up-lh-toolkit-radiology",
+            "title": "Setting up LibreHealth Toolkit and Radiology",
             "summary": "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.",
             "date_modified": "2022-05-26T00:00:00.000Z",
             "author": {
