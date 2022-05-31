@@ -4,14 +4,23 @@
         <title>RoseK's Blog</title>
         <link>https://rosekamallove.vercel.app/</link>
         <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
-        <lastBuildDate>Sun, 29 May 2022 07:01:56 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 31 May 2022 12:12:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>All rights reserved 2022, Rose Kamal Love</copyright>
         <item>
-            <title><![CDATA[GSoC - Community bonding period (LibreHealth)]]></title>
+            <title><![CDATA[My goals for GSoC 22' Community Bonding Period (LibreHealthIO)]]></title>
             <link>https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding</link>
             <guid>https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding</guid>
+            <pubDate>Thu, 26 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></description>
+            <content:encoded><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></content:encoded>
+            <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
+        </item>
+        <item>
+            <title><![CDATA[Setting up LibreHealth Toolkit and Radiology]]></title>
+            <link>https://rosekamallove.vercel.app//blogs/6-setting-up-lh-toolkit-radiology</link>
+            <guid>https://rosekamallove.vercel.app//blogs/6-setting-up-lh-toolkit-radiology</guid>
             <pubDate>Thu, 26 May 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></description>
             <content:encoded><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></content:encoded>
