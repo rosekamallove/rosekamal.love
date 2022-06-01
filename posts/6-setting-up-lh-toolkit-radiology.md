@@ -1,6 +1,6 @@
 ---
 title: 'Setting up LibreHealth Toolkit and Radiology'
-date: '2022-05-26'
+date: '2022-05-31'
 description: "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style."
 og_description: "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style."
 cover_image: 'https://user-images.githubusercontent.com/69139607/170450651-bfe6ef15-5634-473d-908f-d95dab890113.png'

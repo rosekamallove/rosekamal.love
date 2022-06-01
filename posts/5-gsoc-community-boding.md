@@ -7,6 +7,7 @@ cover_image: 'https://user-images.githubusercontent.com/69139607/170450651-bfe6e
 tags: 'gsoc, librehealth, open-source'
 devUrl: ''
 published: true
+featured: false
 ---
 
 I have been selected as an _Open Source Contributor_ for [LibreHealthIO](https://librehealth.io) under the [Google Summer

@@ -8,6 +8,7 @@ cover_image: "https://user-images.githubusercontent.com/69139607/166664947-44a52
 tags: 'mysql, java, jdbc'
 devUrl: 'java-and-mysql-kp9'
 published: true
+featured: true
 ---
 
 ## Java DataBase Connectivity (JDBC)
