@@ -6,7 +6,7 @@ export const BasicIntro: React.FC = () => {
     <div>
       <Box
         borderRadius="8px"
-        bg={useColorModeValue('whiteAlpha.500', '#323843')}
+        bg={useColorModeValue('whiteAlpha.500', '#282c34')}
         mb={6}
         p={3}
         align="center"

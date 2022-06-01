@@ -54,7 +54,7 @@ const LinkItem: React.FC<Props> = ({
         {...props}
         _hover={{
           background: `${
-            !active ? useColorModeValue('whiteAlpha.400', '#323843') : activeBg
+            !active ? useColorModeValue('whiteAlpha.400', '#282c34') : activeBg
           }`
         }}
         transition="ease-in-out 0.25s"

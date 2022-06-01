@@ -8,15 +8,18 @@ import { SearchBar } from './search-bar'
 interface Props {
   allPostsData: Array<postData>
   renderDescription?: boolean
+  featured?: boolean
   count?: number
 }
 
 export const RenderBlogs: React.FC<Props> = ({
   allPostsData,
   renderDescription,
+  featured,
   count
 }) => {
   count = count == -1 ? allPostsData.length : count
+  const featuredPosts = allPostsData.filter(post => post.featured)
 
   const [filteredPosts, setFilteredPosts] = useState([])
   const [searchField, setSearchField] = useState('')
@@ -52,7 +55,7 @@ export const RenderBlogs: React.FC<Props> = ({
     setFilteredPosts(getFiltered.current())
   }, [searchField])
 
-  const handleChange = val => {
+  const handleChange = (val: string): void => {
     if (val == ',') {
       //TODO: update the tagArraySearch state
     }
@@ -68,7 +71,15 @@ export const RenderBlogs: React.FC<Props> = ({
         onlyTags={onlyTags}
         setOnlyTags={setOnlyTags}
       />
-      {searchField === '' ? (
+      {featured ? (
+        <RenderList
+          renderDescription={renderDescription}
+          handleChange={handleChange}
+          posts={featuredPosts}
+          setFromTag={setFromTag}
+          count={count}
+        />
+      ) : searchField === '' ? (
         <RenderList
           renderDescription={renderDescription}
           handleChange={handleChange}

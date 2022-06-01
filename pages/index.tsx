@@ -40,10 +40,11 @@ export default function Page({ allPostsData }) {
 
         <Section delay="0.2">
           <Heading as="h3" variant="section-title">
-            Latest Blogs
+            Featured Blogs
           </Heading>
           <RenderBlogs
             allPostsData={allPostsData}
+            featured={true}
             renderDescription={false}
             count={3}
           />
