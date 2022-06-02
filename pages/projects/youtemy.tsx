@@ -17,6 +17,13 @@ const Project = () => {
         <Title>
           YouTemy <Badge>2021-2022</Badge>
         </Title>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/FiOLt_Fdd1U"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
         <UnorderedList>
           <ListItem>
             This web app aims to improve learning efficiency and make a
@@ -40,9 +47,8 @@ const Project = () => {
             creating a new project. This hinders our progress. YouTemy aims to
             change that by essentially helping us track the number of playlists
             we have watched for a certain topic. It even keeps track of the
-            <strong>percentage of course completed</strong>.
+            <strong> percentage of course completed</strong>.
           </ListItem>
-
           <ListItem>
             In case, you want to enroll in a course not offered by us, simply
             search for it in the Explore section and add it to the Enrolled
@@ -61,7 +67,7 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <Meta>Platform</Meta>
-            <span>Web</span>
+            <Badge>Web</Badge>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
