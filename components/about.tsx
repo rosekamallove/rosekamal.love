@@ -6,7 +6,7 @@ import { IconLinks } from './icon-links'
 import Section from './section'
 
 export const A = ({ children, href }) => (
-  <Link className="font-semibold" href={href}>
+  <Link target="_blank" className="font-semibold" href={href}>
     {children}
   </Link>
 )
@@ -37,7 +37,9 @@ export const About: React.FC = () => {
           will help <A href="https://librehealth.io/">LibreHealthIO</A> build
           Libre Medical Record Systems this summer as an Open Source Contributor
           under the{' '}
-          <A href="summerofcode.with.google.com">Google Summer of Code </A>
+          <A href="https://summerofcode.withgoogle.com/">
+            Google Summer of Code{' '}
+          </A>
           Program ✨
         </Text>
         <Text>
@@ -57,7 +59,7 @@ export const About: React.FC = () => {
               rightIcon={<ChevronRightIcon />}
               colorScheme="teal"
             >
-              My Portfolio
+              Portfolio
             </Button>
           </NextLink>
         </Flex>
