@@ -65,7 +65,7 @@ export default function Page({ allPostsData }) {
             Featured
           </Heading>
           <SimpleGrid columns={[1, 1, 1]} gap={0}>
-            <Center>
+            <Center className="m-0 py-5 rounded-[8px] transition-all hover:shadow-md">
               <GridItem
                 href="/projects/youtemy"
                 title="YouTemy"

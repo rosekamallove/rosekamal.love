@@ -4,6 +4,7 @@ import {
   IoLogoGithub,
   IoLogoInstagram,
   IoLogoLinkedin,
+  IoLogoMedium,
   IoLogoTwitter
 } from 'react-icons/io5'
 
@@ -24,17 +25,17 @@ export const IconLinks: React.FC<Props> = ({ size }) => {
           <Icon as={IoLogoTwitter} />
         </Button>
       </Link>
-      <Link href="https://instagram.com/rosekamallove" target="_blank">
-        <Button variant="ghost" colorScheme="teal" size={size ? size : 'sm'}>
-          <Icon as={IoLogoInstagram} />
-        </Button>
-      </Link>
       <Link
         href="https://www.linkedin.com/in/rose-kamal-love-1146141b0/"
         target="_blank"
       >
         <Button variant="ghost" colorScheme="teal" size={size ? size : 'sm'}>
           <Icon as={IoLogoLinkedin} />
+        </Button>
+      </Link>
+      <Link href="https://medium.com/@rosekamall" target="_blank">
+        <Button variant="ghost" colorScheme="teal" size={size ? size : 'sm'}>
+          <Icon as={IoLogoMedium} />
         </Button>
       </Link>
     </>
