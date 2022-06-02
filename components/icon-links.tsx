@@ -2,7 +2,6 @@ import { Button, Icon, Link } from '@chakra-ui/react'
 import React from 'react'
 import {
   IoLogoGithub,
-  IoLogoInstagram,
   IoLogoLinkedin,
   IoLogoMedium,
   IoLogoTwitter
