@@ -6,10 +6,7 @@ import { IconLinks } from './icon-links'
 import Section from './section'
 
 export const A = ({ children, href }) => (
-  <Link
-    className="decoration-1 underline decoration-dashed underline-offset-2 font-semibold  hover:decoration-solid"
-    href={href}
-  >
+  <Link className="font-semibold" href={href}>
     {children}
   </Link>
 )

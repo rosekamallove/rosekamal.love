@@ -4,16 +4,15 @@
 
 * {
   -webkit-tap-highlight-color: transparent;
-  -webkit-font-smoothing: antialiased;
 }
 
 html,
 body {
-  @apply text-base md:text-[18px]  lg:text-lg;
+  @apply text-[19px];
 }
 
 button {
-  @apply hover:shadow-md;
+  @apply hover:shadow-sm;
 }
 
 hr {
