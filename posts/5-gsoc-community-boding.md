@@ -87,3 +87,7 @@ So, by the end of the community bonding period:
 - I would have created a couple of MRs at least.
 - I will be done with detailed designs of all the pages present in **Toolkit** and **Radiology** which would
   have been revised too on the bases of the feedback I get from the community and the mentors.
+
+I will be updating how all this went and the percentage completion of the tasks that I decided, so stay tuned on [dev.to](https://dev.to/rosekamallove)
+
+You can reach me out on [twitter](https://twitter.com/RoseKamalLove1) meanwhile 🙂
