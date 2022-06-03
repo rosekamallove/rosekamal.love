@@ -1,4 +1,4 @@
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { IoArrowForwardOutline } from 'react-icons/io5'
 import { Button, Flex, Spacer, Text, Link } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from 'react'
@@ -56,7 +56,7 @@ export const About: React.FC = () => {
             <Button
               mx={5}
               variant="ghost"
-              rightIcon={<ChevronRightIcon />}
+              rightIcon={<IoArrowForwardOutline />}
               colorScheme="teal"
             >
               Portfolio
