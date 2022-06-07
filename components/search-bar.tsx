@@ -11,7 +11,7 @@ import {
   Spacer,
   Switch
 } from '@chakra-ui/react'
-import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 
 interface Props {
   renderDescription: boolean

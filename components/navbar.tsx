@@ -40,10 +40,10 @@ const LinkItem: React.FC<Props> = ({
   children,
   ...props
 }) => {
-  const active = path === href
+  let active = path === href
   const inactiveColor = useColorModeValue('#282c34', '#abb2bf')
   const activeBg = useColorModeValue('#3D9CA9', '#55B6C2')
-
+  if (path === '/') active = false
   return (
     <NextLink href={href} passHref>
       <Link
@@ -96,7 +96,7 @@ const Navbar = (
       bg={
         isFirefox
           ? useColorModeValue('#C8CDD5', '#2C313A')
-          : useColorModeValue('#EFF2F540', '#21252B40')
+          : useColorModeValue('#EFF2F520', '#21252B20')
       }
       backdropFilter="auto"
       backdropBlur="8px"
@@ -126,7 +126,7 @@ const Navbar = (
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-          <LinkItem href="/" path={path}>
+          <LinkItem href="/about" path={path}>
             <IoPerson />
             About
           </LinkItem>

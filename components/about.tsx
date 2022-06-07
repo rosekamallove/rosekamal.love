@@ -1,8 +1,5 @@
-import { IoArrowForwardOutline } from 'react-icons/io5'
-import { Button, Flex, Spacer, Text, Link } from '@chakra-ui/react'
-import NextLink from 'next/link'
+import { Text, Link } from '@chakra-ui/react'
 import React from 'react'
-import { IconLinks } from './icon-links'
 import Section from './section'
 
 export const A = ({ children, href }) => (
@@ -49,20 +46,6 @@ export const About: React.FC = () => {
         <Text>
           <strong>Happy Reading </strong>☕
         </Text>
-        <Flex my={4}>
-          <IconLinks size="md" />
-          <Spacer />
-          <NextLink href="/projects">
-            <Button
-              mx={5}
-              variant="ghost"
-              rightIcon={<IoArrowForwardOutline />}
-              colorScheme="teal"
-            >
-              Portfolio
-            </Button>
-          </NextLink>
-        </Flex>
       </Section>
     </div>
   )
