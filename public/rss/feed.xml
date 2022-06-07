@@ -4,7 +4,7 @@
         <title>RoseK's Blog</title>
         <link>https://rosekamallove.vercel.app/</link>
         <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
-        <lastBuildDate>Thu, 02 Jun 2022 12:11:43 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Jun 2022 11:11:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>All rights reserved 2022, Rose Kamal Love</copyright>
@@ -40,8 +40,8 @@
             <link>https://rosekamallove.vercel.app//blogs/3-getting-started-web-dev</link>
             <guid>https://rosekamallove.vercel.app//blogs/3-getting-started-web-dev</guid>
             <pubDate>Wed, 11 May 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[There are a plethora of videos and blog posts out there discussing how to get started with Web Development, whenever I go to Uni there is at least one person asking this question to me. So I figured the content isn't helping and a potential problem can be those videos and blog posts discuss the what but not the how. This is what I am gonna try and solve 😃]]></description>
-            <content:encoded><![CDATA[There are a plethora of videos and blog posts out there discussing how to get started with Web Development, whenever I go to Uni there is at least one person asking this question to me. So I figured the content isn't helping and a potential problem can be those videos and blog posts discuss the what but not the how. This is what I am gonna try and solve 😃]]></content:encoded>
+            <description><![CDATA[A comprehensive guide to taking you from HTML & CSS to a Web Development Intern]]></description>
+            <content:encoded><![CDATA[A comprehensive guide to taking you from HTML & CSS to a Web Development Intern]]></content:encoded>
             <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
         </item>
         <item>

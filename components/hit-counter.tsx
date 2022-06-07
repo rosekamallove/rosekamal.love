@@ -1,14 +1,15 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Text } from '@chakra-ui/react'
 import React from 'react'
 import ReactRetroHitCounter from 'react-retro-hit-counter'
 
 interface Props {
   slug: string
   published: boolean
+  listItem: boolean
 }
 
-const HitCounter: React.FC<Props> = ({ slug, published }) => {
-  const [hits, setHits] = React.useState(undefined)
+const HitCounter: React.FC<Props> = ({ slug, published, listItem }) => {
+  const [hits, setHits] = React.useState(0)
   React.useEffect((): void => {
     //Don't count hits on localhost
     if (process.env.NODE_ENV !== 'production') {
@@ -42,14 +43,21 @@ const HitCounter: React.FC<Props> = ({ slug, published }) => {
       </Box>
     )
   }
+  console.log(listItem)
   return (
     <Box mt={1}>
-      <ReactRetroHitCounter
-        size={15}
-        segmentThickness={2}
-        hits={hits}
-        borderThickness={3}
-      />
+      {listItem === true ? (
+        <div className="font-semibold">
+          <Text>👀 {hits}</Text>
+        </div>
+      ) : (
+        <ReactRetroHitCounter
+          size={15}
+          segmentThickness={2}
+          hits={hits}
+          borderThickness={3}
+        />
+      )}
     </Box>
   )
 }

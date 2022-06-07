@@ -124,7 +124,11 @@ const Post: React.FC<Props> = ({ postData, id }) => {
               </NextLink>
               <FeedbackModal id={id} />
               <Spacer />
-              <HitCounter published={postData.published} slug={id} />
+              <HitCounter
+                published={postData.published}
+                slug={id}
+                listItem={false}
+              />
             </Flex>
           </Section>
         </article>
