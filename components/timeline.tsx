@@ -15,30 +15,27 @@ export const TimeLine: React.FC = () => {
   return (
     <Section delay="0.2">
       <Heading as="h3" variant="section-title">
-        Bio
+        Timeline
       </Heading>
-      <BioSection>
-        <BioYear>2003</BioYear>
-        Born in Bareilly, India.
-      </BioSection>
+
+      {/* 2020 */}
 
       {/* 2020 */}
 
       <BioSection>
-        <BioYear>2020</BioYear>
-        Graduated my 12th, and took admission in
-        <NextLink href="https://mjpru.ac.in/" passHref={true}>
-          <Link> MJPRU </Link>
-        </NextLink>
-        as a Bachelor in Computer Science and Information Technology and Started
-        learning basics of programming and Web Development
+        <BioYear>2022</BioYear> Making OCR accessible at{' '}
+        <Link href="https://trysolvio.ai/">Solvio</Link> /{' '}
+        <Link href="https://blended.app/">BlendEd</Link> as a Front-End Intern,
+        and will help <Link href="https://librehealth.io/">LibreHealthIO</Link>{' '}
+        build Libre Medical Record Systems this summer as an Open Source
+        Contributor under the{' '}
+        <Link href="https://summerofcode.withgoogle.com/">
+          Google Summer of Code{' '}
+        </Link>
+        Program ✨
       </BioSection>
-
-      {/* 2020 */}
-
       <BioSection>
-        <BioYear>2021</BioYear>
-        Built two awesome projects
+        <BioYear>2021</BioYear> Built two awesome projects
         <NextLink
           href="https://github.com/rosekamallove/music-expanse"
           passHref={true}
@@ -65,6 +62,18 @@ export const TimeLine: React.FC = () => {
         <NextLink href="https://github.com/enzymejs/enzyme" passHref={true}>
           <Link> enzyme.js </Link>
         </NextLink>
+      </BioSection>
+      <BioSection>
+        <BioYear>2020</BioYear> Graduated my 12th, and took admission in
+        <NextLink href="https://mjpru.ac.in/" passHref={true}>
+          <Link> MJPRU </Link>
+        </NextLink>
+        as a Bachelor in Computer Science and Information Technology and Started
+        learning basics of programming and Web Development
+      </BioSection>
+      <BioSection>
+        <BioYear>2003</BioYear>
+        Born in Bareilly, India.
       </BioSection>
     </Section>
   )

@@ -8,12 +8,11 @@ import {
 } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
-import { About } from '../components/about'
 import { GridItem } from '../components/grid-item'
-import { BasicIntro } from '../components/intro'
 import Layout from '../components/layouts/article'
 import { RenderBlogs } from '../components/render-blogs'
 import Section from '../components/section'
+import { SmallIntro } from '../components/small-intro'
 import { getSortedPostsData } from '../lib/posts'
 import youtemy from '../public/images/youtemy.png'
 
@@ -21,7 +20,7 @@ export default function Page({ allPostsData }) {
   return (
     <Layout>
       <Head>
-        <title>About - Rose Kamal Love</title>
+        <title>Rose Kamal Love</title>
         <meta property="og:title" content={'About - Rose Kamal Love'} />
         <meta
           property="og:image"
@@ -34,8 +33,7 @@ export default function Page({ allPostsData }) {
       </Head>
       <Container maxW="container.md">
         <Section delay="0.0">
-          <BasicIntro />
-          <About />
+          <SmallIntro />
         </Section>
 
         <Section delay="0.2">

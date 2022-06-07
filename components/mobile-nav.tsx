@@ -28,7 +28,7 @@ export const MobileNav: React.FC = () => {
             className="shadow-sm hover:shadow-md"
           ></MenuButton>
           <MenuList>
-            <NextLink href="/" passHref>
+            <NextLink href="/about" passHref>
               <MenuItem
                 icon={<IoPersonOutline />}
                 as={Link}
