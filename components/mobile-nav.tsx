@@ -25,7 +25,7 @@ export const MobileNav: React.FC = () => {
             icon={<HamburgerIcon />}
             aria-label="Options"
             variant="ghost"
-            className="shadow-md hover:shadow-lg"
+            className="shadow-sm hover:shadow-md"
           ></MenuButton>
           <MenuList>
             <NextLink href="/" passHref>

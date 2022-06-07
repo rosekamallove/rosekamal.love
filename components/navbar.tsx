@@ -91,11 +91,12 @@ const Navbar = (
       position={router.asPath.includes('/blogs/') ? 'absolute' : 'fixed'}
       as="nav"
       w="100%"
+      borderBottom={`1px solid ${useColorModeValue('#d3d9de', '#282c34')}`}
       // eslint-disable-next-line react-hooks/rules-of-hooks
       bg={
         isFirefox
           ? useColorModeValue('#C8CDD5', '#2C313A')
-          : useColorModeValue('#EFF2F540', '##21252c40')
+          : useColorModeValue('#EFF2F540', '#21252B40')
       }
       backdropFilter="auto"
       backdropBlur="8px"

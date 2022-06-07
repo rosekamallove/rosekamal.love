@@ -17,23 +17,17 @@ interface Props {
   renderDescription: boolean
   searchField: string
   handleChange: (_val: string) => void
-  onlyTags: boolean
-  setOnlyTags: Dispatch<SetStateAction<boolean>>
+  featured: boolean
+  setFeatured: Dispatch<SetStateAction<boolean>>
 }
 
 export const SearchBar: React.FC<Props> = ({
   renderDescription,
   searchField,
   handleChange,
-  onlyTags,
-  setOnlyTags
+  featured,
+  setFeatured
 }) => {
-  const [tag, setTag] = useState(onlyTags)
-
-  useEffect(() => {
-    setTag(onlyTags)
-  }, [onlyTags])
-
   return (
     <>
       {renderDescription ? (
@@ -45,7 +39,7 @@ export const SearchBar: React.FC<Props> = ({
               <Search2Icon />
             </InputLeftElement>
             <Input
-              placeholder={onlyTags ? 'Enter tag' : 'Search for posts'}
+              placeholder="Search for posts"
               variant="filled"
               size="md"
               onChange={(e: { target: { value: string } }) =>
@@ -62,16 +56,15 @@ export const SearchBar: React.FC<Props> = ({
             width={{ base: '13rem', md: '10rem' }}
           >
             <FormLabel htmlFor="email-alerts" mb="0" fontSize="80%">
-              By Tags
+              Featured
             </FormLabel>
             <Switch
               id="only tags"
               size="sm"
-              checked={tag}
+              checked={featured}
               colorScheme="teal"
               onChange={() => {
-                setTag(!tag)
-                setOnlyTags(!tag)
+                setFeatured(!featured)
               }}
             />
           </FormControl>

@@ -23,23 +23,19 @@ export const RenderBlogs: React.FC<Props> = ({
 
   const [filteredPosts, setFilteredPosts] = useState([])
   const [searchField, setSearchField] = useState('')
-  const [onlyTags, setOnlyTags] = useState(false)
+  const [featuredPostsOnly, setFeatured] = useState(false)
   const [fromTag, setFromTag] = useState(false)
 
   const getFiltered = useRef<Function>(() => [])
   getFiltered.current = () => {
-    let filteredPosts = []
-    if (onlyTags || fromTag) {
-      //TODO: Search in tagArraySearch
-      //
+    if (featuredPostsOnly) return featuredPosts
 
-      filteredPosts = allPostsData.filter(post =>
-        // Searching in the tags only
+    if (fromTag)
+      return allPostsData.filter(post =>
         post.tags.includes(searchField.toLowerCase())
       )
-    } else {
-      filteredPosts = allPostsData.filter(
-        // Searching in every searchField
+    else
+      return allPostsData.filter(
         post =>
           post.title.toLowerCase().includes(searchField.toLowerCase()) ||
           post.og_description
@@ -47,18 +43,13 @@ export const RenderBlogs: React.FC<Props> = ({
             .includes(searchField.toLowerCase()) ||
           post.tags.includes(searchField.toLowerCase())
       )
-    }
-    return filteredPosts
   }
 
   useEffect(() => {
     setFilteredPosts(getFiltered.current())
-  }, [searchField])
+  }, [searchField, featuredPostsOnly])
 
   const handleChange = (val: string): void => {
-    if (val == ',') {
-      //TODO: update the tagArraySearch state
-    }
     setSearchField(val)
   }
 
@@ -68,8 +59,8 @@ export const RenderBlogs: React.FC<Props> = ({
         renderDescription={renderDescription}
         handleChange={handleChange}
         searchField={searchField}
-        onlyTags={onlyTags}
-        setOnlyTags={setOnlyTags}
+        featured={featuredPostsOnly}
+        setFeatured={setFeatured}
       />
       {featured ? (
         <RenderList
@@ -79,7 +70,7 @@ export const RenderBlogs: React.FC<Props> = ({
           setFromTag={setFromTag}
           count={count}
         />
-      ) : searchField === '' ? (
+      ) : searchField === '' && featuredPostsOnly === false ? (
         <RenderList
           renderDescription={renderDescription}
           handleChange={handleChange}
