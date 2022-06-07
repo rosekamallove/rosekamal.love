@@ -11,6 +11,7 @@ import {
 import NextLink from 'next/link'
 import React, { Dispatch, SetStateAction } from 'react'
 import Date from './date'
+import HitCounter from './hit-counter'
 import { MinutesRead } from './minutes-read'
 import { RenderTags } from './render-tags'
 
@@ -51,55 +52,63 @@ export const BlogListItem: React.FC<Props> = ({
             background: `${useColorModeValue('whiteAlpha.400', '#282c34')}`
           }}
           transition="ease-in-out 0.25s"
-          className="hover:shadow-md"
+          className="md:grid md:grid-cols-4 hover:shadow-md"
           mb={1}
           p={2}
         >
-          <NextLink
-            href={`/blogs/${id}`}
-            color={useColorModeValue('#3181CE', '#c678dd')}
-            scroll={true}
-          >
-            <Box display="inline">
-              <Link>
-                <Heading as="h2">
-                  {title}
-                  {published ? (
-                    ''
-                  ) : (
-                    <Tag
-                      mx="5"
-                      mt="2"
-                      borderRadius="sm"
-                      variant="outline"
-                      colorScheme="red"
-                    >
-                      <TagLabel cursor="pointer" fontFamily="Jetbrains Mono">
-                        Draft
-                      </TagLabel>
-                    </Tag>
-                  )}
-                </Heading>
-              </Link>
-            </Box>
-          </NextLink>
-
-          <Box>
+          <div className="opacity-0 mt-5 h-0 text-base md:opacity-100 md:h-auto">
             <Date dateString={date} />
-            {' • '}
+            <div className=""></div>
             <MinutesRead words={words} />
-          </Box>
-          <RenderTags
-            tagArray={tagArray}
-            handleChange={handleChange}
-            setOnlyTags={setOnlyTags}
-            renderDescription={renderDescription}
-          />
-          {renderDescription ? (
-            <Text fontSize="md">{description}</Text>
-          ) : (
-            <Text fontSize="md">{og_description}</Text>
-          )}
+            <div></div>
+            <HitCounter slug={id} published={published} listItem={true} />
+          </div>
+          <div className="col-span-3">
+            <NextLink
+              href={`/blogs/${id}`}
+              color={useColorModeValue('#3181CE', '#c678dd')}
+              scroll={true}
+            >
+              <Box display="inline">
+                <Link>
+                  <Heading as="h3">
+                    {title}
+                    {published ? (
+                      ''
+                    ) : (
+                      <Tag
+                        mx="5"
+                        mt="1"
+                        borderRadius="sm"
+                        variant="outline"
+                        colorScheme="red"
+                      >
+                        <TagLabel cursor="pointer" fontFamily="Jetbrains Mono">
+                          Draft
+                        </TagLabel>
+                      </Tag>
+                    )}
+                  </Heading>
+                </Link>
+              </Box>
+            </NextLink>
+            <div className="h-auot md:h-0 opacity-100 md:opacity-0">
+              <Date dateString={date} />
+              {' • '}
+              <MinutesRead words={words} />
+            </div>
+            <RenderTags
+              tagArray={tagArray}
+              handleChange={handleChange}
+              setOnlyTags={setOnlyTags}
+              renderDescription={renderDescription}
+            />
+            {renderDescription ? (
+              <Text fontSize="md">{description}</Text>
+            ) : (
+              <Text fontSize="md">{og_description}</Text>
+            )}
+          </div>
         </Box>
       </ListItem>
     </>
