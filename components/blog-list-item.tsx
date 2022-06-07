@@ -61,7 +61,7 @@ export const BlogListItem: React.FC<Props> = ({
             <div className=""></div>
             <MinutesRead words={words} />
             <div></div>
-            <HitCounter slug={id} published={published} listItem={true} />
+            {/*          <HitCounter slug={id} published={published} listItem={true} />*/}
           </div>
           <div className="col-span-3">
             <NextLink
@@ -92,7 +92,7 @@ export const BlogListItem: React.FC<Props> = ({
                 </Link>
               </Box>
             </NextLink>
-            <div className="h-auot md:h-0 opacity-100 md:opacity-0">
+            <div className="visible md:invisible">
               <Date dateString={date} />
               {' • '}
               <MinutesRead words={words} />
