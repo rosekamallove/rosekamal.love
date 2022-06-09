@@ -7,6 +7,7 @@ import {
   Divider,
   Flex,
   Heading,
+  IconButton,
   Link,
   OmitCommonProps,
   Stack,
@@ -25,6 +26,7 @@ import {
 } from 'react-icons/io5'
 import Logo from './logo'
 import { MobileNav } from './mobile-nav'
+import ThemeToggleButton from './theme-toggle-button'
 
 interface Props {
   href?: string
@@ -61,7 +63,7 @@ const LinkItem: React.FC<Props> = ({
         display="inline-flex"
         alignItems="center"
         style={{ gap: 4, borderRadius: '8px' }}
-        className={`${active ? 'shadow-lg' : ''} hover:shadow-lg`}
+        className={`${active ? 'shadow-md' : ''} hover:shadow-md`}
       >
         {children}
       </Link>
@@ -163,6 +165,7 @@ const Navbar = (
           >
             <IoLogoTwitter />
           </LinkItem>
+          <ThemeToggleButton />
         </Stack>
 
         {/* Mobile Nav */}
