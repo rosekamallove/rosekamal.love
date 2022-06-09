@@ -39,6 +39,7 @@ export const SearchBar: React.FC<Props> = ({
               <Input
                 placeholder="Search for posts"
                 variant="filled"
+                colorScheme="teal"
                 onChange={(e: { target: { value: string } }) =>
                   handleChange(e.target.value)
                 }

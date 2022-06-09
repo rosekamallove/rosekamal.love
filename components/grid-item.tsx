@@ -53,7 +53,7 @@ export const WorkGridItem: React.FC<Props> = ({
     borderRadius="8px"
     textAlign="center"
     _hover={{
-      background: `${useColorModeValue('whiteAlpha.400', '#323843')}`
+      background: `${useColorModeValue('whiteAlpha.400', '#282c34')}`
     }}
     transition="ease-in-out 0.25s"
     className="p-3 hover:shadow-md"

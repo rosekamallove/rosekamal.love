@@ -55,43 +55,44 @@ export const BlogListItem: React.FC<Props> = ({
           mb={1}
           p={2}
         >
-          <div className="opacity-0 mt-5 h-0 text-base md:opacity-100 md:h-auto">
+          <div className="opacity-0 my-5  h-0 text-base md:opacity-100 md:h-auto">
             <Date dateString={date} />
             <div className=""></div>
             <MinutesRead words={words} />
             <div></div>
             {/*          <HitCounter slug={id} published={published} listItem={true} />*/}
           </div>
-          <div className="col-span-3">
+          <div className="col-span-3 ml-2">
             <NextLink
               href={`/blogs/${id}`}
               color={useColorModeValue('#3181CE', '#c678dd')}
               scroll={true}
             >
-              <Box display="inline">
+              <Box display="inline relative">
                 <Link>
-                  <Heading as="h3">
+                  <Heading as="h3" display="inline" mr={1}>
                     {title}
-                    {published ? (
-                      ''
-                    ) : (
-                      <Tag
-                        mx="5"
-                        mt="1"
-                        borderRadius="sm"
-                        variant="outline"
-                        colorScheme="red"
-                      >
-                        <TagLabel cursor="pointer" fontFamily="Jetbrains Mono">
-                          Draft
-                        </TagLabel>
-                      </Tag>
-                    )}
                   </Heading>
+                  {published ? (
+                    ''
+                  ) : (
+                    <Tag
+                      className="top-0 left-0"
+                      mt="2"
+                      size="sm"
+                      borderRadius="sm"
+                      variant="outline"
+                      colorScheme="red"
+                    >
+                      <TagLabel cursor="pointer" fontFamily="Jetbrains Mono">
+                        Draft
+                      </TagLabel>
+                    </Tag>
+                  )}
                 </Link>
               </Box>
             </NextLink>
-            <div className="visible md:invisible">
+            <div className="visible md:invisible md:h-0">
               <Date dateString={date} />
               {' • '}
               <MinutesRead words={words} />

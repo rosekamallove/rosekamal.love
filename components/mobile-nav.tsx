@@ -17,8 +17,8 @@ import ThemeToggleButton from './theme-toggle-button'
 export const MobileNav: React.FC = () => {
   return (
     <>
-      <ThemeToggleButton />
       <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+        <ThemeToggleButton />
         <Menu colorScheme="teal">
           <MenuButton
             as={IconButton}
