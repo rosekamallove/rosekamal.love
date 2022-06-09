@@ -22,6 +22,7 @@ const Blogs = ({ allPostsData }) => {
   return (
     <Layout>
       <Head>
+        <title>Blogs - Rose Kamal Love</title>
         <meta property="og:title" content="Blogs - Rose Kamal Love"></meta>
         <meta
           property="og:description"

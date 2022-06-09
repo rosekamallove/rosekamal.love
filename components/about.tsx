@@ -3,9 +3,14 @@ import React from 'react'
 import Section from './section'
 
 export const A = ({ children, href }) => (
-  <Link target="_blank" className="font-semibold" href={href}>
+  <a
+    target="_blank"
+    rel="noreferrer"
+    className="font-semibold hover:underline"
+    href={href}
+  >
     {children}
-  </Link>
+  </a>
 )
 
 export const About: React.FC = () => {
@@ -37,14 +42,29 @@ export const About: React.FC = () => {
           <A href="https://summerofcode.withgoogle.com/">
             Google Summer of Code{' '}
           </A>
-          Program ✨
+          Program
+        </Text>
+        <Text>
+          I have been an Open Source Developer under the{' '}
+          <A href="https://fellowship.mlh.io">MLH Fellowship Program</A> in
+          which only <strong>150 out of 35000</strong> Applicants worldwide got
+          selected. I contributed to{' '}
+          <A href="https://github.com/ljharb/repo-report">repo-report</A> which
+          is a CLI to list all repos a user has access to, and report on their
+          configuration in aggregate.
+        </Text>
+        <Text>
+          Before all this cool stuff I had been a student of the{' '}
+          <A href="fellowship.mlh.io">MLH Pre Fellowship</A> in which I leart a
+          tonne while working with awesome people. I also <em>won</em> the 3
+          week long sprint <em>hackathon</em> in which I built the MVP for{' '}
+          <A href="projects/youtemy">Youtemy</A>
         </Text>
         <Text>
           I write about Internships, Web Development, Open Source, Productivity,
           and more.
-        </Text>
-        <Text>
-          <strong>Happy Reading </strong>☕
+          <br />
+          <strong>Happy Reading </strong>✨
         </Text>
       </Section>
     </div>

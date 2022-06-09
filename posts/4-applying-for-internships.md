@@ -15,7 +15,7 @@ you search online and get confused, Where to apply? How to apply? Best platform?
 one platform find a good internship with a decent pay and with opportunity to learn, and apply for that internship only
 to be ghosted by them.
 
-You get demotivated, all the confidence that you have been gathering when learning and buildng projects shatters into a
+You get demotivated, all the confidence that you have been gathering when learning and building projects shatters into a
 million pieces. You start question yourself, your life decisions and then start complaining.
 
 **My friend, I got you covered 🥺**
