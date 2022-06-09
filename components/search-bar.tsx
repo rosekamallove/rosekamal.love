@@ -1,14 +1,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { Search2Icon } from '@chakra-ui/icons'
 import {
-  Flex,
   FormControl,
   FormLabel,
   Heading,
   Input,
   InputGroup,
   InputLeftElement,
-  Spacer,
   Switch
 } from '@chakra-ui/react'
 import React, { Dispatch, SetStateAction } from 'react'
