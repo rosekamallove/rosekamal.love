@@ -31,44 +31,44 @@ export const SearchBar: React.FC<Props> = ({
   return (
     <>
       {renderDescription ? (
-        <Flex>
-          <Heading as="h2">Blogs</Heading>
-          <Spacer />
-          <InputGroup ml={[5, 10, 20]} mt={3} style={{ zIndex: 0 }}>
-            <InputLeftElement>
-              <Search2Icon />
-            </InputLeftElement>
-            <Input
-              placeholder="Search for posts"
-              variant="filled"
-              size="md"
-              onChange={(e: { target: { value: string } }) =>
-                handleChange(e.target.value)
-              }
-              value={searchField}
-            />
-          </InputGroup>
-          <FormControl
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            ml={5}
-            width={{ base: '13rem', md: '10rem' }}
-          >
-            <FormLabel htmlFor="email-alerts" mb="0" fontSize="80%">
-              Featured
-            </FormLabel>
-            <Switch
-              id="only tags"
-              size="sm"
-              checked={featured}
-              colorScheme="teal"
-              onChange={() => {
-                setFeatured(!featured)
-              }}
-            />
-          </FormControl>
-        </Flex>
+        <div>
+          <Heading as="h3">Blogs</Heading>
+          <div className="flex flex-row">
+            <InputGroup mt={3} mb={5} style={{ zIndex: 0 }}>
+              <InputLeftElement>
+                <Search2Icon />
+              </InputLeftElement>
+              <Input
+                placeholder="Search for posts"
+                variant="filled"
+                onChange={(e: { target: { value: string } }) =>
+                  handleChange(e.target.value)
+                }
+                value={searchField}
+              />
+            </InputGroup>
+            <FormControl
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              width={{ base: '13rem', md: '10rem' }}
+            >
+              <FormLabel htmlFor="email-alerts" mb={2}>
+                <span className="text-sm md:text-base">Featured</span>
+              </FormLabel>
+              <Switch
+                id="only tags"
+                size="sm"
+                checked={featured}
+                colorScheme="teal"
+                mb={2}
+                onChange={() => {
+                  setFeatured(!featured)
+                }}
+              />
+            </FormControl>
+          </div>
+        </div>
       ) : (
         ''
       )}

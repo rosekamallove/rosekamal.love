@@ -26,11 +26,11 @@ export const About: React.FC = () => {
           <A href="/projects/youtemy">YouTemy</A> And contribute to open-source.
           I love music, and am something of an <em>HTML Coder</em> myself, in
           the world of music production
-          <A href="https://soundcloud.com/user-276723683"> (SoundCloud).</A>
+          <A href="https://soundcloud.com/user-276723683"> (SoundCloud)</A>
         </Text>
         <Text>
           I take self proclaimed <em>awesome</em> pictures too, as a hobby{' '}
-          <A href="https://instagram.com/rosekamallove">(Instagram)</A>.
+          <A href="https://instagram.com/rosekamallove">(Instagram)</A>
         </Text>
         <Text>
           Currently making OCR accessible at{' '}
