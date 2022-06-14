@@ -19,6 +19,19 @@ export const newTheme = {
     const { children } = props
     return <blockquote>{children}</blockquote>
   },
+  img: props => {
+    const { src, className, alt } = props
+    const theme = useColorModeValue('light', 'dark')
+    return (
+      <img
+        alt={alt}
+        src={src}
+        className={`shadow-md rounded-md ${
+          theme == 'dark' ? 'shadow-xl' : 'shadow-md'
+        } ${className}`}
+      />
+    )
+  },
   h1: props => {
     const { children, className, id } = props
     return (

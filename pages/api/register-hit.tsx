@@ -6,7 +6,7 @@ module.exports = async (req: NextApiRequest, res: NextApiResponse) => {
   console.log(process.env.FAUNA_SECRET_KEY)
   const q = faunadb.query
   const client = new faunadb.Client({
-    secret: process.env.FAUNA_SECRET_KEY,
+    secret: process.env.FAUNA_SECRET_KEY ?? '', 
     domain: 'db.eu.fauna.com'
   })
 
@@ -41,6 +41,6 @@ module.exports = async (req: NextApiRequest, res: NextApiResponse) => {
   )
 
   return res.status(200).json({
-    hits: document.data.hits
+    hits: document.data.hits 
   })
 }
