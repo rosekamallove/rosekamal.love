@@ -55,12 +55,10 @@ export const BlogListItem: React.FC<Props> = ({
           mb={1}
           p={2}
         >
-          <div className="opacity-0 my-5  h-0 text-base md:opacity-100 md:h-auto">
+          <div className="invisible md:my-5 h-0 text-base md:visible md:h-auto">
             <Date dateString={date} />
             <div className=""></div>
             <MinutesRead words={words} />
-            <div></div>
-            {/*          <HitCounter slug={id} published={published} listItem={true} />*/}
           </div>
           <div className="col-span-3 ml-2">
             <NextLink

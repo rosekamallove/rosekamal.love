@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamallove.vercel.app/</id>
     <title>RoseK's Blog</title>
-    <updated>2022-06-09T20:47:24.033Z</updated>
+    <updated>2022-06-14T16:34:06.430Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -14,6 +14,24 @@
     <subtitle>Blgo posts about internships, Web Development, Open Source, Productivity and more</subtitle>
     <icon>https://rosekamallove.vercel.app//images/logo-dark.png</icon>
     <rights>All rights reserved 2022, Rose Kamal Love</rights>
+    <entry>
+        <title type="html"><![CDATA[The FHIR Standard for data exchange in healthcare]]></title>
+        <id>https://rosekamallove.vercel.app//blogs/7-fhir-standard</id>
+        <link href="https://rosekamallove.vercel.app//blogs/7-fhir-standard"/>
+        <updated>2022-06-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A newbie's prespective on what FHIR is and how is it helpful]]></summary>
+        <content type="html"><![CDATA[A newbie's prespective on what FHIR is and how is it helpful]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Setting up LibreHealth Toolkit and Radiology]]></title>
         <id>https://rosekamallove.vercel.app//blogs/6-setting-up-lh-toolkit-radiology</id>
