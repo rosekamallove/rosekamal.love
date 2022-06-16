@@ -67,7 +67,13 @@ export const newTheme = {
   table: props => {
     const { children } = props
     return (
-      <Table variant="striped" colorScheme="gray" borderRadius="8px">
+      <Table
+        variant="striped"
+        size="sm"
+        my={5}
+        colorScheme="gray"
+        borderRadius="8px"
+      >
         {children}
       </Table>
     )
@@ -81,10 +87,10 @@ export const newTheme = {
     if (classArray == '') {
       return (
         <Code
-          margin="2px"
-          borderRadius="5px"
-          background={useColorModeValue('#E2EAF2', '#414650')}
-          bg={null}
+          background={useColorModeValue('#E2EAF2', '#282c34')}
+          rounded="md"
+          px={1}
+          m={0}
         >
           {children}
         </Code>
@@ -112,11 +118,7 @@ export const newTheme = {
             <IoCopy />
           </Button>
         </Box>
-        <div
-          className={`p-0 m-0 rounded-[8px] ${
-            theme == 'dark' ? 'shadow-xl' : 'shadow-md'
-          }`}
-        >
+        <div className="p-0 m-0 rounded-md 'shadow-md'">
           <Prism
             language={classArray[1]}
             style={theme == 'dark' ? dark : light}

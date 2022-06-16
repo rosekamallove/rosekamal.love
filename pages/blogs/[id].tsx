@@ -84,7 +84,7 @@ const Post: React.FC<Props> = ({ postData, id }) => {
       <ReadingProgress />
 
       <Container maxW="container.md">
-        <article>
+        <article className="overflow-hidden">
           <Section delay="0.1">
             <Heading as="h1" mb={5}>
               {postData.title}

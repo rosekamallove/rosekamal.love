@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamallove.vercel.app/</id>
     <title>RoseK's Blog</title>
-    <updated>2022-06-14T16:34:06.430Z</updated>
+    <updated>2022-06-16T21:53:13.834Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -19,8 +19,8 @@
         <id>https://rosekamallove.vercel.app//blogs/7-fhir-standard</id>
         <link href="https://rosekamallove.vercel.app//blogs/7-fhir-standard"/>
         <updated>2022-06-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A newbie's prespective on what FHIR is and how is it helpful]]></summary>
-        <content type="html"><![CDATA[A newbie's prespective on what FHIR is and how is it helpful]]></content>
+        <summary type="html"><![CDATA[A newbie's perspective on what FHIR is and how is it helpful]]></summary>
+        <content type="html"><![CDATA[A newbie's perspective on what FHIR is and how is it helpful]]></content>
         <author>
             <name>Rose Kamal Love</name>
             <email>rosekamallove@gmail.com</email>

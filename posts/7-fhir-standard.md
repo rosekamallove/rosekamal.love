@@ -1,12 +1,12 @@
 ---
-title: 'The FHIR Standard for data exchange in healthcare'
+title: 'Introduction to FHIR - The Standard for data exchange in healthcare'
 date: '2022-06-14'
 description: "A newbie's perspective on what FHIR is and how is it helpful"
 og_description: "A newbie's perspective on what FHIR is and how is it helpful"
-cover_image: 'https://user-images.githubusercontent.com/69139607/170450651-bfe6ef15-5634-473d-908f-d95dab890113.png'
+cover_image: 'https://user-images.githubusercontent.com/69139607/174186914-4a5a17c6-fee6-40b5-bc0a-5b6e1a70faca.png'
 tags: 'gsoc, librehealth, open-source, fhir'
 devUrl: ''
-published: false
+published: true
 ---
 
 I have recently been accepted as an open source contributor for [LibreHealthIO](https://librehealth.io) under the
@@ -69,7 +69,7 @@ done, just because the technology hadn't caught up, it really wasn't usable by m
 things like building apps that work on your phone and tablet, or work across slow distributed mobile networks, there are
 all kinds of barriers there.
 
-All of this leads to the creation of 🔥 HL7 FHIR\*\*.
+All of this leads to the creation of 🔥 HL7 **FHIR**.
 
 FHIR was created as a response to these old technologies, as a
 fresh attempt to build standards that could meet modern needs for interoperability and most importantly that it
@@ -89,7 +89,7 @@ The work **resources** comes from the **HTTP spec**, the language that they (HTT
 
 For example, you go to google and type in your query term in the form input, and then you pull down a page with a bunch of search results on it, what you have actually done is you have downloaded a resource, that _resource_, in this case, is _search results_.
 
-> The HTTP spec describes the entire web in terms of these adressable , fetchable, resources.
+> The HTTP spec describes the entire web in terms of these addressable , fetchable, resources.
 > FHIR is taking all of that context and applying it to Health Care
 
 **Hl7** is a standards development organization and **FHIR** is a standard. _(V2 and CDA are also separate standards)_
@@ -129,7 +129,7 @@ This sounds trivial I know, a, of course, a technical standard is going to targe
 
 - Every detail of the specification is tested at **connectathon events**
 
-When creating a standard it is crucial to test its implementations because it can and does happen that we come up with standards, think that they are the optimal ones and then they turn out to be unworkable this is why **connectathon events** helps a lot in testing the standards before making them **normative**
+When creating a standard it is crucial to test its implementations because it can and does happen that we come up with standards, think that they are the optimal ones and then they turn out to be unworkable this is why **connectathon events** help a lot in testing the standards before making them **normative**
 
 ### Common Scenarios
 
@@ -175,13 +175,70 @@ Let's look into the **Patient** resource a little deeper,
 
 This is the structure of the **Patient** resource type which you can find on the [FHIR Website](https://www.hl7.org/fhir/patient.html), this website is in itself a highly comprehensive documentation of everything **FHIR** and even everything **HL7**
 
-One of the things in this website/documentation that I think is great but may sound trivial to you, is that everything that can be explained has a link attached to it, which you can click to learn more about what it is.
+One of the things in this website/documentation that I think is great but may sound trivial to you is that everything that can be explained has a link attached to it, which you can click to learn more about what it is.
 
 For example, what do you think that little sigma symbol in the 2nd grid represents? Well, click on it and find out.
 
-One other thing that I have noticed myself is that the documentation is written in a way tha I (a developer) don't have a hard time understanding it. It do be following the manifesto XD
+One other thing that I have noticed myself is that the documentation is written in a way that I (a developer) don't have a hard time understanding. It does be following the manifesto XD
 
-Just look at how self explanatory the JSON is:
+**Data Type: Primitives**
+
+Much like any other programming language, FHIR has defined its own set of data types. These data types are very similar to the ones used in general programming languages so no worries there.
+
+| **Types** | **Example**                   |
+| --------- | ----------------------------- |
+| string    | Patient is awake              |
+| boolean   | true                          |
+| date      | 2016-02-19                    |
+| decimal   | 12.347000                     |
+| integer   | 500                           |
+| uri       | http://snomed.info/sct        |
+| base64    | rwr39o9h=                     |
+| dateTime  | 2015-01-26t15:33:13-05:00     |
+| instant   | 2015-01-26t15:33:13.099-05:00 |
+
+In the FHIR spec, _uris_ and _urls_ are very widely used hence there is a whole data type for that only, **base64** here is used for things like images and all.
+
+There are two types of dates in the FHIR spec, the _dateTime_ represents the human time, which can have variable precision. _instant_ on the other hand stores the system time, with the precision of seconds/milliseconds.
+
+**Data Type: General Purpose (composite)**
+
+General purpose datatypes are mini structures that are reused in a different part of the models
+
+<!-- ![general purpose data types](https://user-images.githubusercontent.com/69139607/173908058-e89d1154-6a53-4b3e-9f3d-905504118f72.jpg) -->
+
+**Here's an example of a general purpose data type: Human Name**
+
+![HumanName](https://user-images.githubusercontent.com/69139607/173908476-cf634875-c094-4643-b233-01c7ef4824d4.jpg)
+
+### FHIR Data Model - Resources
+
+- **Meta Data**
+
+  - Resource ID
+  - Resource Version
+  - Tags
+  - Profile
+
+- **Extensiosn**
+  - Any information that doesn't fit into the 80% (Remember the 80:20 rule?)
+- **Narrative**
+
+  - Human-readable version of the content (optional but encouraged)
+  - _CDA_ has taught them that this is very important
+
+- **Body**
+  - Raw Structured Data
+
+### FHIR Encodings
+
+FHIR has defined as of today 3 encodings, 3 means of serializing data and sending it across the wire,
+
+- **JSON:** The most popular with modern internet APIs
+- **XML:** Still very popular with great tools available
+- **RDF/Turtle:** Only generally used in some research contexts
+
+A JSON encoding example of the _Patient_ resource
 
 ```json
 {
@@ -210,7 +267,7 @@ Just look at how self explanatory the JSON is:
     "address" : { Address }, // Address for the contact person
     "gender" : "<code>", // male | female | other | unknown
     "organization" : { Reference(Organization) }, // C? Organization that is associated with the contact
-    "period" : { Period } // The period during which this contact person or organization is valid to be contacted relating to this patient
+    "period": { Period } // The period during which this contact person or organization is valid to be contacted relating to this patient
   }],
   "communication" : [{ // A language which may be used to communicate with the patient about his or her health
     "language" : { CodeableConcept }, // R!  The language which can be used to communicate with the patient about his or her health
@@ -225,3 +282,135 @@ Just look at how self explanatory the JSON is:
   }]
 }
 ```
+
+### Model Concepts
+
+To work with the understanding we should get a basic understanding of some concepts that are defined by the folks who create FHIR, so that's what we
+re gonna do it.
+
+**Model Concepts: Indentifiers**
+
+Identifies in FHIR have two important parts:
+
+- The **system** is a URI indicating the kind of identifier
+- The **value** is the actual identifier
+
+```txt
+{
+  "system": "http://ehealthontario.ca/NamingSystem/ca-on-patient-hcn",
+  "value": "0123456789"
+}
+```
+
+**Model Concepts: Codes**
+
+- In health we often draw values from a set of allowable codes (e.g. standards like LOINC and local code systems)
+
+- Codes in FHIR have two important parts:
+  - The **system** is a URI indicating the kind of code
+  - The **code** is the actual code
+  - The _display_ is a human-readable display name
+
+```txt
+{
+  "system": "http://loinc.org",
+  "code": "718-7",
+  "display": "Hemoglobin mass/volume in blood"
+}
+```
+
+**Model Concepts: Extensions**
+
+- Extensions are the way we include out _20%_
+- An extension is really just a simple key-value pair
+  - The **key** is a URL
+  - The **value** is an FHIR datatype or more extensions
+- Extensions can also include child extensions which are also called Child Extensions
+
+```txt
+{
+  "url": "http://hl7.org/fhir/StrucureDefinition/patient-birthTime",
+  "valueDateTime": "2020-01-13T10:12:00+08:00"
+}
+```
+
+**Resource URLs**
+
+`http://hapi.fhir.org/baseR4/Patient/example` is a Resource URL, if we look closely the pattern here is that the URL starts with a base URL `http://hapi.fhir.org/baseR4` in this case followed by the **type** of the resource, `Patient` here followed by the **ID** which here is `example`
+
+## REST API: Overview
+
+The FHIR REST API is very expansive and covers many **many** use cases and features, I will be covering a few of them in this blog post but if you want to learn more you can do that by going to the following links
+
+Here's an example of CRUD for the `patient` resource
+
+- http://hl7.org/fhir/http.html
+- http://hl7.org/fhir/sarch.html
+
+| **Operation** | **Verb** | **Base URL**                | **Type**  | **ID** |
+| ------------- | -------- | --------------------------- | --------- | ------ |
+| Read          | GET      | http://hapi.fhir.org/baseR4 | /Patient/ | /123   |
+| Create        | POST     | http://hapi.fhir.org/baseR4 | /Patient/ |        |
+| Update        | PUT      | http://hapi.fhir.org/baseR4 | /Patient/ | /123   |
+| Delete        | DELETE   | http://hapi.fhir.org/baseR4 | /Patient/ | /123   |
+
+> The request body in POST/PUT is FHIR resources, in FHIR DELETE doesn't destroy the data, instead it flags the data as deleted
+
+### FHIR Searching (the Search API)
+
+One of the very powerful features of the FHIR spec is the `search` API which allows us to get data using various _searchParams_. If we're building any applications that are being used for a purpose, it gotta have search functionality, and FHIR provides that.
+
+| **Verb** | **Base URL**                | **Type**  | **Search Parameter** |
+| -------- | --------------------------- | --------- | -------------------- |
+| Get      | http://hapi.fhir.org/baseR4 | /Patient? |                      |
+|          | http://hapi.fhir.org/baseR4 | /Patient? | name=smith           |
+|          | http://hapi.fhir.org/baseR4 | /Patient? | birthdate=gt1970     |
+
+The search parameter can even be empty, which means to the server that we want all it sends the data of all the patients, not all servers support this however because this is a security concern.
+
+That's cool and all but how do we know what all search parameters are available for a particular resource? Well, every resource definition has a table of default search parameters at the bottom of the resource definition.
+
+You can just go to the FHIR website and look for a resource, then at the bottom of the resource definition table, you will find the Search Parameters. There are a couple of columns for every search param table.
+
+The first one is the part that goes in the URL so, baseUrl/Patient?**birthDate**=2020 here, the _birthDate_ is the name that will be present in the first column of every resource.
+
+The second column is an **expression**, and an expression is a **"FHIRPath"** expression determining what is indexed, often times these are very intuitive and one-to-one.
+
+Search parameters have **datatypes**, which are related to (but _NOT_ the same as) regular datatypes
+
+**FHIR Search Datatypes: String**
+
+The search param datatypes determine the semantics
+
+```txt
+http://hapi.fhir.org/baseR4/Patient?name=rob
+http://hapi.fhir.org/baseR4/Patient?name:exact=Robby
+```
+
+**FHIR Search Datatypes: Token**
+
+The search param index identifier and coded fields
+
+```txt
+http://hapi.fhir.org/baseR4/Patient?identifier=http://foo|1234
+http://hapi.fhir.org/baseR4/Patient?identifier=1234
+http://hapi.fhir.org/baseR4/Patient?identifier=http://foo|
+```
+
+**FHIR Search Datatypes: Date**
+
+Date parameters index dates and times
+
+```txt
+http://hapi.fhir.org/baseR4/Encounter?date=2020
+http://hapi.fhir.org/baseR4/Encounter?date=gt2020
+http://hapi.fhir.org/baseR4/Encounter?date=2020-10-10
+http://hapi.fhir.org/baseR4/Encounter?date=ge2020-10-10T12:12:00Z
+
+```
+
+Phew!
+
+So, that's FHIR for you in a lot more than 100 seconds, I will next be blogging about consuming an FHIR API (HAPI FHIR to be exact) which I will be doing in a _typeScript_ `React.js` app will be using `Axios + ReactQuery` for data fetching.
+
+Until then, bye 👋🏻
