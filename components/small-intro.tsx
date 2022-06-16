@@ -16,7 +16,7 @@ export const SmallIntro: React.FC = () => {
   return (
     <div>
       <div className="mt-10">
-        <div className="text-[19px] md:text-2xl">
+        <div className="text-xl md:text-2xl">
           Hey, my name is <span className="font-semibold">Rose Kamal Love</span>{' '}
           and,
         </div>

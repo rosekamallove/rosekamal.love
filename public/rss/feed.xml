@@ -4,7 +4,7 @@
         <title>RoseK's Blog</title>
         <link>https://rosekamallove.vercel.app/</link>
         <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
-        <lastBuildDate>Tue, 14 Jun 2022 16:34:06 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Jun 2022 21:53:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>All rights reserved 2022, Rose Kamal Love</copyright>
@@ -13,8 +13,8 @@
             <link>https://rosekamallove.vercel.app//blogs/7-fhir-standard</link>
             <guid>https://rosekamallove.vercel.app//blogs/7-fhir-standard</guid>
             <pubDate>Tue, 14 Jun 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[A newbie's prespective on what FHIR is and how is it helpful]]></description>
-            <content:encoded><![CDATA[A newbie's prespective on what FHIR is and how is it helpful]]></content:encoded>
+            <description><![CDATA[A newbie's perspective on what FHIR is and how is it helpful]]></description>
+            <content:encoded><![CDATA[A newbie's perspective on what FHIR is and how is it helpful]]></content:encoded>
             <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
         </item>
         <item>

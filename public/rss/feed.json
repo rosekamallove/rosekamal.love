@@ -11,10 +11,10 @@
     "items": [
         {
             "id": "https://rosekamallove.vercel.app//blogs/7-fhir-standard",
-            "content_html": "A newbie's prespective on what FHIR is and how is it helpful",
+            "content_html": "A newbie's perspective on what FHIR is and how is it helpful",
             "url": "https://rosekamallove.vercel.app//blogs/7-fhir-standard",
             "title": "The FHIR Standard for data exchange in healthcare",
-            "summary": "A newbie's prespective on what FHIR is and how is it helpful",
+            "summary": "A newbie's perspective on what FHIR is and how is it helpful",
             "date_modified": "2022-06-14T00:00:00.000Z",
             "author": {
                 "name": "Rose Kamal Love",
