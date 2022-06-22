@@ -1,5 +1,6 @@
 import { Container } from '@chakra-ui/react'
 import Head from 'next/head'
+import { SVGBackground } from '.'
 import { About } from '../components/about'
 import { BasicIntro } from '../components/intro'
 import Layout from '../components/layouts/article'
@@ -22,13 +23,16 @@ export default function Page({}) {
           content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
         />
       </Head>
-      <Container maxW="container.md">
-        <Section delay="0.0">
-          <BasicIntro />
-          <About />
-          <TimeLine />
-        </Section>
-      </Container>
+      <div className="overflow-hidden relative">
+        <SVGBackground />
+        <Container maxW="container.md">
+          <Section delay="0.0">
+            <BasicIntro />
+            <About />
+            <TimeLine />
+          </Section>
+        </Container>
+      </div>
     </Layout>
   )
 }

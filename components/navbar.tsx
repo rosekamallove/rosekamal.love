@@ -4,11 +4,11 @@ import {
   Box,
   ChakraProps,
   Container,
-  Divider,
   Flex,
   Heading,
   Link,
   OmitCommonProps,
+  Spacer,
   Stack,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -92,28 +92,21 @@ const Navbar = (
       position={router.asPath.includes('/blogs/') ? 'absolute' : 'fixed'}
       as="nav"
       w="100%"
+      className="shadow-sm"
       borderBottom={`1px solid ${useColorModeValue('#d3d9de', '#282c34')}`}
       // eslint-disable-next-line react-hooks/rules-of-hooks
       bg={
         isFirefox
-          ? useColorModeValue('#C8CDD5', '#2C313A')
-          : useColorModeValue('#EFF2F520', '#21252B20')
+          ? useColorModeValue('#F1F2F4', '#21252B')
+          : useColorModeValue('#EFF2F540', '#21252B40')
       }
       backdropFilter="auto"
-      backdropBlur="8px"
+      align="center"
+      backdropBlur="4px"
       zIndex={1}
       {...props}
     >
-      <Container
-        display="flex"
-        px={2}
-        py={0}
-        my={0}
-        maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
-      >
+      <Container display="flex" px={2} py={0} my={0} maxW="container.md">
         <Flex align="center" mr={8}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
@@ -139,10 +132,7 @@ const Navbar = (
             <IoOpen />
             Portfolio
           </LinkItem>
-          <Divider
-            orientation="vertical"
-            style={{ marginLeft: '15px', marginRight: '0px', padding: 0 }}
-          />
+          <Spacer />
           <LinkItem
             href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
             path={path}
