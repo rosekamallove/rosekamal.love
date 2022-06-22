@@ -6,13 +6,11 @@ import {
   Flex,
   Heading,
   Spacer,
-  Link,
-  useToast
+  Link
 } from '@chakra-ui/react'
 import ChakraUIRenderer from 'chakra-ui-markdown-renderer'
 import Head from 'next/head'
 import NextLink from 'next/link'
-import React, { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
@@ -30,7 +28,6 @@ import { MinutesRead } from '../../components/minutes-read'
 import { RenderTags } from '../../components/render-tags'
 import postData from '../../interfaces/postData'
 import { ReadingProgress } from '../../components/reading-progress'
-import { SVGBackground } from '..'
 
 interface Props {
   postData: postData
