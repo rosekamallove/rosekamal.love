@@ -4,12 +4,12 @@
         <title>RoseK's Blog</title>
         <link>https://rosekamallove.vercel.app/</link>
         <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
-        <lastBuildDate>Thu, 16 Jun 2022 21:53:13 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Jun 2022 08:52:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>All rights reserved 2022, Rose Kamal Love</copyright>
         <item>
-            <title><![CDATA[The FHIR Standard for data exchange in healthcare]]></title>
+            <title><![CDATA[Introduction to FHIR - The Standard for data exchange in healthcare]]></title>
             <link>https://rosekamallove.vercel.app//blogs/7-fhir-standard</link>
             <guid>https://rosekamallove.vercel.app//blogs/7-fhir-standard</guid>
             <pubDate>Tue, 14 Jun 2022 00:00:00 GMT</pubDate>
