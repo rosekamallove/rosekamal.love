@@ -1,5 +1,6 @@
 import { Container } from '@chakra-ui/react'
 import Head from 'next/head'
+import { SVGBackground } from '..'
 import Layout from '../../components/layouts/article'
 import { RenderBlogs } from '../../components/render-blogs'
 import Section from '../../components/section'
@@ -18,7 +19,7 @@ export async function getStaticProps() {
   }
 }
 
-const Blogs = ({ allPostsData }) => {
+const Blogs = ({ allPostsData }: { allPostsData: any }) => {
   return (
     <Layout>
       <Head>
@@ -34,13 +35,16 @@ const Blogs = ({ allPostsData }) => {
         />
       </Head>
       <Section delay="0.1">
-        <Container maxW="container.md">
-          <RenderBlogs
-            allPostsData={allPostsData}
-            renderDescription={true}
-            count={-1}
-          />
-        </Container>
+        <div className="relative overflow-hidden">
+          <SVGBackground />
+          <Container maxW="container.md">
+            <RenderBlogs
+              allPostsData={allPostsData}
+              renderDescription={true}
+              count={-1}
+            />
+          </Container>
+        </div>
       </Section>
     </Layout>
   )

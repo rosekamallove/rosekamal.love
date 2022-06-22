@@ -5,6 +5,7 @@ import Section from '../components/section'
 import Head from 'next/head'
 import musicexpanse from '../public/images/music-expanse.jpg'
 import youtemy from '../public/images/youtemy.png'
+import { SVGBackground } from '.'
 
 const Portfolio = () => {
   /*
@@ -40,31 +41,35 @@ const Portfolio = () => {
           content="My projects, work experiences and open source contributions"
         />
       </Head>
-      <Container maxW="container.md">
-        <Heading as="h3" mb={4}>
-          My Projects
-        </Heading>
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay="0">
-            <WorkGridItem id="youtemy" title="YouTemy" thumbnail={youtemy}>
-              A great way to learn from YouTube courses without any distractions
-              and the ability to enroll in courses and track them with a daily
-              streak to become more consistent.
-            </WorkGridItem>
-          </Section>
-          <Section delay="0">
-            <WorkGridItem
-              id="music-expanse"
-              title="Music Expanse"
-              thumbnail={musicexpanse}
-            >
-              Tired of arguing over music at a party or a gathering? Here, make
-              a virtual room add people with the unique RoomID, and let the
-              members of the room control the music through a voting system.
-            </WorkGridItem>
-          </Section>
-        </SimpleGrid>
-      </Container>
+      <div className="relative overflow-hidden">
+        <SVGBackground />
+        <Container maxW="container.md">
+          <Heading as="h3" mb={4}>
+            My Projects
+          </Heading>
+          <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <Section delay="0">
+              <WorkGridItem id="youtemy" title="YouTemy" thumbnail={youtemy}>
+                A great way to learn from YouTube courses without any
+                distractions and the ability to enroll in courses and track them
+                with a daily streak to become more consistent.
+              </WorkGridItem>
+            </Section>
+            <Section delay="0">
+              <WorkGridItem
+                id="music-expanse"
+                title="Music Expanse"
+                thumbnail={musicexpanse}
+              >
+                Tired of arguing over music at a party or a gathering? Here,
+                make a virtual room add people with the unique RoomID, and let
+                the members of the room control the music through a voting
+                system.
+              </WorkGridItem>
+            </Section>
+          </SimpleGrid>
+        </Container>
+      </div>
     </Layout>
   )
 }
