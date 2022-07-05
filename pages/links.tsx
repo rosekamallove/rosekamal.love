@@ -11,8 +11,8 @@ import {
 
 const Links: React.FC = () => {
   const bg = `${useColorModeValue(
-    'bg-[#abb2bf40] text-white',
-    'bg-[#282c3460] text-gray-100'
+    'bg-[#abb2bf] text-white',
+    'bg-[#282c34] text-gray-100'
   )}`
 
   const logoImg = `/images/logo${useColorModeValue('-light', '-dark')}.png`
@@ -52,7 +52,7 @@ const Links: React.FC = () => {
           />
         </div>
         <div
-          className={`${bg} py-1 px-2 rounded-full border-2 font-bold shadow backdrop-blur-sm text-sm mt-1 mb-10`}
+          className={`${bg} bg-opacity-30 py-1 px-2 rounded-full border-2 font-bold shadow backdrop-blur-sm text-sm mt-1 mb-10`}
         >
           <a href="http://instagram.com/rosekamallove">@rosekamallove</a>
         </div>
@@ -64,7 +64,7 @@ const Links: React.FC = () => {
               href={link.href}
               rel="noreferrer"
               target="_blank"
-              className={`${bg} w-60 font-semibold hover:font-bold border hover:shadow-2xl hover:scale-110 shadow backdrop-blur-md hover:backdrop-blur-sm text-lg flex justify-center items-center gap-2 bg-gray-800 py-2 rounded-full transition-all duration-75`}
+              className={`${bg} bg-opacity-30 w-60 font-semibold hover:font-bold border hover:shadow-2xl hover:scale-110 shadow backdrop-blur-md hover:backdrop-blur-sm text-lg flex justify-center items-center gap-2 bg-gray-800 py-2 rounded-full transition-all duration-75`}
             >
               {link.logo}
               {link.name}
