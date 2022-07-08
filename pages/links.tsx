@@ -21,7 +21,7 @@ const Links: React.FC = () => {
     <div
       style={{
         background:
-          'url(/images/art-background.webp) repeat center center fixed',
+          'url(/images/art-background-light.jpg) repeat center center fixed',
         backgroundSize: 'cover',
         height: '100vh',
         overflow: 'hidden'
@@ -42,29 +42,28 @@ const Links: React.FC = () => {
         <meta property="og:type" content="website" />
       </Head>
       <header className="flex flex-col items-center">
-        <div className="rounded-full flex justify-center items-center border-4 w-fit shadow-xl backdrop-blur-sm mt-10">
+        <div className="flex justify-center items-center bg-white w-fit backdrop-blur-sm my-10 transition-all border-2 border-black">
           <Image
             src="/images/rosek.jpg"
             alt="Rose Kamal"
             height={125}
             width={125}
-            className="rounded-full"
           />
         </div>
         <div
-          className={`${bg} bg-opacity-50 hover:scale-125 py-1 px-2 rounded-full border-2 font-bold shadow backdrop-blur-sm text-sm mt-1 mb-10 transition-all`}
+          className={`bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,0.8)] text-black py-1 px-2 border-black border-2 font-bold backdrop-blur-sm text-sm mt-1 mb-10 transition-all`}
         >
           <a href="http://instagram.com/rosekamallove">@rosekamallove</a>
         </div>
       </header>
-      <ul className="flex flex-col items-center justify-center gap-2">
+      <ul className="flex flex-col items-center justify-center gap-3">
         {links.map(link => (
           <li key={link.href}>
             <a
               href={link.href}
               rel="noreferrer"
               target="_blank"
-              className={`${bg} bg-opacity-50 w-60 font-semibold hover:font-bold box-border border hover:shadow-2xl hover:scale-110 shadow backdrop-blur-md hover:backdrop-blur-sm text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all`}
+              className={`bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,0.8)]  text-black w-60 font-semibold  box-border border-2  border-black  text-lg flex justify-center items-center gap-2 py-2 transition-all`}
             >
               {link.logo}
               {link.name}
