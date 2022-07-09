@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamallove.vercel.app/</id>
     <title>RoseK's Blog</title>
-    <updated>2022-07-05T15:24:09.750Z</updated>
+    <updated>2022-07-09T16:30:47.108Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -14,6 +14,24 @@
     <subtitle>Blgo posts about internships, Web Development, Open Source, Productivity and more</subtitle>
     <icon>https://rosekamallove.vercel.app//images/logo-dark.png</icon>
     <rights>All rights reserved 2022, Rose Kamal Love</rights>
+    <entry>
+        <title type="html"><![CDATA[The start of something nice]]></title>
+        <id>https://rosekamallove.vercel.app//blogs/9-starting-up</id>
+        <link href="https://rosekamallove.vercel.app//blogs/9-starting-up"/>
+        <updated>2022-07-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this blogpost I talk about my team and how/why I want to start up]]></summary>
+        <content type="html"><![CDATA[In this blogpost I talk about my team and how/why I want to start up]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Introduction to FHIR - The Standard for data exchange in healthcare]]></title>
         <id>https://rosekamallove.vercel.app//blogs/7-fhir-standard</id>
