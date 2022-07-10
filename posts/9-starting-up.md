@@ -98,7 +98,7 @@ I have realized that I am a pretty good leader, I can not only lift other people
 
 Yuvraj is an amazing UI and UX designer and has some really good engineering skills, even though he lacks the "big picture" which I and Aman can more than make up for.
 
-Aman, on the other hand, is obsessed with startup stuff, and pitches, he can dig out amazing startup programs, and is really good at market research. And I think he can easily handle more than himself when things are not going so well.
+Aman, on the other hand, is obsessed with startup stuff, and pitches, he can dig out amazing startup programs, and is really good at market research. And I think he can easily handle more than himself when things are not going so well. He is going to be responsible for all the finance and legal stuff, and I and Aman are essentially going to make all the deciesions. It has only been a week or so and he has already improved the idea, and has pushed the team to deliver fast and deliver good.
 
 This is it, thanks for reading this far (even if you have skipped to the ending). We are actually planning on building in public so I will be posting blogs about whatever we do, you can stay tuned if you like.
 
