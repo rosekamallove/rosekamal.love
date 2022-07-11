@@ -7,6 +7,7 @@ cover_image: 'https://user-images.githubusercontent.com/69139607/174186914-4a5a1
 tags: 'gsoc, librehealth, open-source, fhir'
 devUrl: 'introduction-to-fhir-the-standard-for-data-exchange-in-healthcare-fh0'
 published: true
+featured: true
 ---
 
 I have recently been accepted as an open source contributor for [LibreHealthIO](https://librehealth.io) under the

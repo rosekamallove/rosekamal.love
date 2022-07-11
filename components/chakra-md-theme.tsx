@@ -26,7 +26,7 @@ export const newTheme = {
       <img
         alt={alt}
         src={src}
-        className={`shadow-md rounded-md ${
+        className={`shadow-md rounded-sm ${
           theme == 'dark' ? 'shadow-xl' : 'shadow-md'
         } ${className}`}
       />
@@ -87,8 +87,8 @@ export const newTheme = {
     if (classArray == '') {
       return (
         <Code
-          background={useColorModeValue('#E2EAF2', '#282c34')}
-          rounded="md"
+          background={useColorModeValue('#ffffff', '#282c34')}
+          rounded="sm"
           px={1}
           m={0}
         >
@@ -118,7 +118,7 @@ export const newTheme = {
             <IoCopy />
           </Button>
         </Box>
-        <div className="p-0 m-0 rounded-md 'shadow-md'">
+        <div className="p-0 m-0 rounded-sm shadow-md">
           <Prism
             language={classArray[1]}
             style={theme == 'dark' ? dark : light}
