@@ -14,47 +14,41 @@ interface Props {
 export const RenderList: React.FC<Props> = ({
   posts,
   setFromTag,
-  count,
   renderDescription,
   handleChange
 }) => (
   <>
     {posts.map(
-      (
-        {
-          id,
-          date,
-          title,
-          description,
-          og_description,
-          words,
-          tags,
-          published,
-          devUrl
-        },
-        index
-      ) => {
+      ({
+        id,
+        date,
+        title,
+        description,
+        og_description,
+        words,
+        tags,
+        published,
+        devUrl
+      }) => {
         const tagArray = tags.split(',').map(tag => tag.trim())
-        if (index < count) {
-          return (
-            <NextLink key={id} href={`/blogs/${id}`}>
-              <BlogListItem
-                id={id}
-                date={date}
-                published={published}
-                title={title}
-                devUrl={devUrl}
-                description={description}
-                renderDescription={renderDescription}
-                og_description={og_description}
-                words={words}
-                tagArray={tagArray}
-                handleChange={handleChange}
-                setOnlyTags={setFromTag}
-              />
-            </NextLink>
-          )
-        }
+        return (
+          <NextLink key={id} href={`/blogs/${id}`}>
+            <BlogListItem
+              id={id}
+              date={date}
+              published={published}
+              title={title}
+              devUrl={devUrl}
+              description={description}
+              renderDescription={renderDescription}
+              og_description={og_description}
+              words={words}
+              tagArray={tagArray}
+              handleChange={handleChange}
+              setOnlyTags={setFromTag}
+            />
+          </NextLink>
+        )
       }
     )}
   </>

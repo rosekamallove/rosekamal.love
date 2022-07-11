@@ -61,7 +61,7 @@ export default function Page({ allPostsData }: { allPostsData: any }) {
           </Section>
           <Section delay="0.3">{/*<TimeLine />*/}</Section>
 
-          <Section delay="0.4">
+          {/*<Section delay="0.4">
             <Heading as="h3" variant="section-title">
               Featured
             </Heading>
@@ -78,7 +78,7 @@ export default function Page({ allPostsData }: { allPostsData: any }) {
                 </GridItem>
               </Center>
             </SimpleGrid>
-          </Section>
+          </Section> */}
         </Container>
       </div>
     </Layout>
