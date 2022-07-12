@@ -1,16 +1,8 @@
-import { Button, Flex, Link, Spacer, useColorModeValue } from '@chakra-ui/react'
+import { Button, Flex, Spacer } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from 'react'
 import { IoArrowForwardOutline } from 'react-icons/io5'
 import { IconLinks } from './icon-links'
-
-const A = ({ href, children }) => (
-  <NextLink href={href}>
-    <Link>
-      <>{children}</>
-    </Link>
-  </NextLink>
-)
 
 export const SmallIntro: React.FC = () => {
   return (

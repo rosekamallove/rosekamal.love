@@ -1,21 +1,12 @@
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import {
-  Button,
-  Center,
-  Container,
-  Heading,
-  SimpleGrid,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Button, Container, Heading, useColorModeValue } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
-import { GridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import { RenderBlogs } from '../components/render-blogs'
 import Section from '../components/section'
 import { SmallIntro } from '../components/small-intro'
 import { getSortedPostsData } from '../lib/posts'
-import youtemy from '../public/images/youtemy.png'
 
 export default function Page({ allPostsData }: { allPostsData: any }) {
   return (
