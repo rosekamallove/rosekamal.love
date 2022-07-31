@@ -134,7 +134,7 @@ const Navbar = (
           </LinkItem>
           <Spacer />
           <LinkItem
-            href="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/view"
+            href="/resume"
             path={path}
           >
             <IoLink />

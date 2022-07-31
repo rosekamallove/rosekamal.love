@@ -1,8 +1,17 @@
-import { Text } from '@chakra-ui/react'
-import React from 'react'
+import { Button, Flex, Spacer, Text } from '@chakra-ui/react'
+import React, { ReactNode } from 'react'
+import { IconLinks } from './icon-links'
 import Section from './section'
+import NextLink from 'next/link'
+import { IoArrowForwardOutline } from 'react-icons/io5'
 
-export const A = ({ children, href }) => (
+export const A = ({
+  children,
+  href
+}: {
+  children: ReactNode
+  href: string
+}) => (
   <a
     target="_blank"
     rel="noreferrer"
@@ -64,8 +73,21 @@ export const About: React.FC = () => {
           I write about Internships, Web Development, Open Source, Productivity,
           and more.
           <br />
-          <strong>Happy Reading </strong>✨
         </Text>
+        <Flex my={8}>
+          <IconLinks size="md" />
+          <Spacer />
+          <NextLink href="/projects">
+            <Button
+              mx={5}
+              variant="ghost"
+              rightIcon={<IoArrowForwardOutline />}
+              colorScheme="teal"
+            >
+              Portfolio
+            </Button>
+          </NextLink>
+        </Flex>
       </Section>
     </div>
   )
