@@ -13,7 +13,7 @@ export default function Page() {
           content="https://rosekamallove.vercel.app/images/rosek.jpg"
         />
       </Head>
-      <Container maxW="container.md" h="100vh">
+      <Container maxW="container.md">
         <iframe
           src="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/preview"
           allow="autoplay"
