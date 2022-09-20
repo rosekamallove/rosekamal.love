@@ -4,7 +4,7 @@
         <title>RoseK's Blog</title>
         <link>https://rosekamallove.vercel.app/</link>
         <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
-        <lastBuildDate>Sun, 31 Jul 2022 06:29:49 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 20 Sep 2022 07:27:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>All rights reserved 2022, Rose Kamal Love</copyright>
@@ -75,6 +75,15 @@
             <title><![CDATA[Java and MySQL]]></title>
             <link>https://rosekamallove.vercel.app//blogs/1-java-jdbc-mysql</link>
             <guid>https://rosekamallove.vercel.app//blogs/1-java-jdbc-mysql</guid>
+            <pubDate>Sun, 01 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></description>
+            <content:encoded><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></content:encoded>
+            <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
+        </item>
+        <item>
+            <title><![CDATA[Java and MySQL]]></title>
+            <link>https://rosekamallove.vercel.app//blogs/10-project-report-gsoc</link>
+            <guid>https://rosekamallove.vercel.app//blogs/10-project-report-gsoc</guid>
             <pubDate>Sun, 01 May 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></description>
             <content:encoded><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></content:encoded>
