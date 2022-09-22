@@ -43,7 +43,6 @@ const HitCounter: React.FC<Props> = ({ slug, published, listItem }) => {
       </Box>
     )
   }
-  console.log(listItem)
   return (
     <Box mt={1}>
       {listItem === true ? (
