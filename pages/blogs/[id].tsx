@@ -35,7 +35,7 @@ interface Props {
 }
 
 const Post: React.FC<Props> = ({ postData, id }) => {
-  const url = `https://rosekamallove.vercel.app/blogs/${id}`
+  const url = `https://rosekamal.love/blogs/${id}`
 
   return (
     <Layout>

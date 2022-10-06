@@ -89,7 +89,7 @@ export const IoLogoDev = () => (
 export const links = [
   {
     name: 'Official Website',
-    href: 'https://rosekamallove.vercel.app',
+    href: 'https://rosekamal.love',
     logo: <IoGlobeOutline />
   },
   {

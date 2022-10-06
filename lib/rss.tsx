@@ -7,7 +7,7 @@ export const generateRssFeed = async (): Promise<void> => {
   if (process.env.NODE_EVN === 'development') return
 
   const posts = getSortedPostsData()
-  const siteURL = 'https://rosekamallove.vercel.app/'
+  const siteURL = 'https://rosekamal.love/'
   const date = new Date()
 
   const author = {
