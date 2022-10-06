@@ -10,7 +10,7 @@ export default function Page() {
         <meta property="og:title" content={'Resume - Rose Kamal Love'} />
         <meta
           property="og:image"
-          content="https://rosekamallove.vercel.app/images/rosek.jpg"
+          content="https://rosekamal.love/images/rosek.jpg"
         />
       </Head>
       <Container maxW="container.md">

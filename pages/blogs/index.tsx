@@ -31,7 +31,7 @@ const Blogs = ({ allPostsData }: { allPostsData: any }) => {
         />
         <meta
           property="og:image"
-          content="https://rosekamallove.vercel.app/images/og_blogs.png"
+          content="https://rosekamal.love/images/og_blogs.png"
         />
       </Head>
       <Section delay="0.1">

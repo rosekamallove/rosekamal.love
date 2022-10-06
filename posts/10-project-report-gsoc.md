@@ -56,7 +56,7 @@ so that people that come after me have a place to look for, and my understanding
 
 > FYI: FHIR is pronounced as Fire, weird I know but it is what it is.
 
-So learned about that and wrote [this blog](https://rosekamallove.vercel.app/blogs/7-fhir-standard)
+So learned about that and wrote [this blog](https://rosekamal.love/blogs/7-fhir-standard)
 
 ## Addinng a Scalable Data Fetching Architecture and Implementing Patient Search
 

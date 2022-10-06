@@ -34,7 +34,7 @@ const Portfolio = () => {
         <meta property="og:title" content={'Portfolio - Rose Kamal Love'} />
         <meta
           property="og:image"
-          content="https://rosekamallove.vercel.app/images/rosek.jpg"
+          content="https://rosekamal.love/images/rosek.jpg"
         />
         <meta
           property="og:description"

@@ -1,8 +1,8 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "RoseK's Blog",
-    "home_page_url": "https://rosekamallove.vercel.app/",
-    "feed_url": "https://rosekamallove.vercel.app//rss/feed.json",
+    "home_page_url": "https://rosekamal.love/",
+    "feed_url": "https://rosekamal.love//rss/feed.json",
     "description": "Blgo posts about internships, Web Development, Open Source, Productivity and more",
     "author": {
         "name": "Rose Kamal Love",
@@ -10,9 +10,9 @@
     },
     "items": [
         {
-            "id": "https://rosekamallove.vercel.app//blogs/9-starting-up",
+            "id": "https://rosekamal.love//blogs/9-starting-up",
             "content_html": "In this blog post I talk about my team and how/why I want to start up",
-            "url": "https://rosekamallove.vercel.app//blogs/9-starting-up",
+            "url": "https://rosekamal.love//blogs/9-starting-up",
             "title": "The start of something nice",
             "summary": "In this blog post I talk about my team and how/why I want to start up",
             "date_modified": "2022-07-09T00:00:00.000Z",
@@ -22,9 +22,9 @@
             }
         },
         {
-            "id": "https://rosekamallove.vercel.app//blogs/7-fhir-standard",
+            "id": "https://rosekamal.love//blogs/7-fhir-standard",
             "content_html": "A newbie's perspective on what FHIR is and how is it helpful",
-            "url": "https://rosekamallove.vercel.app//blogs/7-fhir-standard",
+            "url": "https://rosekamal.love//blogs/7-fhir-standard",
             "title": "Introduction to FHIR - The Standard for data exchange in healthcare",
             "summary": "A newbie's perspective on what FHIR is and how is it helpful",
             "date_modified": "2022-06-14T00:00:00.000Z",
@@ -34,9 +34,9 @@
             }
         },
         {
-            "id": "https://rosekamallove.vercel.app//blogs/6-setting-up-lh-toolkit-radiology",
+            "id": "https://rosekamal.love//blogs/6-setting-up-lh-toolkit-radiology",
             "content_html": "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.",
-            "url": "https://rosekamallove.vercel.app//blogs/6-setting-up-lh-toolkit-radiology",
+            "url": "https://rosekamal.love//blogs/6-setting-up-lh-toolkit-radiology",
             "title": "Setting up LibreHealth Toolkit and Radiology",
             "summary": "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.",
             "date_modified": "2022-05-31T00:00:00.000Z",
@@ -46,9 +46,9 @@
             }
         },
         {
-            "id": "https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding",
+            "id": "https://rosekamal.love//blogs/5-gsoc-community-boding",
             "content_html": "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.",
-            "url": "https://rosekamallove.vercel.app//blogs/5-gsoc-community-boding",
+            "url": "https://rosekamal.love//blogs/5-gsoc-community-boding",
             "title": "My goals for GSoC 22' Community Bonding Period (LibreHealthIO)",
             "summary": "Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.",
             "date_modified": "2022-05-26T00:00:00.000Z",
@@ -58,9 +58,9 @@
             }
         },
         {
-            "id": "https://rosekamallove.vercel.app//blogs/4-applying-for-internships",
+            "id": "https://rosekamal.love//blogs/4-applying-for-internships",
             "content_html": "A proven way to land an internship irrespective of your college and year.",
-            "url": "https://rosekamallove.vercel.app//blogs/4-applying-for-internships",
+            "url": "https://rosekamal.love//blogs/4-applying-for-internships",
             "title": "How to land an internship, with amazing learning experince and good pay?",
             "summary": "A proven way to land an internship irrespective of your college and year.",
             "date_modified": "2022-05-22T00:00:00.000Z",
@@ -70,9 +70,9 @@
             }
         },
         {
-            "id": "https://rosekamallove.vercel.app//blogs/3-getting-started-web-dev",
+            "id": "https://rosekamal.love//blogs/3-getting-started-web-dev",
             "content_html": "A comprehensive guide to taking you from HTML & CSS to a Web Development Intern",
-            "url": "https://rosekamallove.vercel.app//blogs/3-getting-started-web-dev",
+            "url": "https://rosekamal.love//blogs/3-getting-started-web-dev",
             "title": "This is how you become \"Internship Ready\" as a Web Developer [in 2022] (Part 1: Front-End)",
             "summary": "A comprehensive guide to taking you from HTML & CSS to a Web Development Intern",
             "date_modified": "2022-05-11T00:00:00.000Z",
@@ -82,9 +82,9 @@
             }
         },
         {
-            "id": "https://rosekamallove.vercel.app//blogs/2-cryptography-101",
+            "id": "https://rosekamal.love//blogs/2-cryptography-101",
             "content_html": "This is a write-up post for the Cryptography video that Fireship.io has published, hope you like it.",
-            "url": "https://rosekamallove.vercel.app//blogs/2-cryptography-101",
+            "url": "https://rosekamal.love//blogs/2-cryptography-101",
             "title": "Cryptography 101",
             "summary": "This is a write-up post for the Cryptography video that Fireship.io has published, hope you like it.",
             "date_modified": "2022-05-06T00:00:00.000Z",
@@ -94,9 +94,9 @@
             }
         },
         {
-            "id": "https://rosekamallove.vercel.app//blogs/1-java-jdbc-mysql",
+            "id": "https://rosekamal.love//blogs/1-java-jdbc-mysql",
             "content_html": "I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion",
-            "url": "https://rosekamallove.vercel.app//blogs/1-java-jdbc-mysql",
+            "url": "https://rosekamal.love//blogs/1-java-jdbc-mysql",
             "title": "Java and MySQL",
             "summary": "I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion",
             "date_modified": "2022-05-01T00:00:00.000Z",
@@ -106,9 +106,9 @@
             }
         },
         {
-            "id": "https://rosekamallove.vercel.app//blogs/10-project-report-gsoc",
+            "id": "https://rosekamal.love//blogs/10-project-report-gsoc",
             "content_html": "I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion",
-            "url": "https://rosekamallove.vercel.app//blogs/10-project-report-gsoc",
+            "url": "https://rosekamal.love//blogs/10-project-report-gsoc",
             "title": "Java and MySQL",
             "summary": "I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion",
             "date_modified": "2022-05-01T00:00:00.000Z",
@@ -118,9 +118,9 @@
             }
         },
         {
-            "id": "https://rosekamallove.vercel.app//blogs/0-what-is-coding-and-an-intro-to-c++",
+            "id": "https://rosekamal.love//blogs/0-what-is-coding-and-an-intro-to-c++",
             "content_html": "An introduction to coding, what, how and why",
-            "url": "https://rosekamallove.vercel.app//blogs/0-what-is-coding-and-an-intro-to-c++",
+            "url": "https://rosekamal.love//blogs/0-what-is-coding-and-an-intro-to-c++",
             "title": "What is Coding & and an intro to C++",
             "summary": "An introduction to coding, what, how and why",
             "date_modified": "2021-12-19T00:00:00.000Z",
