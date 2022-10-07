@@ -34,7 +34,7 @@ const Links: React.FC = () => {
         <meta property="og:type" content="website" />
       </Head>
       <header className="flex flex-col items-center h-full">
-        <div className="rounded-full flex justify-center items-center border-4 w-fit shadow-xl backdrop-blur-sm mt-10">
+        <div className="rounded-full flex justify-center items-center border-4 w-fit shadow-sm backdrop-blur-sm mt-10">
           <Image
             src="/images/rosek.jpg"
             alt="Rose Kamal"
@@ -44,9 +44,10 @@ const Links: React.FC = () => {
           />
         </div>
         <div
-          className={`${bg} bg-opacity-50 py-1 px-2 rounded-full border-2 font-bold shadow backdrop-blur-sm text-sm mt-1 mb-10 transition-all`}
+          className={`font-bold shadow text-sm mt-1 mb-10 rounded-md transition-all`}
         >
-          <a href="http://instagram.com/rosekamallove">@rosekamallove</a>
+          <Button variant='ghost' size='xs'>
+            <a href="http://instagram.com/rosekamallove">@rosekamallove</a></Button>
         </div>
       </header>
       <ul className="flex flex-col items-center justify-center gap-2">
