@@ -21,7 +21,7 @@ const Links: React.FC = () => {
     <div
       style={{
         background:
-          'url(/images/art-background.webp) repeat center center fixed',
+          'url(/images/art-background.jpeg) repeat center center fixed',
         backgroundSize: 'cover',
         height: '100vh',
         overflow: 'hidden'
