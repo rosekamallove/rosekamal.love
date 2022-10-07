@@ -1,4 +1,4 @@
-import { Icon, useColorModeValue } from '@chakra-ui/react'
+import { Button, Icon, useColorModeValue } from '@chakra-ui/react'
 import Head from 'next/head'
 import Image from 'next/image'
 import {
@@ -18,15 +18,7 @@ const Links: React.FC = () => {
   const logoImg = `/images/logo${useColorModeValue('-light', '-dark')}.png`
 
   return (
-    <div
-      style={{
-        background:
-          'url(/images/art-background.jpeg) repeat center center fixed',
-        backgroundSize: 'cover',
-        height: '100vh',
-        overflow: 'hidden'
-      }}
-    >
+    <div>
       <Head>
         <title>Links - Rose Kamal Love</title>
         <meta name="viewport" content="width=device-width initial-scale=1" />
@@ -41,7 +33,7 @@ const Links: React.FC = () => {
         <meta name="og:title" content="Rose Kamal Love" />
         <meta property="og:type" content="website" />
       </Head>
-      <header className="flex flex-col items-center">
+      <header className="flex flex-col items-center h-full">
         <div className="rounded-full flex justify-center items-center border-4 w-fit shadow-xl backdrop-blur-sm mt-10">
           <Image
             src="/images/rosek.jpg"
@@ -52,7 +44,7 @@ const Links: React.FC = () => {
           />
         </div>
         <div
-          className={`${bg} bg-opacity-50 hover:scale-125 py-1 px-2 rounded-full border-2 font-bold shadow backdrop-blur-sm text-sm mt-1 mb-10 transition-all`}
+          className={`${bg} bg-opacity-50 py-1 px-2 rounded-full border-2 font-bold shadow backdrop-blur-sm text-sm mt-1 mb-10 transition-all`}
         >
           <a href="http://instagram.com/rosekamallove">@rosekamallove</a>
         </div>
@@ -64,10 +56,16 @@ const Links: React.FC = () => {
               href={link.href}
               rel="noreferrer"
               target="_blank"
-              className={`${bg} bg-opacity-50 w-60 font-semibold hover:font-bold box-border border hover:shadow-2xl hover:scale-110 shadow backdrop-blur-md hover:backdrop-blur-sm text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all`}
+            // className={`${bg} bg-opacity-50 w-60 font-semibold box-border border hover:shadow-2xl shadow backdrop-blur-md text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all`}
             >
-              {link.logo}
-              {link.name}
+              <Button
+                variant='ghost'
+                width='60'
+                className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all`}
+              >
+                {link.logo}
+                {link.name}
+              </Button>
             </a>
           </li>
         ))}
