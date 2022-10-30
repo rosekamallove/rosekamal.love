@@ -103,7 +103,7 @@ export const IoLogoKroto = () => (
 export const links = [
   {
     name: 'YouTube',
-    href: '',
+    href: 'https://www.youtube.com/channel/UCIcZjoMa7k1w63XlP1qGbQQ/videos',
     logo: <IoLogoYoutube />
   },
   {
