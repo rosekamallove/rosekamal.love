@@ -111,7 +111,6 @@ export const FeedbackModal: React.FC<Props> = ({ id }) => {
               <Textarea
                 placeholder="Enter your message"
                 id="message"
-                type="textarea"
                 variant="filled"
                 onChange={e => setMessage(e.target.value)}
               />

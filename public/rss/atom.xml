@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamal.love/</id>
     <title>RoseK's Blog</title>
-    <updated>2022-09-20T07:27:45.176Z</updated>
+    <updated>2022-10-30T16:13:56.937Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -159,12 +159,12 @@
         </contributor>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Java and MySQL]]></title>
+        <title type="html"><![CDATA[GSoC 2022 Project Report]]></title>
         <id>https://rosekamal.love//blogs/10-project-report-gsoc</id>
         <link href="https://rosekamal.love//blogs/10-project-report-gsoc"/>
         <updated>2022-05-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></summary>
-        <content type="html"><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></content>
+        <summary type="html"><![CDATA[This is my project report for the 'Complete UI Rewrite of Radiology and Toolkit]]></summary>
+        <content type="html"><![CDATA[This is my project report for the 'Complete UI Rewrite of Radiology and Toolkit]]></content>
         <author>
             <name>Rose Kamal Love</name>
             <email>rosekamallove@gmail.com</email>

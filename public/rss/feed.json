@@ -107,10 +107,10 @@
         },
         {
             "id": "https://rosekamal.love//blogs/10-project-report-gsoc",
-            "content_html": "I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion",
+            "content_html": "This is my project report for the 'Complete UI Rewrite of Radiology and Toolkit",
             "url": "https://rosekamal.love//blogs/10-project-report-gsoc",
-            "title": "Java and MySQL",
-            "summary": "I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion",
+            "title": "GSoC 2022 Project Report",
+            "summary": "This is my project report for the 'Complete UI Rewrite of Radiology and Toolkit",
             "date_modified": "2022-05-01T00:00:00.000Z",
             "author": {
                 "name": "Rose Kamal Love",

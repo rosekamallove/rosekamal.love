@@ -4,7 +4,7 @@
         <title>RoseK's Blog</title>
         <link>https://rosekamal.love/</link>
         <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
-        <lastBuildDate>Tue, 20 Sep 2022 07:27:45 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 30 Oct 2022 16:13:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>All rights reserved 2022, Rose Kamal Love</copyright>
@@ -81,12 +81,12 @@
             <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
         </item>
         <item>
-            <title><![CDATA[Java and MySQL]]></title>
+            <title><![CDATA[GSoC 2022 Project Report]]></title>
             <link>https://rosekamal.love//blogs/10-project-report-gsoc</link>
             <guid>https://rosekamal.love//blogs/10-project-report-gsoc</guid>
             <pubDate>Sun, 01 May 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></description>
-            <content:encoded><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></content:encoded>
+            <description><![CDATA[This is my project report for the 'Complete UI Rewrite of Radiology and Toolkit]]></description>
+            <content:encoded><![CDATA[This is my project report for the 'Complete UI Rewrite of Radiology and Toolkit]]></content:encoded>
             <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
         </item>
         <item>
