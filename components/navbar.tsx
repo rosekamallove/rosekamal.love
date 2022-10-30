@@ -133,10 +133,7 @@ const Navbar = (
             Portfolio
           </LinkItem>
           <Spacer />
-          <LinkItem
-            href="/resume"
-            path={path}
-          >
+          <LinkItem href="/resume" path={path}>
             <IoLink />
             Resume
           </LinkItem>
