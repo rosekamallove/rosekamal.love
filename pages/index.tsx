@@ -1,6 +1,5 @@
 import { Container, useColorModeValue } from '@chakra-ui/react'
 import Head from 'next/head'
-import Layout from '../components/layouts/article'
 import Links from './links'
 
 export default function Page() {
