@@ -11,10 +11,10 @@ import {
 import NextLink from 'next/link'
 
 const Links: React.FC = () => {
-  const bg = `${useColorModeValue(
-    'bg-[#abb2bf] text-white',
-    'bg-[#282c34] text-gray-100'
-  )}`
+  // const bg = `${useColorModeValue(
+  //   'bg-[#abb2bf] text-white',
+  //   'bg-[#282c34] text-gray-100'
+  // )}`
 
   const logoImg = `/images/logo${useColorModeValue('-light', '-dark')}.png`
 
