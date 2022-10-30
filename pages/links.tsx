@@ -47,7 +47,7 @@ const Links: React.FC = () => {
         <div
           className={`font-bold shadow text-sm mt-1 mb-10 rounded-md transition-all`}
         >
-          <Button variant="ghost" size="sm">
+          <Button variant="ghost" size="sm" backdropBlur="md">
             <a href="http://instagram.com/rosekamallove">@rosekamallove</a>
           </Button>
         </div>
@@ -66,7 +66,7 @@ const Links: React.FC = () => {
                   width="60"
                   variant="ghost"
                   size="lg"
-                  className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all`}
+                  className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all backdrop-blur-md`}
                 >
                   {link.logo}
                   {link.name}
