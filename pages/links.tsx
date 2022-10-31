@@ -1,4 +1,14 @@
-import { Button, Icon, useColorModeValue } from '@chakra-ui/react'
+import {
+  Button,
+  Icon,
+  Popover,
+  PopoverArrow,
+  PopoverBody,
+  PopoverCloseButton,
+  PopoverContent,
+  PopoverTrigger,
+  useColorModeValue
+} from '@chakra-ui/react'
 import Head from 'next/head'
 import Image from 'next/image'
 import {
@@ -6,17 +16,26 @@ import {
   IoLogoGithub,
   IoLogoLinkedin,
   IoLogoTwitter,
-  IoLogoYoutube
+  IoLogoYoutube,
+  IoShuffle
 } from 'react-icons/io5'
 import NextLink from 'next/link'
+import { useEffect, useState } from 'react'
 
-const Links: React.FC = () => {
-  // const bg = `${useColorModeValue(
-  //   'bg-[#abb2bf] text-white',
-  //   'bg-[#282c34] text-gray-100'
-  // )}`
+interface P {
+  data: any
+}
 
+const Links: React.FC<P> = () => {
   const logoImg = `/images/logo${useColorModeValue('-light', '-dark')}.png`
+
+  const [meme, setMeme] = useState(null)
+
+  useEffect(() => {
+    fetch(`https://meme-api.herokuapp.com/gimme`).then(d =>
+      d.json().then(data => setMeme(data))
+    )
+  }, [])
 
   return (
     <div>
@@ -53,6 +72,26 @@ const Links: React.FC = () => {
         </div>
       </header>
       <ul className="flex flex-col items-center justify-center gap-2 mb-20">
+        <Popover>
+          <PopoverTrigger>
+            <Button
+              width="60"
+              variant="ghost"
+              size="lg"
+              className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all backdrop-blur-md`}
+            >
+              <IoShuffle />
+              Random Meme
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <PopoverArrow />
+            <PopoverCloseButton />
+            <PopoverBody>
+              {meme && <img src={meme.preview[meme.preview.length - 2]}></img>}
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
         {links.map(link => (
           <li key={link.href}>
             <NextLink href={link.href}>
@@ -78,6 +117,16 @@ const Links: React.FC = () => {
       </ul>
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://meme-api.herokuapp.com/gimme`)
+  console.log(res)
+  const data = await res.json()
+
+  // Pass data to the page via props
+  return { props: { data } }
 }
 
 export default Links
