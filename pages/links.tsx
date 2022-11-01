@@ -1,11 +1,13 @@
 import {
   Button,
+  Flex,
   Icon,
   Popover,
   PopoverArrow,
   PopoverBody,
   PopoverCloseButton,
   PopoverContent,
+  PopoverHeader,
   PopoverTrigger,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -31,10 +33,14 @@ const Links: React.FC<P> = () => {
 
   const [meme, setMeme] = useState(null)
 
-  useEffect(() => {
+  const updateMeme = () => {
     fetch(`https://meme-api.herokuapp.com/gimme`).then(d =>
       d.json().then(data => setMeme(data))
     )
+  }
+
+  useEffect(() => {
+    updateMeme()
   }, [])
 
   return (
@@ -86,9 +92,25 @@ const Links: React.FC<P> = () => {
           </PopoverTrigger>
           <PopoverContent>
             <PopoverArrow />
+            <PopoverHeader>
+              <div className="flex items-center justify-center gap-5">
+                Want more?
+                <Button size="xs" onClick={() => updateMeme()}>
+                  <IoShuffle />
+                  <span className="pl-1">Re Shuffle</span>
+                </Button>
+              </div>
+            </PopoverHeader>
             <PopoverCloseButton />
             <PopoverBody>
-              {meme && <img src={meme.preview[meme.preview.length - 2]}></img>}
+              <div className="flex items-center justify-center gap-5 overflow-scroll">
+                {meme && (
+                  <img
+                    height="80%"
+                    src={meme.preview[meme.preview.length - 1]}
+                  ></img>
+                )}
+              </div>
             </PopoverBody>
           </PopoverContent>
         </Popover>
@@ -99,7 +121,6 @@ const Links: React.FC<P> = () => {
                 href={link.href}
                 rel="noreferrer"
                 target={link.href === '/home' ? '' : '_blank'}
-                // className={`${bg} bg-opacity-50 w-60 font-semibold box-border border hover:shadow-2xl shadow backdrop-blur-md text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all`}
               >
                 <Button
                   width="60"
