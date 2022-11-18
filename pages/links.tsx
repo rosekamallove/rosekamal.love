@@ -13,8 +13,9 @@ import {
 import Head from 'next/head'
 import Image from 'next/image'
 import {
+  IoCheckmarkCircleOutline,
   IoGlobeOutline,
-  IoLogoGithub,
+  IoLogoInstagram,
   IoLogoLinkedin,
   IoLogoTwitter,
   IoLogoYoutube,
@@ -23,11 +24,7 @@ import {
 import NextLink from 'next/link'
 import { useEffect, useState } from 'react'
 
-interface P {
-  data: any
-}
-
-const Links: React.FC<P> = () => {
+const Links: React.FC = () => {
   const logoImg = `/images/logo${useColorModeValue('-light', '-dark')}.png`
 
   const [meme, setMeme] = useState(null)
@@ -43,7 +40,7 @@ const Links: React.FC<P> = () => {
   }, [])
 
   return (
-    <div>
+    <div className="mt-20">
       <Head>
         <title>Links - Rose Kamal Love</title>
         <meta name="viewport" content="width=device-width initial-scale=1" />
@@ -58,94 +55,75 @@ const Links: React.FC<P> = () => {
         <meta name="og:title" content="Rose Kamal Love" />
         <meta property="og:type" content="website" />
       </Head>
-      <header className="flex flex-col items-center h-full">
-        <div className="rounded-full flex justify-center items-center border-4 w-fit shadow-sm backdrop-blur-sm mt-10">
+      <header className="flex flex-col justify-center items-center ">
+        <div className="rounded-full scale-75 flex justify-center items-center border-4 w-fit shadow-sm backdrop-blur-sm mt-10">
           <Image
-            src="/images/rosek.jpg"
+            src="/images/profile.png"
             alt="Rose Kamal"
             height={125}
             width={125}
             className="rounded-full"
           />
         </div>
-        <div
-          className={`font-bold shadow text-sm mt-1 mb-10 rounded-md transition-all`}
-        >
-          <Button variant="ghost" size="sm" backdropBlur="md">
-            <a href="http://instagram.com/rosekamallove">@rosekamallove</a>
-          </Button>
+        <div className="-mt-3 font-bold flex items-center mb-10 gap-1 justify-center">
+          <NextLink href="/home">rosekamal.love</NextLink>
+          <IoCheckmarkCircleOutline />
         </div>
       </header>
-      <ul className="flex flex-col items-center justify-center gap-2 mb-20">
-        <Popover>
-          <PopoverTrigger>
-            <Button
-              width="60"
-              variant="ghost"
-              size="lg"
-              className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all backdrop-blur-md`}
-            >
-              <IoShuffle />
-              Random Meme
-            </Button>
-          </PopoverTrigger>
-          <PopoverContent>
-            <PopoverArrow />
-            <PopoverHeader>
-              <div className="flex items-center justify-center gap-5">
-                Want more?
-                <Button size="xs" onClick={() => updateMeme()}>
-                  <IoShuffle />
-                  <span className="pl-1">Re Shuffle</span>
-                </Button>
-              </div>
-            </PopoverHeader>
-            <PopoverCloseButton />
-            <PopoverBody>
-              <div className="flex items-center justify-center gap-5 overflow-scroll">
-                {meme && (
-                  <img
-                    height="80%"
-                    src={meme.preview[meme.preview.length - 1]}
-                  ></img>
-                )}
-              </div>
-            </PopoverBody>
-          </PopoverContent>
-        </Popover>
-        {links.map(link => (
-          <li key={link.href}>
-            <NextLink href={link.href}>
-              <a
-                href={link.href}
-                rel="noreferrer"
-                target={link.href === '/home' ? '' : '_blank'}
-              >
-                <Button
-                  width="60"
-                  variant="ghost"
-                  size="lg"
-                  className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all backdrop-blur-md`}
+      <div className="flex flex-col items-center">
+        <div className="flex flex-col sm:flex-row gap-2">
+          <NextLink href="https://www.youtube.com/channel/UCIcZjoMa7k1w63XlP1qGbQQ">
+            <div className="flex w-52 sm:w-56 h-28 mb-5 justify-center items-center gap-2 bg-[#282c34] hover:bg-[#ef3054] hover:shadow-lg text-white cursor-pointer rounded-md px-5 py-2 transition-all">
+              <IoLogoYoutube size="2em" />
+            </div>
+          </NextLink>
+          <NextLink href="https://instagram.com/rosekamallove">
+            <div className="flex w-52 sm:w-40 h-28 mb-5 justify-center items-center gap-2 bg-[#282c34] hover:bg-[#ef3054] hover:shadow-lg text-white cursor-pointer rounded-md px-5 py-2 transition-all">
+              <IoLogoInstagram size="2em" />
+            </div>
+          </NextLink>
+        </div>
+        {/* <div className="flex flex-col items-center bg-[#282c34] hover:bg-[#ef3054] hover:shadow-lg text-white cursor-pointer rounded-md px-5 py-2 w-lg transition-all">
+          <h3 className="flex gap-2 items-center">
+            Take Charge of your learning <FiExternalLink />
+          </h3>
+        </div> */}
+      </div>
+      <div className="flex items-center justify-center">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 mb-56 gap-2 max-w-lg">
+          {links.map(link => (
+            <li key={link.href}>
+              <NextLink href={link.href}>
+                <a
+                  href={link.href}
+                  rel="noreferrer"
+                  target={link.href === '/home' ? '' : '_blank'}
                 >
-                  {link.logo}
-                  {link.name}
-                </Button>
-              </a>
-            </NextLink>
-          </li>
-        ))}
-      </ul>
+                  <Button
+                    width="full"
+                    // variant="ghost"
+                    bg="#282c34"
+                    _hover={{ bg: '#ef3054', color: 'white' }}
+                    size="lg"
+                    className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all backdrop-blur-md`}
+                  >
+                    {link.logo}
+                    {link.name}
+                  </Button>
+                </a>
+              </NextLink>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }
 
 export async function getServerSideProps() {
-  // Fetch data from external API
   const res = await fetch(`https://meme-api.herokuapp.com/gimme`)
-  console.log(res)
   const data = await res.json()
 
-  // Pass data to the page via props
   return { props: { data } }
 }
 
@@ -171,11 +149,6 @@ export const IoLogoKroto = () => (
 
 export const links = [
   {
-    name: 'YouTube',
-    href: 'https://www.youtube.com/channel/UCIcZjoMa7k1w63XlP1qGbQQ/videos',
-    logo: <IoLogoYoutube />
-  },
-  {
     name: 'rosekamal.love',
     href: '/home',
     logo: <IoGlobeOutline />
@@ -191,13 +164,44 @@ export const links = [
     logo: <IoLogoLinkedin />
   },
   {
-    name: 'GitHub',
-    href: 'https://github.com/rosekamallove',
-    logo: <IoLogoGithub />
-  },
-  {
     name: 'OnlyFans 😳',
     href: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     logo: <IoGlobeOutline />
   }
 ]
+
+export const MemeButton = () => (
+  <Popover>
+    <PopoverTrigger>
+      <Button
+        width="60"
+        variant="ghost"
+        size="lg"
+        className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all backdrop-blur-md`}
+      >
+        <IoShuffle />
+        Have a laugh
+      </Button>
+    </PopoverTrigger>
+    <PopoverContent>
+      <PopoverArrow />
+      <PopoverHeader>
+        <div className="flex items-center justify-center gap-5">
+          Want more?
+          <Button size="xs" onClick={() => updateMeme()}>
+            <IoShuffle />
+            <span className="pl-1">Re Shuffle</span>
+          </Button>
+        </div>
+      </PopoverHeader>
+      <PopoverCloseButton />
+      <PopoverBody>
+        <div className="flex items-center justify-center gap-5 overflow-scroll">
+          {meme && (
+            <img height="80%" src={meme.preview[meme.preview.length - 1]}></img>
+          )}
+        </div>
+      </PopoverBody>
+    </PopoverContent>
+  </Popover>
+)
