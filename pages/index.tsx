@@ -17,7 +17,7 @@ export default function Page() {
           content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
         />
       </Head>
-      <div className="overflow-scroll relative">
+      <div className="overflow-hidden relative">
         <SVGBackground />
         <Container maxW="container.md">
           <Links />

@@ -15,6 +15,7 @@ import Image from 'next/image'
 import {
   IoGlobeOutline,
   IoLogoGithub,
+  IoLogoInstagram,
   IoLogoLinkedin,
   IoLogoTwitter,
   IoLogoYoutube,
@@ -24,7 +25,7 @@ import NextLink from 'next/link'
 import { useEffect, useState } from 'react'
 
 interface P {
-  data: any
+  data?: any
 }
 
 const Links: React.FC<P> = () => {
@@ -43,7 +44,7 @@ const Links: React.FC<P> = () => {
   }, [])
 
   return (
-    <div>
+    <div className="mt-20">
       <Head>
         <title>Links - Rose Kamal Love</title>
         <meta name="viewport" content="width=device-width initial-scale=1" />
@@ -71,12 +72,33 @@ const Links: React.FC<P> = () => {
         <div
           className={`font-bold shadow text-sm mt-1 mb-10 rounded-md transition-all`}
         >
-          <Button variant="ghost" size="sm" backdropBlur="md">
-            <a href="http://instagram.com/rosekamallove">@rosekamallove</a>
+          <Button variant="ghost" size="lg" backdropBlur="md">
+            <a href="/home">rosekamal.love</a>
           </Button>
         </div>
       </header>
-      <ul className="flex flex-col items-center justify-center gap-2 mb-20">
+      <ul className="flex flex-col items-center justify-center gap-2 mb-56">
+        {links.map(link => (
+          <li key={link.href}>
+            <NextLink href={link.href}>
+              <a
+                href={link.href}
+                rel="noreferrer"
+                target={link.href === '/home' ? '' : '_blank'}
+              >
+                <Button
+                  width="60"
+                  variant="ghost"
+                  size="lg"
+                  className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all backdrop-blur-md`}
+                >
+                  {link.logo}
+                  {link.name}
+                </Button>
+              </a>
+            </NextLink>
+          </li>
+        ))}
         <Popover>
           <PopoverTrigger>
             <Button
@@ -113,27 +135,6 @@ const Links: React.FC<P> = () => {
             </PopoverBody>
           </PopoverContent>
         </Popover>
-        {links.map(link => (
-          <li key={link.href}>
-            <NextLink href={link.href}>
-              <a
-                href={link.href}
-                rel="noreferrer"
-                target={link.href === '/home' ? '' : '_blank'}
-              >
-                <Button
-                  width="60"
-                  variant="ghost"
-                  size="lg"
-                  className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all backdrop-blur-md`}
-                >
-                  {link.logo}
-                  {link.name}
-                </Button>
-              </a>
-            </NextLink>
-          </li>
-        ))}
       </ul>
     </div>
   )
@@ -176,9 +177,9 @@ export const links = [
     logo: <IoLogoYoutube />
   },
   {
-    name: 'rosekamal.love',
-    href: '/home',
-    logo: <IoGlobeOutline />
+    name: 'Instagram',
+    href: 'https://github.com/rosekamallove',
+    logo: <IoLogoInstagram />
   },
   {
     name: 'Twitter',
@@ -189,11 +190,6 @@ export const links = [
     name: 'LinkedIn',
     href: 'https://www.linkedin.com/in/rose-kamal-love-1146141b0/',
     logo: <IoLogoLinkedin />
-  },
-  {
-    name: 'GitHub',
-    href: 'https://github.com/rosekamallove',
-    logo: <IoLogoGithub />
   },
   {
     name: 'OnlyFans 😳',
