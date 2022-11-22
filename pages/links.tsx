@@ -39,6 +39,7 @@ const Links: React.FC = () => {
   }, [])
 
   return (
+
     <div className="bg-[url('/images/green-home-bg.png')] bg-cover w-[100vw] h-[100vh] flex items-center justify-center text-white">
       <Head>
         <title>Links - Rose Kamal Love</title>
@@ -54,7 +55,6 @@ const Links: React.FC = () => {
         <meta name="og:title" content="Rose Kamal Love" />
         <meta property="og:type" content="website" />
       </Head>
-
       <div className="bg-black/40 rounded-lg relative grid place-items-center place-content-center w-full md:w-5/6 lg:w-4/6 min-h-[60vh] min-h-4/6 backdrop-blur-md">
         <div className="flex flex-col my-20 mx-2 sm:mx-10 lg:mx-20 gap-10 justify-center">
           <div className="flex">
