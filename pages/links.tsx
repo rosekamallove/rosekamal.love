@@ -13,8 +13,6 @@ import {
 import Head from 'next/head'
 import Image from 'next/image'
 import {
-  IoCheckmarkCircleOutline,
-  IoGlobeOutline,
   IoLogoInstagram,
   IoLogoLinkedin,
   IoLogoTwitter,
@@ -28,6 +26,7 @@ const Links: React.FC = () => {
   const logoImg = `/images/logo${useColorModeValue('-light', '-dark')}.png`
 
   const [meme, setMeme] = useState(null)
+  console.log(meme)
 
   const updateMeme = () => {
     fetch(`https://meme-api.herokuapp.com/gimme`).then(d =>
@@ -40,7 +39,7 @@ const Links: React.FC = () => {
   }, [])
 
   return (
-    <div className="mt-20">
+    <div className="bg-[url('/images/green-home-bg.png')] bg-cover w-[100vw] h-[100vh] flex items-center justify-center text-white">
       <Head>
         <title>Links - Rose Kamal Love</title>
         <meta name="viewport" content="width=device-width initial-scale=1" />
@@ -55,66 +54,58 @@ const Links: React.FC = () => {
         <meta name="og:title" content="Rose Kamal Love" />
         <meta property="og:type" content="website" />
       </Head>
-      <header className="flex flex-col justify-center items-center ">
-        <div className="rounded-full scale-75 flex justify-center items-center border-4 w-fit shadow-sm backdrop-blur-sm mt-10">
-          <Image
-            src="/images/profile.png"
-            alt="Rose Kamal"
-            height={125}
-            width={125}
-            className="rounded-full"
-          />
-        </div>
-        <div className="-mt-3 font-bold flex items-center mb-10 gap-1 justify-center">
-          <NextLink href="/home">rosekamal.love</NextLink>
-          <IoCheckmarkCircleOutline />
-        </div>
-      </header>
-      <div className="flex flex-col items-center">
-        <div className="flex flex-col sm:flex-row gap-2">
-          <NextLink href="https://www.youtube.com/channel/UCIcZjoMa7k1w63XlP1qGbQQ">
-            <div className="flex w-52 sm:w-56 h-28 mb-5 justify-center items-center gap-2 bg-[#282c34] hover:bg-[#ef3054] hover:shadow-lg text-white cursor-pointer rounded-md px-5 py-2 transition-all">
-              <IoLogoYoutube size="2em" />
-            </div>
-          </NextLink>
-          <NextLink href="https://instagram.com/rosekamallove">
-            <div className="flex w-52 sm:w-40 h-28 mb-5 justify-center items-center gap-2 bg-[#282c34] hover:bg-[#ef3054] hover:shadow-lg text-white cursor-pointer rounded-md px-5 py-2 transition-all">
-              <IoLogoInstagram size="2em" />
-            </div>
-          </NextLink>
-        </div>
-        {/* <div className="flex flex-col items-center bg-[#282c34] hover:bg-[#ef3054] hover:shadow-lg text-white cursor-pointer rounded-md px-5 py-2 w-lg transition-all">
-          <h3 className="flex gap-2 items-center">
-            Take Charge of your learning <FiExternalLink />
-          </h3>
-        </div> */}
-      </div>
-      <div className="flex items-center justify-center">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 mb-56 gap-2 max-w-lg">
-          {links.map(link => (
-            <li key={link.href}>
-              <NextLink href={link.href}>
+
+      <div className="bg-black/40 rounded-lg relative grid place-items-center place-content-center w-full md:w-5/6 lg:w-4/6 min-h-[60vh] min-h-4/6 backdrop-blur-md">
+        <div className="flex flex-col my-20 mx-2 sm:mx-10 lg:mx-20 gap-10 justify-center">
+          <div className="flex">
+            <div className="relative overflow-hidden -mb-5 rounded-full py-1.5 px-4 text-xs md:text-base lg:text-lg font-bold leading-6 ring-1 ring-white/10 hover:ring-white/20 transition-all">
+              <span className="flex gap-2">
+                Struggling to learn to code? Here&apos;s you solution!
                 <a
-                  href={link.href}
-                  rel="noreferrer"
-                  target={link.href === '/home' ? '' : '_blank'}
+                  href="https://www.kroto.in"
+                  className="font-semibold flex gap-1 hover:gap-2 transition-all items-center text-[#ef3054]"
                 >
-                  <Button
-                    width="full"
-                    // variant="ghost"
-                    bg="#282c34"
-                    _hover={{ bg: '#ef3054', color: 'white' }}
-                    size="lg"
-                    className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all backdrop-blur-md`}
-                  >
-                    {link.logo}
-                    {link.name}
-                  </Button>
+                  Read more <span aria-hidden="true">&rarr;</span>
                 </a>
+              </span>
+            </div>
+          </div>
+          <p className="text-5xl md:text-7xl">Rose Kamal Love</p>
+          <p className="text-xl md:text-2xl ml-1 -mt-8 md:-mt-5">
+            A friendly ambivert, trying to make a life out of code who also
+            happens to love taking photos
+          </p>
+          <p className="text-lg md:text-xl ml-1 -mt-5">
+            <NextLink href="/home">
+              <a className="font-semibold flex gap-2 hover:gap-3 transition-all items-center">
+                More about me
+                <span className="mt-1" aria-hidden="true">
+                  &rarr;
+                </span>
+              </a>
+            </NextLink>
+          </p>
+          <div className="flex gap-10 ml-2 mt-5">
+            {socials.map(link => (
+              <NextLink key={link.href} href={link.href}>
+                <div className="rounded-full hover:text-[#ef3054] flex items-center justify-center cursor-pointer scale-125 hover:scale-150 active:scale-125 transition-all w-10 h-10">
+                  {link.logo}
+                </div>
               </NextLink>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </div>
+        </div>
+        <div className="absolute -top-36 lg:left-52">
+          <div className="rounded-full scale-75 flex justify-center items-center border-4 w-fit shadow-sm backdrop-blur-sm mt-10">
+            <Image
+              src="/images/profile.png"
+              alt="Rose Kamal"
+              height={200}
+              width={200}
+              className="rounded-full"
+            />
+          </div>
+        </div>
       </div>
     </div>
   )
@@ -147,11 +138,16 @@ export const IoLogoKroto = () => (
   </Icon>
 )
 
-export const links = [
+export const socials = [
   {
-    name: 'rosekamal.love',
-    href: '/home',
-    logo: <IoGlobeOutline />
+    name: 'YouTube',
+    href: 'https://www.youtube.com/channel/UCIcZjoMa7k1w63XlP1qGbQQ',
+    logo: <IoLogoYoutube />
+  },
+  {
+    name: 'Instagram',
+    href: 'https://instagram.com/rosekamallove',
+    logo: <IoLogoInstagram />
   },
   {
     name: 'Twitter',
@@ -162,11 +158,6 @@ export const links = [
     name: 'LinkedIn',
     href: 'https://www.linkedin.com/in/rose-kamal-love-1146141b0/',
     logo: <IoLogoLinkedin />
-  },
-  {
-    name: 'OnlyFans 😳',
-    href: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    logo: <IoGlobeOutline />
   }
 ]
 
