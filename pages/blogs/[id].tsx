@@ -37,6 +37,8 @@ interface Props {
 const Post: React.FC<Props> = ({ postData, id }) => {
   const url = `https://rosekamal.love/blogs/${id}`
 
+  console.log(postData)
+
   return (
     <Layout>
       <Head>
