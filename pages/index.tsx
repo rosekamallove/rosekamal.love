@@ -1,4 +1,4 @@
-import { Container, useColorModeValue } from '@chakra-ui/react'
+import { useColorModeValue } from '@chakra-ui/react'
 import Head from 'next/head'
 import Links from './links'
 
@@ -19,9 +19,7 @@ export default function Page() {
       </Head>
       <div className="overflow-hidden relative">
         <SVGBackground />
-        <Container maxW="container.md">
-          <Links />
-        </Container>
+        <Links />
       </div>
     </div>
   )
