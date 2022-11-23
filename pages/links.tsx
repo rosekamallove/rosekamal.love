@@ -58,7 +58,7 @@ const Links: React.FC = () => {
       <div className="bg-black/40 rounded-lg relative grid place-items-center place-content-center w-full md:w-5/6 lg:w-4/6 min-h-[60vh] min-h-4/6 backdrop-blur-md">
         <div className="flex flex-col my-20 mx-2 sm:mx-10 lg:mx-20 gap-10 justify-center">
           <div className="flex">
-            <div className="relative overflow-hidden -mb-5 rounded-full py-1.5 px-4 text-xs md:text-base lg:text-lg font-bold leading-6 ring-1 ring-white/10 hover:ring-white/20 transition-all">
+            <div className="relative overflow-hidden -mb-5 mt-2 rounded-full py-1.5 px-4 text-xs md:text-base lg:text-lg font-bold leading-6 ring-1 ring-white/10 hover:ring-white/20 transition-all">
               <span className="flex gap-2">
                 Struggling to learn to code? Here&apos;s you solution!
                 <a
@@ -161,18 +161,19 @@ export const socials = [
   }
 ]
 
-export const MemeButton = () => (
+export const MemeButton = ({
+  meme,
+  updateMeme
+}: {
+  meme: any
+  updateMeme: () => null
+}) => (
   <Popover>
     <PopoverTrigger>
-      <Button
-        width="60"
-        variant="ghost"
-        size="lg"
-        className={`hover:shadow-lg shadow text-lg flex justify-center items-center gap-2 py-2 rounded-full transition-all backdrop-blur-md`}
-      >
+      <div className="rounded-full hover:text-[#ef3054] flex items-center justify-center cursor-pointer hover:scale-105 active:scale-100 transition-all">
         <IoShuffle />
         Have a laugh
-      </Button>
+      </div>
     </PopoverTrigger>
     <PopoverContent>
       <PopoverArrow />
