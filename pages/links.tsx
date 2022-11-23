@@ -19,6 +19,7 @@ import {
   IoLogoYoutube,
   IoShuffle
 } from 'react-icons/io5'
+import { BsArrowRight } from 'react-icons/bs'
 import NextLink from 'next/link'
 import { useEffect, useState } from 'react'
 
@@ -63,9 +64,9 @@ const Links: React.FC = () => {
                 Struggling to learn to code? Here&apos;s you solution!
                 <a
                   href="https://www.kroto.in"
-                  className="font-semibold flex gap-1 hover:gap-2 transition-all items-center text-[#ef3054]"
+                  className="font-semibold flex gap-1 hover:gap-2 transition-all justify-center items-center text-[#ef3054]"
                 >
-                  Read more <span aria-hidden="true">&rarr;</span>
+                  Read more <BsArrowRight />
                 </a>
               </span>
             </div>
@@ -77,11 +78,9 @@ const Links: React.FC = () => {
           </p>
           <p className="text-lg md:text-xl ml-1 -mt-5">
             <NextLink href="/home">
-              <a className="font-semibold flex gap-2 hover:gap-3 transition-all items-center">
+              <a className="font-semibold hover:text-[#ef3054] flex gap-2 hover:gap-3 transition-all items-center">
                 More about me
-                <span className="mt-1" aria-hidden="true">
-                  &rarr;
-                </span>
+                <BsArrowRight />
               </a>
             </NextLink>
           </p>
