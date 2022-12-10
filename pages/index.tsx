@@ -1,13 +1,19 @@
-import { useColorModeValue } from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { Button, Container, Heading, useColorModeValue } from '@chakra-ui/react'
 import Head from 'next/head'
-import Links from './links'
+import NextLink from 'next/link'
+import Layout from '../components/layouts/article'
+import { RenderBlogs } from '../components/render-blogs'
+import Section from '../components/section'
+import { SmallIntro } from '../components/small-intro'
+import { getSortedPostsData } from '../lib/posts'
 
-export default function Page() {
+export default function Home({ allPostsData }: { allPostsData: any }) {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Rose Kamal Love</title>
-        <meta property="og:title" content={'Links - Rose Kamal Love'} />
+        <meta property="og:title" content={'About - Rose Kamal Love'} />
         <meta
           property="og:image"
           content="https://rosekamal.love/images/rosek.jpg"
@@ -16,19 +22,82 @@ export default function Page() {
           property="og:description"
           content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
         />
+        <meta name="description" content="@rosekamallove on the web" />
+        <meta name="author" content="Rose Kamal Love" />
+        <meta name="twitter:title" content="Rose Kamal Love" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RoseKamalLove1" />
+        <meta name="twitter:creator" content="@RoseKamalLove1" />
+        <meta property="og:site_name" content="Rose Kamal Love" />
+        <meta name="og:title" content="Rose Kamal Love" />
+        <meta property="og:type" content="website" />
       </Head>
       <div className="overflow-hidden relative">
         <SVGBackground />
-        <Links />
+        <Container maxW="container.md">
+          <Section delay="0.0">
+            <SmallIntro />
+          </Section>
+
+          <Section delay="0.2">
+            <Heading as="h3" variant="section-title">
+              Featured Blogs
+            </Heading>
+            <RenderBlogs
+              allPostsData={allPostsData}
+              featured={true}
+              renderDescription={false}
+              count={3}
+            />
+            <NextLink href="/blogs">
+              <Button
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="teal"
+                variant="ghost"
+              >
+                Read All Blogs
+              </Button>
+            </NextLink>
+          </Section>
+          <Section delay="0.3">{/*<TimeLine />*/}</Section>
+
+          {/*<Section delay="0.4">
+            <Heading as="h3" variant="section-title">
+              Featured
+            </Heading>
+            <SimpleGrid columns={[1, 1, 1]} gap={0}>
+              <Center className="m-0 py-5 rounded-[8px] transition-all hover:shadow-md">
+                <GridItem
+                  href="/projects/youtemy"
+                  title="YouTemy"
+                  thumbnail={youtemy}
+                >
+                  A great way to learn from YouTube courses without any
+                  distractions and the ability to enroll in courses and track
+                  them with a daily streak to become more consistent.
+                </GridItem>
+              </Center>
+            </SimpleGrid>
+          </Section> */}
+        </Container>
       </div>
-    </div>
+    </Layout>
   )
+}
+
+export const getStaticProps = async () => {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
 
 export const SVGBackground = () => (
   <div className="relative h-full translate-y-80 max-w-sm md:max-w-lg -z-10 mx-auto">
     <svg
-      className="absolute right-full transform translate-x-1/4 lg:translate-x-1/2"
+      className="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2"
       width={404}
       height={784}
       fill="none"
