@@ -7,7 +7,7 @@ cover_image: 'https://user-images.githubusercontent.com/69139607/169824962-78f2a
 tags: 'internships, web-development'
 devUrl: ''
 published: false
-featured: true
+featured: false
 ---
 
 So, you have been working really hard for a while now, and you think you'r ready to start applying for internships. Then

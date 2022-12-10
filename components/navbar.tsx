@@ -62,7 +62,7 @@ const LinkItem: React.FC<Props> = ({
         display="inline-flex"
         alignItems="center"
         style={{ gap: 4, borderRadius: '8px' }}
-        className={`${active ? 'shadow-md' : ''} hover:shadow-md`}
+        className={`${active ? 'shadow-md' : ''} scale-90 hover:shadow-md`}
       >
         {children}
       </Link>
@@ -137,7 +137,7 @@ const Navbar = (
             <IoLink />
             Resume
           </LinkItem>
-          <LinkItem
+          {/* <LinkItem
             href="https://github.com/rosekamallove"
             target="_blank"
             path={path}
@@ -150,7 +150,7 @@ const Navbar = (
             path={path}
           >
             <IoLogoTwitter />
-          </LinkItem>
+          </LinkItem> */}
           <ThemeToggleButton />
         </Stack>
 

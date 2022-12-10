@@ -21,26 +21,25 @@ import {
 } from 'react-icons/io5'
 import { BsArrowRight } from 'react-icons/bs'
 import NextLink from 'next/link'
-import { useEffect, useState } from 'react'
 
 const Links: React.FC = () => {
   const logoImg = `/images/logo${useColorModeValue('-light', '-dark')}.png`
 
-  const [meme, setMeme] = useState(null)
-  console.log(meme)
+  // const [meme, setMeme] = useState(null)
+  // console.log(meme)
 
-  const updateMeme = () => {
-    fetch(`https://meme-api.herokuapp.com/gimme`).then(d =>
-      d.json().then(data => setMeme(data))
-    )
-  }
+  // const updateMeme = () => {
+  //   fetch(`https://meme-api.herokuapp.com/gimme`).then(d =>
+  //     d.json().then(data => setMeme(data))
+  //   )
+  // }
 
-  useEffect(() => {
-    updateMeme()
-  }, [])
+  // useEffect(() => {
+  //   updateMeme()
+  // }, [])
 
   return (
-    <div className="bg-[url('/images/green-home-bg.png')] bg-cover w-[100vw] h-[100vh] flex items-center justify-center text-white">
+    <div className="w-[100vw] h-[100vh] flex items-center justify-center text-white">
       <Head>
         <title>Links - Rose Kamal Love</title>
         <meta name="viewport" content="width=device-width initial-scale=1" />
@@ -56,27 +55,14 @@ const Links: React.FC = () => {
         <meta property="og:type" content="website" />
       </Head>
 
-      <div className="bg-black/40 rounded-lg relative grid place-items-center place-content-center w-full md:w-5/6 lg:w-4/6 min-h-[60vh] min-h-4/6 backdrop-blur-md">
+      <div className="bg-black/10 backdrop-blur-sm rounded-lg relative grid place-items-center place-content-center w-full md:w-5/6 lg:w-4/6 min-h-[60vh] min-h-4/6">
         <div className="flex flex-col my-20 mx-2 sm:mx-10 lg:mx-20 gap-10 justify-center">
-          <div className="flex">
-            <div className="relative overflow-hidden -mb-5 mt-2 rounded-full py-1.5 px-4 text-xs md:text-base lg:text-lg font-bold leading-6 ring-1 ring-white/10 hover:ring-white/20 transition-all">
-              <span className="flex gap-2">
-                Struggling to learn to code? Here&apos;s you solution!
-                <a
-                  href="https://www.kroto.in"
-                  className="font-semibold flex gap-1 hover:gap-2 transition-all justify-center items-center text-[#ef3054]"
-                >
-                  Read more <BsArrowRight />
-                </a>
-              </span>
-            </div>
-          </div>
-          <p className="text-5xl md:text-7xl">Rose Kamal Love</p>
-          <p className="text-xl md:text-2xl ml-1 -mt-8 md:-mt-5">
+          <p className="text-4xl sm:text-5xl md:text-7xl">Rose Kamal Love</p>
+          <p className="text-lg sm:text-xl md:text-2xl ml-1 -mt-8 md:-mt-5">
             A friendly ambivert, trying to make a life out of code who also
             happens to love taking photos
           </p>
-          <p className="text-lg md:text-xl ml-1 -mt-5">
+          <p className="text-base sm:text-lg md:text-xl ml-1 -mt-5">
             <NextLink href="/home">
               <a className="font-semibold hover:text-[#ef3054] flex gap-2 hover:gap-3 transition-all items-center">
                 More about me
@@ -95,7 +81,7 @@ const Links: React.FC = () => {
           </div>
         </div>
         <div className="absolute -top-36 lg:left-52">
-          <div className="rounded-full scale-75 flex justify-center items-center border-4 w-fit shadow-sm backdrop-blur-sm mt-10">
+          <div className="rounded-full scale-[0.6] sm:scale-75 flex justify-center items-center border-4 w-fit shadow-sm backdrop-blur-sm mt-10">
             <Image
               src="/images/profile.png"
               alt="Rose Kamal"

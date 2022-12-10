@@ -11,8 +11,6 @@ interface Props extends AppProps {
 const Main: React.FC<Props> = ({ children, router }) => {
   const logoImg = `/images/logo${useColorModeValue('-light', '-dark')}.png`
 
-  if (router.pathname === '/') return <div />
-
   return (
     <Box as="main" pb={8}>
       <Head>
