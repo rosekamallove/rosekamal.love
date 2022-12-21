@@ -6,8 +6,8 @@ import { IconLinks } from './icon-links'
 
 export const SmallIntro: React.FC = () => {
   return (
-    <div>
-      <div className="mt-10">
+    <div className="my-20">
+      <div className="">
         <div className="text-xl md:text-2xl">
           Hey, my name is <span className="font-semibold">Rose Kamal Love</span>{' '}
           and,
@@ -27,8 +27,8 @@ export const SmallIntro: React.FC = () => {
           <p className="mt-0 p-0">Happy Reading ✨</p>
         </div>
       </div>
-      <Flex my={8}>
-        <IconLinks size="md" />
+      <Flex align="center" my={8}>
+        <IconLinks size="lg" />
         <Spacer />
         <NextLink href="/about">
           <Button

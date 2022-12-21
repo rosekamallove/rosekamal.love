@@ -38,7 +38,9 @@ export default function Home({ allPostsData }: { allPostsData: any }) {
           <Section delay="0.0">
             <SmallIntro />
           </Section>
+        </Container>
 
+        <Container maxW="container.md">
           <Section delay="0.2">
             <Heading as="h3" variant="section-title">
               Featured Blogs
@@ -59,9 +61,10 @@ export default function Home({ allPostsData }: { allPostsData: any }) {
               </Button>
             </NextLink>
           </Section>
-          <Section delay="0.3">{/*<TimeLine />*/}</Section>
+        </Container>
+        <Section delay="0.3">{/*<TimeLine />*/}</Section>
 
-          {/*<Section delay="0.4">
+        {/*<Section delay="0.4">
             <Heading as="h3" variant="section-title">
               Featured
             </Heading>
@@ -79,7 +82,6 @@ export default function Home({ allPostsData }: { allPostsData: any }) {
               </Center>
             </SimpleGrid>
           </Section> */}
-        </Container>
       </div>
     </Layout>
   )

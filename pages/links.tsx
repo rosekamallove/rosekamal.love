@@ -40,7 +40,6 @@ const Links: React.FC = () => {
   }, [])
 
   return (
-
     <div className="bg-[url('/images/green-home-bg.png')] bg-cover w-[100vw] h-[100vh] flex items-center justify-center text-white">
       <Head>
         <title>Links - Rose Kamal Love</title>
@@ -77,7 +76,7 @@ const Links: React.FC = () => {
             happens to love taking photos
           </p>
           <p className="text-lg md:text-xl ml-1 -mt-5">
-            <NextLink href="/home">
+            <NextLink href="/">
               <a className="font-semibold hover:text-[#ef3054] flex gap-2 hover:gap-3 transition-all items-center">
                 More about me
                 <BsArrowRight />

@@ -1,11 +1,6 @@
 import { Button, Icon, Link } from '@chakra-ui/react'
 import React from 'react'
-import {
-  IoLogoGithub,
-  IoLogoLinkedin,
-  IoLogoMedium,
-  IoLogoTwitter
-} from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from 'react-icons/io5'
 
 interface Props {
   size?: string
@@ -14,27 +9,22 @@ interface Props {
 export const IconLinks: React.FC<Props> = ({ size }) => {
   return (
     <>
-      <Link href="https://github.com/rosekamallove" target="_blank">
+      <Link href="https://instagram.com/rosekamallove" target="_blank">
         <Button variant="ghost" colorScheme="teal" size={size ? size : 'sm'}>
-          <Icon as={IoLogoGithub} />
+          <Icon as={IoLogoInstagram} />
+        </Button>
+      </Link>
+      <Link
+        href="https://www.youtube.com/channel/UCIcZjoMa7k1w63XlP1qGbQQ"
+        target="_blank"
+      >
+        <Button variant="ghost" colorScheme="teal" size={size ? size : 'sm'}>
+          <Icon as={IoLogoYoutube} />
         </Button>
       </Link>
       <Link href="https://twitter.com/RoseKamalLove1" target="_blank">
         <Button variant="ghost" colorScheme="teal" size={size ? size : 'sm'}>
           <Icon as={IoLogoTwitter} />
-        </Button>
-      </Link>
-      <Link
-        href="https://www.linkedin.com/in/rose-kamal-love-1146141b0/"
-        target="_blank"
-      >
-        <Button variant="ghost" colorScheme="teal" size={size ? size : 'sm'}>
-          <Icon as={IoLogoLinkedin} />
-        </Button>
-      </Link>
-      <Link href="https://medium.com/@rosekamall" target="_blank">
-        <Button variant="ghost" colorScheme="teal" size={size ? size : 'sm'}>
-          <Icon as={IoLogoMedium} />
         </Button>
       </Link>
     </>

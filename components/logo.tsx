@@ -19,7 +19,7 @@ const LogoBox = styled.span`
 const Logo: React.FC = () => {
   const logoImg = `/images/logo${useColorModeValue('-light', '-dark')}.png`
   return (
-    <Link href="/home">
+    <Link href="/">
       <a>
         <LogoBox>
           <Image src={logoImg} width={50} height={50} alt="logo" />
