@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamal.love/</id>
     <title>RoseK's Blog</title>
-    <updated>2022-12-21T10:00:43.155Z</updated>
+    <updated>2023-01-26T08:42:51.234Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -13,7 +13,7 @@
     <link rel="self" href="https://rosekamal.love//rss/atom.xml"/>
     <subtitle>Blgo posts about internships, Web Development, Open Source, Productivity and more</subtitle>
     <icon>https://rosekamal.love//images/logo-dark.png</icon>
-    <rights>All rights reserved 2022, Rose Kamal Love</rights>
+    <rights>All rights reserved 2023, Rose Kamal Love</rights>
     <entry>
         <title type="html"><![CDATA[The start of something nice]]></title>
         <id>https://rosekamal.love//blogs/9-starting-up</id>

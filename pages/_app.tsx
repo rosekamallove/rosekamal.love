@@ -6,12 +6,12 @@ import theme from '../lib/theme'
 import '../styles/global.css'
 
 import { AppProps } from 'next/app'
-import * as ga from '../lib/ga'
+// import * as ga from '../lib/ga'
 
-const Website: React.FC = ({ Component, pageProps, router }: AppProps) => {
+const Website = ({ Component, pageProps, router }: AppProps) => {
   useEffect(() => {
     const handleRouteChange = (url: string): void => {
-      ga.pageView(url)
+      // ga.pageView(url)
     }
     //When the component is mounted, subscribe to router changes
     //and log those page views
@@ -25,11 +25,13 @@ const Website: React.FC = ({ Component, pageProps, router }: AppProps) => {
   }, [router.events])
 
   return (
-    <ChakraProvider theme={theme}>
+    <>
+      {/* <ChakraProvider theme={theme}> */}
       <Fonts />
       <Layout router={router} {...pageProps} />
       <Component {...pageProps} key={router.route} />
-    </ChakraProvider>
+      {/* </ChakraProvider> */}
+    </>
   )
 }
 
