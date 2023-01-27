@@ -3,10 +3,13 @@ import Link from "next/link";
 import Date from "../components/date";
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
+import utilStyles from "../styles/utils.module.css";
 import {
+  IoLogoGithub,
   IoLogoInstagram,
+  IoLogoLinkedin,
+  IoGlobeOutline,
   IoLogoTwitter,
-  IoLogoYoutube,
 } from "react-icons/io5";
 
 export default function Home({
@@ -25,22 +28,29 @@ export default function Home({
       </Head>
 
       {/* User Bio Section */}
-      <section>
+      <section className={utilStyles.headingMd}>
         <p>
           Hi, I am Rose Kamal Love
-          A friendly ambivert, trying to make a life out of code who also happens to love taking photos</p>
-        <p>Happy Reading ✨</p>
+          <a href="https://rosekamallove.vercel.app" target="_blank">
+            {" "}
+            (<IoGlobeOutline className="IOLOGO1" />
+            Website)
+          </a>{" "}
+          a friendly ambivert who loves writing software, with a crave to create
+          music and yeah I take photos too.
+        </p>
       </section>
-
-
 
       {/* Connect Section */}
       <section>
         <a
-          href="https://www.youtube.com/channel/UCIcZjoMa7k1w63XlP1qGbQQ"
+          href="https://www.linkedin.com/in/rose-kamal-love-1146141b0/"
           target="_blank"
         >
-          <IoLogoYoutube className="IOLOGO" />
+          <IoLogoLinkedin className="IOLOGO" />
+        </a>
+        <a href="https://github.com/rosekamallove" target="_blank">
+          <IoLogoGithub className="IOLOGO" />
         </a>
         <a href="https://twitter.com/RoseKamalLove1/" target="_blank">
           <IoLogoTwitter className="IOLOGO" />
@@ -51,16 +61,16 @@ export default function Home({
       </section>
 
       {/* Blogs Section */}
-      <section >
-        <h2 >Blogs</h2>
-        <ul >
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Blogs</h2>
+        <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
+            <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
-              <small >
+              <small className={utilStyles.lightText}>
                 <Date dateString={date} />
               </small>
             </li>
