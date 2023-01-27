@@ -1,172 +1,91 @@
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import { Button, Container, Heading, useColorModeValue } from '@chakra-ui/react'
-import Head from 'next/head'
-import NextLink from 'next/link'
-import Layout from '../components/layouts/article'
-import { RenderBlogs } from '../components/render-blogs'
-import Section from '../components/section'
-import { SmallIntro } from '../components/small-intro'
-import { getSortedPostsData } from '../lib/posts'
+import Head from "next/head";
+import Link from "next/link";
+import Date from "../components/date";
+import Layout, { siteTitle } from "../components/layout";
+import { getSortedPostsData } from "../lib/posts";
+import utilStyles from "../styles/utils.module.css";
+import {
+  IoLogoGithub,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+  IoGlobeOutline,
+  IoLogoTwitter,
+} from "react-icons/io5";
 
-export default function Home({ allPostsData }: { allPostsData: any }) {
+export default function Home({
+  allPostsData,
+}: {
+  allPostsData: {
+    date: string;
+    title: string;
+    id: string;
+  }[]; // Array of objects
+}) {
   return (
-    <Layout>
+    <Layout home>
       <Head>
-        <title>Rose Kamal Love</title>
-        <meta property="og:title" content={'About - Rose Kamal Love'} />
-        <meta
-          property="og:image"
-          content="https://rosekamal.love/images/rosek.jpg"
-        />
-        <meta
-          property="og:description"
-          content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
-        />
-        <meta name="description" content="@rosekamallove on the web" />
-        <meta name="author" content="Rose Kamal Love" />
-        <meta name="twitter:title" content="Rose Kamal Love" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@RoseKamalLove1" />
-        <meta name="twitter:creator" content="@RoseKamalLove1" />
-        <meta property="og:site_name" content="Rose Kamal Love" />
-        <meta name="og:title" content="Rose Kamal Love" />
-        <meta property="og:type" content="website" />
+        <title>{siteTitle}</title>
       </Head>
-      <div className="overflow-hidden relative">
-        <SVGBackground />
-        <Container maxW="container.md">
-          <Section delay="0.0">
-            <SmallIntro />
-          </Section>
-        </Container>
 
-        <Container maxW="container.md">
-          <Section delay="0.2">
-            <Heading as="h3" variant="section-title">
-              Featured Blogs
-            </Heading>
-            <RenderBlogs
-              allPostsData={allPostsData}
-              featured={true}
-              renderDescription={false}
-              count={3}
-            />
-            <NextLink href="/blogs">
-              <Button
-                rightIcon={<ChevronRightIcon />}
-                colorScheme="teal"
-                variant="ghost"
-              >
-                Read All Blogs
-              </Button>
-            </NextLink>
-          </Section>
-        </Container>
-        <Section delay="0.3">{/*<TimeLine />*/}</Section>
+      {/* User Bio Section */}
+      <section className={utilStyles.headingMd}>
+        <p>
+          Hi, I am Rose Kamal Love
+          <a href="https://rosekamallove.vercel.app" target="_blank">
+            {" "}
+            (<IoGlobeOutline className="IOLOGO1" />
+            Website)
+          </a>{" "}
+          a friendly ambivert who loves writing software, with a crave to create
+          music and yeah I take photos too.
+        </p>
+      </section>
 
-        {/*<Section delay="0.4">
-            <Heading as="h3" variant="section-title">
-              Featured
-            </Heading>
-            <SimpleGrid columns={[1, 1, 1]} gap={0}>
-              <Center className="m-0 py-5 rounded-[8px] transition-all hover:shadow-md">
-                <GridItem
-                  href="/projects/youtemy"
-                  title="YouTemy"
-                  thumbnail={youtemy}
-                >
-                  A great way to learn from YouTube courses without any
-                  distractions and the ability to enroll in courses and track
-                  them with a daily streak to become more consistent.
-                </GridItem>
-              </Center>
-            </SimpleGrid>
-          </Section> */}
-      </div>
+      {/* Connect Section */}
+      <section>
+        <a
+          href="https://www.linkedin.com/in/rose-kamal-love-1146141b0/"
+          target="_blank"
+        >
+          <IoLogoLinkedin className="IOLOGO" />
+        </a>
+        <a href="https://github.com/rosekamallove" target="_blank">
+          <IoLogoGithub className="IOLOGO" />
+        </a>
+        <a href="https://twitter.com/RoseKamalLove1/" target="_blank">
+          <IoLogoTwitter className="IOLOGO" />
+        </a>
+        <a href="https://instagram.com/rosekamallove" target="_blank">
+          <IoLogoInstagram className="IOLOGO" />
+        </a>
+      </section>
+
+      {/* Blogs Section */}
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Blogs</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
+            </li>
+          ))}
+        </ul>
+      </section>
     </Layout>
-  )
+  );
 }
 
 export const getStaticProps = async () => {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
-      allPostsData
-    }
-  }
-}
-
-export const SVGBackground = () => (
-  <div className="relative h-full translate-y-80 max-w-sm md:max-w-lg -z-10 mx-auto">
-    <svg
-      className="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2"
-      width={404}
-      height={784}
-      fill="none"
-      viewBox="0 0 404 784"
-    >
-      <defs>
-        <pattern
-          id="f210dbf6-a58d-4871-961e-36d5016a0f49"
-          x={0}
-          y={0}
-          width={20}
-          height={20}
-          patternUnits="userSpaceOnUse"
-        >
-          <rect
-            x={0}
-            y={0}
-            width={4}
-            height={4}
-            className={`${useColorModeValue(
-              'text-gray-200',
-              'text-[#282c34]'
-            )}`}
-            fill="currentColor"
-          />
-        </pattern>
-      </defs>
-      <rect
-        width={404}
-        height={784}
-        fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
-      />
-    </svg>
-    <svg
-      className="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2"
-      width={404}
-      height={784}
-      fill="none"
-      viewBox="0 0 404 784"
-    >
-      <defs>
-        <pattern
-          id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
-          x={0}
-          y={0}
-          width={20}
-          height={20}
-          patternUnits="userSpaceOnUse"
-        >
-          <rect
-            x={0}
-            y={0}
-            width={4}
-            height={4}
-            className={`${useColorModeValue(
-              'text-gray-200',
-              'text-[#282c34]'
-            )}`}
-            fill="currentColor"
-          />
-        </pattern>
-      </defs>
-      <rect
-        width={404}
-        height={784}
-        fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
-      />
-    </svg>
-  </div>
-)
+      allPostsData,
+    },
+  };
+};
