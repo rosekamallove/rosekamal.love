@@ -3,7 +3,6 @@ import Link from "next/link";
 import Date from "../components/date";
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
-import utilStyles from "../styles/utils.module.css";
 import {
   IoLogoGithub,
   IoLogoInstagram,
@@ -28,7 +27,7 @@ export default function Home({
       </Head>
 
       {/* User Bio Section */}
-      <section className={utilStyles.headingMd}>
+      <section>
         <p>
           Hi, I am Rose Kamal Love
           <a href="https://rosekamallove.vercel.app" target="_blank">
@@ -61,16 +60,16 @@ export default function Home({
       </section>
 
       {/* Blogs Section */}
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blogs</h2>
-        <ul className={utilStyles.list}>
+      <section>
+        <h2>Blogs</h2>
+        <ul>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
-              <small className={utilStyles.lightText}>
+              <small>
                 <Date dateString={date} />
               </small>
             </li>
