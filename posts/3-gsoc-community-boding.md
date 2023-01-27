@@ -6,7 +6,7 @@ og_description: "Getting to know the community and familiarizing myself with Lib
 cover_image: 'https://user-images.githubusercontent.com/69139607/170450651-bfe6ef15-5634-473d-908f-d95dab890113.png'
 tags: 'gsoc, librehealth, open-source'
 devUrl: ''
-published: true
+published: false
 featured: false
 ---
 

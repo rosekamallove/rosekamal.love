@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import utilStyles from "../styles/utils.module.css";
-import styles from "./layout.module.css";
 
 const name = "Rose Kamal Love";
 export const siteTitle = "Blogs - Rose Kamal Love";
@@ -15,7 +13,7 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Rose Kamal Love</title>
         <meta property="og:title" content={'About - Rose Kamal Love'} />
@@ -37,18 +35,17 @@ export default function Layout({
         <meta name="og:title" content="Rose Kamal Love" />
         <meta property="og:type" content="website" />
       </Head>
-      <header className={styles.header}>
+      <header>
         {home ? (
           <>
             <Image
               priority
               src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
               height={144}
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1>{name}</h1>
           </>
         ) : (
           <>
@@ -57,16 +54,15 @@ export default function Layout({
                 <Image
                   priority
                   src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
                   height={108}
                   width={108}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 >
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a >{name}</a>
               </Link>
             </h2>
           </>
@@ -74,7 +70,7 @@ export default function Layout({
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
