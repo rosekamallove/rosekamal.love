@@ -5,11 +5,9 @@ import Layout, { siteTitle } from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 import utilStyles from "../styles/utils.module.css";
 import {
-  IoLogoGithub,
   IoLogoInstagram,
-  IoLogoLinkedin,
-  IoGlobeOutline,
   IoLogoTwitter,
+  IoLogoYoutube,
 } from "react-icons/io5";
 
 export default function Home({
@@ -31,26 +29,19 @@ export default function Home({
       <section className={utilStyles.headingMd}>
         <p>
           Hi, I am Rose Kamal Love
-          <a href="https://rosekamallove.vercel.app" target="_blank">
-            {" "}
-            (<IoGlobeOutline className="IOLOGO1" />
-            Website)
-          </a>{" "}
-          a friendly ambivert who loves writing software, with a crave to create
-          music and yeah I take photos too.
-        </p>
+          A friendly ambivert, trying to make a life out of code who also happens to love taking photos</p>
+        <p>Happy Reading ✨</p>
       </section>
+
+
 
       {/* Connect Section */}
       <section>
         <a
-          href="https://www.linkedin.com/in/rose-kamal-love-1146141b0/"
+          href="https://www.youtube.com/channel/UCIcZjoMa7k1w63XlP1qGbQQ"
           target="_blank"
         >
-          <IoLogoLinkedin className="IOLOGO" />
-        </a>
-        <a href="https://github.com/rosekamallove" target="_blank">
-          <IoLogoGithub className="IOLOGO" />
+          <IoLogoYoutube className="IOLOGO" />
         </a>
         <a href="https://twitter.com/RoseKamalLove1/" target="_blank">
           <IoLogoTwitter className="IOLOGO" />

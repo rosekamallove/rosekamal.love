@@ -17,19 +17,25 @@ export default function Layout({
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <title>Rose Kamal Love</title>
+        <meta property="og:title" content={'About - Rose Kamal Love'} />
         <meta
           property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content="https://rosekamal.love/images/rosek.jpg"
         />
-        <meta name="og:title" content={siteTitle} />
+        <meta
+          property="og:description"
+          content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
+        />
+        <meta name="description" content="@rosekamallove on the web" />
+        <meta name="author" content="Rose Kamal Love" />
+        <meta name="twitter:title" content="Rose Kamal Love" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RoseKamalLove1" />
+        <meta name="twitter:creator" content="@RoseKamalLove1" />
+        <meta property="og:site_name" content="Rose Kamal Love" />
+        <meta name="og:title" content="Rose Kamal Love" />
+        <meta property="og:type" content="website" />
       </Head>
       <header className={styles.header}>
         {home ? (
