@@ -3,7 +3,6 @@ import Head from "next/head";
 import Date from "../../components/date";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import { GetStaticProps, GetStaticPaths } from "next";
-import { ReadingProgress } from "../../components/reading-progress";
 
 export default function Post({
   postData,
