@@ -3,6 +3,7 @@ import Head from "next/head";
 import Date from "../../components/date";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import { GetStaticProps, GetStaticPaths } from "next";
+import { ReadingProgress } from "../../components/reading-progress";
 
 export default function Post({
   postData,
@@ -11,13 +12,29 @@ export default function Post({
     title: string;
     date: string;
     contentHtml: string;
+    og_description: string;
+    description: string;
+    slug: string;
+    cover_image: any;
   };
 }) {
+  const url = `https://rosekamal.love/blogs/${postData.slug}`
+
   return (
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <meta name="description" content={postData.description}></meta>
+        <meta property="og:title" content={postData.title}></meta>
+        <meta property="og:url" content={url}></meta>
+        <meta
+          property="og:description"
+          content={postData.og_description}
+        ></meta>
+        <meta property="og:type" content="article"></meta>
+        <meta property="og:image" content={postData.cover_image}></meta>
       </Head>
+      {/* <ReadingProgress /> */}
       <article className="prose lg:prose-xl dark:prose-invert">
         <h1>{postData.title}</h1>
         <div>

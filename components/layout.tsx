@@ -11,7 +11,7 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <div className="dark:text-[#D1D5DA] text-[#374151] w-6/12 my-10 m-auto">
+    <div className="dark:text-[#D1D5DA] text-[#374151] w-full mx-2 md:mx-auto md:w-6/12 my-10">
       <Head>
         <title>Rose Kamal Love</title>
         <meta property="og:title" content={'About - Rose Kamal Love'} />
