@@ -18,7 +18,7 @@ export default function Post({
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
+      <article className="prose lg:prose-xl dark:prose-invert">
         <h1>{postData.title}</h1>
         <div>
           <Date dateString={postData.date} />

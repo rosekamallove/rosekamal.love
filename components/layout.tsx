@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 
-const name = "Rose Kamal Love";
 export const siteTitle = "Blogs - Rose Kamal Love";
 
 export default function Layout({
@@ -13,13 +11,13 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <div>
+    <div className="dark:text-[#D1D5DA] text-[#374151] w-6/12 my-10 m-auto">
       <Head>
         <title>Rose Kamal Love</title>
         <meta property="og:title" content={'About - Rose Kamal Love'} />
         <meta
           property="og:image"
-          content="https://rosekamal.love/images/rosek.jpg"
+          content="https://rosekamal.love/images/profile.jpg"
         />
         <meta
           property="og:description"
@@ -35,37 +33,12 @@ export default function Layout({
         <meta name="og:title" content="Rose Kamal Love" />
         <meta property="og:type" content="website" />
       </Head>
-      <header>
+      <header className="flex mt-10 justify-center">
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1>{name}</h1>
           </>
         ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 >
-              <Link href="/">
-                <a >{name}</a>
-              </Link>
-            </h2>
-          </>
+          ''
         )}
       </header>
       <main>{children}</main>
