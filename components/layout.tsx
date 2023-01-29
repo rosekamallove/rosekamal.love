@@ -11,14 +11,11 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <div className="dark:text-[#D1D5DA] text-[#374151] w-full mx-2 md:mx-auto md:w-6/12 my-10">
+    <div className="dark:text-[#D1D5DA] text-[#374151] w-11/12 mx-auto md:w-6/12 mb-10">
+      {/* <Navbar /> */}
       <Head>
         <title>Rose Kamal Love</title>
-        <meta property="og:title" content={'About - Rose Kamal Love'} />
-        <meta
-          property="og:image"
-          content="https://rosekamal.love/images/profile.jpg"
-        />
+        <meta property="og:title" content={"About - Rose Kamal Love"} />
         <meta
           property="og:description"
           content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
@@ -33,22 +30,58 @@ export default function Layout({
         <meta name="og:title" content="Rose Kamal Love" />
         <meta property="og:type" content="website" />
       </Head>
-      <header className="flex mt-10 justify-center">
-        {home ? (
-          <>
-          </>
-        ) : (
-          ''
-        )}
-      </header>
+      <header className="flex mt-10 justify-center">{home ? <></> : ""}</header>
       <main>{children}</main>
       {!home && (
         <div>
           <Link href="/">
-            <a>← Back to home</a>
+            <a className="cursor-pointer hover:underline underline-offset-4 text-base font-medium transition-all">
+              ← Back to home
+            </a>
           </Link>
         </div>
       )}
+      <Footer />
     </div>
   );
+}
+
+export function Footer() {
+  return (
+    <div className="mt-20 text-sm flex justify-between items-center bg-gray-300 bg-opacity-30 px-5 py-3 rounded-md dark:bg-gray-800 dark:bg-opacity-30">
+      <ConnectionSection />
+      <Link href="/rss/feed.xml">
+        <a className="text-base hidden md:block underline-offset-4 hover:underline">rss</a>
+      </Link>
+    </div>
+  )
+}
+
+export function ConnectionSection() {
+  return (
+    <section className="flex text-sm items-center my-5 gap-8" >
+      <a
+        href="https://youtube.com/@rosekamallove"
+        className="underline-offset-4 hover:underline"
+        rel="noreferrer"
+        target="_blank"
+      >
+        /youtube
+      </a>
+      <a
+        href="https://twitter.com/RoseKamalLove1/"
+        className="underline-offset-4 hover:underline"
+        rel="noreferrer"
+        target="_blank"
+      >
+        /twitter
+      </a>
+      <Link href="/resume">
+        <a className="underline-offset-4 hover:underline">/resume</a>
+      </Link>
+      <Link href="/resume">
+        <a className="underline-offset-4 hover:underline">/about</a>
+      </Link>
+    </section >
+  )
 }

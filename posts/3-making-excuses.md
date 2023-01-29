@@ -1,16 +1,14 @@
 ---
-title: 'Making Excuses'
-date: '2022-09-19'
-description: 'Why is it so hard to get started ?'
-og_description: 'Why is it so hard to get started ?'
-cover_image: 'https://user-images.githubusercontent.com/69139607/169286239-44eb2877-047b-453a-8ffe-4ebac0b34f05.png'
-tags: 'starting-up'
-devUrl: ''
+title: "Making Excuses"
+date: "2022-09-19"
+description: "Why is it so hard to get started?"
+og_description: "Why is it so hard to get started?"
+cover_image: "https://user-images.githubusercontent.com/69139607/169286239-44eb2877-047b-453a-8ffe-4ebac0b34f05.png"
+tags: "starting-up"
+devUrl: ""
 featured: false
 published: true
 ---
-
-## Making Excuses
 
 Once we have the idea, the hard part actually is to get started. For example, I and my team mates (Aman and Yuvraj) had an amazing strategy.
 

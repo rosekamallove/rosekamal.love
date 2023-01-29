@@ -1,11 +1,11 @@
 ---
-title: 'This is how you become "Internship Ready" as a Web Developer'
-date: '2022-05-11'
-description: 'A comprehensive guide to taking you from HTML & CSS to a Web Development Intern'
-og_description: 'A comprehensive guide to taking you from HTML & CSS to a Web Development Intern'
-cover_image: 'https://user-images.githubusercontent.com/69139607/167338113-fd54e91d-37f6-4fc6-a3f4-f9e51940c6d8.png'
-tags: 'web-dev, react, node'
-devUrl: 'this-is-how-you-become-internship-ready-as-a-web-developer-in-2022-part-1-front-end-449g'
+title: 'Internship Ready as a Web Developer'
+date: "2022-05-11"
+description: "A comprehensive guide to taking you from HTML & CSS to a Web Development Intern"
+og_description: "From basics to a web-dev intern"
+cover_image: "https://user-images.githubusercontent.com/69139607/167338113-fd54e91d-37f6-4fc6-a3f4-f9e51940c6d8.png"
+tags: "web-dev, react, node"
+devUrl: "this-is-how-you-become-internship-ready-as-a-web-developer-in-2022-part-1-front-end-449g"
 published: true
 featured: true
 ---

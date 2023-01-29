@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://rosekamal.love/</id>
+    <title>RoseK's Blog</title>
+    <updated>2023-01-29T17:06:31.554Z</updated>
+    <generator>Feed for Node.js</generator>
+    <author>
+        <name>Rose Kamal Love</name>
+        <email>rosekamallove@gmail.com</email>
+        <uri>https://twitter.com/RoseKamalLove1</uri>
+    </author>
+    <link rel="alternate" href="https://rosekamal.love/"/>
+    <link rel="self" href="https://rosekamal.love//rss/atom.xml"/>
+    <subtitle>Blgo posts about internships, Web Development, Open Source, Productivity and more</subtitle>
+    <icon>https://rosekamal.love//images/logo-dark.png</icon>
+    <rights>All rights reserved 2023, Rose Kamal Love</rights>
+    <entry>
+        <title type="html"><![CDATA[Making Excuses]]></title>
+        <id>https://rosekamal.love//blogs/3-making-excuses</id>
+        <link href="https://rosekamal.love//blogs/3-making-excuses"/>
+        <updated>2022-09-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Why is it so hard to get started?]]></summary>
+        <content type="html"><![CDATA[Why is it so hard to get started?]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The start of something nice]]></title>
+        <id>https://rosekamal.love//blogs/1-starting-up</id>
+        <link href="https://rosekamal.love//blogs/1-starting-up"/>
+        <updated>2022-07-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this blog post I talk about my team and how/why I want to start up]]></summary>
+        <content type="html"><![CDATA[In this blog post I talk about my team and how/why I want to start up]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Internship Ready as a Web Developer]]></title>
+        <id>https://rosekamal.love//blogs/2-getting-started-web-dev</id>
+        <link href="https://rosekamal.love//blogs/2-getting-started-web-dev"/>
+        <updated>2022-05-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A comprehensive guide to taking you from HTML & CSS to a Web Development Intern]]></summary>
+        <content type="html"><![CDATA[A comprehensive guide to taking you from HTML & CSS to a Web Development Intern]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
+</feed>

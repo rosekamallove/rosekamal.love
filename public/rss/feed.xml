@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>RoseK's Blog</title>
+        <link>https://rosekamal.love/</link>
+        <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
+        <lastBuildDate>Sun, 29 Jan 2023 17:06:31 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <copyright>All rights reserved 2023, Rose Kamal Love</copyright>
+        <item>
+            <title><![CDATA[Making Excuses]]></title>
+            <link>https://rosekamal.love//blogs/3-making-excuses</link>
+            <guid>https://rosekamal.love//blogs/3-making-excuses</guid>
+            <pubDate>Mon, 19 Sep 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Why is it so hard to get started?]]></description>
+            <content:encoded><![CDATA[Why is it so hard to get started?]]></content:encoded>
+            <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
+        </item>
+        <item>
+            <title><![CDATA[The start of something nice]]></title>
+            <link>https://rosekamal.love//blogs/1-starting-up</link>
+            <guid>https://rosekamal.love//blogs/1-starting-up</guid>
+            <pubDate>Sat, 09 Jul 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[In this blog post I talk about my team and how/why I want to start up]]></description>
+            <content:encoded><![CDATA[In this blog post I talk about my team and how/why I want to start up]]></content:encoded>
+            <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
+        </item>
+        <item>
+            <title><![CDATA[Internship Ready as a Web Developer]]></title>
+            <link>https://rosekamal.love//blogs/2-getting-started-web-dev</link>
+            <guid>https://rosekamal.love//blogs/2-getting-started-web-dev</guid>
+            <pubDate>Wed, 11 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[A comprehensive guide to taking you from HTML & CSS to a Web Development Intern]]></description>
+            <content:encoded><![CDATA[A comprehensive guide to taking you from HTML & CSS to a Web Development Intern]]></content:encoded>
+            <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
+        </item>
+    </channel>
+</rss>

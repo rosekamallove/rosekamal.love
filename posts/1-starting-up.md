@@ -1,11 +1,11 @@
 ---
-title: 'The start of something nice'
-date: '2022-07-09'
-description: 'In this blog post I talk about my team and how/why I want to start up'
-og_description: 'In this blog post I talk about my team and how/why I want to start up'
-cover_image: 'https://user-images.githubusercontent.com/69139607/178135704-3f3a2f9b-0a22-4774-bbb3-f32a057cdaf6.png'
-tags: 'starting-up, 0to1'
-devUrl: ''
+title: "The start of something nice"
+date: "2022-07-09"
+description: "In this blog post I talk about my team and how/why I want to start up"
+og_description: "In this blog post I talk about my team and how/why I want to start up"
+cover_image: "https://user-images.githubusercontent.com/69139607/178135704-3f3a2f9b-0a22-4774-bbb3-f32a057cdaf6.png"
+tags: "starting-up, 0to1"
+devUrl: ""
 published: true
 featured: true
 ---
@@ -52,7 +52,7 @@ I am not saying that all startups that do this are bad, but like everything most
 
 I am not obsessed with the headlines that say a "20-year-old raises X for Y valuation", I am only going to be focussing on the value that my team and my product can give to the users. As I mentioned earlier, this is what gives me meaning.
 
-> Value creation is more important than Valuation 
+> Value creation is more important than Valuation
 >
 > (some random podcast)
 

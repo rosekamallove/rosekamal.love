@@ -17,7 +17,7 @@ export default function Post({
     cover_image: any;
   };
 }) {
-  const url = `https://rosekamal.love/blogs/${postData.slug}`
+  const url = `https://rosekamal.love/blogs/${postData.slug}`;
 
   return (
     <Layout>
@@ -34,8 +34,8 @@ export default function Post({
         <meta property="og:image" content={postData.cover_image}></meta>
       </Head>
       {/* <ReadingProgress /> */}
-      <article className="prose lg:prose-xl dark:prose-invert">
-        <h1>{postData.title}</h1>
+      <article className="prose-lg lg:prose-xl dark:prose-invert">
+        <h1 className="font-black">{postData.title}</h1>
         <div>
           <Date dateString={postData.date} />
         </div>

@@ -1,0 +1,49 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "RoseK's Blog",
+    "home_page_url": "https://rosekamal.love/",
+    "feed_url": "https://rosekamal.love//rss/feed.json",
+    "description": "Blgo posts about internships, Web Development, Open Source, Productivity and more",
+    "author": {
+        "name": "Rose Kamal Love",
+        "url": "https://twitter.com/RoseKamalLove1"
+    },
+    "items": [
+        {
+            "id": "https://rosekamal.love//blogs/3-making-excuses",
+            "content_html": "Why is it so hard to get started?",
+            "url": "https://rosekamal.love//blogs/3-making-excuses",
+            "title": "Making Excuses",
+            "summary": "Why is it so hard to get started?",
+            "date_modified": "2022-09-19T00:00:00.000Z",
+            "author": {
+                "name": "Rose Kamal Love",
+                "url": "https://twitter.com/RoseKamalLove1"
+            }
+        },
+        {
+            "id": "https://rosekamal.love//blogs/1-starting-up",
+            "content_html": "In this blog post I talk about my team and how/why I want to start up",
+            "url": "https://rosekamal.love//blogs/1-starting-up",
+            "title": "The start of something nice",
+            "summary": "In this blog post I talk about my team and how/why I want to start up",
+            "date_modified": "2022-07-09T00:00:00.000Z",
+            "author": {
+                "name": "Rose Kamal Love",
+                "url": "https://twitter.com/RoseKamalLove1"
+            }
+        },
+        {
+            "id": "https://rosekamal.love//blogs/2-getting-started-web-dev",
+            "content_html": "A comprehensive guide to taking you from HTML & CSS to a Web Development Intern",
+            "url": "https://rosekamal.love//blogs/2-getting-started-web-dev",
+            "title": "Internship Ready as a Web Developer",
+            "summary": "A comprehensive guide to taking you from HTML & CSS to a Web Development Intern",
+            "date_modified": "2022-05-11T00:00:00.000Z",
+            "author": {
+                "name": "Rose Kamal Love",
+                "url": "https://twitter.com/RoseKamalLove1"
+            }
+        }
+    ]
+}

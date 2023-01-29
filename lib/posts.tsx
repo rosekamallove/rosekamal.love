@@ -2,14 +2,13 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import { remark } from "remark";
-import remarkGfm from 'remark-gfm'
+import remarkGfm from "remark-gfm";
 import html from "remark-html";
+import wordCounter from "./word-counter";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
 export function getSortedPostsData() {
-  console.log(postsDirectory);
-
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
@@ -22,15 +21,25 @@ export function getSortedPostsData() {
 
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
+    const words = wordCounter(matterResult.content);
 
     // Combine the data with the id
     return {
       id,
-      ...(matterResult.data as { date: string; title: string, published: boolean }),
+      words,
+      ...(matterResult.data as {
+        date: string;
+        title: string;
+        description: string;
+        og_description: string;
+        published: boolean;
+      }),
     };
   });
   // Sort posts by date
-  const returnPosts = allPostsData.filter(({ published }) => published === true)
+  const returnPosts = allPostsData.filter(
+    ({ published }) => published === true
+  );
   return returnPosts.sort(({ date: a }, { date: b }) => {
     if (a < b) {
       return 1;
