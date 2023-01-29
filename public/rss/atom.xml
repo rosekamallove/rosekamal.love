@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamal.love/</id>
     <title>RoseK's Blog</title>
-    <updated>2022-12-21T10:00:43.155Z</updated>
+    <updated>2023-01-29T17:06:31.554Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -13,11 +13,29 @@
     <link rel="self" href="https://rosekamal.love//rss/atom.xml"/>
     <subtitle>Blgo posts about internships, Web Development, Open Source, Productivity and more</subtitle>
     <icon>https://rosekamal.love//images/logo-dark.png</icon>
-    <rights>All rights reserved 2022, Rose Kamal Love</rights>
+    <rights>All rights reserved 2023, Rose Kamal Love</rights>
+    <entry>
+        <title type="html"><![CDATA[Making Excuses]]></title>
+        <id>https://rosekamal.love//blogs/3-making-excuses</id>
+        <link href="https://rosekamal.love//blogs/3-making-excuses"/>
+        <updated>2022-09-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Why is it so hard to get started?]]></summary>
+        <content type="html"><![CDATA[Why is it so hard to get started?]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[The start of something nice]]></title>
-        <id>https://rosekamal.love//blogs/9-starting-up</id>
-        <link href="https://rosekamal.love//blogs/9-starting-up"/>
+        <id>https://rosekamal.love//blogs/1-starting-up</id>
+        <link href="https://rosekamal.love//blogs/1-starting-up"/>
         <updated>2022-07-09T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[In this blog post I talk about my team and how/why I want to start up]]></summary>
         <content type="html"><![CDATA[In this blog post I talk about my team and how/why I want to start up]]></content>
@@ -33,156 +51,12 @@
         </contributor>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Introduction to FHIR - The Standard for data exchange in healthcare]]></title>
-        <id>https://rosekamal.love//blogs/7-fhir-standard</id>
-        <link href="https://rosekamal.love//blogs/7-fhir-standard"/>
-        <updated>2022-06-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A newbie's perspective on what FHIR is and how is it helpful]]></summary>
-        <content type="html"><![CDATA[A newbie's perspective on what FHIR is and how is it helpful]]></content>
-        <author>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </author>
-        <contributor>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Setting up LibreHealth Toolkit and Radiology]]></title>
-        <id>https://rosekamal.love//blogs/6-setting-up-lh-toolkit-radiology</id>
-        <link href="https://rosekamal.love//blogs/6-setting-up-lh-toolkit-radiology"/>
-        <updated>2022-05-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></summary>
-        <content type="html"><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></content>
-        <author>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </author>
-        <contributor>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[My goals for GSoC 22' Community Bonding Period (LibreHealthIO)]]></title>
-        <id>https://rosekamal.love//blogs/5-gsoc-community-boding</id>
-        <link href="https://rosekamal.love//blogs/5-gsoc-community-boding"/>
-        <updated>2022-05-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></summary>
-        <content type="html"><![CDATA[Getting to know the community and familiarizing myself with LibreHealht's codebase and their working style.]]></content>
-        <author>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </author>
-        <contributor>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to land an internship, with amazing learning experince and good pay?]]></title>
-        <id>https://rosekamal.love//blogs/4-applying-for-internships</id>
-        <link href="https://rosekamal.love//blogs/4-applying-for-internships"/>
-        <updated>2022-05-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A proven way to land an internship irrespective of your college and year.]]></summary>
-        <content type="html"><![CDATA[A proven way to land an internship irrespective of your college and year.]]></content>
-        <author>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </author>
-        <contributor>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[This is how you become "Internship Ready" as a Web Developer [in 2022] (Part 1: Front-End)]]></title>
-        <id>https://rosekamal.love//blogs/3-getting-started-web-dev</id>
-        <link href="https://rosekamal.love//blogs/3-getting-started-web-dev"/>
+        <title type="html"><![CDATA[Internship Ready as a Web Developer]]></title>
+        <id>https://rosekamal.love//blogs/2-getting-started-web-dev</id>
+        <link href="https://rosekamal.love//blogs/2-getting-started-web-dev"/>
         <updated>2022-05-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[A comprehensive guide to taking you from HTML & CSS to a Web Development Intern]]></summary>
         <content type="html"><![CDATA[A comprehensive guide to taking you from HTML & CSS to a Web Development Intern]]></content>
-        <author>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </author>
-        <contributor>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cryptography 101]]></title>
-        <id>https://rosekamal.love//blogs/2-cryptography-101</id>
-        <link href="https://rosekamal.love//blogs/2-cryptography-101"/>
-        <updated>2022-05-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is a write-up post for the Cryptography video that Fireship.io has published, hope you like it.]]></summary>
-        <content type="html"><![CDATA[This is a write-up post for the Cryptography video that Fireship.io has published, hope you like it.]]></content>
-        <author>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </author>
-        <contributor>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java and MySQL]]></title>
-        <id>https://rosekamal.love//blogs/1-java-jdbc-mysql</id>
-        <link href="https://rosekamal.love//blogs/1-java-jdbc-mysql"/>
-        <updated>2022-05-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></summary>
-        <content type="html"><![CDATA[I have been learning Java and SQL at University, I thought to myself why not combine both of them,  which can then help build the base for a future project maybe. P.S stay tuned for a Notes App using Spring Boot and Vaadin Fusion]]></content>
-        <author>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </author>
-        <contributor>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GSoC 2022 Project Report]]></title>
-        <id>https://rosekamal.love//blogs/10-project-report-gsoc</id>
-        <link href="https://rosekamal.love//blogs/10-project-report-gsoc"/>
-        <updated>2022-05-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is my project report for the 'Complete UI Rewrite of Radiology and Toolkit]]></summary>
-        <content type="html"><![CDATA[This is my project report for the 'Complete UI Rewrite of Radiology and Toolkit]]></content>
-        <author>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </author>
-        <contributor>
-            <name>Rose Kamal Love</name>
-            <email>rosekamallove@gmail.com</email>
-            <uri>https://twitter.com/RoseKamalLove1</uri>
-        </contributor>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What is Coding & and an intro to C++]]></title>
-        <id>https://rosekamal.love//blogs/0-what-is-coding-and-an-intro-to-c++</id>
-        <link href="https://rosekamal.love//blogs/0-what-is-coding-and-an-intro-to-c++"/>
-        <updated>2021-12-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[An introduction to coding, what, how and why]]></summary>
-        <content type="html"><![CDATA[An introduction to coding, what, how and why]]></content>
         <author>
             <name>Rose Kamal Love</name>
             <email>rosekamallove@gmail.com</email>

@@ -54,3 +54,4 @@ export const generateRssFeed = async (): Promise<void> => {
   fs.writeFileSync('./public/rss/atom.xml', feed.atom1())
   fs.writeFileSync('./public/rss/feed.json', feed.json1())
 }
+

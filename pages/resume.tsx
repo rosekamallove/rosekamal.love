@@ -1,24 +1,13 @@
-import { Container } from '@chakra-ui/react'
-import Head from 'next/head'
-import Layout from '../components/layouts/article'
+import Layout from "../components/layout";
 
-export default function Page() {
+export default function Resume() {
   return (
     <Layout>
-      <Head>
-        <title>Resume - Rose Kamal Love</title>
-        <meta property="og:title" content={'Resume - Rose Kamal Love'} />
-        <meta
-          property="og:image"
-          content="https://rosekamal.love/images/rosek.jpg"
-        />
-      </Head>
-      <Container maxW="container.md">
-        <iframe
-          src="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/preview"
-          allow="autoplay"
-        ></iframe>
-      </Container>
+      <iframe
+        src="https://drive.google.com/file/d/16S4zJlCyRrM5e8k66Ng69h0f1Q1aRL04/preview"
+        allow="autoplay"
+        className="w-full min-h-[90vh]"
+      ></iframe>
     </Layout>
-  )
+  );
 }
