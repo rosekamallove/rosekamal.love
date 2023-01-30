@@ -1,11 +1,11 @@
 ---
-title: 'Introduction to FHIR - Data exchange in healthcare'
-date: '2022-06-14'
+title: "Introduction to FHIR - Data exchange in healthcare"
+date: "2022-06-14"
 description: "A newbie's perspective on what FHIR is and how is it helpful"
 og_description: "A newbie's perspective on what FHIR is and how is it helpful"
-cover_image: 'https://user-images.githubusercontent.com/69139607/174186914-4a5a17c6-fee6-40b5-bc0a-5b6e1a70faca.png'
-tags: 'gsoc, librehealth, open-source, fhir'
-devUrl: 'introduction-to-fhir-the-standard-for-data-exchange-in-healthcare-fh0'
+cover_image: "https://user-images.githubusercontent.com/69139607/174186914-4a5a17c6-fee6-40b5-bc0a-5b6e1a70faca.png"
+tags: "gsoc, librehealth, open-source, fhir"
+devUrl: "introduction-to-fhir-the-standard-for-data-exchange-in-healthcare-fh0"
 published: true
 featured: false
 ---

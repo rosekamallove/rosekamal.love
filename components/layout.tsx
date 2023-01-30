@@ -1,21 +1,22 @@
 import Head from "next/head";
 import Link from "next/link";
-
-export const siteTitle = "Blogs - Rose Kamal Love";
+import { RxCaretLeft } from "react-icons/rx";
 
 export default function Layout({
   children,
   home,
+  title,
 }: {
   children: React.ReactNode;
   home?: boolean;
+  title?: string;
 }) {
   return (
     <div className="dark:text-[#D1D5DA] p-5 border-x border-x-gray-300 dark:border-x-gray-800 bg-gray-100 dark:bg-black text-[#374151] w-full mx-auto md:w-8/12">
       {/* <Navbar /> */}
       <Head>
-        <title>Rose Kamal Love</title>
-        <meta property="og:title" content={"About - Rose Kamal Love"} />
+        <title>{title ?? "Rose Kamal Love"}</title>
+        <meta property="og:title" content={title ?? "Rose Kamal Love"} />
         <meta
           property="og:description"
           content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
@@ -36,8 +37,8 @@ export default function Layout({
       {!home && (
         <div>
           <Link href="/">
-            <a className="cursor-pointer hover:underline underline-offset-4 text-base font-medium transition-all">
-              ← Back to home
+            <a className="cursor-pointer flex items-center hover:underline underline-offset-4 my-5 font-medium transition-all">
+              <RxCaretLeft /> Back to home
             </a>
           </Link>
         </div>
@@ -106,9 +107,7 @@ export function ConnectionSection() {
           GitHub
         </a>
         <Link href="/rss/feed.xml">
-          <a className="underline-offset-4 hover:underline">
-            RSS Feed
-          </a>
+          <a className="underline-offset-4 hover:underline">RSS Feed</a>
         </Link>
       </div>
     </section>

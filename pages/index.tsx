@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
-import { RxCaretRight } from 'react-icons/rx'
+import { RxCaretRight } from "react-icons/rx";
 import Image from "next/image";
 import { generateRssFeed } from "../lib/rss";
 import { BlogListItem } from "../components/blog-list-item";
@@ -22,7 +22,6 @@ export default function Home({
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
         <meta
           property="og:image"
           content="https://rosekamal.love/images/profile.jpg"

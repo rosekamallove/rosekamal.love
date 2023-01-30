@@ -14,7 +14,7 @@ export default function Blog({
   }[]; // Array of objects
 }) {
   return (
-    <Layout>
+    <Layout title="Blog | Rose Kamal Love">
       <section className="px-2">
         <h1 className="text-6xl font-black">Blogs</h1>
         <p className="my-2">
