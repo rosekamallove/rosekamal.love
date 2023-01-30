@@ -11,7 +11,7 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <div className="dark:text-[#D1D5DA] text-[#374151] w-11/12 mx-auto md:w-6/12 mb-10">
+    <div className="dark:text-[#D1D5DA] p-5 border-x border-x-gray-300 dark:border-x-gray-800 bg-gray-100 dark:bg-black text-[#374151] w-full mx-auto md:w-8/12">
       {/* <Navbar /> */}
       <Head>
         <title>Rose Kamal Love</title>
@@ -50,42 +50,67 @@ export default function Layout({
 
 export function Footer() {
   return (
-    <div className="mt-20 text-sm flex justify-between items-center bg-gray-300 bg-opacity-30 hover:bg-opacity-75 px-5 py-3 border-b-[1px] border-b-gray-300 dark:border-gray-800 dark:bg-gray-800 dark:bg-opacity-30 dark:hover:bg-opacity-90 transition-all">
+    <div className="mt-20 px-5 py-3 border-t border-t-gray-300 dark:border-t-gray-900">
       <ConnectionSection />
-      <Link href="/rss/feed.xml">
-        <a className="text-base hidden md:block underline-offset-4 hover:underline">
-          rss
-        </a>
-      </Link>
     </div>
   );
 }
 
 export function ConnectionSection() {
   return (
-    <section className="flex text-sm items-center my-5 gap-4">
-      <Link href="/about">
-        <a className="underline-offset-4 hover:underline">/about</a>
-      </Link>
-      <Link href="/resume">
-        <a className="underline-offset-4 hover:underline">/resume</a>
-      </Link>
-      <a
-        href="https://youtube.com/@rosekamallove"
-        className="underline-offset-4 hover:underline"
-        rel="noreferrer"
-        target="_blank"
-      >
-        /youtube
-      </a>
-      <a
-        href="https://twitter.com/RoseKamalLove1/"
-        className="underline-offset-4 hover:underline"
-        rel="noreferrer"
-        target="_blank"
-      >
-        /twitter
-      </a>
+    <section className="flex justify-between gap-8 text-base my-5">
+      <div className="flex flex-col gap-2">
+        <Link href="/">
+          <a className="underline-offset-4 hover:underline">Home</a>
+        </Link>
+        <Link href="/about">
+          <a className="underline-offset-4 hover:underline">About</a>
+        </Link>
+        <Link href="/resume">
+          <a className="underline-offset-4 hover:underline">Resume</a>
+        </Link>
+      </div>
+      <div className="flex flex-col gap-2">
+        <a
+          href="https://youtube.com/@rosekamallove"
+          className="underline-offset-4 hover:underline"
+          rel="noreferrer"
+          target="_blank"
+        >
+          YouTube
+        </a>
+        <a
+          href="https://twitter.com/RoseKamalLove1/"
+          className="underline-offset-4 hover:underline"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Twitter
+        </a>
+        <a
+          href="https://instagram.com/rosekamallove/"
+          className="underline-offset-4 hover:underline"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Instagram
+        </a>
+      </div>
+      <div className="flex flex-col gap-2">
+        <a
+          href="https://github.com/rosekamallove/"
+          className="underline-offset-4 hover:underline"
+          rel="noreferrer"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        <Link href="/rss/feed.xml">
+          <a className="underline-offset-4 hover:underline">
+            RSS Feed
+          </a>
+        </Link>
+      </div>
     </section>
   );
 }

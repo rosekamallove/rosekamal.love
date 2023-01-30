@@ -3,7 +3,7 @@ title: "Making Excuses"
 date: "2022-09-19"
 description: "Why is it so hard to get started?"
 og_description: "Why is it so hard to get started?"
-cover_image: "https://user-images.githubusercontent.com/69139607/169286239-44eb2877-047b-453a-8ffe-4ebac0b34f05.png"
+cover_image: "https://user-images.githubusercontent.com/69139607/215478344-2ff8076c-a3a5-4088-9d83-dd7224303fc2.png"
 tags: "starting-up"
 devUrl: ""
 featured: false

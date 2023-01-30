@@ -4,7 +4,7 @@ date: "2022-07-09"
 description: "In this blog post I talk about my team and how/why I want to start up"
 og_description: "In this blog post I talk about my team and how/why I want to start up"
 cover_image: "https://user-images.githubusercontent.com/69139607/178135704-3f3a2f9b-0a22-4774-bbb3-f32a057cdaf6.png"
-tags: "starting-up, 0to1"
+tags: "starting-up"
 devUrl: ""
 published: true
 featured: true

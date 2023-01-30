@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamal.love/</id>
     <title>RoseK's Blog</title>
-    <updated>2023-01-30T06:47:56.015Z</updated>
+    <updated>2023-01-30T16:07:10.885Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -14,6 +14,24 @@
     <subtitle>Blgo posts about internships, Web Development, Open Source, Productivity and more</subtitle>
     <icon>https://rosekamal.love//images/logo-dark.png</icon>
     <rights>All rights reserved 2023, Rose Kamal Love</rights>
+    <entry>
+        <title type="html"><![CDATA[Getting and Evaluating Startup Ideas]]></title>
+        <id>https://rosekamal.love//blogs/4-evaluating-startup-ideas</id>
+        <link href="https://rosekamal.love//blogs/4-evaluating-startup-ideas"/>
+        <updated>2023-01-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Should you start up? If so how to get and evaluate the idea]]></summary>
+        <content type="html"><![CDATA[Should you start up? If so how to get and evaluate the idea]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Making Excuses]]></title>
         <id>https://rosekamal.love//blogs/3-making-excuses</id>
@@ -39,6 +57,24 @@
         <updated>2022-07-09T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[In this blog post I talk about my team and how/why I want to start up]]></summary>
         <content type="html"><![CDATA[In this blog post I talk about my team and how/why I want to start up]]></content>
+        <author>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </author>
+        <contributor>
+            <name>Rose Kamal Love</name>
+            <email>rosekamallove@gmail.com</email>
+            <uri>https://twitter.com/RoseKamalLove1</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introduction to FHIR - Data exchange in healthcare]]></title>
+        <id>https://rosekamal.love//blogs/0-FHIR-Standards</id>
+        <link href="https://rosekamal.love//blogs/0-FHIR-Standards"/>
+        <updated>2022-06-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A newbie's perspective on what FHIR is and how is it helpful]]></summary>
+        <content type="html"><![CDATA[A newbie's perspective on what FHIR is and how is it helpful]]></content>
         <author>
             <name>Rose Kamal Love</name>
             <email>rosekamallove@gmail.com</email>

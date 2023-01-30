@@ -4,10 +4,19 @@
         <title>RoseK's Blog</title>
         <link>https://rosekamal.love/</link>
         <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
-        <lastBuildDate>Mon, 30 Jan 2023 06:47:56 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 30 Jan 2023 16:07:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>All rights reserved 2023, Rose Kamal Love</copyright>
+        <item>
+            <title><![CDATA[Getting and Evaluating Startup Ideas]]></title>
+            <link>https://rosekamal.love//blogs/4-evaluating-startup-ideas</link>
+            <guid>https://rosekamal.love//blogs/4-evaluating-startup-ideas</guid>
+            <pubDate>Mon, 30 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Should you start up? If so how to get and evaluate the idea]]></description>
+            <content:encoded><![CDATA[Should you start up? If so how to get and evaluate the idea]]></content:encoded>
+            <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
+        </item>
         <item>
             <title><![CDATA[Making Excuses]]></title>
             <link>https://rosekamal.love//blogs/3-making-excuses</link>
@@ -24,6 +33,15 @@
             <pubDate>Sat, 09 Jul 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[In this blog post I talk about my team and how/why I want to start up]]></description>
             <content:encoded><![CDATA[In this blog post I talk about my team and how/why I want to start up]]></content:encoded>
+            <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
+        </item>
+        <item>
+            <title><![CDATA[Introduction to FHIR - Data exchange in healthcare]]></title>
+            <link>https://rosekamal.love//blogs/0-FHIR-Standards</link>
+            <guid>https://rosekamal.love//blogs/0-FHIR-Standards</guid>
+            <pubDate>Tue, 14 Jun 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[A newbie's perspective on what FHIR is and how is it helpful]]></description>
+            <content:encoded><![CDATA[A newbie's perspective on what FHIR is and how is it helpful]]></content:encoded>
             <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
         </item>
         <item>

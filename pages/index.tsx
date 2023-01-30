@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
-import Date from "../components/date";
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
+import { RxCaretRight } from 'react-icons/rx'
 import Image from "next/image";
 import { generateRssFeed } from "../lib/rss";
+import { BlogListItem } from "../components/blog-list-item";
 
 export default function Home({
   allPostsData,
@@ -15,6 +16,7 @@ export default function Home({
     id: string;
     words: number;
     og_description: string;
+    featured: boolean;
   }[]; // Array of objects
 }) {
   return (
@@ -35,8 +37,21 @@ export default function Home({
               Hi, I am Rose Kamal Love
             </h1>
             <p className="text-xl">
-              A friendly ambivert who loves writing software, with a crave to
-              create music and yeah I take photos too.
+              A friendly ambivert who loves writing software, trying to make a
+              difference through{" "}
+              <a
+                href="https://youtube.com/@rosekamallove"
+                className="cursor-pointer my-3 md:mb-3 hover:underline underline-offset-4"
+              >
+                YouTube
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://discord.com/invite/e5SnnVP3ad"
+                className="cursor-pointer my-3 md:mb-3 hover:underline underline-offset-4"
+              >
+                Kroto
+              </a>
             </p>
           </div>
           <div>
@@ -51,8 +66,8 @@ export default function Home({
           </div>
         </div>
         <Link href="/about">
-          <a className="cursor-pointer my-3 md:mb-3 hover:underline underline-offset-4 text-base font-medium transition-all">
-            More about me →
+          <a className="cursor-pointer my-3 flex items-center hover:underline underline-offset-4 font-medium transition-all">
+            More about me <RxCaretRight />
           </a>
         </Link>
       </section>
@@ -63,20 +78,15 @@ export default function Home({
         {/*   Happy reading ✨ */}
         {/* </h2> */}
         <ul className="flex flex-col my-5">
-          {allPostsData.map(({ id, og_description, words, date, title }) => (
-            <Link key={id} href={`/posts/${id}`}>
-              <li className="border-b-[1px] border-gray-300 hover:bg-gray-300 dark:hover:bg-gray-800 dark:border-gray-800 cursor-pointer px-2 py-5 transition-all">
-                <a className="text-2xl font-bold text-[#111827] m-0 dark:text-white">
-                  {title}
-                </a>
-                <p className="text-sm font-light">
-                  <Date dateString={date} /> •{" "}
-                  <b>{Math.floor(words / 255)} minutes read</b>
-                </p>
-                <p className="text-lg mt-6">{og_description}</p>
-              </li>
-            </Link>
-          ))}
+          {allPostsData.map((post) => {
+            if (post.featured)
+              return <BlogListItem key={post.id} post={post} />;
+          })}
+          <Link href="/blog">
+            <li className="cursor-pointer my-5 mx-2 flex items-center hover:underline underline-offset-4 font-medium transition-all">
+              Read all blogs <RxCaretRight />
+            </li>
+          </Link>
         </ul>
       </section>
     </Layout>
