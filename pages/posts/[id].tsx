@@ -13,11 +13,12 @@ export default function Post({
     contentHtml: string;
     og_description: string;
     description: string;
-    slug: string;
+    id: string;
+    words: number;
     cover_image: any;
   };
 }) {
-  const url = `https://rosekamal.love/blogs/${postData.slug}`;
+  const url = `https://rosekamal.love/blogs/${postData.id}`;
 
   return (
     <Layout>
@@ -33,11 +34,13 @@ export default function Post({
         <meta property="og:type" content="article"></meta>
         <meta property="og:image" content={postData.cover_image}></meta>
       </Head>
+
       {/* <ReadingProgress /> */}
-      <article className="prose-lg lg:prose-xl dark:prose-invert">
+      <article className="prose lg:prose-xl prose-a:underline-offset-4 prose-a:decoration-1 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-blockquote:border-l-gray-800 dark:prose-invert transition-all">
         <h1 className="font-black">{postData.title}</h1>
         <div>
-          <Date dateString={postData.date} />
+          <Date dateString={postData.date} /> •{" "}
+          <b>{Math.floor(postData.words / 255)} minutes read</b>
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>

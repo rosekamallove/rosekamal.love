@@ -11,11 +11,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  // safelist: [{
-  //   pattern: /hljs+/,
-  // }],
-  plugins: [
-    require("@tailwindcss/typography"),
-    // require('tailwind-highlightjs'),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };

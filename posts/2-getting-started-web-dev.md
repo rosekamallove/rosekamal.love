@@ -1,5 +1,5 @@
 ---
-title: 'Internship Ready as a Web Developer'
+title: "Internship Ready as a Web Developer"
 date: "2022-05-11"
 description: "A comprehensive guide to taking you from HTML & CSS to a Web Development Intern"
 og_description: "From basics to a web-dev intern"

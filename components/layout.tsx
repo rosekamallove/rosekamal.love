@@ -32,6 +32,7 @@ export default function Layout({
       </Head>
       <header className="flex mt-10 justify-center">{home ? <></> : ""}</header>
       <main>{children}</main>
+
       {!home && (
         <div>
           <Link href="/">
@@ -41,6 +42,7 @@ export default function Layout({
           </Link>
         </div>
       )}
+
       <Footer />
     </div>
   );
@@ -48,18 +50,26 @@ export default function Layout({
 
 export function Footer() {
   return (
-    <div className="mt-20 text-sm flex justify-between items-center bg-gray-300 bg-opacity-30 px-5 py-3 rounded-md dark:bg-gray-800 dark:bg-opacity-30">
+    <div className="mt-20 text-sm flex justify-between items-center bg-gray-300 bg-opacity-30 hover:bg-opacity-75 px-5 py-3 border-b-[1px] border-b-gray-300 dark:border-gray-800 dark:bg-gray-800 dark:bg-opacity-30 dark:hover:bg-opacity-90 transition-all">
       <ConnectionSection />
       <Link href="/rss/feed.xml">
-        <a className="text-base hidden md:block underline-offset-4 hover:underline">rss</a>
+        <a className="text-base hidden md:block underline-offset-4 hover:underline">
+          rss
+        </a>
       </Link>
     </div>
-  )
+  );
 }
 
 export function ConnectionSection() {
   return (
-    <section className="flex text-sm items-center my-5 gap-8" >
+    <section className="flex text-sm items-center my-5 gap-4">
+      <Link href="/about">
+        <a className="underline-offset-4 hover:underline">/about</a>
+      </Link>
+      <Link href="/resume">
+        <a className="underline-offset-4 hover:underline">/resume</a>
+      </Link>
       <a
         href="https://youtube.com/@rosekamallove"
         className="underline-offset-4 hover:underline"
@@ -76,12 +86,6 @@ export function ConnectionSection() {
       >
         /twitter
       </a>
-      <Link href="/resume">
-        <a className="underline-offset-4 hover:underline">/resume</a>
-      </Link>
-      <Link href="/resume">
-        <a className="underline-offset-4 hover:underline">/about</a>
-      </Link>
-    </section >
-  )
+    </section>
+  );
 }
