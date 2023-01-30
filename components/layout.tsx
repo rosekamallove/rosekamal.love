@@ -12,7 +12,7 @@ export default function Layout({
   title?: string;
 }) {
   return (
-    <div className="dark:text-[#D1D5DA] p-5 border-x border-x-gray-300 dark:border-x-gray-800 bg-gray-100 dark:bg-black text-[#374151] w-full mx-auto md:w-8/12">
+    <div className="relative mx-auto w-full border-x border-x-gray-300 bg-gray-100 p-5 text-[#374151] dark:border-x-gray-800 dark:bg-black dark:text-[#D1D5DA] md:w-8/12">
       {/* <Navbar /> */}
       <Head>
         <title>{title ?? "Rose Kamal Love"}</title>
@@ -31,14 +31,14 @@ export default function Layout({
         <meta name="og:title" content="Rose Kamal Love" />
         <meta property="og:type" content="website" />
       </Head>
-      <header className="flex mt-10 justify-center">{home ? <></> : ""}</header>
+      <header className="mt-10 flex justify-center">{home ? <></> : ""}</header>
       <main>{children}</main>
 
       {!home && (
         <div>
           <Link href="/">
-            <a className="cursor-pointer flex items-center hover:underline underline-offset-4 my-5 font-medium transition-all">
-              <RxCaretLeft /> Back to home
+            <a className="absolute left-0 top-3 ml-4 flex cursor-pointer items-center rounded-full bg-gray-200 p-2 shadow transition-all hover:font-bold hover:text-black dark:bg-zinc-900 dark:hover:text-white md:top-5 md:-ml-4">
+              <RxCaretLeft />
             </a>
           </Link>
         </div>
@@ -51,7 +51,7 @@ export default function Layout({
 
 export function Footer() {
   return (
-    <div className="mt-20 px-5 py-3 border-t border-t-gray-300 dark:border-t-gray-900">
+    <div className="mt-20 border-t border-t-gray-300 px-5 py-3 dark:border-t-gray-900">
       <ConnectionSection />
     </div>
   );
@@ -59,7 +59,7 @@ export function Footer() {
 
 export function ConnectionSection() {
   return (
-    <section className="flex justify-between gap-8 text-base my-5">
+    <section className="my-5 flex justify-between gap-8 text-base">
       <div className="flex flex-col gap-2">
         <Link href="/">
           <a className="underline-offset-4 hover:underline">Home</a>

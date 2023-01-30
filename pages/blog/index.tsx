@@ -22,10 +22,7 @@ export default function Blog({
         </p>
       </section>
       <section>
-        {/* <h2 className="text-3xl text-[#111827] dark:text-white font-semibold"> */}
-        {/*   Happy reading ✨ */}
-        {/* </h2> */}
-        <ul className="flex flex-col my-5">
+        <ul className="my-5 flex flex-col">
           {allPostsData.map((post) => (
             <BlogListItem key={post.id} post={post} />
           ))}

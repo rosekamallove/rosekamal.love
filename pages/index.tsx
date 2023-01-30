@@ -29,10 +29,10 @@ export default function Home({
       </Head>
 
       {/* User Bio Section */}
-      <section className="flex flex-col my-10 pl-2">
-        <div className="flex flex-col-reverse md:flex-row gap-5">
-          <div className="w-full md:max-w-8/12">
-            <h1 className="text-2xl md:text-4xl text-[#111827] dark:text-white mb-6 font-black">
+      <section className="my-10 flex flex-col pl-2">
+        <div className="flex flex-col-reverse gap-5 md:flex-row">
+          <div className="md:max-w-8/12 w-full">
+            <h1 className="mb-6 text-2xl font-black text-[#111827] dark:text-white md:text-4xl">
               Hi, I am Rose Kamal Love
             </h1>
             <p className="text-xl">
@@ -40,14 +40,14 @@ export default function Home({
               difference through{" "}
               <a
                 href="https://youtube.com/@rosekamallove"
-                className="cursor-pointer my-3 md:mb-3 hover:underline underline-offset-4"
+                className="my-3 cursor-pointer underline-offset-4 hover:underline md:mb-3"
               >
                 YouTube
               </a>{" "}
               and{" "}
               <a
                 href="https://discord.com/invite/e5SnnVP3ad"
-                className="cursor-pointer my-3 md:mb-3 hover:underline underline-offset-4"
+                className="my-3 cursor-pointer underline-offset-4 hover:underline md:mb-3"
               >
                 Kroto
               </a>
@@ -65,7 +65,7 @@ export default function Home({
           </div>
         </div>
         <Link href="/about">
-          <a className="cursor-pointer my-3 flex items-center hover:underline underline-offset-4 font-medium transition-all">
+          <a className="my-3 flex cursor-pointer items-center font-medium underline-offset-4 transition-all hover:underline">
             More about me <RxCaretRight />
           </a>
         </Link>
@@ -76,13 +76,13 @@ export default function Home({
         {/* <h2 className="text-3xl text-[#111827] dark:text-white font-semibold"> */}
         {/*   Happy reading ✨ */}
         {/* </h2> */}
-        <ul className="flex flex-col my-5">
+        <ul className="my-5 flex flex-col">
           {allPostsData.map((post) => {
             if (post.featured)
               return <BlogListItem key={post.id} post={post} />;
           })}
           <Link href="/blog">
-            <li className="cursor-pointer my-5 mx-2 flex items-center hover:underline underline-offset-4 font-medium transition-all">
+            <li className="my-5 mx-2 flex cursor-pointer items-center font-medium underline-offset-4 transition-all hover:underline">
               Read all blogs <RxCaretRight />
             </li>
           </Link>
