@@ -83,9 +83,9 @@ export default function Home({
               return <BlogListItem key={post.id} post={post} />;
           })}
           <Link href="/blog">
-            <li className="my-5 mx-2 flex cursor-pointer items-center font-medium underline-offset-4 transition-all hover:underline">
+            <a href="/blog" className="my-5 mx-2 flex cursor-pointer items-center font-medium underline-offset-4 transition-all hover:underline">
               Read all blogs <RxCaretRight />
-            </li>
+            </a>
           </Link>
         </ul>
       </section>
