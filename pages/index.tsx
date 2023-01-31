@@ -36,6 +36,7 @@ export default function Home({
               Hi, I am Rose Kamal Love
             </h1>
             <p className="text-xl">
+              {" "}
               A friendly ambivert who loves writing software, trying to make a
               difference through{" "}
               <a

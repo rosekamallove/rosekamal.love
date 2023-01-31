@@ -36,7 +36,7 @@ export default function Post({
       </Head>
 
       {/* <ReadingProgress /> */}
-      <article className="w-full prose lg:prose-xl dark:prose-pre:bg-gray-900 prose-a:underline-offset-4 prose-a:decoration-1 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-blockquote:border-l-gray-800 dark:prose-invert transition-all">
+      <article className="prose transition-all prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-invert dark:prose-blockquote:border-l-gray-800 dark:prose-pre:bg-gray-900 lg:prose-xl xl:prose-2xl">
         <h1 className="font-black">{postData.title}</h1>
         <div>
           <Date dateString={postData.date} /> •{" "}
