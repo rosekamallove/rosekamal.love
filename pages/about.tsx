@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import Layout from "../components/layout";
 
 export default function About() {
@@ -49,7 +48,7 @@ export const Timeline = () => {
   return (
     <ol className="prose relative mx-3 border-l border-gray-200 dark:border-gray-700 dark:prose-invert lg:prose-lg">
       {Experiences.map((experience) => (
-        <li className="mb-10 ml-6">
+        <li key={experience.name} className="mb-10 ml-6">
           <span className="absolute -left-2 mt-3 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 ring-8 ring-gray-100 dark:bg-gray-900 dark:ring-black">
             <svg
               aria-hidden="true"
@@ -58,7 +57,7 @@ export const Timeline = () => {
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path fill-rule="evenodd" clip-rule="evenodd"></path>
+              <path fillRule="evenodd" clipRule="evenodd"></path>
             </svg>
           </span>
           <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
