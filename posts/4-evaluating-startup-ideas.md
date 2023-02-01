@@ -114,7 +114,7 @@ In _Zen and the Art of Motorcycle Maintenance_, Robert Pirsig says:
 Being at the leading edge doesn't mean we have to be the ones pushing it forward we can be at the leading edge as a user too.
 
 Here's a story from PG's Essay:
-Being at the leading edge of a field doesn't mean you have to be one of the people pushing it forward. You can also be at the leading edge as a user. It was not so much because he was a programmer that Facebook seemed a good idea to Mark Zuckerberg because he used computers so much. If you'd asked most 40-year-olds in 2004 whether they'd like to publish their lives semi-publicly on the Internet, they'd have been horrified at the idea. But Mark already lived online; to him, it seemed natural.
+Being at the leading edge of a field doesn't mean you have to be one of the people pushing it forward. You can also be at the leading edge as a user. It was not so much because he was a programmer that Facebook seemed a good idea to Mark Zuckerberg. After all, he used computers so much. If you'd asked most 40-year-olds in 2004 whether they'd like to publish their lives semi-publicly on the Internet, they'd have been horrified at the idea. But Mark already lived online; to him, it seemed natural.
 
 Paul Buchheit says that people at the leading edge of a rapidly changing field "live in the future." Combine that with Pirsig and you get:
 > Live in the future, then build what's missing.
@@ -125,7 +125,7 @@ If you're not at the leading edge of some rapidly changing field, you can get to
 
 Okay, okay I get what you're saying but how do I use the "living in the future" thing to _get the freaking ideas_? Well, you start noticing the things that are missing.
 
-> If you're really at the leading edge of a rapidly changing field, there will be things that are obviously missing.
+> If you're really at the leading edge of a rapidly changing field, there will be things that are missing.
 > 
 > PG
 
@@ -144,7 +144,7 @@ Since we're looking for startup ideas, we can take efficiency for granted and st
 
 > If something annoys you, it could be because you're living in the future.
 
-Okay, how will I know if this is the right problem? Well, it will seem _obvious_ to us. This ultimately means that coming up with startup ideas is a question of seeing the obvious. That suggests how weird this process is: you're trying to see things that are obvious, and yet that you hadn't seen.
+Okay, how will I know if this is the right problem? Well, it will seem _obvious_ to us. This ultimately means that coming up with startup ideas is a question of seeing the obvious. That suggests how weird this process is: you're trying to see obvious things, and yet that you hadn't seen.
 
 Don't overthink a problem, take some time **creativity is a by-product of procrastination after all.** Work on projects that seem cool, they'd help you notice ideas because this helps you naturally build things that are missing. It wouldn't seem as interesting to build something that already exists.
 
@@ -175,11 +175,23 @@ Instead of going and getting a summer internship at a software company go and wo
 But don't feel like you have to build things that will become startups. That's premature optimization. Just build things. Preferably with other students.
 
 ### The unsexy startup & schlep blindness
+When we come across ideas for a startup, we naturally ignore the ones that lie in the following two categories:
+- The unsexy startup
+- And, the hard AF startup
+
+Some problems are so hard to solve, or rather we are so fearful of solving them that we deliberately ignore these types of ideas. This is called [Schlep Blindness](http://www.paulgraham.com/schlep.html) 
+
+An example would be Stripe. Thousands of programmers were in a position to see this idea; thousands of programmers knew how painful it was to process payments before Stripe. But when they looked for startup ideas they didn't see this one, because unconsciously they shrank from having to deal with payments. And dealing with payments is a schlep for Stripe, but not an intolerable one. In fact, they might have had net less pain; because the fear of dealing with payments kept most people away from this idea, Stripe has had comparatively smooth sailing in other areas that are sometimes painful, they might have had less pain; because the fear of dealing with payments kept most people away from this idea, Stripe has had comparatively smooth sailing in other sometimes painful areas like user acquisition. They didn't have to try very hard to make themselves heard by users, because users were desperately waiting for what they were building.
+
+The unsexy startups are similar to this but instead of fearing the ideas we despise them. Turning off the schlep filter is more important than turning off the unsexy filter because the schlep filter is more likely to be an illusion. And even to a degree it isn't, it's a worse form of self-indulgence.
+
+The unsexy filter, while still a source of error, is not as entirely useless as the schlep filter. If you're at the leading edge of a field that's changing rapidly, your ideas about what's sexy will be somewhat correlated with what's valuable in practice. Particularly as you get older and more experienced. Plus if you find an idea sexy, you'll work on it more enthusiastically.
+
 
 
 ## Evaluating the Idea
 
-In order to evaluate any startup ideas, a simple way to do so is to answer a set of questions that'll help you not only understand the customer needs, if the problem is a good problem but also if you are the right person to do so. 
+To evaluate any startup ideas, a simple way to do so is to answer a set of questions that'll help you understand the customer's needs if the problem is good, and if you are the right person to do so. 
 
 So, I blatantly copied this set of questions from YC's Startup School and listed them below. I have been working on answering them on my idea and if you want to evaluate yours, try answering these questions:
 
@@ -215,3 +227,5 @@ So, I blatantly copied this set of questions from YC's Startup School and listed
 	- Agencies and service companies not so much.
 - **Is this a good ideas space**
 	- An _idea space_ is one level of abstraction out from a particular startup idea. It is a class of closely related startup ideas.
+
+And, this is the end of the blog post.

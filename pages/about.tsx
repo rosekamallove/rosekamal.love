@@ -4,7 +4,7 @@ export default function About() {
   return (
     <Layout title="About | Rose Kamal Love">
       <Intro />
-      <h1 className="my-10 text-5xl font-black">My Experiences</h1>
+      <h1 className="my-10 text-3xl font-black">My Experiences</h1>
       <Timeline />
     </Layout>
   );
@@ -13,7 +13,7 @@ export default function About() {
 export const Intro = () => (
   <div className="mx-2">
     <div className="flex items-center justify-center">
-      <p className="max-w-2xl rounded-md bg-gray-200 px-4 py-4 text-center dark:bg-gray-900">
+      <p className="max-w-2xl rounded-md bg-gray-200 px-4 py-4 text-center dark:bg-gray-900/60">
         I&apos;m a software developer who brings latency down to his humour
         level 🚀
       </p>
@@ -21,23 +21,26 @@ export const Intro = () => (
     <div className="prose my-8 prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 dark:prose-invert lg:prose-xl xl:prose-2xl">
       <p>
         I am a self taught full-stack web developer who loves applying his
-        skills to develop cool projects like{" "}
-        <a href="/projects/youtemy">YouTemy</a> And contribute to open-source. I
-        love music, and am something of an <em>HTML Coder</em> myself, in the
-        world of music production{" "}
-        <a href="https://soundcloud.com/user-276723683">(SoundCloud)</a>
+        skills to develop cool projects, and contribute to open-source. I love
+        music, and am something of an <em>HTML Coder</em> myself, in the world
+        of <a href="https://soundcloud.com/user-276723683">music production</a>
       </p>
       <p>
         Though, I have recently been getting my hands dirty making{" "}
-        <a href="https://youtube.com/@rosekamallove">YouTube Videos</a> which
-        essentially is a philosophical approach to life and writing code. And, I
-        have been working on building{" "}
+        <a href="https://youtube.com/@rosekamallove">YouTube Videos</a> about{" "}
+        <span className="font-medium">
+          a philosophical approach to life and writing code.
+        </span>{" "}
+        And, I have been working on building{" "}
         <a href="https://discord.com/invite/e5SnnVP3ad">a community</a> of
-        amazing developers, I would love for you to be a part of it.
+        excellent developers, I would love for you to be a part of it.
       </p>
       <p>
-        I take self proclaimed <em>awesome</em> pictures too, as a hobby{" "}
-        <a href="https://instagram.com/rosekamallove">(Instagram)</a>
+        I take self proclaimed{" "}
+        <em>
+          <a href="https://instagram.com/rosekamallove">awesome pictures</a>
+        </em>{" "}
+        too, as a hobby.
       </p>
     </div>
   </div>

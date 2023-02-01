@@ -37,7 +37,7 @@ export default function Layout({
       {!home && (
         <div>
           <Link href="/">
-            <a className="absolute left-0 top-3 ml-4 flex cursor-pointer items-center rounded-full bg-gray-200 p-2 shadow transition-all hover:font-bold hover:text-black dark:bg-zinc-900 dark:hover:text-white md:top-5 md:-ml-4">
+            <a className="absolute left-0 top-3 ml-4 flex cursor-pointer items-center rounded-full bg-gray-200 p-2 shadow backdrop-blur-sm transition-all hover:scale-105 hover:text-black dark:bg-gray-900 focus:scale-100 dark:hover:text-white md:top-5 md:-ml-4">
               <RxCaretLeft />
             </a>
           </Link>
