@@ -14,7 +14,7 @@ export const Intro = () => (
   <div className="mx-2">
     <div className="flex items-center justify-center">
       <p className="max-w-2xl rounded-md bg-gray-200 px-4 py-4 text-center dark:bg-gray-900">
-        I&apos;m A software developer who brings latency down to his humour
+        I&apos;m a software developer who brings latency down to his humour
         level 🚀
       </p>
     </div>
@@ -46,7 +46,7 @@ export const Links = () => <div />;
 
 export const Timeline = () => {
   return (
-    <ol className="prose relative mx-3 border-l border-gray-200 dark:border-gray-700 dark:prose-invert lg:prose-lg">
+    <ol className="prose relative mx-3 border-l border-gray-300 dark:border-gray-900 dark:prose-invert lg:prose-lg">
       {Experiences.map((experience) => (
         <li key={experience.name} className="mb-10 ml-6">
           <span className="absolute -left-2 mt-3 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 ring-8 ring-gray-100 dark:bg-gray-900 dark:ring-black">
