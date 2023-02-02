@@ -15,6 +15,7 @@ export default function Home({
     title: string;
     id: string;
     words: number;
+    tags: string;
     og_description: string;
     featured: boolean;
   }[]; // Array of objects
@@ -83,7 +84,10 @@ export default function Home({
               return <BlogListItem key={post.id} post={post} />;
           })}
           <Link href="/blog">
-            <a href="/blog" className="my-5 mx-2 flex cursor-pointer items-center font-medium underline-offset-4 transition-all hover:underline">
+            <a
+              href="/blog"
+              className="my-5 mx-2 flex cursor-pointer items-center font-medium underline-offset-4 transition-all hover:underline"
+            >
               Read all blogs <RxCaretRight />
             </a>
           </Link>

@@ -30,6 +30,7 @@ export function getSortedPostsData() {
       ...(matterResult.data as {
         date: string;
         title: string;
+        tags: string;
         description: string;
         og_description: string;
         published: boolean;

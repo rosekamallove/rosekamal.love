@@ -9,6 +9,7 @@ export default function Blog({
     date: string;
     title: string;
     id: string;
+    tags: string;
     words: number;
     og_description: string;
   }[]; // Array of objects
