@@ -10,8 +10,6 @@ published: true
 featured: true
 ---
 
-# Introduction
-
 In this blog post we're gonna dive into, how one who has zero experience in Web Development can become an **internship ready Web Developer**.
 
 We'll first understand the difference between the backend and frontend of a web application, then we'll start by learning the frontend which will include firstly the basics _html_, _css_, and _js_.

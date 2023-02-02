@@ -92,6 +92,8 @@ export async function getPostData(id: string) {
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
+  // if (!matterResult.data.published) return "";
+
   // Combine the data with the id and contentHtml
   return {
     id,

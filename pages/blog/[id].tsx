@@ -37,10 +37,13 @@ export default function Post({
 
       {/* <ReadingProgress /> */}
       <article className="prose mx-auto transition-all prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-invert dark:prose-blockquote:border-l-gray-800 dark:prose-pre:bg-gray-900 md:prose-xl xl:prose-2xl">
-        <h1 className="font-black">{postData.title}</h1>
-        <div>
-          <Date dateString={postData.date} /> •{" "}
-          <b>{Math.floor(postData.words / 255)} minutes read</b>
+        <div className="flex min-h-[40vh] md:min-h-[60vh] flex-col  justify-center">
+          <h1 className="font-black">{postData.title}</h1>
+          <div>
+            <Date dateString={postData.date} /> •{" "}
+            <b>{Math.floor(postData.words / 255)} minutes read</b>
+          </div>
+          {/* <p>{postData.description}</p> */}
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
