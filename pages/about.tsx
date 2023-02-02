@@ -4,7 +4,7 @@ export default function About() {
   return (
     <Layout title="About | Rose Kamal Love">
       <Intro />
-      <h1 className="my-10 text-3xl font-black">My Experiences</h1>
+      <h1 className="my-10 mx-auto text-3xl font-black">My Experiences</h1>
       <Timeline />
     </Layout>
   );
@@ -12,13 +12,13 @@ export default function About() {
 
 export const Intro = () => (
   <div className="mx-2">
-    <div className="flex items-center justify-center">
-      <p className="max-w-2xl rounded-md bg-gray-200 px-4 py-4 text-center dark:bg-gray-900/60">
-        I&apos;m a software developer who brings latency down to his humour
-        level 🚀
-      </p>
-    </div>
-    <div className="prose my-8 prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 dark:prose-invert lg:prose-xl xl:prose-2xl">
+    <div className="prose mx-auto my-8 prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 dark:prose-invert lg:prose-xl xl:prose-2xl">
+      <div className="flex items-center justify-center">
+        <p className="max-w-2xl rounded-md bg-gray-200 px-4 py-4 text-center dark:bg-gray-900/60">
+          I&apos;m a software developer who brings latency down to his humour
+          level 🚀
+        </p>
+      </div>
       <p>
         I am a self taught full-stack web developer who loves applying his
         skills to develop cool projects, and contribute to open-source. I love
@@ -49,7 +49,7 @@ export const Links = () => <div />;
 
 export const Timeline = () => {
   return (
-    <ol className="prose relative mx-3 border-l border-gray-300 dark:border-gray-900 dark:prose-invert lg:prose-lg">
+    <ol className="prose mx-auto relative border-l border-gray-300 dark:border-gray-900 dark:prose-invert lg:prose-lg">
       {Experiences.map((experience) => (
         <li key={experience.name} className="mb-10 ml-6">
           <span className="absolute -left-2 mt-3 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 ring-8 ring-gray-100 dark:bg-gray-900 dark:ring-black">
@@ -63,10 +63,10 @@ export const Timeline = () => {
               <path fillRule="evenodd" clipRule="evenodd"></path>
             </svg>
           </span>
-          <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+          <h3 className="mb-1 flex items-center text-gray-900 dark:text-white">
             {experience.name}
             {experience.current && (
-              <span className="mr-2 ml-3 rounded bg-gray-300 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-900 dark:text-gray-500">
+              <span className="mr-2 ml-3 hidden md:block rounded bg-gray-300 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-900 dark:text-gray-500">
                 Currently Working
               </span>
             )}
