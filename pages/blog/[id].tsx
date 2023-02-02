@@ -47,7 +47,10 @@ export default function Post({
           </div>
           <div className="my-2 flex gap-2">
             {postData.tags.split(",").map((t) => (
-              <span className="z-10 cursor-pointer rounded-md bg-gray-200/70 px-3 py-1 text-sm md:text-base transition-all hover:dark:bg-gray-800/100 hover:bg-gray-200/100 dark:bg-gray-800/70 ">
+              <span
+                key={t}
+                className="z-10 cursor-pointer rounded-md bg-gray-200/70 px-3 py-1 text-sm transition-all hover:bg-gray-200/100 dark:bg-gray-800/70 hover:dark:bg-gray-800/100 md:text-base "
+              >
                 {t}
               </span>
             ))}
