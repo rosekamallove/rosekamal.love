@@ -76,7 +76,17 @@ export const Timeline = () => {
           </time>
           <ul>
             {experience.description.map((d, idx) => (
-              <>{idx === 0 ? <p key={idx}>{d}</p> : <li key={idx}>{d}</li>}</>
+              <>
+                {idx === 0 ? (
+                  <p key={idx}>
+                    <div dangerouslySetInnerHTML={{ __html: d }} />
+                  </p>
+                ) : (
+                  <li key={idx}>
+                    <div dangerouslySetInnerHTML={{ __html: d }} />
+                  </li>
+                )}
+              </>
             ))}
           </ul>
         </li>
@@ -89,7 +99,8 @@ const Experiences = [
   {
     name: "Material Depot (YC W22) - Software Intern",
     description: [
-      "Migrated React.js frontend to V3 of API and added E Commerce functionality",
+      "Working on a <b>React.js</b> codebase with <b>mobx</b> as the state management library",
+      "Migrated React.js frontend to V3 of API and added e-commerce functionality",
       "Built a CRM using React.js and Material UI",
     ],
     date: "January 2023 - Current",
@@ -99,8 +110,8 @@ const Experiences = [
     name: "Google Summer of Code (LibreHealthIO)",
     description: [
       "I worked on re-writing the UI of LH Toolkit & Radiology as an Open Web Application following the FHIR Standard",
-      "The rewrite is done using React.js as the UI Library and React Query + Axios for cached data fetching",
-      "The web components are built using Polymer.js and uses Material UI, and follow the FHIR Spec",
+      "The rewrite is done using React.js as the UI Library and <b>React Query + Axios</b> for cached data fetching",
+      "The web components are built using <b>Polymer.js</b> and uses Material UI, and follow the FHIR Spec",
     ],
     date: "June 2022 - September 2022",
     current: false,
@@ -109,8 +120,8 @@ const Experiences = [
     name: "BlendED - Fronted Intern",
     description: [
       "I worked on Next.js & TailwindCSS codebase to redesign the teacher’s and parent’s landing pages and,",
-      "Added firstLogin personalisation flow and persisted data using React Query, improved invoke time by ~40%",
-      "Integrated Mix Panel Analytics tool for various functions, which highly impacted the product launch analysis",
+      "Added firstLogin personalisation flow and persisted data using <b>React Query</b>, improved invoke time <b>by ~40%</b>",
+      "Integrated <b>Mix Panel Analytics</b> tool for various functions, which highly impacted the product launch analysis",
       "Implemented a scalable video tooltip modal component that invokes on the first user visit using cookies",
     ],
     date: "May 2022 - June 2022",
@@ -120,9 +131,9 @@ const Experiences = [
     name: "MLH Fellowship - Open Source",
     description: [
       "Worked on a CLI application (repo-report) that shows the maintainer’s GitHub info on the terminal",
-      "Updated the GraphQL queries and validations to add two new metrics from Github’s GraphQL API",
+      "Updated the <b>GraphQL</b> queries and validations to add two new metrics from Github’s GraphQL API",
       "Refactored the code which decreased the hassle of adding new metrics from 5 files to 1 file - by 25%",
-      "Wrote tests to type-check the Metrics and their properties using tape.js with jsonschema for variables",
+      "Wrote tests to type-check the Metrics and their properties using <b>tape.js</b> with jsonschema for variables",
       "Worked on a Web Based client for the CLI using React.js and TailwindCSS making the app more accessible",
     ],
     date: "June 2022 - September 2022",
