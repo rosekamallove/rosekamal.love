@@ -73,7 +73,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export const SVGBackground = () => (
   <div className="relative mx-auto h-full max-w-sm translate-y-60 md:max-w-lg">
     <svg
-      className="absolute right-full translate-x-1/4 transform lg:translate-x-1/2"
+      className="absolute hidden md:block right-full translate-x-1/4 transform lg:translate-x-1/2"
       width={404}
       height={784}
       fill="none"
