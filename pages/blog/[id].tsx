@@ -14,6 +14,7 @@ export default function Post({
     og_description: string;
     description: string;
     id: string;
+    tags: string;
     words: number;
     cover_image: any;
   };
@@ -44,6 +45,13 @@ export default function Post({
             <Date dateString={postData.date} /> •{" "}
             <b>{Math.floor(postData.words / 255)} minutes read</b>
           </div>
+          <div className="my-2 flex gap-2">
+            {postData.tags.split(",").map((t) => (
+              <span className="z-10 cursor-pointer rounded-md bg-gray-200/70 px-3 py-1 text-sm md:text-base transition-all hover:dark:bg-gray-800/100 hover:bg-gray-200/100 dark:bg-gray-800/70 ">
+                {t}
+              </span>
+            ))}
+          </div>
           {/* <p>{postData.description}</p> */}
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
@@ -73,7 +81,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export const SVGBackground = () => (
   <div className="relative mx-auto h-full max-w-sm translate-y-60 md:max-w-lg">
     <svg
-      className="absolute hidden md:block right-full translate-x-1/4 transform lg:translate-x-1/2"
+      className="absolute right-full hidden translate-x-1/4 transform md:block lg:translate-x-1/2"
       width={404}
       height={784}
       fill="none"
@@ -93,7 +101,7 @@ export const SVGBackground = () => (
             y={0}
             width={4}
             height={4}
-            className={`text-gray-200 dark:text-gray-900`}
+            className={`text-gray-200/70 dark:text-gray-900/70`}
             fill="currentColor"
           />
         </pattern>
@@ -125,7 +133,7 @@ export const SVGBackground = () => (
             y={0}
             width={4}
             height={4}
-            className={`text-gray-200 dark:text-gray-900`}
+            className={`text-gray-200/70 dark:text-gray-900/70`}
             fill="currentColor"
           />
         </pattern>
