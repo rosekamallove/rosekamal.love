@@ -203,15 +203,14 @@ So, I blatantly copied this set of questions from YC's Startup School and listed
 - **How big is the market?**
 	- Ones that are big now, and ones that are small now but are rapidly growing
 	- An example of the second one is `Coinbase` which grew with the web3 train
-	- How acute is this problem?
 - **How acute is this problem?**
 	- A problem that people don't care about, it is a made-up problem or there is just not enough reason to solve it.
-	- An example of the opposite of it would be `Brex` which allowed startups to have a credit card, before if it just wasn't possible for startups to get a credit card from the banks
+	- An example of the opposite of it would be `Brex` which allowed startups to have a credit card, before them it just wasn't possible for startups to get a credit card from the banks
 - **Is there any competition?**
 	- Founders generally think that having competitors is a bad thing, but counterintuitively most good startup ideas already have competition.
 	- But if you're going into an especially entrenched competition, then insight is necessary
 - **Do you want this (the product)?**
-	- Do you personally even want this product? or Do you know people personally who'll wish to this product?
+	- Do you personally even want this product? or Do you know people personally who'll wish to use this product?
 	- If the answer to both of these questions is a no then well, don't start up
 - **Did this only recently become possible or necessary?**
 	- Something has recently changed in the industry, a new technology, a regulatory change, or a new problem
@@ -228,4 +227,10 @@ So, I blatantly copied this set of questions from YC's Startup School and listed
 - **Is this a good ideas space**
 	- An _idea space_ is one level of abstraction out from a particular startup idea. It is a class of closely related startup ideas.
 
-And, this is the end of the blog post.
+Phew, we're finally done and my mind is now finally at ease. Wait no I have to answer these questions for my own idea... and I'm stressed again.
+
+I hope after reading this you can answer whether to startup or not because I have got my answer and it is "Hell Yeah!" because I honestly don't see a downside to starting up right now, I am in college, I have a full 1.5 years left and I honestly don't have anything better to do. Job? I can still get a job if the startup doesn't work out, I'll have a killer project with real users to showcase on my resume which is going to be a real stand out.
+
+Did you notice that I didn't talk about competition in this blog post? It is a different topic to [discuss](/blog/6-competition-is-a-bitch) since I completely stopped working on my ideas when I found out about the competition.
+
+Anyway, this is me `gulaab ka phool` signing off.
