@@ -46,8 +46,8 @@ export default function Post({
             <h1 className="relative z-20 font-black">{postData.title}</h1>
 
             <p className="relative z-10">
-              {postData.description} in ~
-              <b>{Math.floor(postData.words / 255)} minutes</b>
+              {postData.description} in ~{Math.floor(postData.words / 255)}{" "}
+              minutes
             </p>
             <div>
               <b className="z-20"></b>
@@ -75,7 +75,7 @@ export default function Post({
                 alt={"rosekamallove"}
               />
             </div>
-            <Link href="/">
+            <Link href="/about">
               <p className="z-10 flex cursor-pointer flex-col text-base font-bold leading-5 md:text-3xl md:leading-8">
                 <span className="text-xs font-light md:text-sm">
                   Written By
