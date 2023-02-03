@@ -24,7 +24,7 @@ export default function Post({
   const url = `https://rosekamal.love/blog/${postData.id}`;
 
   return (
-    <Layout>
+    <Layout home>
       <Head>
         <title>{postData.title}</title>
         <meta name="description" content={postData.description}></meta>
@@ -41,26 +41,29 @@ export default function Post({
       {/* <ReadingProgress /> */}
       <article className="prose prose-lg relative mx-auto overflow-hidden transition-all prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-invert dark:prose-blockquote:border-l-gray-800 dark:prose-pre:bg-gray-900 md:prose-xl xl:prose-2xl">
         <SVGBackground />
-        <div className="flex -mt-20 min-h-[100vh] flex-col justify-center">
-          <h1 className="z-10 font-black">{postData.title}</h1>
+        <div className="flex min-h-[80vh] flex-col justify-around md:min-h-screen">
+          <div>
+            <h1 className="relative z-20 font-black">{postData.title}</h1>
 
-          {/* <div> */}
-          {/*   <b className="z-20"> */}
-          {/*     {Math.floor(postData.words / 255)} minutes read */}
-          {/*   </b> */}
-          {/*   <div className="my-2 flex gap-2"> */}
-          {/*     {postData.tags.split(",").map((t) => ( */}
-          {/*       <span */}
-          {/*         key={t} */}
-          {/*         className="z-20 cursor-pointer rounded-md bg-gray-200/70 px-3 py-1 text-sm transition-all hover:bg-gray-200/100 dark:bg-gray-800/70 hover:dark:bg-gray-800/100 md:text-base " */}
-          {/*       > */}
-          {/*         {t} */}
-          {/*       </span> */}
-          {/*     ))} */}
-          {/*   </div> */}
-          {/*   {/* <p>{postData.description}</p> */}
-          {/* </div> */}
-             
+            <p className="relative z-10">
+              {postData.description} in ~
+              <b>{Math.floor(postData.words / 255)} minutes</b>
+            </p>
+            <div>
+              <b className="z-20"></b>
+              <div className="my-2 flex gap-2">
+                {postData.tags.split(",").map((t) => (
+                  <span
+                    key={t}
+                    className="z-20 cursor-pointer rounded-md bg-gray-200/70 px-3 py-1 text-sm transition-all hover:bg-gray-200/100 dark:bg-gray-800/70 hover:dark:bg-gray-800/100 md:text-base "
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
           <div className="mb-5 flex items-center gap-5">
             <div className="flex items-center">
               <Image
@@ -73,17 +76,22 @@ export default function Post({
               />
             </div>
             <Link href="/">
-              <p className="z-10 flex cursor-pointer flex-col text-base md:text-3xl font-bold leading-5 md:leading-8">
-                <span className="text-xs md:text-sm font-light">Written By</span>Rose Kamal
-                Love
-                <span className="text-xs md:text-sm font-light">
+              <p className="z-10 flex cursor-pointer flex-col text-base font-bold leading-5 md:text-3xl md:leading-8">
+                <span className="text-xs font-light md:text-sm">
+                  Written By
+                </span>
+                Rose Kamal Love
+                <span className="text-xs font-light md:text-sm">
                   on <Date dateString={postData.date} />
                 </span>
               </p>
             </Link>
           </div>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div
+          className="relative z-10"
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        />
       </article>
     </Layout>
   );
@@ -114,7 +122,7 @@ export const SVGBackground = () => (
       width={404}
       height={784}
       fill="none"
-      viewBox="0 0 404 784"
+      viewBox="0 0 404 584"
     >
       <defs>
         <pattern
