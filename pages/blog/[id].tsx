@@ -1,8 +1,10 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
 import Date from "../../components/date";
+import Image from "next/image";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import { GetStaticProps, GetStaticPaths } from "next";
+import Link from "next/link";
 
 export default function Post({
   postData,
@@ -39,23 +41,47 @@ export default function Post({
       {/* <ReadingProgress /> */}
       <article className="prose relative mx-auto overflow-hidden transition-all prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-invert dark:prose-blockquote:border-l-gray-800 dark:prose-pre:bg-gray-900 md:prose-xl xl:prose-2xl">
         <SVGBackground />
-        <div className="flex min-h-[40vh] flex-col justify-center  md:min-h-[60vh]">
+        <div className="flex -mt-20 min-h-[100vh] flex-col justify-center">
           <h1 className="z-10 font-black">{postData.title}</h1>
-          <div className="z-10">
-            <Date dateString={postData.date} /> •{" "}
-            <b>{Math.floor(postData.words / 255)} minutes read</b>
+
+          {/* <div> */}
+          {/*   <b className="z-20"> */}
+          {/*     {Math.floor(postData.words / 255)} minutes read */}
+          {/*   </b> */}
+          {/*   <div className="my-2 flex gap-2"> */}
+          {/*     {postData.tags.split(",").map((t) => ( */}
+          {/*       <span */}
+          {/*         key={t} */}
+          {/*         className="z-20 cursor-pointer rounded-md bg-gray-200/70 px-3 py-1 text-sm transition-all hover:bg-gray-200/100 dark:bg-gray-800/70 hover:dark:bg-gray-800/100 md:text-base " */}
+          {/*       > */}
+          {/*         {t} */}
+          {/*       </span> */}
+          {/*     ))} */}
+          {/*   </div> */}
+          {/*   {/* <p>{postData.description}</p> */}
+          {/* </div> */}
+             
+          <div className="mb-5 flex items-center gap-5">
+            <div className="flex items-center">
+              <Image
+                priority
+                src="/images/profile.jpg"
+                height={72}
+                width={72}
+                className="rounded-full"
+                alt={"rosekamallove"}
+              />
+            </div>
+            <Link href="/">
+              <p className="z-10 flex cursor-pointer flex-col text-base md:text-3xl font-bold leading-5 md:leading-8">
+                <span className="text-xs md:text-sm font-light">Written By</span>Rose Kamal
+                Love
+                <span className="text-xs md:text-sm font-light">
+                  on <Date dateString={postData.date} />
+                </span>
+              </p>
+            </Link>
           </div>
-          <div className="my-2 flex gap-2">
-            {postData.tags.split(",").map((t) => (
-              <span
-                key={t}
-                className="z-10 cursor-pointer rounded-md bg-gray-200/70 px-3 py-1 text-sm transition-all hover:bg-gray-200/100 dark:bg-gray-800/70 hover:dark:bg-gray-800/100 md:text-base "
-              >
-                {t}
-              </span>
-            ))}
-          </div>
-          {/* <p>{postData.description}</p> */}
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
@@ -84,7 +110,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export const SVGBackground = () => (
   <div className="relative mx-auto h-full max-w-sm translate-y-60 md:max-w-lg">
     <svg
-      className="absolute right-full hidden translate-x-1/4 transform md:block lg:translate-x-1/2"
+      className="absolute right-full translate-x-1/4 transform lg:translate-x-1/2"
       width={404}
       height={784}
       fill="none"
@@ -111,7 +137,7 @@ export const SVGBackground = () => (
       </defs>
       <rect
         width={404}
-        height={284}
+        height={584}
         fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
       />
     </svg>
