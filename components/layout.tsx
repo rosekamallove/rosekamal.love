@@ -12,7 +12,7 @@ export default function Layout({
   title?: string;
 }) {
   return (
-    <div className="relative mx-auto w-full border-x border-x-gray-300 bg-gray-100 p-5 px-2 text-[#374151] dark:border-x-gray-800 dark:bg-black dark:text-[#D1D5DA] sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
+    <div className="relative mx-auto w-full border-x border-x-gray-300 bg-gray-100 p-5 px-3 text-[#374151] dark:border-x-gray-800 dark:bg-black dark:text-[#D1D5DA] sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
       <Head>
         <title>{title ?? "Rose Kamal Love"}</title>
         <meta property="og:title" content={title ?? "Rose Kamal Love"} />
@@ -36,7 +36,7 @@ export default function Layout({
       {!home && (
         <div>
           <Link href="/">
-            <a className="absolute left-0 top-3 ml-4 flex cursor-pointer items-center rounded-full bg-gray-200 p-2 shadow backdrop-blur-sm transition-all hover:scale-105 hover:text-black focus:scale-100 dark:bg-gray-900 dark:hover:text-white md:top-5 md:-ml-4">
+            <a className="absolute left-0 top-3 ml-3 flex cursor-pointer items-center rounded-full bg-gray-200/60 p-2 shadow backdrop-blur-sm transition-all hover:scale-105 hover:bg-gray-200/100 hover:text-black focus:scale-100 dark:bg-gray-900/70 dark:hover:bg-gray-900/100 dark:hover:text-white md:top-5 md:-ml-4">
               <RxCaretLeft />
             </a>
           </Link>
