@@ -14,7 +14,7 @@ export const Intro = () => (
   <div className="mx-2">
     <div className="prose mx-auto my-8 prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 dark:prose-invert lg:prose-xl xl:prose-2xl">
       <div className="flex items-center justify-center">
-        <p className="max-w-2xl rounded-md bg-gray-200 px-4 py-4 text-center dark:bg-gray-900/60">
+        <p className="rounded-md bg-gray-200 px-4 py-4 text-center dark:bg-gray-900/60">
           I&apos;m a software developer who brings latency down to his humour
           level 🚀
         </p>
@@ -97,13 +97,13 @@ export const Timeline = () => {
 
 const Experiences = [
   {
-    name: "Material Depot (YC W22) - Software Intern",
+    name: "Material Depot (YC W22)",
     description: [
       "Working on a <b>React.js</b> codebase with <b>mobx</b> as the state management library",
       "Migrated React.js frontend to V3 of API and added e-commerce functionality",
       "Built a CRM using React.js and Material UI",
     ],
-    date: "January 2023 - Current",
+    date: "Software Intern from January 2023 to Current",
     current: true,
   },
   {
@@ -113,18 +113,18 @@ const Experiences = [
       "The rewrite is done using React.js as the UI Library and <b>React Query + Axios</b> for cached data fetching",
       "The web components are built using <b>Polymer.js</b> and uses Material UI, and follow the FHIR Spec",
     ],
-    date: "June 2022 - September 2022",
+    date: "Open Source Developer from June 2022 to September 2022",
     current: false,
   },
   {
-    name: "BlendED - Fronted Intern",
+    name: "BlendED",
     description: [
       "I worked on Next.js & TailwindCSS codebase to redesign the teacher’s and parent’s landing pages and,",
       "Added firstLogin personalisation flow and persisted data using <b>React Query</b>, improved invoke time <b>by ~40%</b>",
       "Integrated <b>Mix Panel Analytics</b> tool for various functions, which highly impacted the product launch analysis",
       "Implemented a scalable video tooltip modal component that invokes on the first user visit using cookies",
     ],
-    date: "May 2022 - June 2022",
+    date: "Fronted Intern form  May 2022 to June 2022",
     current: false,
   },
   {
@@ -136,7 +136,7 @@ const Experiences = [
       "Wrote tests to type-check the Metrics and their properties using <b>tape.js</b> with jsonschema for variables",
       "Worked on a Web Based client for the CLI using React.js and TailwindCSS making the app more accessible",
     ],
-    date: "June 2022 - September 2022",
+    date: "Open Source Developer from June 2022 to September 2022",
     current: false,
   },
 ];
