@@ -155,7 +155,7 @@ Don't overthink a problem, take some time **creativity is a by-product of procra
 > Live in the future and build what seems interesting.
 
 
-### First principle of thinking
+### First principle thinking
 Yeah, all of that makes sense so now let's get a course on entrepreneurship and start learning how to build a company right?  Because that is what the schools and universities of the world have taught us. We **need** a teacher to guide us through the process, **customers? pfft.**
 
 The thing is that building a company is something that you learn best by doing, the customer is the teacher that guides you to make a good product, not a random teacher who'll tell you words, you'll mug it up and puke it all over your answer sheet.

@@ -10,6 +10,18 @@
     },
     "items": [
         {
+            "id": "https://rosekamal.love//blogs/7-gsoc-in-5-steps",
+            "content_html": "How to became a GSoC contributor in 5 steps under 60 days ",
+            "url": "https://rosekamal.love//blogs/7-gsoc-in-5-steps",
+            "title": "How to become a GSoC Contributor (in 5 Steps)",
+            "summary": "How to became a GSoC contributor in 5 steps under 60 days ",
+            "date_modified": "2023-02-04T00:00:00.000Z",
+            "author": {
+                "name": "Rose Kamal Love",
+                "url": "https://twitter.com/RoseKamalLove1"
+            }
+        },
+        {
             "id": "https://rosekamal.love//blogs/4-evaluating-startup-ideas",
             "content_html": "Should you start up? If so how to get and evaluate ideas",
             "url": "https://rosekamal.love//blogs/4-evaluating-startup-ideas",
