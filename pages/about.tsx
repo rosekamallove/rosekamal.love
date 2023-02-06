@@ -136,7 +136,7 @@ const Experiences = [
       "Wrote tests to type-check the Metrics and their properties using <b>tape.js</b> with jsonschema for variables",
       "Worked on a Web Based client for the CLI using React.js and TailwindCSS making the app more accessible",
     ],
-    date: "Open Source Developer from June 2022 to September 2022",
+    date: "Open Source Developer from September 2021 to December 2021",
     current: false,
   },
 ];

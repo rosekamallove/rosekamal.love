@@ -12,7 +12,7 @@ export default function Layout({
   title?: string;
 }) {
   return (
-    <div className="relative mx-auto w-full border-x-gray-300 bg-gray-100 p-5 px-3 text-[#374151] dark:border-x-gray-800 dark:bg-black dark:text-[#D1D5DA] sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
+    <div className="relative mx-auto w-full border-x border-x-gray-300/30 bg-gray-100 p-5 px-3 text-[#374151] dark:border-x-gray-800/40 dark:bg-black dark:text-[#D1D5DA] sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
       <Head>
         <title>{title ?? "Rose Kamal Love"}</title>
         <meta property="og:title" content={title ?? "Rose Kamal Love"} />
