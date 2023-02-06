@@ -5,7 +5,7 @@ import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import html from "remark-html";
 import wordCounter from "./word-counter";
-
+import remarkHeadingId from "remark-heading-id";
 const postsDirectory = path.join(process.cwd(), "posts");
 
 export function getSortedPostsData() {
@@ -90,10 +90,10 @@ export async function getPostData(id: string) {
   const processedContent = await remark()
     .use(html)
     .use(remarkGfm)
+    .use(remarkHeadingId)
     .process(matterResult.content);
-  const contentHtml = processedContent.toString();
 
-  // if (!matterResult.data.published) return "";
+  const contentHtml = processedContent.toString();
 
   // Combine the data with the id and contentHtml
   return {
