@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rosekamal.love/</id>
     <title>RoseK's Blog</title>
-    <updated>2023-02-06T17:22:44.782Z</updated>
+    <updated>2023-02-07T16:56:15.504Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Rose Kamal Love</name>
@@ -18,9 +18,9 @@
         <title type="html"><![CDATA[How to become a GSoC Contributor (in 5 Steps)]]></title>
         <id>https://rosekamal.love//blogs/7-gsoc-in-5-steps</id>
         <link href="https://rosekamal.love//blogs/7-gsoc-in-5-steps"/>
-        <updated>2023-02-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[How to became a GSoC contributor in 5 steps under 60 days ]]></summary>
-        <content type="html"><![CDATA[How to became a GSoC contributor in 5 steps under 60 days ]]></content>
+        <updated>2023-02-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How to became a GSoC contributor in 5 steps in under 60 days ]]></summary>
+        <content type="html"><![CDATA[How to became a GSoC contributor in 5 steps in under 60 days ]]></content>
         <author>
             <name>Rose Kamal Love</name>
             <email>rosekamallove@gmail.com</email>
