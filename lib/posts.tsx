@@ -6,6 +6,7 @@ import remarkGfm from "remark-gfm";
 import html from "remark-html";
 import wordCounter from "./word-counter";
 import remarkHeadingId from "remark-heading-id";
+import prism from "remark-prism";
 const postsDirectory = path.join(process.cwd(), "posts");
 
 export function getSortedPostsData() {
@@ -73,7 +74,8 @@ export async function getPostData(id: string) {
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
-    .use(html)
+    .use(html, { sanitize: false })
+    .use(prism)
     .use(remarkGfm)
     .use(remarkHeadingId)
     .process(matterResult.content);

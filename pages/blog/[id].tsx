@@ -5,6 +5,9 @@ import Image from "next/image";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
+// import Prism from "prismjs";
+// import "prismjs/components/prism-jsx";
+// import { useEffect } from "react";
 
 export default function Post({
   postData,
@@ -22,6 +25,13 @@ export default function Post({
   };
 }) {
   const url = `https://rosekamal.love/blog/${postData.id}`;
+
+  // useEffect(() => {
+  //   const highlight = async () => {
+  //     await Prism.highlightAll(); // <--- prepare Prism
+  //   };
+  //   highlight(); // <--- call the async function
+  // }, []);
 
   return (
     <Layout home>
