@@ -29,6 +29,8 @@ If you don't even know what Google Summer of Code even is, then I will highly re
 
 Before you move forward I will highly recommend you read through the whole [Google Summer of Code](summerofcode.withgoogle.com) website including all the links to other resources.
 
+<iframe style="width: 100%; height: 500px;" src="https://www.youtube.com/embed/kHLZwQu7V54?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Analyze yourself
 
 With more than 200 Organisations present in GSoC with so many technologies available in those organizations, it is hard to place yourself unless you have analyzed yourself. 
@@ -67,20 +69,67 @@ Once you have made this list, it's time to dig a little deeper into what organiz
 
 It's not easy to pick out these **3 organizations** that you "love" you should take plenty of time and not rush into deciding on these organizations.
 
-To filter out the list that you made earlier, there are some parameters that _I think_ are a good enough sieve to filter out `the three`. These parameters are:
+To filter out the list you made earlier, I think some parameters are a good enough sieve to filter out `the three`. These parameters are:
 - Whether the organization returns every year
 - Does it match your tech stack?
 - And are you genuinely interested in contributing to whatever they're building?
 
 ![GSOC_ORGS](https://user-images.githubusercontent.com/69139607/217305051-333120fe-1ccc-495e-8833-60e38365ab89.png)
 
-One thing that I touched on before is that you should try to focus on whether you like the way a particular organization handles communication and feedback is something that you should make a part of the criteria on which you'll decide whether you're `genuinely interested` in an organization or not. Other reasons for deciding if you're interested in it or not are up to you.
+One thing that I touched on before is that you should try to focus on whether you like the way a particular organization handles communication and feedback is something that you should make a part of the criteria on which you'll decide whether you're `genuinely interested` in an organization or not. Other reasons for deciding whether you're interested in it are up to you.
 
-The organization has to return this year for you to apply to it right? For that what you can do is see if it has been participating consistently for the past few years or not. If you can't decide on this then you can directly communicate with the organization about participation in the program. 
+The organization has to return this year for you to apply to it right? For that what you can do is see if it has been participating consistently for the past few years or not. If you can't decide on this, you can directly communicate with the organization about participating in the program. 
 
 And the last obvious criterion is if that organization matches the technologies that you are proficient in.
 
 ## Setting up the project
+Once you decided on the organization that you are going to be contributing to, the next step is to set up the project locally. Even though it sounds easy because all you have to do is run the development environment on your machine, in reality, it is pretty hard and will take some time.
+
+The project is completely new to you and you don't understand any of it which makes it a lot harder than usual to set up the project locally and get started, this is why all of the organizations have **Contribution Guidelines** documented in which they lay out all of the steps that are required to set up the development environment.
+
+Even with this guideline, there is a very high chance that you run into an issue that you don't understand, to solve it instead of asking the question directly on the forums or chat you should first try to find other similar questions that have been posted on the forum because there is a very high chance the issue that you are facing has already been faced by another contributor and has been solved.
+
+In the rare case in which you are not able to find the solution to your issue, you should post your issue in the forum or the chat and try to get the answers from the community. Don't expect immediate answers. And when you finally do end up setting up the project, don't shy away from helping others set up the project on their local machine. This is not a competition.
+
+For example, let's say you have shortlisted the organization [Rocket.chat](https://rocket.chat) and you need to get started. Now to set up the project you have to find the **Contribution Guidelines** which in the case of `Rocket.chat` is present in the for developer section as [Developer Guides](https://developer.rocket.chat/)
+
+The very first link in this _Developer Guides_ is about how to [contribute to Rocket.chat](https://developer.rocket.chat/rocket.chat/contribute-to-rocket.chat), the only thing left to do now is follow this documentation and get the local server set up.
 ## The feedback cycle
-Basically, communicate -> contribute -> communicate
+Okay, finally the project has been set up locally and is running perfectly. Now you can actually start contributing to the project and get feedback on your code.
+
+### Making the first pull request
+Naturally, the first pull request is going to be the hardest to make because you know nothing about the project, you have to navigate the codebase, have a lot of back and forth with the community 
+
+To get started with code contributions you should go to the `issues` section of the project that you have chosen and try to find issues that are labeled as `good-first-issues` because the organizations want beginner contributors to get on with that project so they make these issues that someone new to the organization can contribute and get started.
+
+![Screenshot 2023-02-10 at 9 23 12 PM](https://user-images.githubusercontent.com/69139607/218138928-652b76b3-c7db-4883-97e1-71d796ad3bfa.jpg)
+
+
+> If you're learning to code, learning a framework, learning how to use git and GitHub, **and** also trying to contribute to an open-source project then **please don't.** First get good at whatever interests you, learn how to use git and GitHub then think about contributing to a large-scale open-source project.
+
+Once you have selected the issue that you are going to be working on, try to understand it properly and ask questions that you might have about the issue because it is possible that the issue description is not complete and you need more information.
+
+You can ask a question on the issue thread just like any other forum post and get the issue _assigned to yourself_ so that someone who is coming to the issue knows that you're working on it. 
+
+![Screenshot 2023-02-10 at 9 37 56 PM](https://user-images.githubusercontent.com/69139607/218139747-beddf1e1-db71-451a-a351-7af53aaa857e.jpg)
+
+After getting the issue assigned, you can start working on it and explore the code base. The first step would be to replicate the issue on your local dev environment and then find where the code is breaking and then fix it.
+
+Once you have replicated the issue and found where it is coming from I would recommend that you share this in the issue thread so that you can get some feedback, maybe even an edge case that you are missing.
+
+If you're unsure how you're going to solve this issue, **communicate**. If you have already solved the issue and want to get some feedback on it, **communicate**. If you can't even replicate the issue solving it is a far cry, **communicate**.
+
+Once you have done this you sort of have established a feedback cycle, in which you start by **communicating** then **contributing**, and then **communicating again**. And this feedback cycle is essential for your success as an open-source contributor.
+
+All that's left now is to repeat the process and move from `good-first-issues` to `critical` issues. So, keep communicating and contributing.
+
+
 ### The proposal
+
+Once you have become a recurring contributor to the organization and the application for GSoC contributors is near, it's time to start writing the proposal. I really want to help you out with writing the proposal but I can't because every project's requirements are different and the only help I can give you is a very high-level overview of what a good proposal consists of.
+
+Google has written about [how to write a good proposal](https://google.github.io/gsocguides/student/writing-a-proposal#:~:text=Summarize%20your%20education%2C%20work%2C%20and,like%20should%20definitely%20be%20mentioned.) and I agree with all of the points, so I will recommend you read that blog. The general advice is to add as much detail as possible about the project in the proposal and lay out a week-wise plan on how you will complete all the tasks that you have set out to complete. If it is UI work, you should have all the designs already completed and include them in the proposal.
+
+And the only way to get enough detail to make this proposal is to communicate with mentors and submit your proposal early to get feedback on it. This will help you improve your milestones, and if the solution that you are thinking of is good or not, and if you will be able to implement the solution in time.
+
+I hope that this blog helped you in shortlisting the organization and getting you started with open source, best of luck for Google Summer of Code 2023 ✨ 
