@@ -12,7 +12,7 @@ export default function Layout({
   title?: string;
 }) {
   return (
-    <div className="relative mx-auto w-full border-x border-x-gray-300/30 bg-gray-100 p-5 px-3 text-[#374151] dark:border-x-gray-800/40 dark:bg-black dark:text-[#D1D5DA] sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
+    <div className="relative mx-auto w-full border-x border-x-gray-300/30 bg-gray-100 my-0 min-h-full p-5 text-[#374151] dark:border-x-gray-800/40 dark:bg-black dark:text-[#D1D5DA] sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
       <Head>
         <title>{title ?? "Rose Kamal Love"}</title>
         <meta property="og:title" content={title ?? "Rose Kamal Love"} />
@@ -36,9 +36,9 @@ export default function Layout({
       {!home && (
         <div>
           <Link href="/">
-            <a className="absolute left-0 top-3 ml-3 flex cursor-pointer items-center rounded-full bg-gray-200/60 p-2 shadow backdrop-blur-sm transition-all hover:scale-105 hover:bg-gray-200/100 hover:text-black focus:scale-100 dark:bg-gray-900/70 dark:hover:bg-gray-900/100 dark:hover:text-white md:top-5 md:-ml-4">
+            <p className="absolute left-0 top-3 ml-3 flex cursor-pointer items-center rounded-full bg-gray-200/60 p-2 shadow backdrop-blur-sm transition-all hover:scale-105 hover:bg-gray-200/100 hover:text-black focus:scale-100 dark:bg-gray-900/70 dark:hover:bg-gray-900/100 dark:hover:text-white md:top-5 md:-ml-4">
               <RxCaretLeft />
-            </a>
+            </p>
           </Link>
         </div>
       )}
@@ -61,13 +61,13 @@ export function ConnectionSection() {
     <section className="my-5 flex justify-between gap-8">
       <div className="flex flex-col gap-2">
         <Link href="/">
-          <a className="underline-offset-4 hover:underline">Home</a>
+          <p className="underline-offset-4 hover:underline">Home</p>
         </Link>
         <Link href="/about">
-          <a className="underline-offset-4 hover:underline">About</a>
+          <p className="underline-offset-4 hover:underline">About</p>
         </Link>
         <Link href="/resume">
-          <a className="underline-offset-4 hover:underline">Resume</a>
+          <p className="underline-offset-4 hover:underline">Resume</p>
         </Link>
       </div>
       <div className="flex flex-col gap-2">
@@ -106,7 +106,7 @@ export function ConnectionSection() {
           GitHub
         </a>
         <Link href="/rss/feed.xml">
-          <a className="underline-offset-4 hover:underline">RSS Feed</a>
+          <p className="underline-offset-4 hover:underline">RSS Feed</p>
         </Link>
       </div>
     </section>

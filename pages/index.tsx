@@ -67,9 +67,9 @@ export default function Home({
           </div>
         </div>
         <Link href="/about">
-          <a className="my-3 flex cursor-pointer items-center font-medium underline-offset-4 transition-all hover:underline">
+          <p className="my-3 flex cursor-pointer items-center font-medium underline-offset-4 transition-all hover:underline">
             More about me <RxCaretRight />
-          </a>
+          </p>
         </Link>
       </section>
 
@@ -84,12 +84,11 @@ export default function Home({
               return <BlogListItem key={post.id} post={post} />;
           })}
           <Link href="/blog">
-            <a
-              href="/blog"
+            <p
               className="my-5 mx-2 flex cursor-pointer items-center font-medium underline-offset-4 transition-all hover:underline"
             >
               Read all blogs <RxCaretRight />
-            </a>
+            </p>
           </Link>
         </ul>
       </section>

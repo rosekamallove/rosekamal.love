@@ -46,7 +46,7 @@ export default function Document() {
         />
         <link rel="me" href="https://tty0.social/@bketelsen" />
       </Head>
-      <body className="flex h-full flex-col bg-gray-100 dark:bg-black">
+      <body className="flex h-full flex-col bg-gray-200 bg-[url('/grid-dark.svg')]  dark:bg-black dark:bg-[url('/grid.svg')]">
         <Main />
         <NextScript />
       </body>
