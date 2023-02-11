@@ -34,7 +34,7 @@ export default function Post({
   // }, []);
 
   return (
-    <Layout home>
+    <Layout home blog>
       <Head>
         <title>{postData.title}</title>
         <meta name="description" content={postData.description}></meta>
@@ -49,7 +49,7 @@ export default function Post({
       </Head>
 
       {/* <ReadingProgress /> */}
-      <article className="prose prose-lg relative mx-auto overflow-hidden transition-all prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-invert dark:prose-blockquote:border-l-gray-800 dark:prose-pre:bg-gray-900 md:prose-xl xl:prose-2xl">
+      <article className="prose prose-lg relative mx-auto overflow-hidden transition-all dark:prose-invert md:prose-xl xl:prose-2xl prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-blockquote:border-l-gray-800 dark:prose-pre:bg-gray-900">
         <SVGBackground />
         <div className="flex min-h-[80vh] flex-col justify-around md:min-h-screen">
           <div>
@@ -75,7 +75,7 @@ export default function Post({
           </div>
 
           <div className="mb-5 flex items-center gap-5">
-            <div className="flex items-center">
+            <div className="relative z-10 items-center">
               <Image
                 priority
                 src="/images/profile.jpg"
@@ -85,7 +85,7 @@ export default function Post({
                 alt={"rosekamallove"}
               />
             </div>
-            <Link href="/about">
+            <Link className="relative z-10 no-underline" href="/about">
               <p className="z-10 flex cursor-pointer flex-col text-base font-bold leading-5 md:text-3xl md:leading-8">
                 <span className="text-xs font-light md:text-sm">
                   Written By

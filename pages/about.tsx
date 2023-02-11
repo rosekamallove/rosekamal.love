@@ -14,7 +14,7 @@ export const Intro = () => (
   <div className="mx-2">
     <div className="prose mx-auto my-8 prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 dark:prose-invert lg:prose-xl xl:prose-2xl">
       <div className="flex items-center justify-center">
-        <p className="rounded-md bg-gray-200 px-4 py-4 text-center dark:bg-gray-900/60">
+        <p className="rounded-md shadow bg-gray-200 px-4 py-4 text-center dark:bg-neutral-900/60">
           I&apos;m a software developer who brings latency down to his humour
           level 🚀
         </p>
@@ -49,13 +49,13 @@ export const Links = () => <div />;
 
 export const Timeline = () => {
   return (
-    <ol className="prose mx-auto relative border-l border-gray-300 dark:border-gray-900 dark:prose-invert lg:prose-lg">
+    <ol className="prose mx-auto relative border-l border-gray-300 dark:border-neutral-900 dark:prose-invert lg:prose-lg">
       {Experiences.map((experience) => (
         <li key={experience.name} className="mb-10 ml-6">
-          <span className="absolute -left-2 mt-3 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 ring-8 ring-gray-100 dark:bg-gray-900 dark:ring-black">
+          <span className="absolute -left-2 mt-3 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 ring-8 ring-gray-100 dark:bg-neutral-900 dark:ring-black">
             <svg
               aria-hidden="true"
-              className="h-2 w-2 text-gray-300 dark:text-gray-900"
+              className="h-2 w-2 text-gray-300 dark:text-neutral-900"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -63,10 +63,10 @@ export const Timeline = () => {
               <path fillRule="evenodd" clipRule="evenodd"></path>
             </svg>
           </span>
-          <h3 className="mb-1 flex items-center text-gray-900 dark:text-white">
+          <h3 className="mb-1 flex items-center text-neutral-900 dark:text-white">
             {experience.name}
             {experience.current && (
-              <span className="mr-2 ml-3 hidden md:block rounded bg-gray-300 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-gray-900 dark:text-gray-500">
+              <span className="mr-2 ml-3 hidden md:block rounded bg-gray-300 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-neutral-900 dark:text-gray-500">
                 Currently Working
               </span>
             )}
