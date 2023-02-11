@@ -91,13 +91,13 @@ export function ConnectionSection() {
     <section className="my-5 flex justify-between gap-8">
       <div className="flex flex-col gap-2">
         <Link href="/">
-          <p className="underline-offset-4 hover:underline">Home</p>
+          <p className="underline-offset-4 cursor-pointer hover:underline">Home</p>
         </Link>
         <Link href="/about">
-          <p className="underline-offset-4 hover:underline">About</p>
+          <p className="underline-offset-4 cursor-pointer hover:underline">About</p>
         </Link>
         <Link href="/resume">
-          <p className="underline-offset-4 hover:underline">Resume</p>
+          <p className="underline-offset-4 cursor-pointer hover:underline">Resume</p>
         </Link>
       </div>
       <div className="flex flex-col gap-2">
