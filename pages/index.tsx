@@ -30,10 +30,10 @@ export default function Home({
       </Head>
 
       {/* User Bio Section */}
-      <section className="my-10 flex flex-col pl-2">
+      <section className="flex flex-col pl-2">
         <div className="flex flex-col-reverse gap-5 md:flex-row">
           <div className="md:max-w-8/12 w-full">
-            <h1 className="mb-6 text-2xl font-black text-[#111827] dark:text-white md:text-4xl lg:text-5xl">
+            <h1 className="mb-6 text-2xl font-black dark:text-white md:text-4xl lg:text-5xl">
               Hi, I am Rose Kamal Love
             </h1>
             <p className="text-xl lg:text-2xl">

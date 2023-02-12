@@ -65,7 +65,7 @@ export default function Post({
                 {postData.tags.split(",").map((t) => (
                   <span
                     key={t}
-                    className="z-20 cursor-pointer rounded-md bg-gray-200/70 px-3 py-1 text-sm transition-all hover:bg-gray-200/100 dark:bg-gray-800/70 hover:dark:bg-gray-800/100 md:text-base "
+                    className="z-20 cursor-pointer rounded-md bg-gray-300/70 px-3 py-1 text-sm transition-all hover:bg-gray-400/40 dark:bg-gray-800/70 hover:dark:bg-gray-800/100 md:text-base "
                   >
                     {t}
                   </span>
