@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
-import { RxArrowDown, RxArrowRight, RxCaretRight } from "react-icons/rx";
+import { RxArrowRight } from "react-icons/rx";
 import Image from "next/image";
 import { IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { generateRssFeed } from "../lib/rss";
@@ -82,7 +82,7 @@ export default function Home({
             href={s.link}
             key={s.link}
           >
-            <span className="cursor-pointer active:scale-[0.95] rounded-md px-3 py-2 dark:hover:bg-neutral-800/80">
+            <span className="cursor-pointer rounded-md px-3 py-2 active:scale-[0.95] dark:hover:bg-neutral-800/80">
               {s.icon}
             </span>
           </Link>
