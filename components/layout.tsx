@@ -1,6 +1,8 @@
+import { useTheme } from "next-themes";
 import Head from "next/head";
 import Link from "next/link";
-import { RxCaretLeft } from "react-icons/rx";
+import { MdOutlineDarkMode } from "react-icons/md";
+import { FaRegLightbulb } from "react-icons/fa";
 
 export default function Layout({
   children,
@@ -16,7 +18,7 @@ export default function Layout({
   return (
     <div className="text-[#374151] dark:text-[#D1D5DA]">
       {!blog && <Navbar />}
-      <div className="relative mx-auto my-0 min-h-full w-full rounded-md border border-gray-300 bg-gray-200 p-5 shadow dark:border-neutral-900 dark:bg-black dark:shadow-black/60  sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
+      <div className="relative mx-auto my-0 min-h-full w-full rounded-md border border-gray-300 bg-gray-200 px-5 dark:border-neutral-900 dark:bg-black dark:shadow-black/60  sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
         <Head>
           <title>{title ?? "Rose Kamal Love"}</title>
           <meta property="og:title" content={title ?? "Rose Kamal Love"} />
@@ -39,15 +41,15 @@ export default function Layout({
         </header>
         <main>{children}</main>
 
-        {!home && (
-          <div>
-            <Link href="/">
-              <p className="absolute left-0 top-3 ml-3 flex cursor-pointer items-center rounded-full bg-gray-200/60 p-2 shadow backdrop-blur-sm transition-all hover:scale-105 hover:bg-gray-200/100 hover:text-black focus:scale-100 dark:bg-neutral-900/70 dark:hover:bg-neutral-900/100 dark:hover:text-white md:top-5 md:-ml-4">
-                <RxCaretLeft />
-              </p>
-            </Link>
-          </div>
-        )}
+        {/* {!home && ( */}
+        {/*   <div> */}
+        {/*     <Link href="/"> */}
+        {/*       <p className="absolute left-0 top-3 ml-3 flex cursor-pointer items-center rounded-full bg-gray-200/60 p-2 shadow backdrop-blur-sm transition-all hover:scale-105 hover:bg-gray-200/100 hover:text-black focus:scale-100 dark:bg-neutral-900/70 dark:hover:bg-neutral-900/100 dark:hover:text-white md:top-5 md:-ml-4"> */}
+        {/*         <RxCaretLeft /> */}
+        {/*       </p> */}
+        {/*     </Link> */}
+        {/*   </div> */}
+        {/* )} */}
       </div>
       <Footer />
     </div>
@@ -56,38 +58,53 @@ export default function Layout({
 
 export function Footer() {
   return (
-    <div className="mx-auto my-0 mt-10 rounded-md border border-gray-300 bg-gray-200 px-5 py-3 shadow dark:border-neutral-900 dark:bg-black dark:shadow-black/60 sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
+    <div className="mx-auto my-0 mt-10 rounded-md border border-gray-300 bg-gray-200 px-5 py-1 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
       <ConnectionSection />
     </div>
   );
 }
 
 export function Navbar() {
+  const { theme, setTheme } = useTheme();
+  const navbar = [
+    {
+      href: "/",
+      title: "Home",
+    },
+    {
+      href: "/about",
+      title: "About",
+    },
+    {
+      href: "/blog",
+      title: "Blog",
+    },
+  ];
   return (
-    <div className="mx-auto my-0 mt-5 mb-10 rounded-md border border-gray-300 bg-gray-200 px-5 py-3 shadow dark:border-neutral-900 dark:bg-black dark:shadow-black/60 sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
+    <div className="mx-auto my-0 mt-5 mb-10 rounded-md border border-gray-300 bg-gray-200 px-5 py-3 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
       <div className="flex justify-between">
-        <div className=" flex gap-5">
-          <Link href="/">
-            <p className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-200/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-900/50">
-              Home
-            </p>
-          </Link>
-          <Link href="/about">
-            <p className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-200/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-900/50">
-              About
-            </p>
-          </Link>
-          <Link href="/blog">
-            <p className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-200/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-900/50">
-              Blog
-            </p>
-          </Link>
+        <div className="flex gap-5">
+          {navbar.map((n) => (
+            <Link key={n.href} href={n.href}>
+              <span className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60">
+                {n.title}
+              </span>
+            </Link>
+          ))}
         </div>
-        <Link href="/resume">
-          <p className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-200/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-900/50">
-            Resume
-          </p>
-        </Link>
+        <div className="flex">
+          <Link href="/resume">
+            <span className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60">
+              Resume
+            </span>
+          </Link>
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60"
+          >
+            {theme === "dark" ? <FaRegLightbulb /> : <MdOutlineDarkMode />}
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -52,10 +52,10 @@ export const Timeline = () => {
     <ol className="prose mx-auto relative border-l border-gray-300 dark:border-neutral-900 dark:prose-invert lg:prose-lg">
       {Experiences.map((experience) => (
         <li key={experience.name} className="mb-10 ml-6">
-          <span className="absolute -left-2 mt-3 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 ring-8 ring-gray-100 dark:bg-neutral-900 dark:ring-black">
+          <span className="absolute -left-2 mt-3 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 ring-8 ring-gray-200 dark:bg-neutral-800 dark:ring-black">
             <svg
               aria-hidden="true"
-              className="h-2 w-2 text-gray-300 dark:text-neutral-900"
+              className="h-2 w-2 text-gray-300 dark:text-neutral-800"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"

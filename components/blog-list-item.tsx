@@ -14,7 +14,7 @@ export const BlogListItem = ({
   };
 }) => (
   <Link key={post.id} href={`/blog/${post.id}`}>
-    <li className="cursor-pointer rounded-md border-b-[1px] border-gray-300/40 px-2 py-5 transition-all hover:bg-gray-200/50 active:scale-[.99] dark:border-gray-900/60 dark:hover:bg-neutral-900/50">
+    <li className="cursor-pointer rounded-md border-b-[1px] border-gray-300/40 px-2 py-5 transition-all hover:bg-gray-300/30 active:scale-[.99] dark:border-gray-900/60 dark:hover:bg-neutral-900/50">
       <p className="text-2xl font-bold md:text-3xl">{post.title}</p>
       <div className="text-base font-normal md:text-base">
         <Date dateString={post.date} /> •{" "}
