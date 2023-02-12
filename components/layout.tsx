@@ -19,7 +19,7 @@ export default function Layout({
   return (
     <div className="text-[#374151] dark:text-[#D1D5DA]">
       {!blog && <Navbar />}
-      <div className="relative mx-auto my-0 min-h-full w-full rounded-md border border-gray-300 bg-gray-200 px-5 dark:border-neutral-900 dark:bg-black dark:shadow-black/60  sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
+      <div className="relative mx-auto my-0 min-h-full w-11/12 rounded-md border border-gray-300 bg-gray-200 px-2 md:px-5 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12">
         <Head>
           <title>{title ?? "Rose Kamal Love"}</title>
           <meta property="og:title" content={title ?? "Rose Kamal Love"} />
@@ -59,7 +59,7 @@ export default function Layout({
 
 export function Footer() {
   return (
-    <div className="mx-auto my-0 mt-10 rounded-md border border-gray-300 bg-gray-200 px-5 py-1 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
+    <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-2 py-1 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5 ">
       <ConnectionSection />
     </div>
   );
@@ -83,7 +83,7 @@ export function Navbar() {
     },
   ];
   return (
-    <div className="mx-auto my-0 mt-5 mb-10 rounded-md border border-gray-300 bg-gray-200 px-5 py-3 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 sm:w-11/12 md:w-10/12 md:px-5 lg:w-8/12">
+    <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-2 md:px-5 py-3 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12">
       <div className="flex justify-between">
         <div className="flex gap-5">
           {navbar.map((n) => (
@@ -91,19 +91,19 @@ export function Navbar() {
               <span
                 className={`${
                   router.asPath === n.href ? "font-semibold" : ""
-                } cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
+                } cursor-pointer rounded-md px-3 py-1 text-base transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
               >
                 {n.title}
               </span>
             </Link>
           ))}
         </div>
-        <div className="hidden md:flex">
+        <div className="flex">
           <Link href="/resume">
             <span
               className={`${
                 router.asPath === "/resume" ? "font-semibold" : ""
-              } cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
+              } hidden cursor-pointer rounded-md px-3 py-1 transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60 md:block`}
             >
               Resume
             </span>
