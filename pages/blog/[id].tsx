@@ -49,11 +49,11 @@ export default function Post({
       </Head>
 
       {/* <ReadingProgress /> */}
-      <article className="prose prose-lg relative mx-auto overflow-hidden transition-all dark:prose-invert md:prose-xl xl:prose-2xl prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-blockquote:border-l-gray-800 dark:prose-pre:bg-gray-900">
+      <article className="prose prose-lg relative mx-auto overflow-hidden transition-all prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-invert dark:prose-blockquote:border-l-gray-800 dark:prose-pre:bg-gray-900 md:prose-xl">
         <SVGBackground />
         <div className="flex min-h-[80vh] flex-col justify-around md:min-h-screen">
           <div>
-            <h1 className="relative z-20 font-black">{postData.title}</h1>
+            <h2 className="relative z-20 font-black">{postData.title}</h2>
 
             <p className="relative z-10">
               {postData.description} in ~{Math.floor(postData.words / 255)}{" "}

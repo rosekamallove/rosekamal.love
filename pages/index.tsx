@@ -34,10 +34,10 @@ export default function Home({
       <section className="flex flex-col pl-2">
         <div className="flex flex-col-reverse gap-5 md:flex-row">
           <div className="md:max-w-8/12 w-full">
-            <h1 className="mb-6 text-4xl font-black dark:text-white md:text-5xl">
+            <h1 className="mb-6 text-4xl font-black dark:text-white">
               Rose Kamal Love
             </h1>
-            <p className="text-xl lg:text-2xl">
+            <p className="text-lg">
               {" "}
               A friendly ambivert who loves writing software, trying to make a
               difference through{" "}
