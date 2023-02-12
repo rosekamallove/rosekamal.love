@@ -34,7 +34,7 @@ export default function Post({
   // }, []);
 
   return (
-    <Layout home blog>
+    <Layout home>
       <Head>
         <title>{postData.title}</title>
         <meta name="description" content={postData.description}></meta>
@@ -65,7 +65,7 @@ export default function Post({
                 {postData.tags.split(",").map((t) => (
                   <span
                     key={t}
-                    className="z-20 cursor-pointer rounded-md bg-gray-300/70 px-3 py-1 text-sm transition-all hover:bg-gray-400/40 dark:bg-gray-800/70 hover:dark:bg-gray-800/100 md:text-base "
+                    className="z-20 cursor-pointer rounded-md bg-gray-300/70 px-3 py-1 text-sm transition-all hover:bg-gray-400/40 dark:bg-neutral-900 hover:dark:bg-neutral-800/100 md:text-base "
                   >
                     {t}
                   </span>
@@ -148,7 +148,7 @@ export const SVGBackground = () => (
             y={0}
             width={4}
             height={4}
-            className={`text-gray-200/70 dark:text-gray-900/70`}
+            className={`text-gray-400/20 dark:text-neutral-800/70`}
             fill="currentColor"
           />
         </pattern>
@@ -180,7 +180,7 @@ export const SVGBackground = () => (
             y={0}
             width={4}
             height={4}
-            className={`text-gray-200/70 dark:text-gray-900/70`}
+            className={`text-gray-400/20 dark:text-neutral-800/70`}
             fill="currentColor"
           />
         </pattern>
