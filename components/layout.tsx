@@ -91,14 +91,14 @@ export function Navbar() {
               <span
                 className={`${
                   router.asPath === n.href ? "font-semibold" : ""
-                } cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
+                } cursor-pointer rounded-md px-3 text-sm transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60 md:text-base`}
               >
                 {n.title}
               </span>
             </Link>
           ))}
         </div>
-        <div className="flex">
+        <div className="hidden md:flex">
           <Link href="/resume">
             <span
               className={`${
