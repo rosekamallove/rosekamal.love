@@ -12,7 +12,7 @@ export default function About() {
 
 export const Intro = () => (
   <div className="mx-2">
-    <div className="prose mx-auto my-8 prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 dark:prose-invert lg:prose-xl xl:prose-2xl">
+    <div className="prose mx-auto prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 dark:prose-invert lg:prose-xl xl:prose-2xl">
       <div className="flex items-center justify-center">
         <p className="rounded-md shadow bg-gray-200 px-4 py-4 text-center dark:bg-neutral-900/60">
           I&apos;m a software developer who brings latency down to his humour

@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { FaRegLightbulb } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 export default function Layout({
   children,
@@ -66,6 +67,7 @@ export function Footer() {
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
+  const router = useRouter();
   const navbar = [
     {
       href: "/",
@@ -86,7 +88,11 @@ export function Navbar() {
         <div className="flex gap-5">
           {navbar.map((n) => (
             <Link key={n.href} href={n.href}>
-              <span className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60">
+              <span
+                className={`${
+                  router.asPath === n.href ? "font-semibold" : ""
+                } cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
+              >
                 {n.title}
               </span>
             </Link>
@@ -94,7 +100,11 @@ export function Navbar() {
         </div>
         <div className="flex">
           <Link href="/resume">
-            <span className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60">
+            <span
+              className={`${
+                router.asPath === "/resume" ? "font-semibold" : ""
+              } cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
+            >
               Resume
             </span>
           </Link>
