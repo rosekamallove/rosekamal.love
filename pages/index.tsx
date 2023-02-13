@@ -34,7 +34,7 @@ export default function Home({
       <section className="flex flex-col pl-2">
         <div className="flex flex-col-reverse gap-5 md:flex-row">
           <div className="md:max-w-8/12 w-full">
-            <h1 className="mb-6 text-4xl font-black dark:text-white">
+            <h1 className="mb-6 text-3xl md:text-5xl font-bold dark:text-white">
               Rose Kamal Love
             </h1>
             <p className="text-lg">
@@ -76,22 +76,21 @@ export default function Home({
 
       <section className="my-5 flex gap-5 text-2xl">
         {socials.map((s) => (
-          <Link
+          <a
             rel="noopener noreferrer"
+            key={s.link}
             target="_blank"
             href={s.link}
-            key={s.link}
+            className={`cursor-pointer rounded-md px-3 py-2 transition-all hover:bg-gray-400/30 active:scale-[0.95] dark:hover:bg-neutral-800/80`}
           >
-            <span className="cursor-pointer rounded-md px-3 py-2 active:scale-[0.95] dark:hover:bg-neutral-800/80">
-              {s.icon}
-            </span>
-          </Link>
+            {s.icon}
+          </a>
         ))}
       </section>
 
       {/* Blogs Section */}
       <section>
-        <h2 className="mt-14 px-1 text-3xl font-bold dark:text-white">
+        <h2 className="mt-14 px-1 text-2xl md:text-3xl font-bold dark:text-white">
           Featured Posts
         </h2>
         <ul className="mb-5 flex flex-col">
@@ -112,16 +111,19 @@ export default function Home({
 
 const socials = [
   {
-    link: "https://instagram.com/rosekamallove",
+    link: "https://youtube.com/@rosekamallove/",
     icon: <IoLogoYoutube />,
+    hover: "#C31A1E",
   },
   {
     link: "https://instagram.com/rosekamallove",
     icon: <IoLogoInstagram />,
+    hover: "#2C6A93",
   },
   {
-    link: "https://instagram.com/rosekamallove",
+    link: "https://twitter.com/RoseKamalLove1",
     icon: <IoLogoTwitter />,
+    hover: "#00B6F1",
   },
 ];
 

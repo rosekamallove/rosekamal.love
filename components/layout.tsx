@@ -19,7 +19,7 @@ export default function Layout({
   return (
     <div className="text-[#374151] dark:text-[#D1D5DA]">
       {!blog && <Navbar />}
-      <div className="relative mx-auto my-0 min-h-full w-11/12 rounded-md border border-gray-300 bg-gray-200 px-2 md:px-5 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12">
+      <div className="relative mx-auto my-0 min-h-full w-11/12 rounded-md border border-gray-300 bg-gray-200 px-2 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5">
         <Head>
           <title>{title ?? "Rose Kamal Love"}</title>
           <meta property="og:title" content={title ?? "Rose Kamal Love"} />
@@ -83,7 +83,7 @@ export function Navbar() {
     },
   ];
   return (
-    <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-2 md:px-5 py-3 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12">
+    <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-2 py-3 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5">
       <div className="flex justify-between">
         <div className="flex gap-5">
           {navbar.map((n) => (
@@ -91,7 +91,7 @@ export function Navbar() {
               <span
                 className={`${
                   router.asPath === n.href ? "font-semibold" : ""
-                } cursor-pointer rounded-md px-3 py-1 text-base transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
+                } flex cursor-pointer items-center rounded-md px-3 py-1 text-base transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
               >
                 {n.title}
               </span>

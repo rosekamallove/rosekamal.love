@@ -1,8 +1,14 @@
+import { useTheme } from "next-themes";
 import { Head, Html, Main, NextScript } from "next/document";
+import { useEffect } from "react";
 
 export default function Document() {
+
+  const { setTheme } = useTheme();
+  useEffect(() => setTheme("dark"), []);
+
   return (
-    <Html className="h-full dark antialiased" lang="en">
+    <Html className="h-full antialiased" lang="en">
       <Head>
         <link
           rel="alternate"

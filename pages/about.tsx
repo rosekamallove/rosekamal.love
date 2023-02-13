@@ -11,12 +11,11 @@ export default function About() {
 }
 
 export const Intro = () => (
-  <div className="mx-2">
+  <div>
     <div className="prose prose-lg mx-auto prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 dark:prose-invert ">
       <div className="flex items-center justify-center">
-        <p className="rounded-md shadow bg-gray-200 px-4 py-4 text-center dark:bg-neutral-900/60">
-          I&apos;m a software developer who brings latency down to his humour
-          level 🚀
+        <p className="rounded-md bg-gray-200 px-4 py-4 text-center text-sm shadow dark:bg-neutral-900/60 md:text-base">
+          A software developer who brings latency down to his humour level 🚀
         </p>
       </div>
       <p>
@@ -49,7 +48,7 @@ export const Links = () => <div />;
 
 export const Timeline = () => {
   return (
-    <ol className="prose mx-auto relative border-l border-gray-300 dark:border-neutral-900 dark:prose-invert lg:prose-lg">
+    <ol className="prose prose-sm relative mx-5 border-l border-gray-300 dark:border-neutral-900 dark:prose-invert md:prose-lg">
       {Experiences.map((experience) => (
         <li key={experience.name} className="mb-10 ml-6">
           <span className="absolute -left-2 mt-3 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 ring-8 ring-gray-200 dark:bg-neutral-800 dark:ring-black">
@@ -66,7 +65,7 @@ export const Timeline = () => {
           <h3 className="mb-1 flex items-center text-neutral-900 dark:text-white">
             {experience.name}
             {experience.current && (
-              <span className="mr-2 ml-3 hidden md:block rounded bg-gray-300 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-neutral-900 dark:text-gray-500">
+              <span className="mr-2 ml-3 hidden rounded bg-gray-300 px-2.5 py-0.5 text-xs font-medium text-gray-800 dark:bg-neutral-900 dark:text-gray-500 md:block">
                 Currently Working
               </span>
             )}

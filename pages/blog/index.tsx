@@ -17,7 +17,7 @@ export default function Blog({
   return (
     <Layout title="Blog | Rose Kamal Love">
       <section className="px-0">
-        <h1 className="text-5xl font-black">Blogs</h1>
+        <h1 className="text-5xl font-bold">Blog</h1>
         <p className="my-2">
           The home to my thoughts and revelations, happy reading ✨
         </p>
