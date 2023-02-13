@@ -59,7 +59,7 @@ export default function Layout({
 
 export function Footer() {
   return (
-    <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-2 py-1 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5 ">
+    <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-5 py-1 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5">
       <ConnectionSection />
     </div>
   );
@@ -83,7 +83,7 @@ export function Navbar() {
     },
   ];
   return (
-    <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-2 py-3 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5">
+    <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-5 py-3 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5">
       <div className="flex justify-between">
         <div className="flex gap-5">
           {navbar.map((n) => (
