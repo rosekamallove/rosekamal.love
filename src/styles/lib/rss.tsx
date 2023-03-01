@@ -1,5 +1,5 @@
 import fs from "fs";
-import postData from "../src/interfaces/postData";
+import postData from "../interfaces/postData";
 import { getSortedPostsData } from "./posts";
 import { Feed } from "feed";
 
