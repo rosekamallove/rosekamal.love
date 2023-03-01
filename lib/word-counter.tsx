@@ -2,7 +2,7 @@ export default function wordCounter(input: string) {
   const text = input.split(/\s+/);
   let wordCount = 0;
   for (let i = 0; i < text.length; i++) {
-    if (text[i] !== " " && isWord(text[i])) {
+    if (text[i] !== " " && isWord(text[i] ?? "")) {
       wordCount++;
     }
   }

@@ -34,6 +34,7 @@ export const generateRssFeed = async (): Promise<void> => {
     author,
   });
 
+  // @ts-ignore
   posts.forEach((post: postData) => {
     const url = `${siteURL}/blogs/${post.id}`;
 

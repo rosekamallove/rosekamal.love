@@ -49,7 +49,7 @@ export default function Post({
       </Head>
 
       {/* <ReadingProgress /> */}
-      <article className="prose prose-lg prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-invert dark:prose-blockquote:border-l-gray-800 dark:prose-pre:bg-gray-900 md:prose-xl relative mx-auto overflow-hidden transition-all">
+      <article className="prose prose-lg relative mx-auto overflow-hidden transition-all dark:prose-invert md:prose-xl prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 prose-blockquote:border-l-gray-300 dark:prose-blockquote:border-l-gray-800 dark:prose-pre:bg-gray-900">
         <SVGBackground />
         <div className="flex min-h-[80vh] flex-col justify-around md:min-h-screen">
           <div>
@@ -117,7 +117,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postData = await getPostData(params.id as string);
+  const postData = await getPostData(params?.id as string);
   return {
     props: {
       postData,

@@ -5,8 +5,10 @@ import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import html from "remark-html";
 import wordCounter from "./word-counter";
+// @ts-ignore
 import remarkHeadingId from "remark-heading-id";
 import prism from "remark-prism";
+
 const postsDirectory = path.join(process.cwd(), "posts");
 
 export function getSortedPostsData() {
