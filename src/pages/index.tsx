@@ -7,6 +7,7 @@ import Image from "next/image";
 import { IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { generateRssFeed } from "../../lib/rss";
 import { BlogListItem } from "../components/blog-list-item";
+import { api } from "~/utils/api";
 
 export default function Home({
   allPostsData,
@@ -21,6 +22,8 @@ export default function Home({
     featured: boolean;
   }[]; // Array of objects
 }) {
+  const hello = api.example.hello.useQuery({ text: "Hello from TRPC" });
+  console.log(hello.data?.greeting);
   return (
     <Layout home>
       <Head>
