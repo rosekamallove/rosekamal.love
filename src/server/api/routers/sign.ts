@@ -8,7 +8,11 @@ import {
 
 export const signatureRouter = createTRPCRouter({
   sign: protectedProcedure
-    .input(z.object({ text: z.string({ required_error: "Text is required" }) }))
+    .input(
+      z.object({
+        text: z.string({ required_error: "Text is required" }).min(3),
+      })
+    )
     .mutation(({ ctx, input }) => {
       const { prisma, session } = ctx;
       const { text } = input;
@@ -28,7 +32,16 @@ export const signatureRouter = createTRPCRouter({
   getAll: publicProcedure.query(async ({ ctx }) => {
     const { prisma } = ctx;
 
-    const signatures = prisma.signature.findMany();
+    const signatures = prisma.signature.findMany({
+      include: {
+        author: {
+          select: {
+            name: true,
+            id: true,
+          },
+        },
+      },
+    });
     return signatures;
   }),
 });
