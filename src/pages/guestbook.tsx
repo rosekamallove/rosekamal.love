@@ -48,7 +48,7 @@ const Guestbook = () => {
       ) : (
         <div>
           {data?.map((signature) => (
-            <div className="flex gap-1 px-1">
+            <div key={signature.authorId} className="flex gap-1 px-1">
               <b>{signature.author?.name}:</b>
               <p>{signature.text}</p>
             </div>
