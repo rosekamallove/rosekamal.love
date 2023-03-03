@@ -1,5 +1,5 @@
 import fs from "fs";
-import postData from "../interfaces/postData";
+import postData from "../src/interfaces/postData";
 import { getSortedPostsData } from "./posts";
 import { Feed } from "feed";
 
@@ -34,6 +34,7 @@ export const generateRssFeed = async (): Promise<void> => {
     author,
   });
 
+  // @ts-ignore
   posts.forEach((post: postData) => {
     const url = `${siteURL}/blogs/${post.id}`;
 

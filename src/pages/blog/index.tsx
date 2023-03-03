@@ -1,6 +1,6 @@
 import { BlogListItem } from "../../components/blog-list-item";
 import Layout from "../../components/layout";
-import { getSortedPostsData } from "../../lib/posts";
+import { getSortedPostsData } from "../../../lib/posts";
 
 export default function Blog({
   allPostsData,

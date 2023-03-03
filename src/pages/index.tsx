@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedPostsData } from "../../lib/posts";
 import { RxArrowRight } from "react-icons/rx";
 import Image from "next/image";
 import { IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
-import { generateRssFeed } from "../lib/rss";
+import { generateRssFeed } from "../../lib/rss";
 import { BlogListItem } from "../components/blog-list-item";
+import { api } from "~/utils/api";
 
 export default function Home({
   allPostsData,
@@ -21,6 +22,8 @@ export default function Home({
     featured: boolean;
   }[]; // Array of objects
 }) {
+  const hello = api.example.hello.useQuery({ text: "Hello from TRPC" });
+  console.log(hello.data?.greeting);
   return (
     <Layout home>
       <Head>
@@ -34,7 +37,7 @@ export default function Home({
       <section className="flex flex-col pl-2">
         <div className="flex flex-col-reverse gap-5 md:flex-row">
           <div className="md:max-w-8/12 w-full">
-            <h1 className="mb-6 text-3xl md:text-5xl font-bold dark:text-white">
+            <h1 className="mb-6 text-3xl font-bold dark:text-white md:text-5xl">
               Rose Kamal Love
             </h1>
             <p className="text-lg">
@@ -90,7 +93,7 @@ export default function Home({
 
       {/* Blogs Section */}
       <section>
-        <h2 className="mt-14 px-1 text-2xl md:text-3xl font-bold dark:text-white">
+        <h2 className="mt-14 px-1 text-2xl font-bold dark:text-white md:text-3xl">
           Featured Posts
         </h2>
         <ul className="mb-5 flex flex-col">
