@@ -14,7 +14,7 @@ const Guestbook = () => {
     <Layout>
       <div className="flex gap-3">
         <input
-          className="rounded-md bg-gray-50 px-3 transition-all hover:bg-gray-100 active:scale-95 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+          className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 transition-all focus:outline-gray-400 focus:border-gray-400 focus:ring-gray-400 dark:border-neutral-600 dark:bg-neutral-900 dark:text-white dark:placeholder-neutral-400 dark:outline-neutral-800 dark:focus:border-neutral-800 dark:focus:ring-gray-800"
           onChange={(e) => setText(e.target.value)}
           placeholder="Add your signature"
         />

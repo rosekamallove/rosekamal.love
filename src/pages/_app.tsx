@@ -1,5 +1,6 @@
 import { type AppType } from "next/app";
 import { type Session } from "next-auth";
+import "prism-themes/themes/prism-one-dark.min.css";
 import { SessionProvider } from "next-auth/react";
 
 import { api } from "~/utils/api";

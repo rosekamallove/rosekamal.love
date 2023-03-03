@@ -81,17 +81,21 @@ export function Navbar() {
       href: "/blog",
       title: "Blog",
     },
+    {
+      href: "/guestbook",
+      title: "Guestbook",
+    },
   ];
   return (
     <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-5 py-3 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5">
       <div className="flex justify-between">
-        <div className="flex gap-5">
+        <div className="flex gap-1">
           {navbar.map((n) => (
             <Link key={n.href} href={n.href}>
               <span
                 className={`${
                   router.asPath === n.href ? "font-semibold" : ""
-                } flex cursor-pointer items-center rounded-md px-3 py-1 text-base transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
+                } flex cursor-pointer items-center rounded-md px-3 py-1 text-sm md:text-base transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
               >
                 {n.title}
               </span>
@@ -177,6 +181,9 @@ export function ConnectionSection() {
         </a>
         <Link href="/rss/feed.xml">
           <p className="underline-offset-4 hover:underline">RSS Feed</p>
+        </Link>
+        <Link href="/guestbook">
+          <p className="underline-offset-4 hover:underline">Guestbook</p>
         </Link>
       </div>
     </section>
