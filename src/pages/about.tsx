@@ -48,7 +48,7 @@ export const Links = () => <div />;
 
 export const Timeline = () => {
   return (
-    <ol className="prose prose-sm relative mx-5 border-l border-gray-300 dark:prose-invert md:prose-lg dark:border-neutral-900">
+    <ol className="prose relative mx-5 border-l border-gray-300 dark:prose-invert dark:border-neutral-900">
       {Experiences.map((experience) => (
         <li key={experience.name} className="mb-10 ml-6">
           <span className="absolute -left-2 mt-3 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 ring-8 ring-gray-200 dark:bg-neutral-800 dark:ring-black">
