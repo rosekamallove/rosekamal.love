@@ -24,6 +24,7 @@ export default function Home({
 }) {
   const hello = api.example.hello.useQuery({ text: "Hello from TRPC" });
   console.log(hello.data?.greeting);
+
   return (
     <Layout home>
       <Head>
