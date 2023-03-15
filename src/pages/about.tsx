@@ -12,7 +12,7 @@ export default function About() {
 
 export const Intro = () => (
   <div>
-    <div className="prose prose-lg mx-auto prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 dark:prose-invert ">
+    <div className="prose prose-lg mx-auto dark:prose-invert prose-a:decoration-1 prose-a:underline-offset-4 hover:prose-a:decoration-2 ">
       <div className="flex items-center justify-center">
         <p className="rounded-md bg-gray-200 px-4 py-4 text-center text-sm shadow dark:bg-neutral-900/60 md:text-base">
           A software developer who brings latency down to his humour level 🚀
@@ -48,7 +48,7 @@ export const Links = () => <div />;
 
 export const Timeline = () => {
   return (
-    <ol className="prose prose-sm relative mx-5 border-l border-gray-300 dark:border-neutral-900 dark:prose-invert md:prose-lg">
+    <ol className="prose relative mx-5 border-l border-gray-300 dark:prose-invert dark:border-neutral-900">
       {Experiences.map((experience) => (
         <li key={experience.name} className="mb-10 ml-6">
           <span className="absolute -left-2 mt-3 flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 ring-8 ring-gray-200 dark:bg-neutral-800 dark:ring-black">
@@ -100,7 +100,7 @@ const Experiences = [
     description: [
       "Working on a <b>React.js</b> codebase with <b>mobx</b> as the state management library",
       "Migrated React.js frontend to V3 of API and added e-commerce functionality",
-      "Built a CRM using React.js and Material UI",
+      "Built a CRM using React.js and Material UI and worked on Pamphlet generation using Python",
     ],
     date: "Software Intern from January 2023 to Current",
     current: true,
