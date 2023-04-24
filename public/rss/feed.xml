@@ -4,7 +4,7 @@
         <title>RoseK's Blog</title>
         <link>https://rosekamal.love/</link>
         <description>Blgo posts about internships, Web Development, Open Source, Productivity and more</description>
-        <lastBuildDate>Wed, 15 Mar 2023 09:26:07 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Mar 2023 10:09:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>All rights reserved 2023, Rose Kamal Love</copyright>
@@ -12,6 +12,15 @@
             <title><![CDATA[How to become a GSoC Contributor (in 5 Steps)]]></title>
             <link>https://rosekamal.love//blogs/7-gsoc-in-5-steps</link>
             <guid>https://rosekamal.love//blogs/7-gsoc-in-5-steps</guid>
+            <pubDate>Tue, 07 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[How to became a GSoC contributor in 5 steps in under 60 days ]]></description>
+            <content:encoded><![CDATA[How to became a GSoC contributor in 5 steps in under 60 days ]]></content:encoded>
+            <author>rosekamallove@gmail.com (Rose Kamal Love)</author>
+        </item>
+        <item>
+            <title><![CDATA[How to become a GSoC Contributor (in 5 Steps)]]></title>
+            <link>https://rosekamal.love//blogs/@rose</link>
+            <guid>https://rosekamal.love//blogs/@rose</guid>
             <pubDate>Tue, 07 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[How to became a GSoC contributor in 5 steps in under 60 days ]]></description>
             <content:encoded><![CDATA[How to became a GSoC contributor in 5 steps in under 60 days ]]></content:encoded>

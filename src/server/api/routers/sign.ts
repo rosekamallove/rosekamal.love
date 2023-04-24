@@ -33,6 +33,11 @@ export const signatureRouter = createTRPCRouter({
     const { prisma } = ctx;
 
     const signatures = prisma.signature.findMany({
+      orderBy: [
+        {
+          createdAt: "desc",
+        },
+      ],
       include: {
         author: {
           select: {

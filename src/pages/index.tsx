@@ -53,7 +53,7 @@ export default function Home({
               </a>{" "}
               and{" "}
               <a
-                href="https://discord.com/invite/e5SnnVP3ad"
+                href="https://www.kroto.in"
                 className="my-3 cursor-pointer underline-offset-4 hover:underline md:mb-3"
               >
                 Kroto

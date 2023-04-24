@@ -56,7 +56,7 @@ const Guestbook = () => {
               <b className="text-gray-500 dark:text-neutral-500">
                 {signature.author?.name}:
               </b>
-              <p>{signature.text}</p>
+              <p className="truncate">{signature.text}</p>
             </div>
           ))}
         </div>
