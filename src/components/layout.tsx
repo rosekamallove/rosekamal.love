@@ -1,8 +1,5 @@
-import { useTheme } from "next-themes";
 import Head from "next/head";
 import Link from "next/link";
-import { MdOutlineDarkMode } from "react-icons/md";
-import { FaRegLightbulb } from "react-icons/fa";
 import { useRouter } from "next/router";
 
 export default function Layout({
@@ -66,7 +63,6 @@ export function Footer() {
 }
 
 export function Navbar() {
-  const { theme, setTheme } = useTheme();
   const router = useRouter();
   const navbar = [
     {

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../../lib/posts";
-import { RxArrowDown, RxArrowRight } from "react-icons/rx";
+import { RxArrowDown } from "react-icons/rx";
 import Image from "next/image";
 import { IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { generateRssFeed } from "../../lib/rss";
