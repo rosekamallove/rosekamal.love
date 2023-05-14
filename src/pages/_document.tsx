@@ -1,12 +1,6 @@
-import { useTheme } from "next-themes";
 import { Head, Html, Main, NextScript } from "next/document";
-import { useEffect } from "react";
 
 export default function Document() {
-
-  const { setTheme } = useTheme();
-  useEffect(() => setTheme("dark"), []);
-
   return (
     <Html className="h-full antialiased" lang="en">
       <Head>
@@ -21,7 +15,7 @@ export default function Document() {
           href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
         />
       </Head>
-      <body className="flex h-full flex-col bg-gray-200 bg-[url('/grid-dark.svg')]  dark:bg-black dark:bg-[url('/grid.svg')]">
+      <body className="flex h-full flex-col bg-gray-200 bg-[url('/topography-light.svg')]  dark:bg-black dark:bg-[url('/topography.svg')]">
         <Main />
         <NextScript />
       </body>

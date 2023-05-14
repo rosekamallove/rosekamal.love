@@ -4,7 +4,6 @@ const config = {
   theme: {
     extend: {},
   },
-  darkMode: "class",
   plugins: [
     require('@tailwindcss/typography'),
   ],

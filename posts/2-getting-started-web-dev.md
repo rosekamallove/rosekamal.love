@@ -7,7 +7,7 @@ cover_image: "https://user-images.githubusercontent.com/69139607/167338113-fd54e
 tags: "web-dev, react, node"
 devUrl: "this-is-how-you-become-internship-ready-as-a-web-developer-in-2022-part-1-front-end-449g"
 published: true
-featured: true
+featured: false
 ---
 
 In this blog post we're gonna dive into, how one who has zero experience in Web Development can become an **internship ready Web Developer**.

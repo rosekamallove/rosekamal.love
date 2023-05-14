@@ -19,7 +19,7 @@ export default function Layout({
   return (
     <div className="text-[#374151] dark:text-[#D1D5DA]">
       {!blog && <Navbar />}
-      <div className="relative mx-auto my-0 min-h-full w-11/12 rounded-md border border-gray-300 bg-gray-200 px-2 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5">
+      <div className="relative mx-auto my-0 min-h-full max-w-4xl rounded-md border border-gray-300 bg-gray-200 px-2 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:px-5">
         <Head>
           <title>{title ?? "Rose Kamal Love"}</title>
           <meta property="og:title" content={title ?? "Rose Kamal Love"} />
@@ -59,7 +59,7 @@ export default function Layout({
 
 export function Footer() {
   return (
-    <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-5 py-1 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5">
+    <div className="mx-auto my-5 max-w-4xl rounded-md border border-gray-300 bg-gray-200 px-5 py-1 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:px-5">
       <ConnectionSection />
     </div>
   );
@@ -87,15 +87,15 @@ export function Navbar() {
     },
   ];
   return (
-    <div className="mx-auto my-5 w-11/12 rounded-md border border-gray-300 bg-gray-200 px-5 py-3 dark:border-neutral-900 dark:bg-black dark:shadow-black/60 md:w-6/12 md:px-5">
+    <div className="mx-auto my-5 max-w-4xl rounded-md border border-gray-300 bg-gray-200 px-5 py-3 dark:border-neutral-900 dark:bg-black dark:shadow-black/60  md:px-5">
       <div className="flex justify-between">
         <div className="flex gap-1">
           {navbar.map((n) => (
             <Link key={n.href} href={n.href}>
               <span
                 className={`${
-                  router.asPath === n.href ? "font-semibold" : ""
-                } flex cursor-pointer items-center rounded-md px-3 py-1 text-sm md:text-base transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
+                  router.asPath === n.href ? "font-bold" : ""
+                } flex cursor-pointer items-center rounded-md px-3 py-1 transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60`}
               >
                 {n.title}
               </span>
@@ -106,18 +106,18 @@ export function Navbar() {
           <Link href="/resume">
             <span
               className={`${
-                router.asPath === "/resume" ? "font-semibold" : ""
+                router.asPath === "/resume" ? "font-black" : ""
               } hidden cursor-pointer rounded-md px-3 py-1 transition-all hover:bg-gray-300/50 active:scale-[.95] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60 md:block`}
             >
               Resume
             </span>
           </Link>
-          <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60"
-          >
-            {theme === "dark" ? <FaRegLightbulb /> : <MdOutlineDarkMode />}
-          </button>
+          {/* <button */}
+          {/*   onClick={() => setTheme(theme === "dark" ? "light" : "dark")} */}
+          {/*   className="cursor-pointer rounded-md px-3 transition-all hover:bg-gray-300/50 active:scale-[.99] dark:border-neutral-800/60 dark:hover:bg-neutral-800/60" */}
+          {/* > */}
+          {/*   {theme === "dark" ? <FaRegLightbulb /> : <MdOutlineDarkMode />} */}
+          {/* </button> */}
         </div>
       </div>
     </div>
@@ -179,9 +179,14 @@ export function ConnectionSection() {
         >
           GitHub
         </a>
-        <Link href="/rss/feed.xml">
-          <p className="underline-offset-4 hover:underline">RSS Feed</p>
-        </Link>
+        <a
+          href="https://www.linkedin.com/in/rose-kamal-love-1146141b0/"
+          className="underline-offset-4 hover:underline"
+          rel="noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
         <Link href="/guestbook">
           <p className="underline-offset-4 hover:underline">Guestbook</p>
         </Link>

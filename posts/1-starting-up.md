@@ -7,7 +7,7 @@ cover_image: "https://user-images.githubusercontent.com/69139607/178135704-3f3a2
 tags: "starting-up"
 devUrl: ""
 published: true
-featured: false
+featured: true
 ---
 
 ![zero_to_one](https://user-images.githubusercontent.com/69139607/178135704-3f3a2f9b-0a22-4774-bbb3-f32a057cdaf6.png)

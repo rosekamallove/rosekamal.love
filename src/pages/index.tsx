@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../../lib/posts";
-import { RxArrowRight } from "react-icons/rx";
+import { RxArrowDown, RxArrowRight } from "react-icons/rx";
 import Image from "next/image";
 import { IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { generateRssFeed } from "../../lib/rss";
@@ -103,8 +103,8 @@ export default function Home({
               return <BlogListItem key={post.id} post={post} />;
           })}
           <Link href="/blog">
-            <p className="my-5 flex cursor-pointer items-center gap-1 px-1 font-medium">
-              Read More <RxArrowRight />
+            <p className="my-5 flex cursor-pointer flex-col items-center gap-1 px-1 font-medium">
+              Read More <RxArrowDown />
             </p>
           </Link>
         </ul>
