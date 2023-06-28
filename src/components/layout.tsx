@@ -6,11 +6,15 @@ export default function Layout({
   children,
   home,
   blog,
+  img,
+  description,
   title,
 }: {
   children: React.ReactNode;
   home?: boolean;
   blog?: boolean;
+  description?: string;
+  img?: string;
   title?: string;
 }) {
   return (
@@ -22,8 +26,12 @@ export default function Layout({
           <meta property="og:title" content={title ?? "Rose Kamal Love"} />
           <meta
             property="og:description"
-            content="A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
+            content={
+              description ??
+              "A friendly ambivert who loves writing code, with a craving to create music. I take photos too"
+            }
           />
+          <meta property="og:image" content={img ?? "/images/profile.jpg"} />
           <meta name="description" content="@rosekamallove on the web" />
           <meta name="author" content="Rose Kamal Love" />
           <meta name="twitter:title" content="Rose Kamal Love" />

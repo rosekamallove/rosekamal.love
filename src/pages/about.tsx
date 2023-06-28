@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 
 export default function About() {
   return (
-    <Layout title="About | Rose Kamal Love">
+    <Layout title="About ✦ Rose Kamal Love">
       <Intro />
       <h1 className="my-10 mx-auto text-3xl font-black">My Experiences</h1>
       <Timeline />

@@ -15,21 +15,27 @@ export default function Blog({
   }[]; // Array of objects
 }) {
   return (
-    <Layout title="Blog | Rose Kamal Love">
-      <section className="px-0">
-        <h1 className="text-5xl font-bold">Blog</h1>
-        <p className="my-2">
-          The home to my thoughts and revelations, happy reading ✨
-        </p>
-      </section>
-      <section>
-        <ul className="my-5 flex flex-col">
-          {allPostsData.map((post) => (
-            <BlogListItem key={post.id} post={post} />
-          ))}
-        </ul>
-      </section>
-    </Layout>
+    <>
+      <Layout
+        title="Blog ✦ Rose Kamal Love"
+        description="The home to my thoughts and revelations"
+        img="https://rosekamal.love/images/blog-og.png"
+      >
+        <section className="px-0">
+          <h1 className="text-5xl font-bold">Blog</h1>
+          <p className="my-2">
+            The home to my thoughts and revelations, happy reading ✨
+          </p>
+        </section>
+        <section>
+          <ul className="my-5 flex flex-col">
+            {allPostsData.map((post) => (
+              <BlogListItem key={post.id} post={post} />
+            ))}
+          </ul>
+        </section>
+      </Layout>
+    </>
   );
 }
 

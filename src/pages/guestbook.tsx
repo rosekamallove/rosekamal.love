@@ -12,7 +12,7 @@ const Guestbook = () => {
   const { data, isLoading, refetch } = api.sign.getAll.useQuery();
 
   return (
-    <Layout>
+    <Layout title="Guestbook ✦ Rose Kamal Love">
       <div className="relative flex gap-3">
         <input
           className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 transition-all focus:border-gray-400 focus:outline-gray-400 focus:ring-gray-400 dark:border-neutral-600 dark:bg-neutral-900 dark:text-white dark:placeholder-neutral-400 dark:outline-neutral-800 dark:focus:border-neutral-800 dark:focus:ring-gray-800"
