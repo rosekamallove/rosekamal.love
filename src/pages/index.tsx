@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import { getSortedPostsData } from "../../lib/posts";
 import { RxArrowDown } from "react-icons/rx";
 import Image from "next/image";
-import { IoLogoInstagram, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
+import { IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter, IoLogoYoutube } from "react-icons/io";
 import { generateRssFeed } from "../../lib/rss";
 import { BlogListItem } from "../components/blog-list-item";
 import { api } from "~/utils/api";
@@ -120,8 +120,8 @@ const socials = [
     hover: "#C31A1E",
   },
   {
-    link: "https://instagram.com/rosekamallove",
-    icon: <IoLogoInstagram />,
+    link: "https://www.linkedin.com/in/rose-kamal-love-1146141b0/",
+    icon: <IoLogoLinkedin />,
     hover: "#2C6A93",
   },
   {
